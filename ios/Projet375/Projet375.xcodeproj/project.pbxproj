@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F6C4D2F1E46416200BE70D1 /* questionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6C4D2E1E46416200BE70D1 /* questionView.swift */; };
 		A70A9BA71E4635F8001D0FAE /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A70A9BA61E4635F8001D0FAE /* fontawesome-webfont.ttf */; };
 		A70A9BA91E463623001D0FAE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70A9BA81E463623001D0FAE /* Constant.swift */; };
 		A70A9BAB1E463659001D0FAE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70A9BAA1E463659001D0FAE /* Extensions.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F6C4D2E1E46416200BE70D1 /* questionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = questionView.swift; sourceTree = "<group>"; };
 		3EF146C97C101C8D444D4A19 /* Pods_Projet375.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Projet375.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70A9BA61E4635F8001D0FAE /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		A70A9BA81E463623001D0FAE /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				A70A9BA21E4635C0001D0FAE /* Supporting files */,
 				A76B45D71E46355000300134 /* ViewController.swift */,
 				A70A9BA81E463623001D0FAE /* Constant.swift */,
+				2F6C4D2E1E46416200BE70D1 /* questionView.swift */,
 				A70A9BAA1E463659001D0FAE /* Extensions.swift */,
 			);
 			path = Projet375;
@@ -172,7 +175,7 @@
 				TargetAttributes = {
 					A76B45D11E46355000300134 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8HS34KM4UE;
+						DevelopmentTeam = 4AJ93J2W6L;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F6C4D2F1E46416200BE70D1 /* questionView.swift in Sources */,
 				A76B45D81E46355000300134 /* ViewController.swift in Sources */,
 				A76B45D61E46355000300134 /* AppDelegate.swift in Sources */,
 				A70A9BA91E463623001D0FAE /* Constant.swift in Sources */,
@@ -387,7 +391,7 @@
 			baseConfigurationReference = E8FC2FE27BD6018343E2DDDE /* Pods-Projet375.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8HS34KM4UE;
+				DEVELOPMENT_TEAM = 4AJ93J2W6L;
 				INFOPLIST_FILE = Projet375/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Factory26.Projet375;
@@ -401,7 +405,7 @@
 			baseConfigurationReference = FA3DD0AA0FD39E719231FB71 /* Pods-Projet375.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8HS34KM4UE;
+				DEVELOPMENT_TEAM = 4AJ93J2W6L;
 				INFOPLIST_FILE = Projet375/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Factory26.Projet375;

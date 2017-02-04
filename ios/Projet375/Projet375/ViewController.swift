@@ -16,6 +16,11 @@ class ViewController: UIViewController {
         
         kWidth = self.view.frame.width
         kHeight = self.view.frame.height
+        
+        let q = questionView(frame: self.view.frame)
+        self.view.addSubview(q)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
