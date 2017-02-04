@@ -64,11 +64,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+        var deviceTokenV = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
         print("Device token: \(deviceToken)")
         
         let user = UserDefaults.standard
-        user.setValue(deviceToken, forKey: "token")
+        user.setValue(deviceTokenV, forKey: "token")
         user.synchronize()
     }
   

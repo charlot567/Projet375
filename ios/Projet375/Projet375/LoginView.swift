@@ -20,9 +20,9 @@ class LoginView: UIView, LoginButtonDelegate {
         super.init(frame: frame)
         
         let bWidth = kWidth - kWidth / 4
-        let bHeight = kHeight / 20
+        let bHeight = kHeight / 10
         loginButton = LoginButton(readPermissions: [ .publicProfile, .email ])
-        loginButton.frame = CGRect(x: kWidth / 2 - bWidth / 2, y: 0, width: bWidth, height: bHeight)
+        loginButton.frame = CGRect(x: kWidth / 2 - bWidth / 2, y: 200, width: bWidth, height: bHeight)
         loginButton.delegate = self
         self.addSubview(loginButton)
         
@@ -83,7 +83,6 @@ class LoginView: UIView, LoginButtonDelegate {
                         //  Change page
                         print("User created: \(kCurrentUser.completeName)")
                         let userDefault = UserDefaults.standard
-                        
                         
                         if let token = userDefault.value(forKey: "token") as? String {
                             kCurrentUser.token = token

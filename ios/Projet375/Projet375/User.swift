@@ -15,7 +15,6 @@ class User {
     var lastName: String!
     var profileImageUrl: String!
     var token: String!
-    var notificationToken: String!
     
     private var _profileImage: UIImage!
     
