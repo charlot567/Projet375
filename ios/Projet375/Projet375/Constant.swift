@@ -37,6 +37,11 @@ let kTypeMap:Int     = 0
 let kTypeRegular:Int = 1
 let kTypePicture:Int = 2
 
+var kCurrentUser: User!
 
+var kMasterVC: ViewController!
+
+let KVLogIn = 0
+let KVHome = 1
 
 

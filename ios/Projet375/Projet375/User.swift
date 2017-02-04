@@ -26,7 +26,7 @@ class User {
                 return completeName
             }
             
-            _completeName = "\(firstName) \(lastName)"
+            _completeName = "\(firstName!) \(lastName!)"
             return _completeName
         }
         

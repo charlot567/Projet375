@@ -17,10 +17,21 @@ class ViewController: UIViewController {
         
         kWidth = self.view.frame.width
         kHeight = self.view.frame.height
+        kMasterVC = self
         
         let laQuestion = question(id: 1, type: kTypeRegular, categorie: kCat3, quest: "Quel est la couleur de la lune?", reponse: ["Rouge","Vert","Bleu","Blanc"], reponseImage: [UIImage()], imageQuestion: UIImage(), reponseId: 3, location: CLLocationCoordinate2D())
         let q = questionView(frame: self.view.frame, q: laQuestion)
         self.view.addSubview(q)
+
+//        let loginView = LoginView(frame: self.view.frame)
+//        self.view.addSubview(loginView)
+        
+    }
+    
+    func switchNav(index: Int) {
+        if(index == KVHome) {
+            print("Switch to home")
+        }
     }
 
     override func didReceiveMemoryWarning() {

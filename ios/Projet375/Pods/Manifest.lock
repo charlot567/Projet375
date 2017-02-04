@@ -17,10 +17,12 @@ PODS:
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.19.0):
     - FBSDKCoreKit
+  - SwiftSpinner (1.1.0)
 
 DEPENDENCIES:
   - FacebookCore
   - FacebookLogin
+  - SwiftSpinner
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -28,7 +30,8 @@ SPEC CHECKSUMS:
   FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
   FBSDKCoreKit: 894b2b6eda6a4c8c4204e92e59cc355709ef045c
   FBSDKLoginKit: 83ca4d8f12a2022570af9fd6aacf27f6b425b99f
+  SwiftSpinner: c03815614599b91eea46594bd52ba742849d0414
 
-PODFILE CHECKSUM: 6e63aa678f1f764cc9d971356710c2344e80ecc8
+PODFILE CHECKSUM: 4d0ef129084c58a1b671e91d7c4a776c6f8b4dec
 
 COCOAPODS: 1.1.1
