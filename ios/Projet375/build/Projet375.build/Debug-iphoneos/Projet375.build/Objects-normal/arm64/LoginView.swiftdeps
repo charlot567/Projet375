@@ -1,157 +1,93 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "kWidth"
-- "kHeight"
-- "kRed"
-- "kBlue"
-- "kGreen"
-- "kOrange"
-- "kPurple"
-- "kBaseUrl"
-- "kCat1"
-- "kCat2"
-- "kCat3"
-- "kCat4"
-- "kColorForCategories"
-- "kTypeMap"
-- "kTypeRegular"
-- "kTypePicture"
+- "LoginView"
 provides-nominal:
+- "C9Projet3759LoginView"
 provides-member:
+- ["C9Projet3759LoginView", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Dictionary"
-- "kRed"
-- "kBlue"
-- "StringLiteralType"
-- "kCat2"
-- "UIColor"
-- "kTypeRegular"
-- "kCat4"
-- "kTypePicture"
-- "kWidth"
-- "kCat1"
-- "/"
-- "kTypeMap"
-- "kPurple"
-- "CGFloat"
-- "kCat3"
-- "kGreen"
-- "kBaseUrl"
-- "kHeight"
-- "kOrange"
-- "String"
-- "kColorForCategories"
-- "Int"
+- "LoginView"
+- "UIView"
 depends-member:
-- ["Ps9AnyObject", "init"]
-- ["P12FacebookCore26AppEventParameterValueType", "init"]
-- ["Ps7CVarArg", "Key"]
-- ["Ps7CVarArg", "Value"]
-- ["Ps7CVarArg", "init"]
-- ["Ps10Collection", "Key"]
-- ["Ps10Collection", "Value"]
-- ["Ps10Comparable", "init"]
-- ["Ps28CustomDebugStringConvertible", "Key"]
-- ["Ps28CustomDebugStringConvertible", "Value"]
-- ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps29CustomPlaygroundQuickLookable", "init"]
-- ["Ps17CustomReflectable", "Key"]
-- ["Ps17CustomReflectable", "Value"]
-- ["Ps17CustomReflectable", "init"]
-- ["Ps23CustomStringConvertible", "Key"]
-- ["Ps23CustomStringConvertible", "Value"]
-- ["Ps23CustomStringConvertible", "init"]
-- ["Vs10Dictionary", "Key"]
-- ["Vs10Dictionary", "Value"]
-- ["Vs10Dictionary", "deinit"]
-- ["Ps9Equatable", "init"]
-- ["Ps30ExpressibleByDictionaryLiteral", "Key"]
-- ["Ps30ExpressibleByDictionaryLiteral", "Value"]
-- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- ["Ps32ExpressibleByStringInterpolation", "init"]
-- ["Ps26ExpressibleByStringLiteral", "init"]
-- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- ["Sf", "deinit"]
-- ["Ps8Hashable", "init"]
-- ["SQ", "deinit"]
-- ["Ps9Indexable", "Key"]
-- ["Ps9Indexable", "Value"]
-- ["Ps13IndexableBase", "Key"]
-- ["Ps13IndexableBase", "Value"]
-- ["Si", "deinit"]
-- ["Ps25LosslessStringConvertible", "init"]
-- ["Ps10MirrorPath", "init"]
-- ["PSo8NSCoding", "init"]
-- ["PSo9NSCopying", "init"]
-- ["PSo16NSMutableCopying", "init"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", ""]
+- ["VSC6CGRect", "deinit"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", ""]
+- ["C9Projet3759LoginView", "deinit"]
+- ["C9Projet3759LoginView", "init"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", ""]
 - ["CSo8NSObject", "init"]
-- ["PSo16NSObjectProtocol", "init"]
-- ["PSo14NSSecureCoding", "init"]
-- ["CSo8NSString", "init"]
-- ["Ps8Sequence", "Key"]
-- ["Ps8Sequence", "Value"]
-- ["SS", "deinit"]
-- ["SS", "init"]
-- ["Ps16TextOutputStream", "init"]
-- ["Ps20TextOutputStreamable", "init"]
-- ["CSo7UIColor", "deinit"]
-- ["CSo7UIColor", "init"]
-- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
-- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
-- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
-- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- ["Ps26_ExpressibleByColorLiteral", "init"]
-- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- ["Ps9_Hashable", "init"]
-- ["Ps21_ObjectiveCBridgeable", "Key"]
-- ["Ps21_ObjectiveCBridgeable", "Value"]
-- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", ""]
+- ["CSo11UIResponder", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "deinit"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", ""]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", ""]
 depends-nominal:
 - "Ps9AnyObject"
-- "P12FacebookCore26AppEventParameterValueType"
+- "PSo15CALayerDelegate"
+- "VSC6CGRect"
 - "Ps7CVarArg"
-- "Ps10Collection"
-- "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
-- "Ps29CustomPlaygroundQuickLookable"
-- "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "Vs10Dictionary"
 - "Ps9Equatable"
-- "Ps30ExpressibleByDictionaryLiteral"
-- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- "Ps32ExpressibleByStringInterpolation"
-- "Ps26ExpressibleByStringLiteral"
-- "Ps33ExpressibleByUnicodeScalarLiteral"
-- "Sf"
 - "Ps8Hashable"
-- "SQ"
-- "Ps9Indexable"
-- "Ps13IndexableBase"
-- "Si"
-- "Ps25LosslessStringConvertible"
-- "Ps10MirrorPath"
+- "C9Projet3759LoginView"
+- "CSo7NSCoder"
 - "PSo8NSCoding"
-- "PSo9NSCopying"
-- "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- "PSo14NSSecureCoding"
-- "CSo8NSString"
-- "Ps8Sequence"
-- "SS"
-- "Ps16TextOutputStream"
-- "Ps20TextOutputStreamable"
-- "CSo7UIColor"
-- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
-- "Ps34_ExpressibleByBuiltinStringLiteral"
-- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
-- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- "Ps26_ExpressibleByColorLiteral"
-- "Ps35_HasCustomAnyHashableRepresentation"
+- "Sq"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
 - "Ps9_Hashable"
-- "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -222,4 +158,4 @@ depends-external:
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
-interface-hash: "28c84911bf5373111d2ae5b0b024179f"
+interface-hash: "eeff23c9566e19f00f9ef36072cbc61f"

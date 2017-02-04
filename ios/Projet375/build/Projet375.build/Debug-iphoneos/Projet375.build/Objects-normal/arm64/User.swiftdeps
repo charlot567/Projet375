@@ -1,157 +1,173 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "kWidth"
-- "kHeight"
-- "kRed"
-- "kBlue"
-- "kGreen"
-- "kOrange"
-- "kPurple"
-- "kBaseUrl"
-- "kCat1"
-- "kCat2"
-- "kCat3"
-- "kCat4"
-- "kColorForCategories"
-- "kTypeMap"
-- "kTypeRegular"
-- "kTypePicture"
+- "User"
 provides-nominal:
+- "C9Projet3754User"
 provides-member:
+- ["C9Projet3754User", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Dictionary"
-- "kRed"
-- "kBlue"
-- "StringLiteralType"
-- "kCat2"
-- "UIColor"
-- "kTypeRegular"
-- "kCat4"
-- "kTypePicture"
-- "kWidth"
-- "kCat1"
-- "/"
-- "kTypeMap"
-- "kPurple"
-- "CGFloat"
-- "kCat3"
-- "kGreen"
-- "kBaseUrl"
-- "kHeight"
-- "kOrange"
+- "AssignmentPrecedence"
+- !private "!="
+- !private "getImage"
+- !private "Bool"
+- !private "&&"
 - "String"
-- "kColorForCategories"
-- "Int"
+- "User"
+- "UIImage"
+- !private "StringLiteralType"
+- !private "UnicodeScalarType"
+- "Void"
 depends-member:
-- ["Ps9AnyObject", "init"]
-- ["P12FacebookCore26AppEventParameterValueType", "init"]
-- ["Ps7CVarArg", "Key"]
-- ["Ps7CVarArg", "Value"]
-- ["Ps7CVarArg", "init"]
-- ["Ps10Collection", "Key"]
-- ["Ps10Collection", "Value"]
-- ["Ps10Comparable", "init"]
-- ["Ps28CustomDebugStringConvertible", "Key"]
-- ["Ps28CustomDebugStringConvertible", "Value"]
-- ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps29CustomPlaygroundQuickLookable", "init"]
-- ["Ps17CustomReflectable", "Key"]
-- ["Ps17CustomReflectable", "Value"]
-- ["Ps17CustomReflectable", "init"]
-- ["Ps23CustomStringConvertible", "Key"]
-- ["Ps23CustomStringConvertible", "Value"]
-- ["Ps23CustomStringConvertible", "init"]
-- ["Vs10Dictionary", "Key"]
-- ["Vs10Dictionary", "Value"]
-- ["Vs10Dictionary", "deinit"]
-- ["Ps9Equatable", "init"]
-- ["Ps30ExpressibleByDictionaryLiteral", "Key"]
-- ["Ps30ExpressibleByDictionaryLiteral", "Value"]
-- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- ["Ps32ExpressibleByStringInterpolation", "init"]
-- ["Ps26ExpressibleByStringLiteral", "init"]
-- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- ["Sf", "deinit"]
-- ["Ps8Hashable", "init"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "_completeName"]
+- !private ["Ps9AnyObject", "_profileImage"]
+- !private ["Ps9AnyObject", "firstName"]
+- !private ["Ps9AnyObject", "getImage"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "lastName"]
+- !private ["Ps9AnyObject", "profileImageUrl"]
+- ["Ps9AnyObject", ""]
+- !private ["P12FacebookCore26AppEventParameterValueType", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "init"]
 - ["SQ", "deinit"]
-- ["Ps9Indexable", "Key"]
-- ["Ps9Indexable", "Value"]
-- ["Ps13IndexableBase", "Key"]
-- ["Ps13IndexableBase", "Value"]
-- ["Si", "deinit"]
-- ["Ps25LosslessStringConvertible", "init"]
-- ["Ps10MirrorPath", "init"]
-- ["PSo8NSCoding", "init"]
-- ["PSo9NSCopying", "init"]
-- ["PSo16NSMutableCopying", "init"]
-- ["CSo8NSObject", "init"]
-- ["PSo16NSObjectProtocol", "init"]
-- ["PSo14NSSecureCoding", "init"]
-- ["CSo8NSString", "init"]
-- ["Ps8Sequence", "Key"]
-- ["Ps8Sequence", "Value"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
 - ["SS", "deinit"]
-- ["SS", "init"]
-- ["Ps16TextOutputStream", "init"]
-- ["Ps20TextOutputStreamable", "init"]
-- ["CSo7UIColor", "deinit"]
-- ["CSo7UIColor", "init"]
-- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
-- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
-- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
-- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- ["Ps26_ExpressibleByColorLiteral", "init"]
-- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- ["Ps9_Hashable", "init"]
-- ["Ps21_ObjectiveCBridgeable", "Key"]
-- ["Ps21_ObjectiveCBridgeable", "Value"]
-- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["CSo7UIImage", "deinit"]
+- !private ["CSo7UIImage", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["C9Projet3754User", "Bool"]
+- ["C9Projet3754User", "String"]
+- ["C9Projet3754User", "UIImage"]
+- ["C9Projet3754User", "Void"]
+- !private ["C9Projet3754User", "_completeName"]
+- !private ["C9Projet3754User", "_profileImage"]
+- ["C9Projet3754User", "completeName"]
+- ["C9Projet3754User", "deinit"]
+- ["C9Projet3754User", "fbId"]
+- ["C9Projet3754User", "firstName"]
+- !private ["C9Projet3754User", "getImage"]
+- ["C9Projet3754User", "getProfileImage"]
+- ["C9Projet3754User", "init"]
+- ["C9Projet3754User", "lastName"]
+- ["C9Projet3754User", "profileImageUrl"]
+- ["C9Projet3754User", "token"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByImageLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:
 - "Ps9AnyObject"
-- "P12FacebookCore26AppEventParameterValueType"
-- "Ps7CVarArg"
-- "Ps10Collection"
-- "Ps10Comparable"
-- "Ps28CustomDebugStringConvertible"
-- "Ps29CustomPlaygroundQuickLookable"
-- "Ps17CustomReflectable"
-- "Ps23CustomStringConvertible"
-- "Vs10Dictionary"
-- "Ps9Equatable"
-- "Ps30ExpressibleByDictionaryLiteral"
-- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- "Ps32ExpressibleByStringInterpolation"
-- "Ps26ExpressibleByStringLiteral"
-- "Ps33ExpressibleByUnicodeScalarLiteral"
-- "Sf"
-- "Ps8Hashable"
+- !private "P12FacebookCore26AppEventParameterValueType"
+- "Sb"
+- !private "Ps7CVarArg"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Sd"
+- !private "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
+- !private "Ps8Hashable"
 - "SQ"
-- "Ps9Indexable"
-- "Ps13IndexableBase"
-- "Si"
-- "Ps25LosslessStringConvertible"
-- "Ps10MirrorPath"
-- "PSo8NSCoding"
-- "PSo9NSCopying"
-- "PSo16NSMutableCopying"
-- "CSo8NSObject"
-- "PSo16NSObjectProtocol"
-- "PSo14NSSecureCoding"
-- "CSo8NSString"
-- "Ps8Sequence"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Sq"
 - "SS"
-- "Ps16TextOutputStream"
-- "Ps20TextOutputStreamable"
-- "CSo7UIColor"
-- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
-- "Ps34_ExpressibleByBuiltinStringLiteral"
-- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
-- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- "Ps26_ExpressibleByColorLiteral"
-- "Ps35_HasCustomAnyHashableRepresentation"
-- "Ps9_Hashable"
-- "Ps21_ObjectiveCBridgeable"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "CSo7UIImage"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- "C9Projet3754User"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByImageLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -222,4 +238,4 @@ depends-external:
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
-interface-hash: "28c84911bf5373111d2ae5b0b024179f"
+interface-hash: "c1ffb6386e371332da9d758dcaa78734"

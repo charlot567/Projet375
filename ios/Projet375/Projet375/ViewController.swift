@@ -19,8 +19,6 @@ class ViewController: UIViewController {
         
         let q = questionView(frame: self.view.frame)
         self.view.addSubview(q)
-        
-        
     }
 
     override func didReceiveMemoryWarning() {

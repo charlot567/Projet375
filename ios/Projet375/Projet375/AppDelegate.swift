@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FacebookCore
+import FacebookLogin
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        if let accessToken = AccessToken.current {
+            print("Logged in trough facebook")
+        }
+        
         return true
     }
 
