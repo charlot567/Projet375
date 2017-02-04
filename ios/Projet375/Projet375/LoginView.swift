@@ -9,6 +9,7 @@
 import UIKit
 import FacebookLogin
 import FacebookCore
+import FBSDKLoginKit
 
 class LoginView: UIView, LoginButtonDelegate {
     
@@ -42,6 +43,7 @@ class LoginView: UIView, LoginButtonDelegate {
         case .success(_, _, let accessToken):
             loginSuccess(social:"FB", userId: "\(accessToken.userId)")
         }
+    
     }
     
     /**
@@ -56,6 +58,8 @@ class LoginView: UIView, LoginButtonDelegate {
     
     func loginSuccess(social: String, userId: String) {
         print("Login Success -- \(social)")
+        
+        getUserInfo()
     }
     
     func loginFailed(social: String, result: LoginResult) {
