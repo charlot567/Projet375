@@ -26,18 +26,18 @@ class questionView: UIView {
         super.init(frame:frame)
      
         
-        
-        switch type {
-        case kTypeMap:
-            <#code#>
-        case kTypePicture:
-            <#code#>
-        case kTypeRegular:
-            <#code#>
-        default:
-            <#code#>
-        }
-        
+//        
+//        switch type {
+//        case kTypeMap:
+//            <#code#>
+//        case kTypePicture:
+//            <#code#>
+//        case kTypeRegular:
+//            <#code#>
+//        default:
+//            <#code#>
+//        }
+//        
         
         
         

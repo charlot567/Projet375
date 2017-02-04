@@ -38,6 +38,7 @@
 		A7F0D60D1E463E770087E967 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A7F0D60F1E46404A0087E967 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		A7F0D6111E4643890087E967 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A7F0D6131E4651CB0087E967 /* Projet375.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Projet375.entitlements; sourceTree = "<group>"; };
 		E8FC2FE27BD6018343E2DDDE /* Pods-Projet375.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projet375.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Projet375/Pods-Projet375.debug.xcconfig"; sourceTree = "<group>"; };
 		FA3DD0AA0FD39E719231FB71 /* Pods-Projet375.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projet375.release.xcconfig"; path = "Pods/Target Support Files/Pods-Projet375/Pods-Projet375.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +129,7 @@
 		A76B45D41E46355000300134 /* Projet375 */ = {
 			isa = PBXGroup;
 			children = (
+				A7F0D6131E4651CB0087E967 /* Projet375.entitlements */,
 				A70A9BA41E4635D1001D0FAE /* Model */,
 				A70A9BA31E4635CC001D0FAE /* View */,
 				A70A9B9F1E4635A1001D0FAE /* Ressources */,
@@ -184,8 +186,13 @@
 				TargetAttributes = {
 					A76B45D11E46355000300134 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4AJ93J2W6L;
+						DevelopmentTeam = 8HS34KM4UE;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -403,7 +410,8 @@
 			baseConfigurationReference = E8FC2FE27BD6018343E2DDDE /* Pods-Projet375.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4AJ93J2W6L;
+				CODE_SIGN_ENTITLEMENTS = Projet375/Projet375.entitlements;
+				DEVELOPMENT_TEAM = 8HS34KM4UE;
 				INFOPLIST_FILE = Projet375/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Factory26.Projet375;
@@ -417,7 +425,8 @@
 			baseConfigurationReference = FA3DD0AA0FD39E719231FB71 /* Pods-Projet375.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4AJ93J2W6L;
+				CODE_SIGN_ENTITLEMENTS = Projet375/Projet375.entitlements;
+				DEVELOPMENT_TEAM = 8HS34KM4UE;
 				INFOPLIST_FILE = Projet375/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Factory26.Projet375;

@@ -17,8 +17,8 @@ class ViewController: UIViewController {
         kWidth = self.view.frame.width
         kHeight = self.view.frame.height
         
-        let q = questionView(frame: self.view.frame)
-        self.view.addSubview(q)
+        let loginView = LoginView(frame: self.view.frame)
+        self.view.addSubview(loginView)
     }
 
     override func didReceiveMemoryWarning() {
