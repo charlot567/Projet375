@@ -26,15 +26,6 @@ class LoginView: UIView, LoginButtonDelegate {
         loginButton.delegate = self
         self.addSubview(loginButton)
         
-        if AccessToken.current != nil {
-            createCurrentUser { (success: Bool) in
-                
-                if(success) {
-                    kMasterVC.switchNav(index: KVHome)
-                }
-                
-            }
-        }
     }
     
     /**
@@ -90,7 +81,7 @@ class LoginView: UIView, LoginButtonDelegate {
                         
                         ControllerUser.signup(user: kCurrentUser, completitionHandler: { (succesSignUp: Bool) in
                             if(succesSignUp) {
-                                kMasterVC.switchNav(index: KVHome)
+                                DispatchQueue.main.sync { kMasterVC.switchNav(index: KVHome) }
                             }
                             
                             else {
