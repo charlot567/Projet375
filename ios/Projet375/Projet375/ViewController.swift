@@ -16,9 +16,17 @@ class ViewController: UIViewController {
         
         kWidth = self.view.frame.width
         kHeight = self.view.frame.height
+        kMasterVC = self
         
         let loginView = LoginView(frame: self.view.frame)
         self.view.addSubview(loginView)
+        
+    }
+    
+    func switchNav(index: Int) {
+        if(index == KVHome) {
+            print("Switch to home")
+        }
     }
 
     override func didReceiveMemoryWarning() {

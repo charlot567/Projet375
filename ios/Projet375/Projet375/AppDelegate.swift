@@ -22,17 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
-        if let accessToken = AccessToken.current {
-            print("Logged in trough facebook")
-            
-            
-            createCurrentUser()
-        }
-            
-        else {
-            resetUser()
-        }
-        
         return true
     }
     

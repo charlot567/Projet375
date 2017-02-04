@@ -10,6 +10,7 @@ import UIKit
 import FacebookCore
 import FacebookLogin
 import FBSDKLoginKit
+import SwiftSpinner
 
 func getImage(url: String, completitionHandler: (_ success: Bool, _ imageDownloaded: UIImage?) -> Void) {
     
@@ -44,6 +45,8 @@ func displayAlert(currentViewController: UIViewController, title: String, messag
     let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
     alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
     currentViewController.present(alert, animated: true, completion: nil)
+    
+    SwiftSpinner.hide()
 }
 
 func resetUser() {
@@ -56,12 +59,31 @@ func resetUser() {
     userDefault.synchronize()
 }
 
-func getUserInfo() {
+func createCurrentUser(completitionHandler: @escaping (_ success: Bool) -> Void) {
+    let userDefault = UserDefaults.standard
+    
+    kCurrentUser = User()
+    kCurrentUser.firstName = userDefault.value(forKey: "first_name") as! String
+    kCurrentUser.lastName = userDefault.value(forKey: "last_name") as! String
+    kCurrentUser.fbId = userDefault.value(forKey: "facebook_id") as! String
+    kCurrentUser.profileImageUrl = userDefault.value(forKey: "url_image") as! String
+    
+    if let token = userDefault.value(forKey: "token") as? String {
+        kCurrentUser.token = token
+    }
+    completitionHandler(true)
+    
+//    kCurrentUser.getProfileImage { (image: UIImage?) in
+////        completitionHandler(true)
+//    }
+
+}
+
+func getUserInfoForCurrentUser(completitionHandler: @escaping (_ success: Bool) -> Void) {
     FBSDKGraphRequest.init(graphPath: "me", parameters: ["fields": "email, name, first_name, last_name, picture.type(large)"]).start { (requestConn: FBSDKGraphRequestConnection?, userInfo: Any?, error: Error?) in
         
         if(error == nil) {
             let userInfoObject = userInfo as AnyObject
-            print(userInfoObject)
             let id = userInfoObject["id"] as? String
             let firstName = userInfoObject["first_name"] as? String
             let lastName = userInfoObject["last_name"] as? String
@@ -74,12 +96,20 @@ func getUserInfo() {
                 userDefault.set(lastName!, forKey: "last_name")
                 userDefault.set(imageUrl!!, forKey: "url_image")
                 userDefault.synchronize()
+                completitionHandler(true)
             }
+            
+            else {
+                completitionHandler(false)
+            }
+            
         }
             
         else {
             print(error)
             resetUser()
+            
+            completitionHandler(false)
         }
         
     }

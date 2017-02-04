@@ -10,6 +10,7 @@ import UIKit
 import FacebookLogin
 import FacebookCore
 import FBSDKLoginKit
+import SwiftSpinner
 
 class LoginView: UIView, LoginButtonDelegate {
     
@@ -25,6 +26,15 @@ class LoginView: UIView, LoginButtonDelegate {
         loginButton.delegate = self
         self.addSubview(loginButton)
         
+        if AccessToken.current != nil {
+            createCurrentUser { (success: Bool) in
+                
+                if(success) {
+                    kMasterVC.switchNav(index: KVHome)
+                }
+                
+            }
+        }
     }
     
     /**
@@ -58,12 +68,35 @@ class LoginView: UIView, LoginButtonDelegate {
     
     func loginSuccess(social: String, userId: String) {
         print("Login Success -- \(social)")
+        SwiftSpinner.show("Récupération des infos")
         
-        getUserInfo()
+        getUserInfoForCurrentUser { (success: Bool) in
+            
+            if(!success) {
+                displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Erreur lors de la connexion")
+            }
+            
+            else {
+                createCurrentUser(completitionHandler: { (success: Bool) in
+                    if(success) {
+                        //  Change page
+                        print("User created: \(kCurrentUser.completeName)")
+                        kMasterVC.switchNav(index: KVHome)
+                    }
+                    
+                    else {
+                        displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Erreur lors de la connexion")
+                    }
+                })
+            }
+            
+            SwiftSpinner.hide()
+        }
     }
     
     func loginFailed(social: String, result: LoginResult) {
         print("Login failed -- \(social). \(result)")
+        displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Erreur lors de la connexion")
     }
     
     func logout(social: String) {

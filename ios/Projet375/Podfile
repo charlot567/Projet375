@@ -8,5 +8,6 @@ target 'Projet375' do
   # Pods for Projet375
   pod 'FacebookCore'
   pod 'FacebookLogin'
+  pod "SwiftSpinner"
 
 end
