@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
 
@@ -17,7 +18,8 @@ class ViewController: UIViewController {
         kWidth = self.view.frame.width
         kHeight = self.view.frame.height
         
-        let q = questionView(frame: self.view.frame)
+        let laQuestion = question(id: 1, type: kTypeRegular, categorie: kCat3, quest: "Quel est la couleur de la lune?", reponse: ["Rouge","Vert","Bleu","Blanc"], reponseImage: [UIImage()], imageQuestion: UIImage(), reponseId: 3, location: CLLocationCoordinate2D())
+        let q = questionView(frame: self.view.frame, q: laQuestion)
         self.view.addSubview(q)
     }
 

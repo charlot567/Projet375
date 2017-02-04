@@ -7,8 +7,8 @@ provides-member:
 - ["C9Projet3759LoginView", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "LoginView"
 - "UIView"
+- "LoginView"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

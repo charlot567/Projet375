@@ -6,17 +6,17 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "NSData"
-- "Bool"
-- !private "URL"
-- "String"
-- !private "Data"
-- "getImage"
-- !private "!="
 - !private "BooleanLiteralType"
+- !private "!="
+- "Bool"
 - "UIImage"
+- "getImage"
+- !private "URL"
 - "Void"
-- !private "NSURL"
 - "CastingPrecedence"
+- !private "NSURL"
+- !private "Data"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]

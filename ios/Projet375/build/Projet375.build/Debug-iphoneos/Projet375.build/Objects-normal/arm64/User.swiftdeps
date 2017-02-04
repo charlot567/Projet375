@@ -7,17 +7,17 @@ provides-member:
 - ["C9Projet3754User", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "String"
 - "AssignmentPrecedence"
 - !private "!="
-- !private "getImage"
-- !private "Bool"
-- !private "&&"
-- "String"
-- "User"
 - "UIImage"
-- !private "StringLiteralType"
-- !private "UnicodeScalarType"
 - "Void"
+- "User"
+- !private "UnicodeScalarType"
+- !private "Bool"
+- !private "StringLiteralType"
+- !private "&&"
+- !private "getImage"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "_completeName"]

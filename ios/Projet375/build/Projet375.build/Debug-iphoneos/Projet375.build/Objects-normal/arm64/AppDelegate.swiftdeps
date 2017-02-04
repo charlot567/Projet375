@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C9Projet37511AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillResignActive"
-- "window"
-- "applicationDidEnterBackground"
-- "applicationWillEnterForeground"
-- "application"
 - "applicationDidBecomeActive"
 - "applicationWillTerminate"
+- "window"
+- "applicationWillResignActive"
+- "application"
+- "applicationDidEnterBackground"
+- "applicationWillEnterForeground"
 depends-top-level:
-- "UIApplicationDelegate"
-- "UIApplication"
-- "UIWindow"
-- "AppDelegate"
-- "UIApplicationLaunchOptionsKey"
-- !private "StringLiteralType"
 - "UIResponder"
-- !private "print"
-- !private "SDKApplicationDelegate"
 - !private "AccessToken"
 - "Bool"
+- "UIWindow"
+- "UIApplicationLaunchOptionsKey"
+- "AppDelegate"
 - !private "BooleanLiteralType"
+- !private "SDKApplicationDelegate"
+- "UIApplication"
+- "UIApplicationDelegate"
+- !private "print"
+- !private "StringLiteralType"
 depends-member:
 - !private ["V12FacebookCore11AccessToken", "current"]
 - !private ["Ps9AnyObject", "AccessToken"]

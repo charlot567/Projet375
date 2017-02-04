@@ -25,50 +25,50 @@ provides-member:
 - ["SS", "indefOf"]
 - ["SS", "lz"]
 provides-dynamic-lookup:
+- "minY"
+- "y"
+- "minX"
+- "x"
 - "maxY"
+- "w"
+- "point"
 - "maxX"
 - "h"
-- "minX"
 - "lineSpacing"
-- "minY"
-- "w"
-- "y"
-- "x"
-- "point"
 depends-top-level:
-- !private "Dictionary"
-- !private "NSString"
-- !private "NSParagraphStyleAttributeName"
-- !private "NSLocale"
-- !private "Bundle"
-- "UIView"
-- !private "NSMutableAttributedString"
-- !private "StringLiteralType"
+- !private "CGRect"
 - "UILabel"
-- "UITextView"
+- !private "NSLocale"
+- !private "NSMutableAttributedString"
 - "Bool"
-- !private "NSKernAttributeName"
+- "UIEvent"
+- !private "StringLiteralType"
+- !private "..<"
+- "UITextView"
+- !private "UIEdgeInsetsMake"
+- !private "NSMutableParagraphStyle"
+- !private "NSMakeRange"
 - !private "*"
-- "Int"
+- "UIButton"
+- !private "NSAttributedString"
 - !private "UserDefaults"
+- "TernaryPrecedence"
+- !private "Bundle"
+- "CGFloat"
+- "CGPoint"
+- !private "NSKernAttributeName"
+- !private "NSLocalizedString"
+- "String"
+- "Int"
+- !private "NSParagraphStyleAttributeName"
+- !private "Dictionary"
+- !private "UIEdgeInsetsInsetRect"
+- !private "NSString"
+- "UIView"
+- !private "-"
 - !private "=="
 - "AssignmentPrecedence"
-- !private "..<"
-- !private "NSMakeRange"
 - "CastingPrecedence"
-- "CGPoint"
-- !private "NSAttributedString"
-- !private "CGRect"
-- !private "NSMutableParagraphStyle"
-- !private "UIEdgeInsetsInsetRect"
-- "String"
-- "UIEvent"
-- "TernaryPrecedence"
-- !private "UIEdgeInsetsMake"
-- !private "-"
-- "CGFloat"
-- !private "NSLocalizedString"
-- "UIButton"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "CompareOptions"]
@@ -110,6 +110,23 @@ depends-member:
 - ["Ps9AnyObject", "w"]
 - ["Ps9AnyObject", "x"]
 - ["Ps9AnyObject", "y"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "Bundle"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "IntegerLiteralType"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "NSLocale"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "NSLocalizedString"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "NSString"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "Stride"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "UserDefaults"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "_DisabledRangeIndex"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "charAt"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "characters"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "charactersCount"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "contains"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "init"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "isEmpty"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "replacingOccurrences"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "subscript"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "uppercased"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "SubSequence"]
 - ["Sa", "deinit"]
@@ -1521,6 +1538,7 @@ depends-member:
 - !private ["Ps11_Strideable", "_DisabledRangeIndex"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "P12FacebookCore26AppEventParameterValueType"
 - "Sa"
 - !private "Ps23BidirectionalCollection"
 - !private "Ps22BidirectionalIndexable"
@@ -1663,4 +1681,62 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
 interface-hash: "026fb5b2b43c5fe2090829206797f03e"

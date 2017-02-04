@@ -136,6 +136,14 @@ SWIFT_CLASS("_TtC9Projet37511AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9Projet3759LoginView")
+@interface LoginView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIEvent;
 
 @interface UIButton (SWIFT_EXTENSION(Projet375))
@@ -164,7 +172,6 @@ SWIFT_CLASS("_TtC9Projet37511AppDelegate")
 @end
 
 @class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC9Projet37514ViewController")
 @interface ViewController : UIViewController
@@ -174,11 +181,22 @@ SWIFT_CLASS("_TtC9Projet37514ViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UINavigationBar;
+@class UIImageView;
 
 SWIFT_CLASS("_TtC9Projet37512questionView")
 @interface questionView : UIView
+@property (nonatomic, strong) UINavigationBar * _Nonnull navBar;
+@property (nonatomic, strong) UIImageView * _Nonnull image;
+@property (nonatomic, strong) UILabel * _Nonnull questionLabel;
+@property (nonatomic, readonly) CGFloat margin;
+@property (nonatomic, copy) NSArray<UIButton *> * _Nonnull buttons;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)createHeaderWithCat:(NSString * _Nonnull)cat;
+- (void)createMapContent;
+- (void)createRegularContent;
+- (void)createPictureContent;
 @end
 
 #pragma clang diagnostic pop
