@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         
         kWidth = self.view.frame.width
         kHeight = self.view.frame.height
+        
     }
 
     override func didReceiveMemoryWarning() {
