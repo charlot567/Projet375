@@ -20,6 +20,7 @@ public class Controller {
         
         //  Build the request
         request.httpBody = postString.data(using: String.Encoding.utf8)
+        print(NSString(data: request.httpBody!, encoding: String.Encoding.utf8.rawValue))
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data, response, error in
             
             //  Check for error
@@ -37,7 +38,7 @@ public class Controller {
                     let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String : AnyObject]
                     
                     //  If the request work
-                    if(json!["status"] as! Int == 200) {
+                    if(json!["status"] as! String == "1") {
                         completitionHandler(true, json as AnyObject?)
                     }
                         

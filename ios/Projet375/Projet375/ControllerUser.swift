@@ -12,8 +12,12 @@ public class ControllerUser: Controller {
     
     //  Return the user id of a user
     static func signup(user: User, completitionHandler: @escaping (_ success: Bool) -> Void) {
+        print(user.profileImageUrl!)
         
-        let postString = "facebook_id=\(user.fbId)&first_name=\(user.firstName)&last_name=\(user.lastName)&url_image=\(user.profileImageUrl)&token=\(user.notificationToken == nil ? "" : user.notificationToken)"
+        var imageUrl = user.profileImageUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        imageUrl = imageUrl.replacingOccurrences(of: "&", with: "%26")
+        
+        let postString = "facebook_id=\(user.fbId!)&first_name=\(user.firstName!)&last_name=\(user.lastName!)&url_image=\(imageUrl)&token=\(user.notificationToken == nil ? "NOTOKEN" : user.notificationToken!)"
         
         getData(url: "\(kBaseUrl)/user.php", postParameterAsString: postString) { (success, jsonResult) in
             

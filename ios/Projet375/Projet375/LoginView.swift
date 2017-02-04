@@ -70,6 +70,7 @@ class LoginView: UIView, LoginButtonDelegate {
         print("Login Success -- \(social)")
         SwiftSpinner.show("Récupération des infos")
         
+        
         getUserInfoForCurrentUser { (success: Bool) in
             
             if(!success) {
@@ -81,7 +82,23 @@ class LoginView: UIView, LoginButtonDelegate {
                     if(success) {
                         //  Change page
                         print("User created: \(kCurrentUser.completeName)")
-                        kMasterVC.switchNav(index: KVHome)
+                        let userDefault = UserDefaults.standard
+                        
+                        
+                        if let token = userDefault.value(forKey: "token") as? String {
+                            kCurrentUser.token = token
+                        }
+                        
+                        ControllerUser.signup(user: kCurrentUser, completitionHandler: { (succesSignUp: Bool) in
+                            if(succesSignUp) {
+                                kMasterVC.switchNav(index: KVHome)
+                            }
+                            
+                            else {
+                                displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Erreur lors de la connexion")
+                            }
+                        })
+                        
                     }
                     
                     else {

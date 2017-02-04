@@ -55,7 +55,6 @@ func resetUser() {
     userDefault.set(nil, forKey: "first_name")
     userDefault.set(nil, forKey: "last_name")
     userDefault.set(nil, forKey: "url_image")
-    userDefault.set(nil, forKey: "token")
     userDefault.synchronize()
 }
 

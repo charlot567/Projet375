@@ -22,6 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        //Les notification push et locale
+        let settings = UIUserNotificationSettings(types: [UIUserNotificationType.sound, UIUserNotificationType.alert], categories: nil)
+        UIApplication.shared.registerUserNotificationSettings(settings)
+        UIApplication.shared.registerForRemoteNotifications()
+        
         return true
     }
     
@@ -52,6 +57,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
+    func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+        if notificationSettings.types != .none {
+            application.registerForRemoteNotifications()
+        }
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+        print("Device token: \(deviceToken)")
+        
+        let user = UserDefaults.standard
+        user.setValue(deviceToken, forKey: "token")
+        user.synchronize()
+    }
+  
     
 }
 
