@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     private var menuView: MenuView!
     private var loginView: LoginView!
     private var randomView: RandomPickerView!
+    var currentMatch: Match!
     
     private var currentViewIndex: Int!
     
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
         //  Init View
         menuView = MenuView(frame: self.view.frame)
         loginView = LoginView(frame: self.view.frame)
-        randomView = RandomPickerView(frame: self.view.frame)
+//        randomView = RandomPickerView(frame: self.view.frame)
         
         self.currentViewIndex = KVLogIn
         
@@ -66,8 +67,35 @@ class ViewController: UIViewController {
         }
         
         else if(index == KVPlay) {
-            self.view.addSubview(randomView)
-            randomView.generateCategory()
+            
+            //  Need to fetch match
+            if(self.currentMatch == nil) {
+                ControllerMatch.getMatch { (succesMatch: Bool, match: Match?) in
+                    
+                    if(succesMatch && match != nil) {
+                        
+                        DispatchQueue.main.sync {
+                            self.currentMatch = match
+                            self.randomView = RandomPickerView(frame: self.view.frame, match: match!)
+                            self.view.addSubview(self.randomView)
+                            self.randomView.generateCategory()
+                        }
+                    }
+                        
+                    else {
+                        displayAlert(currentViewController: self, title: "Erreur", message: "Problème lors de la récupération du match")
+                    }
+                }
+            }
+            
+            else {
+                
+//                DispatchQueue.main.sync {
+//                    print(self.randomView)
+                    self.view.addSubview(self.randomView)
+                    self.randomView.generateCategory()
+//                }
+            }
         }
         
         else if(index == KVCart) {

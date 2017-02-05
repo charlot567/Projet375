@@ -44,28 +44,39 @@ class ResultView: UIView {
         if(button.titleLabel!.text == "Terminer") {
             kMasterVC.resultToMenu()
             kUserCurrentTurn = 0
+            kMasterVC.currentMatch = nil
             
             if(match.state == kNewMatch) {
                 //  Send stats to create new match
                 //  SetMatch
+                ControllerMatch.setMatch(playerId: kCurrentUser.fbId, score: kGoodAnswer, completitionHandler: { (success: Bool) in
+                    
+                    if(!success) {
+                        displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Le match n'a pas été sauvegardé")
+                    }
+                })
             }
             
             else {
                 //  Send final score of the game + say the result to the user
                 
                 if(kGoodAnswer > match.score) {
-                    displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez gagnez le match! \(kGoodAnswer)-\(match.score)")
+                    displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez gagnez le match! \(kGoodAnswer)-\(match.score!)")
                 }
                 
                 else if(kGoodAnswer == match.score) {
-                    displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez égalisé le match! \(kGoodAnswer)-\(match.score)")
+                    displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez égalisé le match! \(kGoodAnswer)-\(match.score!)")
                 }
                 
                 else {
-                    displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez perdu le match! \(kGoodAnswer)-\(match.score)")
+                    displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez perdu le match! \(kGoodAnswer)-\(match.score!)")
                 }
                 
-                //  SetScore
+                ControllerMatch.setScore(playerId: kCurrentUser.fbId, score: kGoodAnswer, token: match.opposantToken == nil ? "NOTOKEN" : match.opposantToken, completitionHandler: { (success: Bool) in
+                    if(!success) {
+                        displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Le match n'a pas été sauvegardé")
+                    }
+                })
             }
             
             kGoodAnswer = 0

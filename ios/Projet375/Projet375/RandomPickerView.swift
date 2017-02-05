@@ -20,12 +20,13 @@ class RandomPickerView: UIView {
     var questionView: QuestionView!
     private var categoryView = [UIButton]()
     private var currentCat: Int!
+    private var match: Match!
     
-    override init(frame: CGRect) {
+    init(frame: CGRect, match: Match) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.yellow
         let viewWidth = kWidth / 1.5
-        
+        self.match = match
         let geoView = UIButton()
         geoView.frame = CGRect(x: kWidth / 2 - viewWidth / 2, y: kHeight / 2 - viewWidth / 2, width: viewWidth, height: viewWidth)
         geoView.backgroundColor = kColorForCategories[kCat1]
@@ -93,7 +94,7 @@ class RandomPickerView: UIView {
         aImg.addTarget(self, action: #selector(clickToPlay(button:)), for: .touchUpInside)
         artView.addSubview(aImg)
         categoryView.append(artView)
-    
+        
     }
     
     func generateCategory() {
@@ -108,32 +109,23 @@ class RandomPickerView: UIView {
         let tag = button.tag
         print("Play: \(tag)")
         
-        ControllerMatch.getMatch { (succesMatch: Bool, match: Match?) in
+        ControllerQuestion.getQuestion(location: nil, cat: button.tag/**toreplace with button.tag*/) { (success: Bool, q: question?) in
             
-            if(succesMatch && match != nil) {
-                ControllerQuestion.getQuestion(location: nil, cat: button.tag/**toreplace with button.tag*/) { (success: Bool, q: question?) in
+            
+            if(success && q != nil) {
+                print("Question récupéré")
+                
+                DispatchQueue.main.sync {
+                    self.questionView = QuestionView(frame: self.frame, q: q!, match: self.match)
+                    self.questionView.layer.zPosition = 101
+                    self.addSubview(self.questionView)
                     
-                    
-                    if(success && q != nil) {
-                        print("Question récupéré")
-                        
-                        DispatchQueue.main.sync {
-                            self.questionView = QuestionView(frame: self.frame, q: q!, match: match!)
-                            self.questionView.layer.zPosition = 101
-                            self.addSubview(self.questionView)
-                            
-                            SwiftSpinner.hide()
-                        }
-                    }
-                        
-                    else {
-                        displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Erreur lors de la récupération de la question")
-                    }
+                    SwiftSpinner.hide()
                 }
             }
-            
+                
             else {
-                displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Erreur lors de la récupération du match")
+                displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Erreur lors de la récupération de la question")
             }
         }
         
