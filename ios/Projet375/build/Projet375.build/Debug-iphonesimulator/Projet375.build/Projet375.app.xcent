@@ -3,10 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>4AJ93J2W6L.Factory26.Projet375</string>
+	<string>8HS34KM4UE.Factory26.Projet375</string>
+	<key>aps-environment</key>
+	<string>development</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>4AJ93J2W6L.Factory26.Projet375</string>
+		<string>8HS34KM4UE.Factory26.Projet375</string>
 	</array>
 </dict>
 </plist>

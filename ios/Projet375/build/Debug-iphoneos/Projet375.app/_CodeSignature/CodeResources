@@ -34,7 +34,7 @@
 		</data>
 		<key>Frameworks/Bolts.framework/Bolts</key>
 		<data>
-		eIF7K/At9gYPehFHdbalBVTO4G8=
+		QPoNPC207AjbhgD4OT9d7aar8J0=
 		</data>
 		<key>Frameworks/Bolts.framework/Info.plist</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/FBSDKCoreKit</key>
 		<data>
-		R5lPzaUQl0bsthHrbeIHNhjpXA0=
+		ZdW53GeXGkmWf0XzzMFXco2fyso=
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/af.lproj/FacebookSDK.strings</key>
 		<dict>
@@ -454,7 +454,7 @@
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/FBSDKLoginKit</key>
 		<data>
-		ml9wc2MBi+HdD+7l+hYzKNGDE5g=
+		tGsqYRERdCjGYKhvbBv6tId8WnU=
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/Info.plist</key>
 		<data>
@@ -466,7 +466,7 @@
 		</data>
 		<key>Frameworks/FacebookCore.framework/FacebookCore</key>
 		<data>
-		ua8IOdM7XMNi3liora6GmhNkBT8=
+		3RWs8qVj08/k2H02FMcv9xVWr1Y=
 		</data>
 		<key>Frameworks/FacebookCore.framework/Info.plist</key>
 		<data>
@@ -478,7 +478,7 @@
 		</data>
 		<key>Frameworks/FacebookLogin.framework/FacebookLogin</key>
 		<data>
-		Ivt78JDRGbVVuSUjRBWu/tGgdA0=
+		Ht/hOQwIyYW75pxQ1c9TuQBOHes=
 		</data>
 		<key>Frameworks/FacebookLogin.framework/Info.plist</key>
 		<data>
@@ -488,57 +488,69 @@
 		<data>
 		dR+r4sgLTR5sbjLJBOPH0yXZY2I=
 		</data>
+		<key>Frameworks/SwiftSpinner.framework/Info.plist</key>
+		<data>
+		RvRUEZYv6+AUt8rVY99aegjeStY=
+		</data>
+		<key>Frameworks/SwiftSpinner.framework/SwiftSpinner</key>
+		<data>
+		uzAHRbjuLnQPdDTyispFg9f400M=
+		</data>
+		<key>Frameworks/SwiftSpinner.framework/_CodeSignature/CodeResources</key>
+		<data>
+		e2XlERYjXFgt2CxlypH9TDux4Hw=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		Yvsdzn5ho9QCDFoFdbeVkts5FAI=
+		lg2t+Q0OC1Z27obAYPc5FiYI+UA=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		VCQTNPPVF/GuUz/kQM8Jj1GLk3U=
+		XstEV1y1cvvhlBHx4waHlCWWfYs=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		Oup+Gu4uqwbcNab5hipqoGLF2UI=
+		VijyAUB33IjlVeJBRsWGb1HQOi0=
 		</data>
 		<key>Frameworks/libswiftCoreLocation.dylib</key>
 		<data>
-		hPn6DsxaNHbtKaybNWcELDYIx7E=
+		gWL+YTlcKzk5JfRpeF0feOu6ZdQ=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		KDB5xp3v26ErwypBrlbJScPQrSE=
+		XgD3vTX+DRw8xz4BaZRqKERJnlc=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		3p8v7Gw6L/KLP04HN/Rp3oFsPzE=
+		04kEkcX/bavawa1jLzpKbJdEzDQ=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		4FnryzIH2zgYIKEuxdQB36iQ4iM=
+		QjUFrYfp2aRYkR7yZh/jyLaLhhY=
 		</data>
 		<key>Frameworks/libswiftMapKit.dylib</key>
 		<data>
-		2iqz2/L9myEE+AeonDFt3wrLNVk=
+		7mfGRb66EnbDc0Kr7uBjXVjZkgA=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		os8V/WcRWKh3GyvVF8bpkNYr2fc=
+		iu/Uvba7rlh8bRv0JAufvxcz2qs=
 		</data>
 		<key>Frameworks/libswiftQuartzCore.dylib</key>
 		<data>
-		msb5QHUbasHEETx8r0XJp1sc+P4=
+		F2Zlx+ygDg36IVt+SAkqpD8hu+Y=
 		</data>
 		<key>Frameworks/libswiftSwiftOnoneSupport.dylib</key>
 		<data>
-		HuvywJ3IFIPAev4WQkyv+rnj9Hs=
+		LcmWPOBbPnKu0Xv7Xi6L4GNNJTw=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		WbJnZa62h+LAioiOkHaPP4hKpAo=
+		k0ZFHR8LYloSujBuI2iA4p3ec+E=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kFQ/arTIurY6NLzmk07tivg7Pjg=
+		Xbr81QblfjD0ZfLI08Lz7pQUw2I=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -546,7 +558,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		GOfSNHZ0EpVBySajycuryYK/ZG4=
+		iM04sfUjcXCwdcYvM5C3UZoeGCY=
 		</data>
 		<key>fontawesome-webfont.ttf</key>
 		<data>
@@ -640,11 +652,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eIF7K/At9gYPehFHdbalBVTO4G8=
+			QPoNPC207AjbhgD4OT9d7aar8J0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ToE53Ph1DWLHC/cBVTmEHmQlUkVqJP6t9Fh5qhYGOAE=
+			7XN3DEDEnqRnASoBYexilEoW8x4bT6DI9JwOISpWLXQ=
 			</data>
 		</dict>
 		<key>Frameworks/Bolts.framework/Info.plist</key>
@@ -673,11 +685,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R5lPzaUQl0bsthHrbeIHNhjpXA0=
+			ZdW53GeXGkmWf0XzzMFXco2fyso=
 			</data>
 			<key>hash2</key>
 			<data>
-			hpAuPEXv2L5QYc6CxzvmMW90Iq69iNYJoKM46fvzNnE=
+			6uKm5vbcCcitsmrEU9HzvrI2q4IZQIE9bTuJhZVhTMk=
 			</data>
 		</dict>
 		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/af.lproj/FacebookSDK.strings</key>
@@ -1278,11 +1290,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ml9wc2MBi+HdD+7l+hYzKNGDE5g=
+			tGsqYRERdCjGYKhvbBv6tId8WnU=
 			</data>
 			<key>hash2</key>
 			<data>
-			sJtuzc2p+YEjKu1FT17nZeoMWfQ8+FMoO7Va8VDoFiE=
+			oVnScCrhYF9q4FyJaiLxSGR40xQoDixMIm0g89HEq4E=
 			</data>
 		</dict>
 		<key>Frameworks/FBSDKLoginKit.framework/Info.plist</key>
@@ -1311,11 +1323,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ua8IOdM7XMNi3liora6GmhNkBT8=
+			3RWs8qVj08/k2H02FMcv9xVWr1Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			wfo1BT8/0CJ6bv5GDP3GjPb6rLL2muBvWnb57ho5jyc=
+			glCXRtU2I20+c+SyMMi9+58uERki14U8UZ5JEzXpM9U=
 			</data>
 		</dict>
 		<key>Frameworks/FacebookCore.framework/Info.plist</key>
@@ -1344,11 +1356,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ivt78JDRGbVVuSUjRBWu/tGgdA0=
+			Ht/hOQwIyYW75pxQ1c9TuQBOHes=
 			</data>
 			<key>hash2</key>
 			<data>
-			oxW99rsCDjhLdEC4RnbF9uBNUhkZbGAouMNrgqBBBKc=
+			I8xaOrUK6dA0mPfWU1iZaOdXPR2kAkMI0UZ+J6IDfL4=
 			</data>
 		</dict>
 		<key>Frameworks/FacebookLogin.framework/Info.plist</key>
@@ -1373,147 +1385,180 @@
 			5s+kTCMptRAS5UBaqFbtmDyCwjxSseTZv03K/IB0Qcg=
 			</data>
 		</dict>
+		<key>Frameworks/SwiftSpinner.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RvRUEZYv6+AUt8rVY99aegjeStY=
+			</data>
+			<key>hash2</key>
+			<data>
+			NvlIk/jtbyCcUWHl/dxZ/Sx+7pfdOd6cpEUfX2TEiPY=
+			</data>
+		</dict>
+		<key>Frameworks/SwiftSpinner.framework/SwiftSpinner</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uzAHRbjuLnQPdDTyispFg9f400M=
+			</data>
+			<key>hash2</key>
+			<data>
+			f3ly0OB3v6a0WhK/juPo2QexbafnPf/fPbcEEkgCQuU=
+			</data>
+		</dict>
+		<key>Frameworks/SwiftSpinner.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e2XlERYjXFgt2CxlypH9TDux4Hw=
+			</data>
+			<key>hash2</key>
+			<data>
+			AXLB5hxLxaeV0BuuUopQ1isvS4dZGrv3gZH05o7pM3o=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Yvsdzn5ho9QCDFoFdbeVkts5FAI=
+			lg2t+Q0OC1Z27obAYPc5FiYI+UA=
 			</data>
 			<key>hash2</key>
 			<data>
-			KLKCFXmuKBgwCXgLpgW5WjfgxfL6mWNxUeQGQWIm9nU=
+			9I9Qd5mL5AGLgDxezVWl/5MLAGZqx29bFcUqet2adu8=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VCQTNPPVF/GuUz/kQM8Jj1GLk3U=
+			XstEV1y1cvvhlBHx4waHlCWWfYs=
 			</data>
 			<key>hash2</key>
 			<data>
-			6OA/gx0gNp+xHDHBSLrjDRLsDrbi0mj4kO9oJ8qBerc=
+			5rK9p/LX8OiDidS76htCCim1tEUQXqGqqQaK7PbgDKM=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Oup+Gu4uqwbcNab5hipqoGLF2UI=
+			VijyAUB33IjlVeJBRsWGb1HQOi0=
 			</data>
 			<key>hash2</key>
 			<data>
-			9Rc5lbzfZGhN6lzNRN59JR7dE44TWujAfnQ69BzNAdo=
+			kyJmOefRuHek7I0nm9td9BAlxxjKikvm22WuLFEU+jM=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreLocation.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hPn6DsxaNHbtKaybNWcELDYIx7E=
+			gWL+YTlcKzk5JfRpeF0feOu6ZdQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ACoqL21j6dveLTBfIDcmm5Nz0yEAe4EYhlP8KT7uQ6I=
+			j7TujPiRyI49EO28N5jmhVsL3VuTxk+d7BwFZ5aD7aw=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KDB5xp3v26ErwypBrlbJScPQrSE=
+			XgD3vTX+DRw8xz4BaZRqKERJnlc=
 			</data>
 			<key>hash2</key>
 			<data>
-			de4uJsLxl/hTfrbsjVPodcNmKHNwN3IkdR5bpDkkTqE=
+			lhJmMUW99unI0kIFPIaaUUy9NJ0e9RNN39s2I9l7+tQ=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3p8v7Gw6L/KLP04HN/Rp3oFsPzE=
+			04kEkcX/bavawa1jLzpKbJdEzDQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			4OItsW+eDYl77Dzn7QOMbPnyfZ/+gkNsahN4MGa4RaU=
+			t2PN6EKKP+9N3wowGizz4rO/NTkeidvpx3coVzwxssw=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4FnryzIH2zgYIKEuxdQB36iQ4iM=
+			QjUFrYfp2aRYkR7yZh/jyLaLhhY=
 			</data>
 			<key>hash2</key>
 			<data>
-			e0umgTqFA6Sh0PWz13XBZAGS817S9wd6S37yai2FklM=
+			0Mbtq7wfRmCs6q7pFGrEsY+j8W1hf6cX5KjX5fWO3Jk=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftMapKit.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2iqz2/L9myEE+AeonDFt3wrLNVk=
+			7mfGRb66EnbDc0Kr7uBjXVjZkgA=
 			</data>
 			<key>hash2</key>
 			<data>
-			qy3muOhpESdLYdQv6ihAl9KsS75V9AChrGPmYeaSbkk=
+			Y8dfpBfzhjISOay6ZwiE0s+nZbNd+AFkJeUZJszgwaY=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			os8V/WcRWKh3GyvVF8bpkNYr2fc=
+			iu/Uvba7rlh8bRv0JAufvxcz2qs=
 			</data>
 			<key>hash2</key>
 			<data>
-			6DZwDAXtDsGMnQ0mAWa7W8mVkXhThayZf/6AnCORai4=
+			Lb5kQyWB7vD/xVXTTOIU9M4cPL3OufoGnUji049Rxzo=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftQuartzCore.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			msb5QHUbasHEETx8r0XJp1sc+P4=
+			F2Zlx+ygDg36IVt+SAkqpD8hu+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			g2IhVZ9R7Rf0dIxYgQwWRsRUuVwyzyUXT853CDosFTY=
+			A/vOJm5gWRPgWdnLFrg4I+M9SjrJ+sw8qgS13gOcSJ4=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftSwiftOnoneSupport.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HuvywJ3IFIPAev4WQkyv+rnj9Hs=
+			LcmWPOBbPnKu0Xv7Xi6L4GNNJTw=
 			</data>
 			<key>hash2</key>
 			<data>
-			v8ES51Tm6bzhgSPs6Igo8Onlv4JPOVz/mLp0W22pc60=
+			wp3M0sVwf+/yqZy5xmusb5m+X8NvZUrF2so0/OQyWpc=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WbJnZa62h+LAioiOkHaPP4hKpAo=
+			k0ZFHR8LYloSujBuI2iA4p3ec+E=
 			</data>
 			<key>hash2</key>
 			<data>
-			utudSl7wCUpXl0fHIhZl+r/KId5Ut8CskZYyABKO8iI=
+			cwhycC1MOjj+QQFbWcFxzTlS5s9NC7Q4POKwiw56DkY=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GOfSNHZ0EpVBySajycuryYK/ZG4=
+			iM04sfUjcXCwdcYvM5C3UZoeGCY=
 			</data>
 			<key>hash2</key>
 			<data>
-			TpQPpCzNzv5ABKZAwFO9iQU8YjOrHfwIroKQvIKRHMU=
+			5LW1LcZ5Pcdsq8MgX5EtifwHXHYfMmYuhaSd5+nBhe4=
 			</data>
 		</dict>
 		<key>fontawesome-webfont.ttf</key>

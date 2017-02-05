@@ -1,13 +1,15 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "26f915a46eb20db60663aa3bfd073ef0"
-build_time: [539557674, 354874000]
+options: "8eab9e709185ca589c645c75386277a0"
+build_time: [539558161, 965537000]
 inputs:
-  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/QuestionView.swift": [539557673, 0]
-  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/ViewController.swift": [539553578, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/QuestionView.swift": [539557984, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/ViewController.swift": [539558161, 0]
   "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/Question.swift": [539553268, 0]
-  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/LoginView.swift": [539544369, 0]
-  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/AppDelegate.swift": [539544369, 0]
-  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/Global.swift": [539544369, 0]
-  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/Constant.swift": [539547256, 0]
-  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/User.swift": [539544369, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/LoginView.swift": [539557984, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/AppDelegate.swift": [539557984, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/Global.swift": [539557984, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/Controller.swift": [539557984, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/Constant.swift": [539557984, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/User.swift": [539557984, 0]
   "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/Extensions.swift": [539541946, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Projet375/ControllerUser.swift": [539557984, 0]

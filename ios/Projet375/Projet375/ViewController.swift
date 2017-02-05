@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         kHeight = self.view.frame.height
         kMasterVC = self
         
-        let laQuestion = question(id: 1, type: kTypeRegular, categorie: kCat3, quest: "Quel est la couleur de la lune?", reponse: ["Rouge","Vert","Bleu","Blanc"], reponseImage: [UIImage()], imageQuestion: UIImage(), reponseId: 3, location: CLLocationCoordinate2D())
+        let laQuestion = question(id: 1, type: kTypeMap, categorie: kCat4, quest: "Ou se trouve le chemin de PolyTechnique?", reponse: ["","","",""], reponseImage: [UIImage()], reponseId: -1, location: CLLocationCoordinate2D(latitude: CLLocationDegrees(45.5030422613154), longitude: CLLocationDegrees(-73.6122309793117)))
         let q = questionView(frame: self.view.frame, q: laQuestion)
         self.view.addSubview(q)
 

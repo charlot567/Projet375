@@ -116,31 +116,47 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import Foundation;
 @import CoreGraphics;
+@import MapKit;
+@import CoreLocation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
 @class UIApplication;
+@class UIUserNotificationSettings;
 
 SWIFT_CLASS("_TtC9Projet37511AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions;
+- (BOOL)application:(UIApplication * _Nonnull)application openURL:(NSURL * _Nonnull)url sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id _Nonnull)annotation;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
+- (void)applicationWithApplication:(UIApplication * _Nonnull)application didRegisterUserNotificationSettings:(UIUserNotificationSettings * _Nonnull)notificationSettings;
+- (void)application:(UIApplication * _Nonnull)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData * _Nonnull)deviceToken;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class LoginButton;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC9Projet3759LoginView")
 @interface LoginView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+/**
+  Called when the button was used to logout.
+  \param loginButton Button that was used to logout.
+
+*/
+- (void)loginButtonDidLogOut:(LoginButton * _Nonnull)loginButton;
+- (void)loginSuccessWithSocial:(NSString * _Nonnull)social userId:(NSString * _Nonnull)userId;
+- (void)logoutWithSocial:(NSString * _Nonnull)social;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -176,27 +192,53 @@ SWIFT_CLASS("_TtC9Projet3759LoginView")
 SWIFT_CLASS("_TtC9Projet37514ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
+- (void)switchNavWithIndex:(NSInteger)index;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class CLLocationManager;
 @class UINavigationBar;
-@class UIImageView;
+@class NSTimer;
+@class MKMapView;
+@class UILongPressGestureRecognizer;
+@class CLLocation;
+@protocol MKOverlay;
+@class MKOverlayRenderer;
 
 SWIFT_CLASS("_TtC9Projet37512questionView")
-@interface questionView : UIView
+@interface questionView : UIView <MKMapViewDelegate, CLLocationManagerDelegate>
+@property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
 @property (nonatomic, strong) UINavigationBar * _Nonnull navBar;
-@property (nonatomic, strong) UIImageView * _Nonnull image;
 @property (nonatomic, strong) UILabel * _Nonnull questionLabel;
 @property (nonatomic, readonly) CGFloat margin;
+@property (nonatomic, readonly) CGFloat marginB;
+@property (nonatomic, readonly) CGFloat verticalMargin;
+@property (nonatomic, readonly) CGFloat mapMargin;
 @property (nonatomic, copy) NSArray<UIButton *> * _Nonnull buttons;
+@property (nonatomic, strong) UIView * _Nonnull loadingBar;
+@property (nonatomic) NSInteger time;
+@property (nonatomic, strong) NSTimer * _Nonnull timer;
+@property (nonatomic, strong) UILabel * _Nonnull timeLabel;
+@property (nonatomic) CGFloat headerHeight;
+@property (nonatomic, strong) MKMapView * _Nonnull map;
+@property (nonatomic, strong) UILongPressGestureRecognizer * _Nonnull lgpr;
+@property (nonatomic) BOOL hasAnswer;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)createHeaderWithCat:(NSString * _Nonnull)cat;
-- (void)createMapContent;
 - (void)createRegularContent;
-- (void)createPictureContent;
+- (void)checkAnswerWithSender:(UIButton * _Nonnull)sender;
+- (void)timesUp;
+- (void)createMapContent;
+- (void)pressedWithSender:(UILongPressGestureRecognizer * _Nonnull)sender;
+- (void)displayMapAnswer;
+- (void)displayRegularAnswer;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
+- (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay;
+- (void)userHasWon;
+- (void)userHasLost;
 @end
 
 #pragma clang diagnostic pop

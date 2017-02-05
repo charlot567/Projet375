@@ -488,6 +488,18 @@
 		<data>
 		kZdG6sUY5k0VH4UYMnoWxGCECu8=
 		</data>
+		<key>Frameworks/SwiftSpinner.framework/Info.plist</key>
+		<data>
+		psVZgZmM0QkJiBVDSyCG3brw40M=
+		</data>
+		<key>Frameworks/SwiftSpinner.framework/SwiftSpinner</key>
+		<data>
+		5yCu+dH2JdckSUtsM4Ty8BvfbXA=
+		</data>
+		<key>Frameworks/SwiftSpinner.framework/_CodeSignature/CodeResources</key>
+		<data>
+		EJOS6eHsG4EDbA1Ww0w05fVOMdU=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		blagc+UjPVBTHaTHbrlBKbVn20I=
@@ -538,7 +550,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GXWZSMMJvQ/jmsQMM0hFtRnaN+4=
+		06/MNuSr0I4WFyI2W5DlJuQvI3I=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -1367,6 +1379,39 @@
 			<key>hash2</key>
 			<data>
 			GbYkcYIchkxKRjb9SDCeya1a/xxUNerf9b7KtMkJsA4=
+			</data>
+		</dict>
+		<key>Frameworks/SwiftSpinner.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			psVZgZmM0QkJiBVDSyCG3brw40M=
+			</data>
+			<key>hash2</key>
+			<data>
+			+WofI5RtpSi9dYhhnVLmUW8ZFixbPx5PE/BSdOzgmuk=
+			</data>
+		</dict>
+		<key>Frameworks/SwiftSpinner.framework/SwiftSpinner</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5yCu+dH2JdckSUtsM4Ty8BvfbXA=
+			</data>
+			<key>hash2</key>
+			<data>
+			LgJbBk6ZF47j6YisfIKInszQc5IJUkA8mFMBfuWuSXc=
+			</data>
+		</dict>
+		<key>Frameworks/SwiftSpinner.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EJOS6eHsG4EDbA1Ww0w05fVOMdU=
+			</data>
+			<key>hash2</key>
+			<data>
+			W9QQu7Teln/qfYQZdKAMGwL85mgRv3zZ2XlBlUUF1no=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
