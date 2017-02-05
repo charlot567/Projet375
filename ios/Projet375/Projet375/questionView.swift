@@ -11,6 +11,7 @@ import MapKit
 
 class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
     
+    var resultView: ResultView!
     let locationManager = CLLocationManager()
     
     var navBar: UINavigationBar
@@ -193,6 +194,20 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
             hasAnswer = false
             userHasLost()
         }
+        
+        self.resultView = ResultView(frame: self.frame, bgColor: self.backgroundColor!, success: sender.tag == que.reponseId, goodAnswer: sender.titleLabel!.text)
+        
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(displayResultView), userInfo: nil, repeats: false)
+    }
+    
+    func displayResultView() {
+        resultView.frame.origin.y = kHeight
+        self.addSubview(resultView)
+        
+        UIView.animate(withDuration: 0.5) { 
+            self.resultView.frame.origin.y = 0
+        }
+        
     }
     
     func timesUp() {

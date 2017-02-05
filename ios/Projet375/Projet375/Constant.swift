@@ -49,4 +49,4 @@ let KVPlay = 4
 let KVProfile = 5
 let KVChart = 6
 
-
+var kUserCurrentTurn: Int = 0
