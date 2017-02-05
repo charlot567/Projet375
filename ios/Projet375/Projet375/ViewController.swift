@@ -93,6 +93,7 @@ class ViewController: UIViewController {
             arenaView.isActive = false
         }
             
+        
         else if(index == KVLogIn) {
             self.view.addSubview(loginView)
             arenaView.isActive = false
@@ -119,6 +120,8 @@ class ViewController: UIViewController {
                         self.arenaView.arena = a!
                         self.arenaView.x = kWidth
                         self.arenaView.isActive = true
+                        self.arenaView.load()
+                        
                         
                         UIView.animate(withDuration: 0.5, animations: {
                             self.arenaView.x = 0

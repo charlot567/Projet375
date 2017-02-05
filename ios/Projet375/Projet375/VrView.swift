@@ -168,10 +168,10 @@ class VrView: UIView, CLLocationManagerDelegate {
         
         
         if (bearing >= 180 && bearing <= 0) {
-            view.frame = CGRect(x: CGFloat(bearing/180)*halfInfiniteWall1.frame.width - 30, y: self.frame.height/2 - 30, width: 60, height: 60)
+            view.frame = CGRect(x: CGFloat(bearing/180)*halfInfiniteWall1.frame.width - 60, y: self.frame.height/2 - 60, width: 120, height: 120)
             halfInfiniteWall1.addSubview(view)
         } else {
-            view.frame = CGRect(x: CGFloat((bearing-180)/180)*halfInfiniteWall2.frame.width - 30, y: self.frame.height/2 - 30, width: 60, height: 60)
+            view.frame = CGRect(x: CGFloat((bearing-180)/180)*halfInfiniteWall2.frame.width - 60, y: self.frame.height/2 - 60, width: 120, height: 120)
             halfInfiniteWall2.addSubview(view)
         }
         

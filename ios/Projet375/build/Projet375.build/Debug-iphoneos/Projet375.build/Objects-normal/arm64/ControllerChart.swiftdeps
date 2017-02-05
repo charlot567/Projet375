@@ -7,24 +7,24 @@ provides-member:
 - ["C9Projet37515ControllerChart", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Void"
-- !private "kBaseUrl"
-- "BooleanLiteralType"
-- !private "&&"
 - !private "StringLiteralType"
-- !private "!="
-- "ControllerChart"
-- !private "AssignmentPrecedence"
 - !private "..<"
-- !private "CastingPrecedence"
-- "Int"
 - !private "String"
-- "UnicodeScalarType"
+- "Int"
 - "Controller"
 - !private "kCurrentUser"
 - "Bool"
+- "BooleanLiteralType"
+- "Void"
 - !private "AnyObject"
+- "UnicodeScalarType"
+- !private "&&"
+- "ControllerChart"
+- !private "AssignmentPrecedence"
 - "UserChart"
+- !private "CastingPrecedence"
+- !private "kBaseUrl"
+- !private "!="
 depends-member:
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "UserChart"]
@@ -357,8 +357,8 @@ depends-nominal:
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
 - !private "count"
-- !private "subscript"
 - !private "object"
+- !private "subscript"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"

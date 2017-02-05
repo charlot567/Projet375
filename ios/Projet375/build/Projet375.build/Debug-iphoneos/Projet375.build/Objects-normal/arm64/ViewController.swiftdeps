@@ -7,51 +7,51 @@ provides-member:
 - ["C9Projet37514ViewController", ""]
 provides-dynamic-lookup:
 - "resultToQuestion"
+- "preferredStatusBarStyle"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
 - "switchNav"
 - "resultToMenu"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
-- "preferredStatusBarStyle"
 depends-top-level:
+- !private "kMasterVC"
+- !private "&&"
+- !private "Arena"
+- !private "ControllerMatch"
+- "ChartView"
 - !private "KVCart"
-- !private "StringLiteralType"
-- !private "kHeight"
-- !private "SwiftSpinner"
-- !private "KVPlay"
-- !private "KVLogIn"
-- "Int"
 - !private "KVProfile"
+- !private "AccessToken"
+- "UIStatusBarStyle"
+- !private "!="
+- !private "createCurrentUser"
+- !private "print"
+- "Int"
+- !private "KVArena"
+- "UIViewController"
 - "ProfileView"
+- !private "StringLiteralType"
+- "RandomPickerView"
+- "AssignmentPrecedence"
 - !private "kWidth"
 - !private "KVHome"
-- "UIViewController"
-- "Match"
-- !private "kCurrentUser"
-- !private "displayAlert"
-- !private "ControllerArena"
 - !private "Bool"
-- !private "DispatchQueue"
-- !private "KVChart"
-- "ChartView"
-- "ArenaView"
-- "LoginView"
-- !private "Arena"
-- "MenuView"
-- !private "&&"
-- !private "createCurrentUser"
-- "ViewController"
-- !private "UIImage"
-- "AssignmentPrecedence"
-- !private "!="
-- "UIStatusBarStyle"
-- !private "AccessToken"
-- !private "UIView"
+- "Match"
+- !private "kHeight"
 - !private "=="
-- !private "KVArena"
-- !private "print"
-- !private "kMasterVC"
-- "RandomPickerView"
-- !private "ControllerMatch"
+- !private "DispatchQueue"
+- !private "KVLogIn"
+- !private "UIView"
+- !private "KVPlay"
+- !private "displayAlert"
+- "ViewController"
+- "MenuView"
+- "ArenaView"
+- !private "KVChart"
+- !private "ControllerArena"
+- "LoginView"
+- !private "UIImage"
+- !private "kCurrentUser"
+- !private "SwiftSpinner"
 depends-member:
 - !private ["V12FacebookCore11AccessToken", "current"]
 - !private ["V12FacebookCore11AccessToken", "deinit"]
@@ -97,6 +97,7 @@ depends-member:
 - !private ["Ps9AnyObject", "kHeight"]
 - !private ["Ps9AnyObject", "kMasterVC"]
 - !private ["Ps9AnyObject", "kWidth"]
+- !private ["Ps9AnyObject", "load"]
 - !private ["Ps9AnyObject", "loadData"]
 - ["Ps9AnyObject", "loginView"]
 - !private ["Ps9AnyObject", "main"]
@@ -126,6 +127,7 @@ depends-member:
 - ["C9Projet3759ArenaView", "deinit"]
 - !private ["C9Projet3759ArenaView", "init"]
 - !private ["C9Projet3759ArenaView", "isActive"]
+- !private ["C9Projet3759ArenaView", "load"]
 - !private ["C9Projet3759ArenaView", "x"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
@@ -137,6 +139,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "hide"]
 - !private ["PSo15CALayerDelegate", "init"]
 - !private ["PSo15CALayerDelegate", "isActive"]
+- !private ["PSo15CALayerDelegate", "load"]
 - !private ["PSo15CALayerDelegate", "loadData"]
 - !private ["PSo15CALayerDelegate", "questionView"]
 - !private ["PSo15CALayerDelegate", "removeFromSuperview"]
@@ -152,6 +155,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "arena"]
 - !private ["PSo25CLLocationManagerDelegate", "init"]
 - !private ["PSo25CLLocationManagerDelegate", "isActive"]
+- !private ["PSo25CLLocationManagerDelegate", "load"]
 - !private ["PSo25CLLocationManagerDelegate", "removeFromSuperview"]
 - !private ["PSo25CLLocationManagerDelegate", "resultView"]
 - !private ["PSo25CLLocationManagerDelegate", "x"]
@@ -193,6 +197,7 @@ depends-member:
 - !private ["Ps7CVarArg", "kHeight"]
 - !private ["Ps7CVarArg", "kMasterVC"]
 - !private ["Ps7CVarArg", "kWidth"]
+- !private ["Ps7CVarArg", "load"]
 - !private ["Ps7CVarArg", "loadData"]
 - ["Ps7CVarArg", "loginView"]
 - !private ["Ps7CVarArg", "main"]
@@ -264,6 +269,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "kHeight"]
 - !private ["Ps28CustomDebugStringConvertible", "kMasterVC"]
 - !private ["Ps28CustomDebugStringConvertible", "kWidth"]
+- !private ["Ps28CustomDebugStringConvertible", "load"]
 - !private ["Ps28CustomDebugStringConvertible", "loadData"]
 - ["Ps28CustomDebugStringConvertible", "loginView"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
@@ -335,6 +341,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "kHeight"]
 - !private ["Ps23CustomStringConvertible", "kMasterVC"]
 - !private ["Ps23CustomStringConvertible", "kWidth"]
+- !private ["Ps23CustomStringConvertible", "load"]
 - !private ["Ps23CustomStringConvertible", "loadData"]
 - ["Ps23CustomStringConvertible", "loginView"]
 - !private ["Ps23CustomStringConvertible", "main"]
@@ -405,6 +412,7 @@ depends-member:
 - !private ["Ps9Equatable", "kMasterVC"]
 - !private ["Ps9Equatable", "kWidth"]
 - !private ["Ps9Equatable", "lightContent"]
+- !private ["Ps9Equatable", "load"]
 - !private ["Ps9Equatable", "loadData"]
 - ["Ps9Equatable", "loginView"]
 - !private ["Ps9Equatable", "main"]
@@ -474,6 +482,7 @@ depends-member:
 - !private ["Ps8Hashable", "kMasterVC"]
 - !private ["Ps8Hashable", "kWidth"]
 - !private ["Ps8Hashable", "lightContent"]
+- !private ["Ps8Hashable", "load"]
 - !private ["Ps8Hashable", "loadData"]
 - ["Ps8Hashable", "loginView"]
 - !private ["Ps8Hashable", "main"]
@@ -509,6 +518,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "arena"]
 - !private ["PSo17MKMapViewDelegate", "init"]
 - !private ["PSo17MKMapViewDelegate", "isActive"]
+- !private ["PSo17MKMapViewDelegate", "load"]
 - !private ["PSo17MKMapViewDelegate", "removeFromSuperview"]
 - !private ["PSo17MKMapViewDelegate", "resultView"]
 - !private ["PSo17MKMapViewDelegate", "x"]
@@ -556,6 +566,7 @@ depends-member:
 - !private ["PSo8NSCoding", "kHeight"]
 - !private ["PSo8NSCoding", "kMasterVC"]
 - !private ["PSo8NSCoding", "kWidth"]
+- !private ["PSo8NSCoding", "load"]
 - !private ["PSo8NSCoding", "loadData"]
 - ["PSo8NSCoding", "loginView"]
 - ["PSo8NSCoding", "menuView"]
@@ -666,6 +677,7 @@ depends-member:
 - !private ["CSo8NSObject", "kHeight"]
 - !private ["CSo8NSObject", "kMasterVC"]
 - !private ["CSo8NSObject", "kWidth"]
+- !private ["CSo8NSObject", "load"]
 - !private ["CSo8NSObject", "loadData"]
 - ["CSo8NSObject", "loginView"]
 - !private ["CSo8NSObject", "main"]
@@ -726,6 +738,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "kHeight"]
 - !private ["PSo16NSObjectProtocol", "kMasterVC"]
 - !private ["PSo16NSObjectProtocol", "kWidth"]
+- !private ["PSo16NSObjectProtocol", "load"]
 - !private ["PSo16NSObjectProtocol", "loadData"]
 - ["PSo16NSObjectProtocol", "loginView"]
 - !private ["PSo16NSObjectProtocol", "main"]
@@ -783,6 +796,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "hide"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "isActive"]
+- !private ["PSo29UIAccessibilityIdentification", "load"]
 - !private ["PSo29UIAccessibilityIdentification", "loadData"]
 - !private ["PSo29UIAccessibilityIdentification", "questionView"]
 - !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
@@ -800,6 +814,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "hide"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "isActive"]
+- !private ["PSo12UIAppearance", "load"]
 - !private ["PSo12UIAppearance", "loadData"]
 - !private ["PSo12UIAppearance", "questionView"]
 - !private ["PSo12UIAppearance", "removeFromSuperview"]
@@ -847,6 +862,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "kHeight"]
 - !private ["PSo21UIAppearanceContainer", "kMasterVC"]
 - !private ["PSo21UIAppearanceContainer", "kWidth"]
+- !private ["PSo21UIAppearanceContainer", "load"]
 - !private ["PSo21UIAppearanceContainer", "loadData"]
 - ["PSo21UIAppearanceContainer", "loginView"]
 - ["PSo21UIAppearanceContainer", "menuView"]
@@ -919,6 +935,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "hide"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "isActive"]
+- !private ["PSo17UICoordinateSpace", "load"]
 - !private ["PSo17UICoordinateSpace", "loadData"]
 - !private ["PSo17UICoordinateSpace", "questionView"]
 - !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
@@ -936,6 +953,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "hide"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "isActive"]
+- !private ["PSo13UIDynamicItem", "load"]
 - !private ["PSo13UIDynamicItem", "loadData"]
 - !private ["PSo13UIDynamicItem", "questionView"]
 - !private ["PSo13UIDynamicItem", "removeFromSuperview"]
@@ -983,6 +1001,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "kHeight"]
 - !private ["PSo18UIFocusEnvironment", "kMasterVC"]
 - !private ["PSo18UIFocusEnvironment", "kWidth"]
+- !private ["PSo18UIFocusEnvironment", "load"]
 - !private ["PSo18UIFocusEnvironment", "loadData"]
 - ["PSo18UIFocusEnvironment", "loginView"]
 - ["PSo18UIFocusEnvironment", "menuView"]
@@ -1012,6 +1031,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "hide"]
 - !private ["PSo11UIFocusItem", "init"]
 - !private ["PSo11UIFocusItem", "isActive"]
+- !private ["PSo11UIFocusItem", "load"]
 - !private ["PSo11UIFocusItem", "loadData"]
 - !private ["PSo11UIFocusItem", "questionView"]
 - !private ["PSo11UIFocusItem", "removeFromSuperview"]
@@ -1065,6 +1085,7 @@ depends-member:
 - !private ["CSo11UIResponder", "kHeight"]
 - !private ["CSo11UIResponder", "kMasterVC"]
 - !private ["CSo11UIResponder", "kWidth"]
+- !private ["CSo11UIResponder", "load"]
 - !private ["CSo11UIResponder", "loadData"]
 - ["CSo11UIResponder", "loginView"]
 - ["CSo11UIResponder", "menuView"]
@@ -1123,6 +1144,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "kHeight"]
 - !private ["PSo30UIResponderStandardEditActions", "kMasterVC"]
 - !private ["PSo30UIResponderStandardEditActions", "kWidth"]
+- !private ["PSo30UIResponderStandardEditActions", "load"]
 - !private ["PSo30UIResponderStandardEditActions", "loadData"]
 - ["PSo30UIResponderStandardEditActions", "loginView"]
 - ["PSo30UIResponderStandardEditActions", "menuView"]
@@ -1227,6 +1249,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "kHeight"]
 - !private ["PSo18UITraitEnvironment", "kMasterVC"]
 - !private ["PSo18UITraitEnvironment", "kWidth"]
+- !private ["PSo18UITraitEnvironment", "load"]
 - !private ["PSo18UITraitEnvironment", "loadData"]
 - ["PSo18UITraitEnvironment", "loginView"]
 - ["PSo18UITraitEnvironment", "menuView"]
@@ -1256,6 +1279,7 @@ depends-member:
 - !private ["CSo6UIView", "hide"]
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "isActive"]
+- !private ["CSo6UIView", "load"]
 - !private ["CSo6UIView", "loadData"]
 - !private ["CSo6UIView", "questionView"]
 - !private ["CSo6UIView", "removeFromSuperview"]
@@ -1375,6 +1399,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "hide"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isActive"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "load"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "loadData"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "questionView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
@@ -1430,6 +1455,7 @@ depends-member:
 - !private ["Ps9_Hashable", "kMasterVC"]
 - !private ["Ps9_Hashable", "kWidth"]
 - !private ["Ps9_Hashable", "lightContent"]
+- !private ["Ps9_Hashable", "load"]
 - !private ["Ps9_Hashable", "loadData"]
 - ["Ps9_Hashable", "loginView"]
 - !private ["Ps9_Hashable", "main"]

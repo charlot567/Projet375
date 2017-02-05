@@ -6,78 +6,79 @@ provides-nominal:
 provides-member:
 - ["C9Projet3759ArenaView", ""]
 provides-dynamic-lookup:
-- "margin"
-- "load"
-- "mapView"
-- "getCurrentViewController"
-- "pressedArena"
-- "controller"
-- "back"
-- "isActive"
 - "areneLoc"
-- "locationManager"
-- "locationManager"
-- "showVR"
-- "v"
 - "map"
+- "temp"
+- "locationManager"
+- "locationManager"
+- "controller"
+- "mapView"
+- "pressedArena"
+- "getCurrentViewController"
+- "margin"
+- "v"
+- "showVR"
+- "isActive"
+- "load"
+- "back"
 depends-top-level:
-- "UIViewController"
-- "MKOverlayRenderer"
-- !private "Bool"
-- !private "UIAlertActionStyle"
-- !private "MKCircleRenderer"
-- !private "MKCoordinateSpan"
-- !private "UIAlertAction"
-- !private "-"
-- !private "UIApplication"
-- "NSCoder"
-- !private "UIImage"
-- !private "MKCoordinateRegion"
-- !private "MKCircle"
-- !private "KVHome"
-- !private "kBlue"
-- !private "/"
-- !private "UIAlertController"
-- "CGFloat"
-- !private "nbQuestionReussiUser"
-- "CLLocation"
-- !private "!="
-- !private "UIAlertControllerStyle"
-- !private "NSTextAlignment"
+- "UIView"
 - "CLLocationManager"
-- "MKMapView"
+- !private "kGreen"
 - "CLLocationManagerDelegate"
 - "CLLocationCoordinate2D"
-- !private "+"
-- !private "kHeight"
+- !private "-"
+- !private "UIAlertControllerStyle"
+- "NSCoder"
 - !private "UIColor"
-- "BooleanLiteralType"
-- !private "fatalError"
-- !private "kWidth"
-- !private "kCLLocationAccuracyNearestTenMeters"
-- !private ">"
-- !private "UIFont"
-- !private "StringLiteralType"
-- "ArenaView"
-- !private "imageSize"
-- !private "kGreen"
-- !private "UIControlEvents"
-- "Arena"
-- "AssignmentPrecedence"
-- !private "=="
-- "CastingPrecedence"
-- !private "ControllerArena"
-- "UIButton"
-- "MKMapViewDelegate"
-- !private "*"
-- "UIView"
-- "UILabel"
-- "VrView"
-- "CGRect"
-- "MKOverlay"
 - !private "print"
+- !private "UIFont"
 - !private "CLCircularRegion"
+- !private "KVHome"
+- "MKMapView"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "=="
+- !private "kHeight"
+- !private "kWidth"
+- !private "UIAlertController"
+- !private "imageSize"
+- !private "MKCircle"
+- "VrView"
+- !private "fatalError"
+- !private "nbQuestionReussiUser"
+- "Arena"
+- !private "/"
+- "UIViewController"
+- !private "kCLLocationAccuracyNearestTenMeters"
+- !private "ControllerArena"
+- !private ">"
+- !private "!="
+- "MKOverlayRenderer"
+- !private "kBlue"
+- "CLLocation"
+- "CGRect"
 - !private "kMasterVC"
+- !private "MKCircleRenderer"
+- "CGFloat"
+- !private "UIImage"
+- !private "UIApplication"
+- !private "MKCoordinateRegion"
+- "MKOverlay"
+- !private "StringLiteralType"
+- !private "+"
+- !private "UIAlertAction"
+- "MKMapViewDelegate"
+- "UILabel"
+- !private "UIAlertActionStyle"
+- "BooleanLiteralType"
+- "UIButton"
+- !private "NSTextAlignment"
+- !private "Bool"
+- !private "MKCoordinateSpan"
+- !private "UIControlEvents"
+- !private "*"
+- "ArenaView"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -166,6 +167,7 @@ depends-member:
 - !private ["Ps9AnyObject", "presentedViewController"]
 - ["Ps9AnyObject", "pressedArena"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "removeFromSuperview"]
 - !private ["Ps9AnyObject", "requestWhenInUseAuthorization"]
 - !private ["Ps9AnyObject", "rootViewController"]
 - !private ["Ps9AnyObject", "setArena"]
@@ -178,6 +180,7 @@ depends-member:
 - !private ["Ps9AnyObject", "startUpdatingLocation"]
 - !private ["Ps9AnyObject", "strokeColor"]
 - !private ["Ps9AnyObject", "switchNav"]
+- ["Ps9AnyObject", "temp"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "textAlignment"]
 - !private ["Ps9AnyObject", "textColor"]
@@ -262,6 +265,7 @@ depends-member:
 - ["C9Projet3759ArenaView", "pressedArena"]
 - !private ["C9Projet3759ArenaView", "print"]
 - ["C9Projet3759ArenaView", "showVR"]
+- ["C9Projet3759ArenaView", "temp"]
 - !private ["C9Projet3759ArenaView", "titleLabel"]
 - !private ["C9Projet3759ArenaView", "topNavBar"]
 - ["C9Projet3759ArenaView", "v"]
@@ -352,11 +356,13 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "nbQuestionReussiUser"]
 - ["PSo15CALayerDelegate", "pressedArena"]
 - !private ["PSo15CALayerDelegate", "print"]
+- !private ["PSo15CALayerDelegate", "removeFromSuperview"]
 - !private ["PSo15CALayerDelegate", "rootViewController"]
 - !private ["PSo15CALayerDelegate", "setImage"]
 - !private ["PSo15CALayerDelegate", "setRegion"]
 - ["PSo15CALayerDelegate", "showVR"]
 - !private ["PSo15CALayerDelegate", "showsUserLocation"]
+- ["PSo15CALayerDelegate", "temp"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "textAlignment"]
 - !private ["PSo15CALayerDelegate", "textColor"]
@@ -453,7 +459,9 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "nbQuestionReussiUser"]
 - !private ["PSo25CLLocationManagerDelegate", "pressedArena"]
 - !private ["PSo25CLLocationManagerDelegate", "print"]
+- !private ["PSo25CLLocationManagerDelegate", "removeFromSuperview"]
 - !private ["PSo25CLLocationManagerDelegate", "showVR"]
+- !private ["PSo25CLLocationManagerDelegate", "temp"]
 - !private ["PSo25CLLocationManagerDelegate", "titleLabel"]
 - !private ["PSo25CLLocationManagerDelegate", "topNavBar"]
 - !private ["PSo25CLLocationManagerDelegate", "v"]
@@ -547,6 +555,7 @@ depends-member:
 - !private ["Ps7CVarArg", "presentedViewController"]
 - ["Ps7CVarArg", "pressedArena"]
 - !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "removeFromSuperview"]
 - !private ["Ps7CVarArg", "requestWhenInUseAuthorization"]
 - !private ["Ps7CVarArg", "rootViewController"]
 - !private ["Ps7CVarArg", "setImage"]
@@ -558,6 +567,7 @@ depends-member:
 - !private ["Ps7CVarArg", "startUpdatingLocation"]
 - !private ["Ps7CVarArg", "strokeColor"]
 - !private ["Ps7CVarArg", "switchNav"]
+- ["Ps7CVarArg", "temp"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "textAlignment"]
 - !private ["Ps7CVarArg", "textColor"]
@@ -662,6 +672,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "presentedViewController"]
 - ["Ps28CustomDebugStringConvertible", "pressedArena"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
 - !private ["Ps28CustomDebugStringConvertible", "requestWhenInUseAuthorization"]
 - !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
@@ -673,6 +684,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "startUpdatingLocation"]
 - !private ["Ps28CustomDebugStringConvertible", "strokeColor"]
 - !private ["Ps28CustomDebugStringConvertible", "switchNav"]
+- ["Ps28CustomDebugStringConvertible", "temp"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "textAlignment"]
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
@@ -784,6 +796,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "presentedViewController"]
 - ["Ps23CustomStringConvertible", "pressedArena"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "removeFromSuperview"]
 - !private ["Ps23CustomStringConvertible", "requestWhenInUseAuthorization"]
 - !private ["Ps23CustomStringConvertible", "rootViewController"]
 - !private ["Ps23CustomStringConvertible", "setImage"]
@@ -795,6 +808,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "startUpdatingLocation"]
 - !private ["Ps23CustomStringConvertible", "strokeColor"]
 - !private ["Ps23CustomStringConvertible", "switchNav"]
+- ["Ps23CustomStringConvertible", "temp"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "textAlignment"]
 - !private ["Ps23CustomStringConvertible", "textColor"]
@@ -897,6 +911,7 @@ depends-member:
 - !private ["Ps9Equatable", "presentedViewController"]
 - ["Ps9Equatable", "pressedArena"]
 - !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "removeFromSuperview"]
 - !private ["Ps9Equatable", "requestWhenInUseAuthorization"]
 - !private ["Ps9Equatable", "rootViewController"]
 - !private ["Ps9Equatable", "setImage"]
@@ -908,6 +923,7 @@ depends-member:
 - !private ["Ps9Equatable", "startUpdatingLocation"]
 - !private ["Ps9Equatable", "strokeColor"]
 - !private ["Ps9Equatable", "switchNav"]
+- ["Ps9Equatable", "temp"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "textAlignment"]
 - !private ["Ps9Equatable", "textColor"]
@@ -1022,6 +1038,7 @@ depends-member:
 - !private ["Ps8Hashable", "presentedViewController"]
 - ["Ps8Hashable", "pressedArena"]
 - !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "removeFromSuperview"]
 - !private ["Ps8Hashable", "requestWhenInUseAuthorization"]
 - !private ["Ps8Hashable", "rootViewController"]
 - !private ["Ps8Hashable", "setImage"]
@@ -1033,6 +1050,7 @@ depends-member:
 - !private ["Ps8Hashable", "startUpdatingLocation"]
 - !private ["Ps8Hashable", "strokeColor"]
 - !private ["Ps8Hashable", "switchNav"]
+- ["Ps8Hashable", "temp"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "textAlignment"]
 - !private ["Ps8Hashable", "textColor"]
@@ -1136,6 +1154,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "pressedArena"]
 - !private ["PSo17MKMapViewDelegate", "print"]
 - !private ["PSo17MKMapViewDelegate", "showVR"]
+- !private ["PSo17MKMapViewDelegate", "temp"]
 - !private ["PSo17MKMapViewDelegate", "titleLabel"]
 - !private ["PSo17MKMapViewDelegate", "topNavBar"]
 - !private ["PSo17MKMapViewDelegate", "v"]
@@ -1237,6 +1256,7 @@ depends-member:
 - !private ["PSo8NSCoding", "presentedViewController"]
 - ["PSo8NSCoding", "pressedArena"]
 - !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "removeFromSuperview"]
 - !private ["PSo8NSCoding", "rootViewController"]
 - !private ["PSo8NSCoding", "setImage"]
 - !private ["PSo8NSCoding", "setRegion"]
@@ -1244,6 +1264,7 @@ depends-member:
 - !private ["PSo8NSCoding", "showsUserLocation"]
 - !private ["PSo8NSCoding", "size"]
 - !private ["PSo8NSCoding", "switchNav"]
+- ["PSo8NSCoding", "temp"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textAlignment"]
 - !private ["PSo8NSCoding", "textColor"]
@@ -1314,6 +1335,7 @@ depends-member:
 - ["CSo8NSObject", "controller"]
 - !private ["CSo8NSObject", "coordinate"]
 - !private ["CSo8NSObject", "cornerRadius"]
+- !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "desiredAccuracy"]
 - !private ["CSo8NSObject", "fatalError"]
@@ -1356,6 +1378,7 @@ depends-member:
 - !private ["CSo8NSObject", "presentedViewController"]
 - ["CSo8NSObject", "pressedArena"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "removeFromSuperview"]
 - !private ["CSo8NSObject", "requestWhenInUseAuthorization"]
 - !private ["CSo8NSObject", "rootViewController"]
 - !private ["CSo8NSObject", "setImage"]
@@ -1367,6 +1390,7 @@ depends-member:
 - !private ["CSo8NSObject", "startUpdatingLocation"]
 - !private ["CSo8NSObject", "strokeColor"]
 - !private ["CSo8NSObject", "switchNav"]
+- ["CSo8NSObject", "temp"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textAlignment"]
 - !private ["CSo8NSObject", "textColor"]
@@ -1459,6 +1483,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "presentedViewController"]
 - ["PSo16NSObjectProtocol", "pressedArena"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "removeFromSuperview"]
 - !private ["PSo16NSObjectProtocol", "requestWhenInUseAuthorization"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
@@ -1470,6 +1495,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "startUpdatingLocation"]
 - !private ["PSo16NSObjectProtocol", "strokeColor"]
 - !private ["PSo16NSObjectProtocol", "switchNav"]
+- ["PSo16NSObjectProtocol", "temp"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textAlignment"]
 - !private ["PSo16NSObjectProtocol", "textColor"]
@@ -1598,12 +1624,14 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "nbQuestionReussiUser"]
 - ["PSo29UIAccessibilityIdentification", "pressedArena"]
 - !private ["PSo29UIAccessibilityIdentification", "print"]
+- !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
 - !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
 - !private ["PSo29UIAccessibilityIdentification", "setImage"]
 - !private ["PSo29UIAccessibilityIdentification", "setRegion"]
 - ["PSo29UIAccessibilityIdentification", "showVR"]
 - !private ["PSo29UIAccessibilityIdentification", "showsUserLocation"]
 - !private ["PSo29UIAccessibilityIdentification", "size"]
+- ["PSo29UIAccessibilityIdentification", "temp"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textAlignment"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
@@ -1693,11 +1721,13 @@ depends-member:
 - !private ["PSo12UIAppearance", "nbQuestionReussiUser"]
 - ["PSo12UIAppearance", "pressedArena"]
 - !private ["PSo12UIAppearance", "print"]
+- !private ["PSo12UIAppearance", "removeFromSuperview"]
 - !private ["PSo12UIAppearance", "rootViewController"]
 - !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "setRegion"]
 - ["PSo12UIAppearance", "showVR"]
 - !private ["PSo12UIAppearance", "showsUserLocation"]
+- ["PSo12UIAppearance", "temp"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textAlignment"]
 - !private ["PSo12UIAppearance", "textColor"]
@@ -1780,12 +1810,14 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "presentedViewController"]
 - ["PSo21UIAppearanceContainer", "pressedArena"]
 - !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "removeFromSuperview"]
 - !private ["PSo21UIAppearanceContainer", "rootViewController"]
 - !private ["PSo21UIAppearanceContainer", "setImage"]
 - !private ["PSo21UIAppearanceContainer", "setRegion"]
 - ["PSo21UIAppearanceContainer", "showVR"]
 - !private ["PSo21UIAppearanceContainer", "showsUserLocation"]
 - !private ["PSo21UIAppearanceContainer", "switchNav"]
+- ["PSo21UIAppearanceContainer", "temp"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textAlignment"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
@@ -1900,11 +1932,13 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "nbQuestionReussiUser"]
 - ["PSo17UICoordinateSpace", "pressedArena"]
 - !private ["PSo17UICoordinateSpace", "print"]
+- !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
 - !private ["PSo17UICoordinateSpace", "rootViewController"]
 - !private ["PSo17UICoordinateSpace", "setImage"]
 - !private ["PSo17UICoordinateSpace", "setRegion"]
 - ["PSo17UICoordinateSpace", "showVR"]
 - !private ["PSo17UICoordinateSpace", "showsUserLocation"]
+- ["PSo17UICoordinateSpace", "temp"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textAlignment"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
@@ -1984,11 +2018,13 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "nbQuestionReussiUser"]
 - ["PSo13UIDynamicItem", "pressedArena"]
 - !private ["PSo13UIDynamicItem", "print"]
+- !private ["PSo13UIDynamicItem", "removeFromSuperview"]
 - !private ["PSo13UIDynamicItem", "rootViewController"]
 - !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "setRegion"]
 - ["PSo13UIDynamicItem", "showVR"]
 - !private ["PSo13UIDynamicItem", "showsUserLocation"]
+- ["PSo13UIDynamicItem", "temp"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textAlignment"]
 - !private ["PSo13UIDynamicItem", "textColor"]
@@ -2071,12 +2107,14 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "presentedViewController"]
 - ["PSo18UIFocusEnvironment", "pressedArena"]
 - !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "removeFromSuperview"]
 - !private ["PSo18UIFocusEnvironment", "rootViewController"]
 - !private ["PSo18UIFocusEnvironment", "setImage"]
 - !private ["PSo18UIFocusEnvironment", "setRegion"]
 - ["PSo18UIFocusEnvironment", "showVR"]
 - !private ["PSo18UIFocusEnvironment", "showsUserLocation"]
 - !private ["PSo18UIFocusEnvironment", "switchNav"]
+- ["PSo18UIFocusEnvironment", "temp"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textAlignment"]
 - !private ["PSo18UIFocusEnvironment", "textColor"]
@@ -2156,11 +2194,13 @@ depends-member:
 - !private ["PSo11UIFocusItem", "nbQuestionReussiUser"]
 - ["PSo11UIFocusItem", "pressedArena"]
 - !private ["PSo11UIFocusItem", "print"]
+- !private ["PSo11UIFocusItem", "removeFromSuperview"]
 - !private ["PSo11UIFocusItem", "rootViewController"]
 - !private ["PSo11UIFocusItem", "setImage"]
 - !private ["PSo11UIFocusItem", "setRegion"]
 - ["PSo11UIFocusItem", "showVR"]
 - !private ["PSo11UIFocusItem", "showsUserLocation"]
+- ["PSo11UIFocusItem", "temp"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "textAlignment"]
 - !private ["PSo11UIFocusItem", "textColor"]
@@ -2266,6 +2306,7 @@ depends-member:
 - !private ["CSo11UIResponder", "presentedViewController"]
 - ["CSo11UIResponder", "pressedArena"]
 - !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "removeFromSuperview"]
 - !private ["CSo11UIResponder", "rootViewController"]
 - !private ["CSo11UIResponder", "setImage"]
 - !private ["CSo11UIResponder", "setRegion"]
@@ -2273,6 +2314,7 @@ depends-member:
 - ["CSo11UIResponder", "showVR"]
 - !private ["CSo11UIResponder", "showsUserLocation"]
 - !private ["CSo11UIResponder", "switchNav"]
+- ["CSo11UIResponder", "temp"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textAlignment"]
 - !private ["CSo11UIResponder", "textColor"]
@@ -2355,6 +2397,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "presentedViewController"]
 - ["PSo30UIResponderStandardEditActions", "pressedArena"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "removeFromSuperview"]
 - !private ["PSo30UIResponderStandardEditActions", "rootViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "setImage"]
 - !private ["PSo30UIResponderStandardEditActions", "setRegion"]
@@ -2362,6 +2405,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "showVR"]
 - !private ["PSo30UIResponderStandardEditActions", "showsUserLocation"]
 - !private ["PSo30UIResponderStandardEditActions", "switchNav"]
+- ["PSo30UIResponderStandardEditActions", "temp"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "textAlignment"]
 - !private ["PSo30UIResponderStandardEditActions", "textColor"]
@@ -2449,12 +2493,14 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "presentedViewController"]
 - ["PSo18UITraitEnvironment", "pressedArena"]
 - !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "removeFromSuperview"]
 - !private ["PSo18UITraitEnvironment", "rootViewController"]
 - !private ["PSo18UITraitEnvironment", "setImage"]
 - !private ["PSo18UITraitEnvironment", "setRegion"]
 - ["PSo18UITraitEnvironment", "showVR"]
 - !private ["PSo18UITraitEnvironment", "showsUserLocation"]
 - !private ["PSo18UITraitEnvironment", "switchNav"]
+- ["PSo18UITraitEnvironment", "temp"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textAlignment"]
 - !private ["PSo18UITraitEnvironment", "textColor"]
@@ -2542,11 +2588,13 @@ depends-member:
 - !private ["CSo6UIView", "nbQuestionReussiUser"]
 - ["CSo6UIView", "pressedArena"]
 - !private ["CSo6UIView", "print"]
+- !private ["CSo6UIView", "removeFromSuperview"]
 - !private ["CSo6UIView", "rootViewController"]
 - !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "setRegion"]
 - ["CSo6UIView", "showVR"]
 - !private ["CSo6UIView", "showsUserLocation"]
+- ["CSo6UIView", "temp"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textAlignment"]
 - !private ["CSo6UIView", "textColor"]
@@ -2567,8 +2615,9 @@ depends-member:
 - !private ["C9Projet3756VrView", "addLocationToView"]
 - !private ["C9Projet3756VrView", "arena"]
 - !private ["C9Projet3756VrView", "clipsToBounds"]
-- !private ["C9Projet3756VrView", "deinit"]
+- ["C9Projet3756VrView", "deinit"]
 - !private ["C9Projet3756VrView", "init"]
+- !private ["C9Projet3756VrView", "removeFromSuperview"]
 - !private ["Ps14_ArrayProtocol", "Iterator"]
 - !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "last"]
@@ -2646,11 +2695,13 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "nbQuestionReussiUser"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "pressedArena"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "print"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rootViewController"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setImage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setRegion"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "showVR"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "showsUserLocation"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "temp"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textAlignment"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textColor"]
@@ -2761,6 +2812,7 @@ depends-member:
 - !private ["Ps9_Hashable", "presentedViewController"]
 - ["Ps9_Hashable", "pressedArena"]
 - !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "removeFromSuperview"]
 - !private ["Ps9_Hashable", "requestWhenInUseAuthorization"]
 - !private ["Ps9_Hashable", "rootViewController"]
 - !private ["Ps9_Hashable", "setImage"]
@@ -2772,6 +2824,7 @@ depends-member:
 - !private ["Ps9_Hashable", "startUpdatingLocation"]
 - !private ["Ps9_Hashable", "strokeColor"]
 - !private ["Ps9_Hashable", "switchNav"]
+- ["Ps9_Hashable", "temp"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "textAlignment"]
 - !private ["Ps9_Hashable", "textColor"]
@@ -2917,7 +2970,7 @@ depends-nominal:
 - "CSo8UIWindow"
 - "Su"
 - !private "C9Projet37514ViewController"
-- !private "C9Projet3756VrView"
+- "C9Projet3756VrView"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps15_CVarArgAligned"
 - !private "Ps22_CVarArgPassedAsDouble"
@@ -3015,4 +3068,4 @@ depends-external:
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
-interface-hash: "402525a6c13b824efd4053243df20b17"
+interface-hash: "cfa14a5e889b885a2635b482d0e7417c"

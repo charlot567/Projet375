@@ -166,6 +166,7 @@ SWIFT_CLASS("_TtC9Projet3759ArenaView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
+- (void)temp;
 - (void)back;
 - (void)pressedArenaWithSender:(UIButton * _Nonnull)sender;
 - (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay;

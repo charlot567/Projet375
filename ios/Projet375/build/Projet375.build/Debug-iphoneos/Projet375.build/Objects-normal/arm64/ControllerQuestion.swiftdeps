@@ -7,26 +7,26 @@ provides-member:
 - ["C9Projet37518ControllerQuestion", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "StringLiteralType"
+- !private "kBaseUrl"
+- "Void"
 - "ControllerQuestion"
-- "TernaryPrecedence"
-- "Bool"
-- !private "AnyObject"
+- !private "&&"
+- "Array"
+- !private "!="
+- "BooleanLiteralType"
+- !private "UIImage"
 - !private "String"
 - "Int"
 - "Controller"
-- !private "UIImage"
+- "question"
+- "TernaryPrecedence"
 - !private "CastingPrecedence"
+- "Bool"
+- !private "AnyObject"
 - !private "=="
 - "CLLocationCoordinate2D"
-- "question"
 - !private "Double"
-- !private "StringLiteralType"
-- !private "&&"
-- !private "!="
-- "Array"
-- "BooleanLiteralType"
-- !private "kBaseUrl"
-- "Void"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CLLocationCoordinate2D"]

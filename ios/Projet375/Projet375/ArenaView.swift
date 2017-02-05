@@ -88,6 +88,9 @@ class ArenaView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         //  Arena disponible
 //        self.arena
         
+        if(self.v == nil) {
+            temp()
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -104,18 +107,7 @@ class ArenaView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
                 
                     let alert = UIAlertController(title: "Alerte d'Arène", message: "Une arène est sur votre chemin voulez vous combattre?", preferredStyle: UIAlertControllerStyle.alert)
                     alert.addAction(UIAlertAction(title: "Oui", style: UIAlertActionStyle.default, handler: { action in
-                        self.v = VrView(frame: self.map.frame)
-                        self.v.arena = self.arena
-                        self.v.clipsToBounds = true
-                        self.addSubview(self.v)
-                        
-                        //QuestionView(frame: CGRect(x:,y:,width), q: <#T##question#>, match: <#T##Match#>, background: false)
-                        
-                        //v.addViewToLocation(view: , toAdd: <#T##CLLocationCoordinate2D#>)
-                        let button = self.v.addLocationToView(toAdd: self.areneLoc)
-                        button.addTarget(self, action: #selector(self.pressedArena(sender:)), for: UIControlEvents.touchUpInside)
-                        self.showVR=true
-                        self.load()
+                        self.temp()
                     }))
                 
                     alert.addAction(UIAlertAction(title: "Non", style: UIAlertActionStyle.destructive, handler: nil))
@@ -124,6 +116,21 @@ class ArenaView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
             }
         }
         self.map.setRegion(region, animated: false)
+    }
+    func temp() {
+        self.v = VrView(frame: self.map.frame)
+        self.v.arena = self.arena
+        self.v.clipsToBounds = true
+        self.addSubview(self.v)
+        
+        //QuestionView(frame: CGRect(x:,y:,width), q: <#T##question#>, match: <#T##Match#>, background: false)
+        
+        //v.addViewToLocation(view: , toAdd: <#T##CLLocationCoordinate2D#>)
+        let button = self.v.addLocationToView(toAdd: self.areneLoc)
+        button.addTarget(self, action: #selector(self.pressedArena(sender:)), for: UIControlEvents.touchUpInside)
+        self.showVR=true
+        self.load()
+
     }
     
     func back() {
@@ -137,6 +144,8 @@ class ArenaView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         }
         
         
+        self.v.removeFromSuperview()
+        self.v = nil
         
         nbQuestionReussiUser = 0
         

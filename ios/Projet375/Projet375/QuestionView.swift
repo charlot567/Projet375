@@ -294,7 +294,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         self.map.addAnnotation(point)
         
         
-        let c = CLCircularRegion(center: que.location!, radius: 2000, identifier: "circle")
+        let c = CLCircularRegion(center: que.location!, radius: 4000, identifier: "circle")
         if c.contains(locationCoordinate) {
             hasAnswer = true
             userHasWon()
@@ -315,7 +315,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
     }
     
     func displayMapAnswer() {
-        let circle = MKCircle(center: que.location!, radius: 1000)
+        let circle = MKCircle(center: que.location!, radius: 4000)
         map.add(circle)
     }
     
