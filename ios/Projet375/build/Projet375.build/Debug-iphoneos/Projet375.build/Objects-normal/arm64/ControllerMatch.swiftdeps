@@ -7,26 +7,26 @@ provides-member:
 - ["C9Projet37515ControllerMatch", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "!="
+- "Controller"
+- !private "kCurrentUser"
 - !private "CastingPrecedence"
+- !private "AnyObject"
 - !private "AssignmentPrecedence"
 - !private "=="
+- !private "kNewMatch"
+- "Bool"
+- "String"
+- "Match"
+- "BooleanLiteralType"
+- !private "!="
 - !private "kOldMatch"
 - "Void"
 - !private "kBaseUrl"
-- "ControllerMatch"
 - !private "print"
+- "ControllerMatch"
+- !private "StringLiteralType"
 - !private "&&"
 - "Int"
-- "Controller"
-- !private "kCurrentUser"
-- !private "StringLiteralType"
-- !private "kNewMatch"
-- !private "AnyObject"
-- "BooleanLiteralType"
-- "Bool"
-- "Match"
-- "String"
 depends-member:
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "Match"]

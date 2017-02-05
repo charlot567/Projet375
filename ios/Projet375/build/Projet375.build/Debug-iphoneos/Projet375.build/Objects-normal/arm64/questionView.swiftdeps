@@ -6,106 +6,107 @@ provides-nominal:
 provides-member:
 - ["C9Projet37512QuestionView", ""]
 provides-dynamic-lookup:
-- "createHeader"
+- "time"
+- "mapMargin"
+- "margin"
+- "headerHeight"
+- "hasAnswer"
+- "displayResultView"
+- "displayMapAnswer"
+- "timesUp"
+- "questionLabel"
+- "loadingBar"
+- "pressed"
+- "resultView"
+- "locationManager"
+- "locationManager"
 - "timeLabel"
 - "verticalMargin"
-- "map"
-- "questionLabel"
-- "userHasLost"
-- "pressed"
-- "displayRegularAnswer"
-- "headerHeight"
-- "createMapContent"
-- "userHasWon"
-- "margin"
-- "loadingBar"
 - "lgpr"
-- "createRegularContent"
-- "time"
-- "checkAnswer"
-- "mapMargin"
-- "timesUp"
-- "displayMapAnswer"
-- "mapView"
-- "marginB"
-- "buttons"
+- "createHeader"
+- "map"
 - "navBar"
-- "hasAnswer"
+- "userHasWon"
+- "buttons"
+- "createMapContent"
+- "userHasLost"
 - "timer"
-- "locationManager"
-- "locationManager"
-- "displayResultView"
-- "resultView"
+- "displayRegularAnswer"
+- "marginB"
+- "createRegularContent"
+- "checkAnswer"
+- "mapView"
 depends-top-level:
-- "MKOverlay"
-- !private "MKCoordinateRegion"
-- "UIView"
-- "UIImage"
-- !private "UnicodeScalarType"
-- !private "MKPointAnnotation"
-- !private "NSTextAlignment"
 - "CGFloat"
-- !private "UIControlEvents"
-- !private "DispatchQueue"
-- !private "+="
-- !private "CLCircularRegion"
-- !private "!="
-- "UILabel"
-- !private "-"
-- "BooleanLiteralType"
-- !private "print"
-- !private "kTypeRegular"
-- "QuestionView"
-- "MKMapView"
-- "Match"
-- !private "UIFont"
-- !private "kGreen"
-- !private "UIColor"
-- !private "/"
-- !private "MKCircleRenderer"
-- "StringLiteralType"
-- "Array"
-- !private "kHeight"
-- !private "kRed"
-- !private "kCLLocationAccuracyNearestTenMeters"
-- !private "kTypeMap"
-- "UIButton"
-- !private "UIGestureRecognizerState"
-- !private "MKCircle"
+- !private "MKCoordinateSpan"
 - !private "kBlue"
-- "CastingPrecedence"
+- "UILongPressGestureRecognizer"
+- "UIButton"
+- !private "UINavigationItem"
+- "MKMapView"
+- !private "kBeige"
+- "String"
+- "CLLocationManagerDelegate"
+- "CLLocationManager"
+- "MKMapViewDelegate"
+- !private "MKCircleRenderer"
+- !private "kColorForCategories"
+- !private "fatalError"
+- "NSCoder"
+- "CLLocationCoordinate2D"
+- !private "kRed"
+- !private "MKCircle"
+- !private "UIControlEvents"
 - "ResultView"
+- !private ">"
 - "UINavigationBar"
+- "StringLiteralType"
 - !private "kPurple"
+- !private "kGreen"
+- "BooleanLiteralType"
+- !private "MKCoordinateRegion"
+- !private "Dictionary"
+- !private "+"
+- "QuestionView"
+- !private "print"
+- !private "NSTextAlignment"
+- !private "..."
+- "TernaryPrecedence"
+- "UIImage"
+- !private "UIGestureRecognizerState"
+- !private "kGoodAnswer"
+- "Match"
+- !private "kCLLocationAccuracyNearestTenMeters"
+- "MKOverlayRenderer"
+- "UIView"
+- "UILabel"
+- !private "kTypeRegular"
+- "Array"
+- "Timer"
+- !private "kTypeMap"
+- !private "kHeight"
+- "CGRect"
 - "AssignmentPrecedence"
 - !private "~="
-- !private "Dictionary"
-- !private "=="
-- "String"
-- "CLLocation"
-- !private "*"
-- "TernaryPrecedence"
-- "NSCoder"
-- !private "..."
 - !private "UIBarStyle"
-- "question"
-- !private "kColorForCategories"
-- !private "kGoodAnswer"
-- "UILongPressGestureRecognizer"
-- "MKOverlayRenderer"
-- !private "fatalError"
-- "CLLocationCoordinate2D"
-- !private "UINavigationItem"
 - !private "Int"
-- "CLLocationManagerDelegate"
-- "CGRect"
-- "CLLocationManager"
-- "Timer"
-- !private "+"
+- !private "UnicodeScalarType"
+- !private "=="
+- "CastingPrecedence"
+- "CLLocation"
+- "MKOverlay"
+- "question"
+- !private "*"
 - !private "NSForegroundColorAttributeName"
-- !private "MKCoordinateSpan"
-- !private ">"
-- "MKMapViewDelegate"
+- !private "UIColor"
+- !private "-"
+- !private "!="
+- !private "MKPointAnnotation"
+- !private "UIFont"
+- !private "CLCircularRegion"
+- !private "+="
+- !private "DispatchQueue"
+- !private "/"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - ["Ps16AbsoluteValuable", "init"]
@@ -182,6 +183,7 @@ depends-member:
 - !private ["Ps9AnyObject", "isEnabled"]
 - !private ["Ps9AnyObject", "isScrollEnabled"]
 - !private ["Ps9AnyObject", "isZoomEnabled"]
+- !private ["Ps9AnyObject", "kBeige"]
 - !private ["Ps9AnyObject", "kBlue"]
 - !private ["Ps9AnyObject", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps9AnyObject", "kColorForCategories"]
@@ -368,6 +370,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "isEnabled"]
 - !private ["PSo15CALayerDelegate", "isScrollEnabled"]
 - !private ["PSo15CALayerDelegate", "isZoomEnabled"]
+- !private ["PSo15CALayerDelegate", "kBeige"]
 - !private ["PSo15CALayerDelegate", "kBlue"]
 - !private ["PSo15CALayerDelegate", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo15CALayerDelegate", "kColorForCategories"]
@@ -499,6 +502,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "frame"]
 - !private ["PSo25CLLocationManagerDelegate", "hasAnswer"]
 - !private ["PSo25CLLocationManagerDelegate", "headerHeight"]
+- !private ["PSo25CLLocationManagerDelegate", "kBeige"]
 - !private ["PSo25CLLocationManagerDelegate", "kBlue"]
 - !private ["PSo25CLLocationManagerDelegate", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo25CLLocationManagerDelegate", "kColorForCategories"]
@@ -629,6 +633,7 @@ depends-member:
 - !private ["Ps7CVarArg", "isEnabled"]
 - !private ["Ps7CVarArg", "isScrollEnabled"]
 - !private ["Ps7CVarArg", "isZoomEnabled"]
+- !private ["Ps7CVarArg", "kBeige"]
 - !private ["Ps7CVarArg", "kBlue"]
 - !private ["Ps7CVarArg", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps7CVarArg", "kColorForCategories"]
@@ -806,6 +811,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "isEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "isScrollEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "isZoomEnabled"]
+- !private ["Ps28CustomDebugStringConvertible", "kBeige"]
 - !private ["Ps28CustomDebugStringConvertible", "kBlue"]
 - !private ["Ps28CustomDebugStringConvertible", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps28CustomDebugStringConvertible", "kColorForCategories"]
@@ -998,6 +1004,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "isEnabled"]
 - !private ["Ps23CustomStringConvertible", "isScrollEnabled"]
 - !private ["Ps23CustomStringConvertible", "isZoomEnabled"]
+- !private ["Ps23CustomStringConvertible", "kBeige"]
 - !private ["Ps23CustomStringConvertible", "kBlue"]
 - !private ["Ps23CustomStringConvertible", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps23CustomStringConvertible", "kColorForCategories"]
@@ -1179,6 +1186,7 @@ depends-member:
 - !private ["Ps9Equatable", "isEnabled"]
 - !private ["Ps9Equatable", "isScrollEnabled"]
 - !private ["Ps9Equatable", "isZoomEnabled"]
+- !private ["Ps9Equatable", "kBeige"]
 - !private ["Ps9Equatable", "kBlue"]
 - !private ["Ps9Equatable", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps9Equatable", "kColorForCategories"]
@@ -1365,6 +1373,7 @@ depends-member:
 - !private ["Ps8Hashable", "isEnabled"]
 - !private ["Ps8Hashable", "isScrollEnabled"]
 - !private ["Ps8Hashable", "isZoomEnabled"]
+- !private ["Ps8Hashable", "kBeige"]
 - !private ["Ps8Hashable", "kBlue"]
 - !private ["Ps8Hashable", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps8Hashable", "kColorForCategories"]
@@ -1551,6 +1560,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "frame"]
 - !private ["PSo17MKMapViewDelegate", "hasAnswer"]
 - !private ["PSo17MKMapViewDelegate", "headerHeight"]
+- !private ["PSo17MKMapViewDelegate", "kBeige"]
 - !private ["PSo17MKMapViewDelegate", "kBlue"]
 - !private ["PSo17MKMapViewDelegate", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo17MKMapViewDelegate", "kColorForCategories"]
@@ -1700,6 +1710,7 @@ depends-member:
 - !private ["PSo8NSCoding", "isEnabled"]
 - !private ["PSo8NSCoding", "isScrollEnabled"]
 - !private ["PSo8NSCoding", "isZoomEnabled"]
+- !private ["PSo8NSCoding", "kBeige"]
 - !private ["PSo8NSCoding", "kBlue"]
 - !private ["PSo8NSCoding", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo8NSCoding", "kColorForCategories"]
@@ -1851,6 +1862,7 @@ depends-member:
 - !private ["CSo8NSObject", "isEnabled"]
 - !private ["CSo8NSObject", "isScrollEnabled"]
 - !private ["CSo8NSObject", "isZoomEnabled"]
+- !private ["CSo8NSObject", "kBeige"]
 - !private ["CSo8NSObject", "kBlue"]
 - !private ["CSo8NSObject", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["CSo8NSObject", "kColorForCategories"]
@@ -1993,6 +2005,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "isEnabled"]
 - !private ["PSo16NSObjectProtocol", "isScrollEnabled"]
 - !private ["PSo16NSObjectProtocol", "isZoomEnabled"]
+- !private ["PSo16NSObjectProtocol", "kBeige"]
 - !private ["PSo16NSObjectProtocol", "kBlue"]
 - !private ["PSo16NSObjectProtocol", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo16NSObjectProtocol", "kColorForCategories"]
@@ -2134,6 +2147,7 @@ depends-member:
 - ["C9Projet37512QuestionView", "hasAnswer"]
 - ["C9Projet37512QuestionView", "headerHeight"]
 - ["C9Projet37512QuestionView", "init"]
+- !private ["C9Projet37512QuestionView", "kBeige"]
 - !private ["C9Projet37512QuestionView", "kBlue"]
 - !private ["C9Projet37512QuestionView", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["C9Projet37512QuestionView", "kColorForCategories"]
@@ -2329,6 +2343,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "isEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "isScrollEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "isZoomEnabled"]
+- !private ["PSo29UIAccessibilityIdentification", "kBeige"]
 - !private ["PSo29UIAccessibilityIdentification", "kBlue"]
 - !private ["PSo29UIAccessibilityIdentification", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo29UIAccessibilityIdentification", "kColorForCategories"]
@@ -2444,6 +2459,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "isEnabled"]
 - !private ["PSo12UIAppearance", "isScrollEnabled"]
 - !private ["PSo12UIAppearance", "isZoomEnabled"]
+- !private ["PSo12UIAppearance", "kBeige"]
 - !private ["PSo12UIAppearance", "kBlue"]
 - !private ["PSo12UIAppearance", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo12UIAppearance", "kColorForCategories"]
@@ -2559,6 +2575,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "isEnabled"]
 - !private ["PSo21UIAppearanceContainer", "isScrollEnabled"]
 - !private ["PSo21UIAppearanceContainer", "isZoomEnabled"]
+- !private ["PSo21UIAppearanceContainer", "kBeige"]
 - !private ["PSo21UIAppearanceContainer", "kBlue"]
 - !private ["PSo21UIAppearanceContainer", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo21UIAppearanceContainer", "kColorForCategories"]
@@ -2625,6 +2642,7 @@ depends-member:
 - !private ["OSC10UIBarStyle", "default"]
 - ["OSC10UIBarStyle", "deinit"]
 - !private ["CSo8UIButton", "addTarget"]
+- !private ["CSo8UIButton", "backgroundColor"]
 - !private ["CSo8UIButton", "clipsToBounds"]
 - ["CSo8UIButton", "deinit"]
 - !private ["CSo8UIButton", "frame"]
@@ -2642,6 +2660,7 @@ depends-member:
 - !private ["CSo7UIColor", "red"]
 - !private ["CSo7UIColor", "white"]
 - !private ["CSo7UIColor", "withAlphaComponent"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "backgroundColor"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "clipsToBounds"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "font"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "frame"]
@@ -2653,6 +2672,7 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "textAlignment"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "textColor"]
 - !private ["CSo9UIControl", "addTarget"]
+- !private ["CSo9UIControl", "backgroundColor"]
 - !private ["CSo9UIControl", "clipsToBounds"]
 - !private ["CSo9UIControl", "frame"]
 - !private ["CSo9UIControl", "init"]
@@ -2723,6 +2743,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "isEnabled"]
 - !private ["PSo17UICoordinateSpace", "isScrollEnabled"]
 - !private ["PSo17UICoordinateSpace", "isZoomEnabled"]
+- !private ["PSo17UICoordinateSpace", "kBeige"]
 - !private ["PSo17UICoordinateSpace", "kBlue"]
 - !private ["PSo17UICoordinateSpace", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo17UICoordinateSpace", "kColorForCategories"]
@@ -2838,6 +2859,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "isEnabled"]
 - !private ["PSo13UIDynamicItem", "isScrollEnabled"]
 - !private ["PSo13UIDynamicItem", "isZoomEnabled"]
+- !private ["PSo13UIDynamicItem", "kBeige"]
 - !private ["PSo13UIDynamicItem", "kBlue"]
 - !private ["PSo13UIDynamicItem", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo13UIDynamicItem", "kColorForCategories"]
@@ -2953,6 +2975,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "isEnabled"]
 - !private ["PSo18UIFocusEnvironment", "isScrollEnabled"]
 - !private ["PSo18UIFocusEnvironment", "isZoomEnabled"]
+- !private ["PSo18UIFocusEnvironment", "kBeige"]
 - !private ["PSo18UIFocusEnvironment", "kBlue"]
 - !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo18UIFocusEnvironment", "kColorForCategories"]
@@ -3068,6 +3091,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "isEnabled"]
 - !private ["PSo11UIFocusItem", "isScrollEnabled"]
 - !private ["PSo11UIFocusItem", "isZoomEnabled"]
+- !private ["PSo11UIFocusItem", "kBeige"]
 - !private ["PSo11UIFocusItem", "kBlue"]
 - !private ["PSo11UIFocusItem", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo11UIFocusItem", "kColorForCategories"]
@@ -3138,6 +3162,7 @@ depends-member:
 - ["OSC24UIGestureRecognizerState", "deinit"]
 - ["CSo7UIImage", "deinit"]
 - ["CSo7UIImage", "init"]
+- !private ["CSo7UILabel", "backgroundColor"]
 - !private ["CSo7UILabel", "clipsToBounds"]
 - ["CSo7UILabel", "deinit"]
 - !private ["CSo7UILabel", "font"]
@@ -3229,6 +3254,7 @@ depends-member:
 - !private ["CSo11UIResponder", "isEnabled"]
 - !private ["CSo11UIResponder", "isScrollEnabled"]
 - !private ["CSo11UIResponder", "isZoomEnabled"]
+- !private ["CSo11UIResponder", "kBeige"]
 - !private ["CSo11UIResponder", "kBlue"]
 - !private ["CSo11UIResponder", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["CSo11UIResponder", "kColorForCategories"]
@@ -3343,6 +3369,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "isEnabled"]
 - !private ["PSo30UIResponderStandardEditActions", "isScrollEnabled"]
 - !private ["PSo30UIResponderStandardEditActions", "isZoomEnabled"]
+- !private ["PSo30UIResponderStandardEditActions", "kBeige"]
 - !private ["PSo30UIResponderStandardEditActions", "kBlue"]
 - !private ["PSo30UIResponderStandardEditActions", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo30UIResponderStandardEditActions", "kColorForCategories"]
@@ -3458,6 +3485,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "isEnabled"]
 - !private ["PSo18UITraitEnvironment", "isScrollEnabled"]
 - !private ["PSo18UITraitEnvironment", "isZoomEnabled"]
+- !private ["PSo18UITraitEnvironment", "kBeige"]
 - !private ["PSo18UITraitEnvironment", "kBlue"]
 - !private ["PSo18UITraitEnvironment", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo18UITraitEnvironment", "kColorForCategories"]
@@ -3580,6 +3608,7 @@ depends-member:
 - !private ["CSo6UIView", "isEnabled"]
 - !private ["CSo6UIView", "isScrollEnabled"]
 - !private ["CSo6UIView", "isZoomEnabled"]
+- !private ["CSo6UIView", "kBeige"]
 - !private ["CSo6UIView", "kBlue"]
 - !private ["CSo6UIView", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["CSo6UIView", "kColorForCategories"]
@@ -3714,6 +3743,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isEnabled"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isScrollEnabled"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isZoomEnabled"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kBeige"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kBlue"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kColorForCategories"]
@@ -3879,6 +3909,7 @@ depends-member:
 - !private ["Ps9_Hashable", "isEnabled"]
 - !private ["Ps9_Hashable", "isScrollEnabled"]
 - !private ["Ps9_Hashable", "isZoomEnabled"]
+- !private ["Ps9_Hashable", "kBeige"]
 - !private ["Ps9_Hashable", "kBlue"]
 - !private ["Ps9_Hashable", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps9_Hashable", "kColorForCategories"]

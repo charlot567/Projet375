@@ -153,10 +153,11 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         questionLabel = UILabel(frame: CGRect(x: margin, y: headerHeight + margin, width: self.frame.width - 2*margin, height: self.frame.height*0.2))
         questionLabel.font = UIFont(name: questionLabel.font.fontName, size: 20)
         questionLabel.text = que.quest
-        questionLabel.textColor = UIColor.white
-        questionLabel.layer.borderWidth = 2
+        questionLabel.textColor = UIColor.black
+        //questionLabel.layer.borderWidth = 2
+        questionLabel.backgroundColor = kBeige
         
-        questionLabel.layer.borderColor = (UIColor.white).cgColor
+        //questionLabel.layer.borderColor = (UIColor.white).cgColor
         questionLabel.numberOfLines = 3
         questionLabel.textAlignment = NSTextAlignment.center
         questionLabel.layer.cornerRadius = 20
@@ -168,9 +169,9 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
             let button = UIButton(frame: CGRect(x: marginB/2, y: verticalMargin*2 + questionLabel.frame.maxY + (CGFloat(index)*buttonHeight) + marginB/2 + marginB/2*CGFloat(index), width: self.frame.width - marginB, height: buttonHeight))
             button.setTitleColor(UIColor.black, for: [])
             button.setTitle(que.reponse![index], for: [])
-            
-            button.layer.borderWidth = 2
-            button.layer.borderColor = (UIColor.white).cgColor
+            button.backgroundColor = kBeige
+            //button.layer.borderWidth = 2
+            //button.layer.borderColor = (UIColor.white).cgColor
             button.layer.cornerRadius = button.frame.height/2
             button.tag = index
             button.addTarget(self, action: #selector(checkAnswer(sender:)), for: UIControlEvents.touchUpInside)
@@ -246,12 +247,13 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         questionLabel = UILabel(frame: CGRect(x: margin, y: headerHeight + margin, width: self.frame.width - 2*margin, height: self.frame.height*0.2))
         questionLabel.font = UIFont(name: questionLabel.font.fontName, size: 20)
         questionLabel.text = que.quest
-        questionLabel.layer.borderWidth = 2
+        //questionLabel.layer.borderWidth = 2
         
-        questionLabel.layer.borderColor = (UIColor.white).cgColor
+        //questionLabel.layer.borderColor = (UIColor.white).cgColor
         questionLabel.numberOfLines = 3
         questionLabel.textAlignment = NSTextAlignment.center
-        questionLabel.textColor = UIColor.white
+        questionLabel.textColor = UIColor.black
+        questionLabel.backgroundColor = kBeige
         questionLabel.layer.cornerRadius = 20
         questionLabel.clipsToBounds = true
         

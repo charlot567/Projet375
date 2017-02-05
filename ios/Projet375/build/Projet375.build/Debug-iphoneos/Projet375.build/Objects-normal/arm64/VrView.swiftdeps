@@ -6,77 +6,80 @@ provides-nominal:
 provides-member:
 - ["C9Projet3756VrView", ""]
 provides-dynamic-lookup:
-- "deviceWidth"
 - "calculateBearing"
+- "deviceWidth"
 - "beginCameraSession"
-- "location"
 - "DrollLabel"
+- "location"
 - "motionManager"
+- "calculateDistance"
 - "DebugColor"
 - "DpitchLabel"
 - "DlocationLabel"
-- "placePointOnWall"
 - "captureSession"
-- "halfInfiniteWall1"
-- "DEBUG"
+- "placePointOnWall"
+- "pressedArena"
 - "captureDevice"
-- "addLocationToView"
-- "calculateDistance"
+- "DyawLabel"
+- "DEBUG"
 - "updateMotion"
+- "halfInfiniteWall1"
 - "radToDeg"
 - "locationManager"
 - "locationManager"
 - "locationManager"
-- "DyawLabel"
-- "DheadingLabel"
+- "addLocationToView"
 - "halfInfiniteWall2"
+- "DheadingLabel"
 depends-top-level:
-- "UIColor"
 - "AVCaptureSession"
-- !private "fmod"
-- !private "Timer"
-- !private "*"
-- !private "&&"
-- !private "<="
-- !private "CastingPrecedence"
-- "Double"
-- "NSCoder"
-- !private "AnyObject"
-- !private "-"
-- "AssignmentPrecedence"
-- "UILabel"
-- !private "=="
-- !private "kCLLocationAccuracyNearestTenMeters"
-- !private "AVCaptureVideoPreviewLayer"
-- !private "fatalError"
-- !private "asin"
-- "CGFloat"
-- !private ">="
-- !private ">"
-- "VrView"
-- !private "/"
-- !private "+"
-- !private "kHeight"
-- "BooleanLiteralType"
-- !private "kWidth"
-- !private "!="
-- "CGRect"
-- !private "AVCaptureDevicePosition"
-- !private "M_PI"
-- "AVCaptureDevice"
-- !private "print"
-- !private "AVCaptureSessionPresetHigh"
-- !private "AVCaptureDeviceInput"
-- "CLLocationCoordinate2D"
-- "CLLocationManager"
-- "CLLocationManagerDelegate"
-- "StringLiteralType"
-- !private "atan2"
-- "UIView"
 - "CLHeading"
-- !private "AVMediaTypeVideo"
+- !private "asin"
+- !private "-"
+- !private "AVCaptureDeviceInput"
+- !private "&&"
+- !private "+"
+- "UILabel"
+- !private "kCLLocationAccuracyNearestTenMeters"
+- !private "M_PI"
+- !private "!="
+- "CGFloat"
 - "CLLocation"
+- "VrView"
+- !private ">="
+- !private "/"
+- !private "AVCaptureVideoPreviewLayer"
+- "BooleanLiteralType"
+- "CLLocationManagerDelegate"
+- !private "fmod"
+- !private "kWidth"
+- "UIButton"
+- "CLLocationCoordinate2D"
+- !private "fatalError"
+- !private "kHeight"
+- "StringLiteralType"
+- !private "Timer"
+- "CLLocationManager"
+- "UIView"
+- !private "AVMediaTypeVideo"
+- "UIColor"
+- "NSCoder"
+- !private "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private ">"
+- !private "=="
+- !private "atan2"
+- "Double"
+- !private "print"
+- !private "AVCaptureDevicePosition"
+- "CGRect"
+- !private "AnyObject"
+- !private "UIControlEvents"
+- "AVCaptureDevice"
+- !private "AVCaptureSessionPresetHigh"
+- !private "*"
 - "CMMotionManager"
+- !private "<="
 depends-member:
 - !private ["CSo15AVCaptureDevice", "deinit"]
 - !private ["CSo15AVCaptureDevice", "devices"]
@@ -118,12 +121,15 @@ depends-member:
 - ["Ps9AnyObject", "DyawLabel"]
 - !private ["Ps9AnyObject", "M_PI"]
 - !private ["Ps9AnyObject", "Timer"]
+- !private ["Ps9AnyObject", "UIButton"]
 - ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIControlEvents"]
 - !private ["Ps9AnyObject", "UILabel"]
 - !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "addInput"]
 - ["Ps9AnyObject", "addLocationToView"]
 - !private ["Ps9AnyObject", "addSubview"]
+- !private ["Ps9AnyObject", "addTarget"]
 - !private ["Ps9AnyObject", "alpha"]
 - !private ["Ps9AnyObject", "asin"]
 - !private ["Ps9AnyObject", "atan2"]
@@ -135,7 +141,9 @@ depends-member:
 - ["Ps9AnyObject", "calculateDistance"]
 - ["Ps9AnyObject", "captureDevice"]
 - ["Ps9AnyObject", "captureSession"]
+- !private ["Ps9AnyObject", "clipsToBounds"]
 - !private ["Ps9AnyObject", "coordinate"]
+- !private ["Ps9AnyObject", "cornerRadius"]
 - !private ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "desiredAccuracy"]
@@ -152,6 +160,7 @@ depends-member:
 - !private ["Ps9AnyObject", "hasMediaType"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "insertSublayer"]
+- !private ["Ps9AnyObject", "isUserInteractionEnabled"]
 - !private ["Ps9AnyObject", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps9AnyObject", "kHeight"]
 - !private ["Ps9AnyObject", "kWidth"]
@@ -166,6 +175,7 @@ depends-member:
 - !private ["Ps9AnyObject", "orange"]
 - ["Ps9AnyObject", "placePointOnWall"]
 - !private ["Ps9AnyObject", "position"]
+- ["Ps9AnyObject", "pressedArena"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "quaternion"]
 - ["Ps9AnyObject", "radToDeg"]
@@ -218,6 +228,7 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
+- !private ["CSo7CALayer", "cornerRadius"]
 - ["CSo7CALayer", "deinit"]
 - !private ["CSo7CALayer", "frame"]
 - !private ["CSo7CALayer", "init"]
@@ -244,11 +255,14 @@ depends-member:
 - ["PSo15CALayerDelegate", "DyawLabel"]
 - !private ["PSo15CALayerDelegate", "M_PI"]
 - !private ["PSo15CALayerDelegate", "Timer"]
+- !private ["PSo15CALayerDelegate", "UIButton"]
 - ["PSo15CALayerDelegate", "UIColor"]
+- !private ["PSo15CALayerDelegate", "UIControlEvents"]
 - !private ["PSo15CALayerDelegate", "UILabel"]
 - !private ["PSo15CALayerDelegate", "UIView"]
 - ["PSo15CALayerDelegate", "addLocationToView"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
+- !private ["PSo15CALayerDelegate", "addTarget"]
 - !private ["PSo15CALayerDelegate", "alpha"]
 - !private ["PSo15CALayerDelegate", "asin"]
 - !private ["PSo15CALayerDelegate", "atan2"]
@@ -258,6 +272,7 @@ depends-member:
 - ["PSo15CALayerDelegate", "calculateDistance"]
 - ["PSo15CALayerDelegate", "captureDevice"]
 - ["PSo15CALayerDelegate", "captureSession"]
+- !private ["PSo15CALayerDelegate", "clipsToBounds"]
 - ["PSo15CALayerDelegate", "deviceWidth"]
 - !private ["PSo15CALayerDelegate", "fatalError"]
 - !private ["PSo15CALayerDelegate", "fmod"]
@@ -265,6 +280,7 @@ depends-member:
 - ["PSo15CALayerDelegate", "halfInfiniteWall1"]
 - ["PSo15CALayerDelegate", "halfInfiniteWall2"]
 - ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "isUserInteractionEnabled"]
 - !private ["PSo15CALayerDelegate", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo15CALayerDelegate", "kHeight"]
 - !private ["PSo15CALayerDelegate", "kWidth"]
@@ -276,12 +292,14 @@ depends-member:
 - ["PSo15CALayerDelegate", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo15CALayerDelegate", "motionManager"]
 - ["PSo15CALayerDelegate", "placePointOnWall"]
+- ["PSo15CALayerDelegate", "pressedArena"]
 - !private ["PSo15CALayerDelegate", "print"]
 - ["PSo15CALayerDelegate", "radToDeg"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "textColor"]
 - ["PSo15CALayerDelegate", "updateMotion"]
 - ["PSo15CALayerDelegate", ""]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
 - !private ["PSo13CAMediaTiming", "frame"]
 - !private ["PSo13CAMediaTiming", "init"]
 - !private ["PSo13CAMediaTiming", "insertSublayer"]
@@ -332,7 +350,9 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "DyawLabel"]
 - !private ["PSo25CLLocationManagerDelegate", "M_PI"]
 - !private ["PSo25CLLocationManagerDelegate", "Timer"]
+- !private ["PSo25CLLocationManagerDelegate", "UIButton"]
 - ["PSo25CLLocationManagerDelegate", "UIColor"]
+- !private ["PSo25CLLocationManagerDelegate", "UIControlEvents"]
 - !private ["PSo25CLLocationManagerDelegate", "UILabel"]
 - !private ["PSo25CLLocationManagerDelegate", "UIView"]
 - !private ["PSo25CLLocationManagerDelegate", "addSubview"]
@@ -340,7 +360,6 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "atan2"]
 - !private ["PSo25CLLocationManagerDelegate", "beginCameraSession"]
 - !private ["PSo25CLLocationManagerDelegate", "calculateBearing"]
-- !private ["PSo25CLLocationManagerDelegate", "calculateDistance"]
 - !private ["PSo25CLLocationManagerDelegate", "captureDevice"]
 - !private ["PSo25CLLocationManagerDelegate", "captureSession"]
 - !private ["PSo25CLLocationManagerDelegate", "deviceWidth"]
@@ -359,6 +378,7 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "locationManagerDidResumeLocationUpdates"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo25CLLocationManagerDelegate", "motionManager"]
+- !private ["PSo25CLLocationManagerDelegate", "pressedArena"]
 - !private ["PSo25CLLocationManagerDelegate", "print"]
 - !private ["PSo25CLLocationManagerDelegate", "radToDeg"]
 - !private ["PSo25CLLocationManagerDelegate", "updateMotion"]
@@ -405,7 +425,9 @@ depends-member:
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "Timer"]
+- !private ["Ps7CVarArg", "UIButton"]
 - ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "UIControlEvents"]
 - !private ["Ps7CVarArg", "UILabel"]
 - !private ["Ps7CVarArg", "UIView"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
@@ -413,6 +435,7 @@ depends-member:
 - !private ["Ps7CVarArg", "addInput"]
 - ["Ps7CVarArg", "addLocationToView"]
 - !private ["Ps7CVarArg", "addSubview"]
+- !private ["Ps7CVarArg", "addTarget"]
 - !private ["Ps7CVarArg", "alpha"]
 - !private ["Ps7CVarArg", "asin"]
 - !private ["Ps7CVarArg", "atan2"]
@@ -424,7 +447,9 @@ depends-member:
 - ["Ps7CVarArg", "calculateDistance"]
 - ["Ps7CVarArg", "captureDevice"]
 - ["Ps7CVarArg", "captureSession"]
+- !private ["Ps7CVarArg", "clipsToBounds"]
 - !private ["Ps7CVarArg", "coordinate"]
+- !private ["Ps7CVarArg", "cornerRadius"]
 - !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "desiredAccuracy"]
 - !private ["Ps7CVarArg", "deviceMotion"]
@@ -439,6 +464,7 @@ depends-member:
 - ["Ps7CVarArg", "halfInfiniteWall2"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "insertSublayer"]
+- !private ["Ps7CVarArg", "isUserInteractionEnabled"]
 - !private ["Ps7CVarArg", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps7CVarArg", "kHeight"]
 - !private ["Ps7CVarArg", "kWidth"]
@@ -452,6 +478,7 @@ depends-member:
 - ["Ps7CVarArg", "motionManager"]
 - !private ["Ps7CVarArg", "orange"]
 - ["Ps7CVarArg", "placePointOnWall"]
+- ["Ps7CVarArg", "pressedArena"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "quaternion"]
 - ["Ps7CVarArg", "radToDeg"]
@@ -506,13 +533,16 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "M_PI"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "Timer"]
+- !private ["Ps28CustomDebugStringConvertible", "UIButton"]
 - ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIControlEvents"]
 - !private ["Ps28CustomDebugStringConvertible", "UILabel"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addInput"]
 - ["Ps28CustomDebugStringConvertible", "addLocationToView"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
+- !private ["Ps28CustomDebugStringConvertible", "addTarget"]
 - !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "asin"]
 - !private ["Ps28CustomDebugStringConvertible", "atan2"]
@@ -524,7 +554,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "calculateDistance"]
 - ["Ps28CustomDebugStringConvertible", "captureDevice"]
 - ["Ps28CustomDebugStringConvertible", "captureSession"]
+- !private ["Ps28CustomDebugStringConvertible", "clipsToBounds"]
 - !private ["Ps28CustomDebugStringConvertible", "coordinate"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "desiredAccuracy"]
 - !private ["Ps28CustomDebugStringConvertible", "deviceMotion"]
@@ -540,6 +572,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "height"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "insertSublayer"]
+- !private ["Ps28CustomDebugStringConvertible", "isUserInteractionEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps28CustomDebugStringConvertible", "kHeight"]
 - !private ["Ps28CustomDebugStringConvertible", "kWidth"]
@@ -554,6 +587,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "orange"]
 - !private ["Ps28CustomDebugStringConvertible", "origin"]
 - ["Ps28CustomDebugStringConvertible", "placePointOnWall"]
+- ["Ps28CustomDebugStringConvertible", "pressedArena"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "quaternion"]
 - ["Ps28CustomDebugStringConvertible", "radToDeg"]
@@ -623,7 +657,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "Timer"]
+- !private ["Ps23CustomStringConvertible", "UIButton"]
 - ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIControlEvents"]
 - !private ["Ps23CustomStringConvertible", "UILabel"]
 - !private ["Ps23CustomStringConvertible", "UIView"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
@@ -632,6 +668,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addInput"]
 - ["Ps23CustomStringConvertible", "addLocationToView"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
+- !private ["Ps23CustomStringConvertible", "addTarget"]
 - !private ["Ps23CustomStringConvertible", "alpha"]
 - !private ["Ps23CustomStringConvertible", "asin"]
 - !private ["Ps23CustomStringConvertible", "atan2"]
@@ -643,7 +680,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "calculateDistance"]
 - ["Ps23CustomStringConvertible", "captureDevice"]
 - ["Ps23CustomStringConvertible", "captureSession"]
+- !private ["Ps23CustomStringConvertible", "clipsToBounds"]
 - !private ["Ps23CustomStringConvertible", "coordinate"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "desiredAccuracy"]
 - !private ["Ps23CustomStringConvertible", "deviceMotion"]
@@ -658,6 +697,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "halfInfiniteWall2"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "insertSublayer"]
+- !private ["Ps23CustomStringConvertible", "isUserInteractionEnabled"]
 - !private ["Ps23CustomStringConvertible", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps23CustomStringConvertible", "kHeight"]
 - !private ["Ps23CustomStringConvertible", "kWidth"]
@@ -671,6 +711,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "motionManager"]
 - !private ["Ps23CustomStringConvertible", "orange"]
 - ["Ps23CustomStringConvertible", "placePointOnWall"]
+- ["Ps23CustomStringConvertible", "pressedArena"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "quaternion"]
 - ["Ps23CustomStringConvertible", "radToDeg"]
@@ -724,7 +765,9 @@ depends-member:
 - !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "Timer"]
+- !private ["Ps9Equatable", "UIButton"]
 - ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIControlEvents"]
 - !private ["Ps9Equatable", "UILabel"]
 - !private ["Ps9Equatable", "UIView"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
@@ -732,6 +775,7 @@ depends-member:
 - !private ["Ps9Equatable", "addInput"]
 - ["Ps9Equatable", "addLocationToView"]
 - !private ["Ps9Equatable", "addSubview"]
+- !private ["Ps9Equatable", "addTarget"]
 - !private ["Ps9Equatable", "alpha"]
 - !private ["Ps9Equatable", "asin"]
 - !private ["Ps9Equatable", "atan2"]
@@ -744,7 +788,9 @@ depends-member:
 - ["Ps9Equatable", "calculateDistance"]
 - ["Ps9Equatable", "captureDevice"]
 - ["Ps9Equatable", "captureSession"]
+- !private ["Ps9Equatable", "clipsToBounds"]
 - !private ["Ps9Equatable", "coordinate"]
+- !private ["Ps9Equatable", "cornerRadius"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "desiredAccuracy"]
 - !private ["Ps9Equatable", "deviceMotion"]
@@ -760,6 +806,7 @@ depends-member:
 - !private ["Ps9Equatable", "height"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "insertSublayer"]
+- !private ["Ps9Equatable", "isUserInteractionEnabled"]
 - !private ["Ps9Equatable", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps9Equatable", "kHeight"]
 - !private ["Ps9Equatable", "kWidth"]
@@ -774,6 +821,7 @@ depends-member:
 - !private ["Ps9Equatable", "orange"]
 - !private ["Ps9Equatable", "origin"]
 - ["Ps9Equatable", "placePointOnWall"]
+- ["Ps9Equatable", "pressedArena"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "quaternion"]
 - ["Ps9Equatable", "radToDeg"]
@@ -788,6 +836,7 @@ depends-member:
 - !private ["Ps9Equatable", "startUpdatingLocation"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "textColor"]
+- !private ["Ps9Equatable", "touchUpInside"]
 - ["Ps9Equatable", "updateMotion"]
 - !private ["Ps9Equatable", "width"]
 - !private ["Ps9Equatable", "x"]
@@ -797,6 +846,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "SubSequence"]
 - !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps25ExpressibleByArrayLiteral", "touchUpInside"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - ["Ps25ExpressibleByFloatLiteral", "init"]
@@ -834,7 +884,9 @@ depends-member:
 - !private ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "Timer"]
+- !private ["Ps8Hashable", "UIButton"]
 - ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIControlEvents"]
 - !private ["Ps8Hashable", "UILabel"]
 - !private ["Ps8Hashable", "UIView"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
@@ -842,6 +894,7 @@ depends-member:
 - !private ["Ps8Hashable", "addInput"]
 - ["Ps8Hashable", "addLocationToView"]
 - !private ["Ps8Hashable", "addSubview"]
+- !private ["Ps8Hashable", "addTarget"]
 - !private ["Ps8Hashable", "alpha"]
 - !private ["Ps8Hashable", "asin"]
 - !private ["Ps8Hashable", "atan2"]
@@ -854,7 +907,9 @@ depends-member:
 - ["Ps8Hashable", "calculateDistance"]
 - ["Ps8Hashable", "captureDevice"]
 - ["Ps8Hashable", "captureSession"]
+- !private ["Ps8Hashable", "clipsToBounds"]
 - !private ["Ps8Hashable", "coordinate"]
+- !private ["Ps8Hashable", "cornerRadius"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "desiredAccuracy"]
 - !private ["Ps8Hashable", "deviceMotion"]
@@ -869,6 +924,7 @@ depends-member:
 - ["Ps8Hashable", "halfInfiniteWall2"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "insertSublayer"]
+- !private ["Ps8Hashable", "isUserInteractionEnabled"]
 - !private ["Ps8Hashable", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps8Hashable", "kHeight"]
 - !private ["Ps8Hashable", "kWidth"]
@@ -882,6 +938,7 @@ depends-member:
 - ["Ps8Hashable", "motionManager"]
 - !private ["Ps8Hashable", "orange"]
 - ["Ps8Hashable", "placePointOnWall"]
+- ["Ps8Hashable", "pressedArena"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "quaternion"]
 - ["Ps8Hashable", "radToDeg"]
@@ -967,11 +1024,14 @@ depends-member:
 - ["PSo8NSCoding", "DyawLabel"]
 - !private ["PSo8NSCoding", "M_PI"]
 - !private ["PSo8NSCoding", "Timer"]
+- !private ["PSo8NSCoding", "UIButton"]
 - ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIControlEvents"]
 - !private ["PSo8NSCoding", "UILabel"]
 - !private ["PSo8NSCoding", "UIView"]
 - ["PSo8NSCoding", "addLocationToView"]
 - !private ["PSo8NSCoding", "addSubview"]
+- !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "alpha"]
 - !private ["PSo8NSCoding", "asin"]
 - !private ["PSo8NSCoding", "atan2"]
@@ -983,7 +1043,9 @@ depends-member:
 - ["PSo8NSCoding", "calculateDistance"]
 - ["PSo8NSCoding", "captureDevice"]
 - ["PSo8NSCoding", "captureSession"]
+- !private ["PSo8NSCoding", "clipsToBounds"]
 - !private ["PSo8NSCoding", "coordinate"]
+- !private ["PSo8NSCoding", "cornerRadius"]
 - ["PSo8NSCoding", "deviceWidth"]
 - !private ["PSo8NSCoding", "distance"]
 - !private ["PSo8NSCoding", "fatalError"]
@@ -993,6 +1055,7 @@ depends-member:
 - ["PSo8NSCoding", "halfInfiniteWall2"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "insertSublayer"]
+- !private ["PSo8NSCoding", "isUserInteractionEnabled"]
 - !private ["PSo8NSCoding", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo8NSCoding", "kHeight"]
 - !private ["PSo8NSCoding", "kWidth"]
@@ -1006,6 +1069,7 @@ depends-member:
 - ["PSo8NSCoding", "motionManager"]
 - !private ["PSo8NSCoding", "orange"]
 - ["PSo8NSCoding", "placePointOnWall"]
+- ["PSo8NSCoding", "pressedArena"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "quaternion"]
 - ["PSo8NSCoding", "radToDeg"]
@@ -1050,12 +1114,15 @@ depends-member:
 - !private ["CSo8NSObject", "M_PI"]
 - ["CSo8NSObject", "NSCoder"]
 - !private ["CSo8NSObject", "Timer"]
+- ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIControlEvents"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "addInput"]
 - ["CSo8NSObject", "addLocationToView"]
 - !private ["CSo8NSObject", "addSubview"]
+- !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "alpha"]
 - !private ["CSo8NSObject", "asin"]
 - !private ["CSo8NSObject", "atan2"]
@@ -1067,7 +1134,9 @@ depends-member:
 - ["CSo8NSObject", "calculateDistance"]
 - ["CSo8NSObject", "captureDevice"]
 - ["CSo8NSObject", "captureSession"]
+- !private ["CSo8NSObject", "clipsToBounds"]
 - !private ["CSo8NSObject", "coordinate"]
+- !private ["CSo8NSObject", "cornerRadius"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "desiredAccuracy"]
 - !private ["CSo8NSObject", "deviceMotion"]
@@ -1082,6 +1151,7 @@ depends-member:
 - ["CSo8NSObject", "halfInfiniteWall2"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "insertSublayer"]
+- !private ["CSo8NSObject", "isUserInteractionEnabled"]
 - !private ["CSo8NSObject", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["CSo8NSObject", "kHeight"]
 - !private ["CSo8NSObject", "kWidth"]
@@ -1095,6 +1165,7 @@ depends-member:
 - ["CSo8NSObject", "motionManager"]
 - !private ["CSo8NSObject", "orange"]
 - ["CSo8NSObject", "placePointOnWall"]
+- ["CSo8NSObject", "pressedArena"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "quaternion"]
 - ["CSo8NSObject", "radToDeg"]
@@ -1132,12 +1203,15 @@ depends-member:
 - ["PSo16NSObjectProtocol", "DyawLabel"]
 - !private ["PSo16NSObjectProtocol", "M_PI"]
 - !private ["PSo16NSObjectProtocol", "Timer"]
+- !private ["PSo16NSObjectProtocol", "UIButton"]
 - ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIControlEvents"]
 - !private ["PSo16NSObjectProtocol", "UILabel"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "addInput"]
 - ["PSo16NSObjectProtocol", "addLocationToView"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
+- !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "asin"]
 - !private ["PSo16NSObjectProtocol", "atan2"]
@@ -1149,7 +1223,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "calculateDistance"]
 - ["PSo16NSObjectProtocol", "captureDevice"]
 - ["PSo16NSObjectProtocol", "captureSession"]
+- !private ["PSo16NSObjectProtocol", "clipsToBounds"]
 - !private ["PSo16NSObjectProtocol", "coordinate"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "desiredAccuracy"]
 - !private ["PSo16NSObjectProtocol", "deviceMotion"]
@@ -1164,6 +1240,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "halfInfiniteWall2"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "insertSublayer"]
+- !private ["PSo16NSObjectProtocol", "isUserInteractionEnabled"]
 - !private ["PSo16NSObjectProtocol", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo16NSObjectProtocol", "kHeight"]
 - !private ["PSo16NSObjectProtocol", "kWidth"]
@@ -1177,6 +1254,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "motionManager"]
 - !private ["PSo16NSObjectProtocol", "orange"]
 - ["PSo16NSObjectProtocol", "placePointOnWall"]
+- ["PSo16NSObjectProtocol", "pressedArena"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "quaternion"]
 - ["PSo16NSObjectProtocol", "radToDeg"]
@@ -1204,6 +1282,7 @@ depends-member:
 - ["PSo14NSSecureCoding", "red"]
 - !private ["CSo8NSString", "init"]
 - ["Os5Never", "deinit"]
+- !private ["Ps9OptionSet", "touchUpInside"]
 - ["Sq", "deinit"]
 - !private ["Ps22RandomAccessCollection", "Index"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
@@ -1237,6 +1316,8 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["Ps16RawRepresentable", "RawValue"]
 - !private ["Ps16RawRepresentable", "back"]
+- !private ["Ps16RawRepresentable", "touchUpInside"]
+- ["V10ObjectiveC8Selector", "deinit"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
 - !private ["Ps8Sequence", "IndexDistance"]
@@ -1245,6 +1326,7 @@ depends-member:
 - !private ["Ps8Sequence", "SubSequence"]
 - !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "subscript"]
+- !private ["Ps10SetAlgebra", "touchUpInside"]
 - !private ["Ps13SignedInteger", "IntegerLiteralType"]
 - !private ["Ps13SignedInteger", "Stride"]
 - !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
@@ -1290,11 +1372,14 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "DyawLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "M_PI"]
 - !private ["PSo29UIAccessibilityIdentification", "Timer"]
+- !private ["PSo29UIAccessibilityIdentification", "UIButton"]
 - ["PSo29UIAccessibilityIdentification", "UIColor"]
+- !private ["PSo29UIAccessibilityIdentification", "UIControlEvents"]
 - !private ["PSo29UIAccessibilityIdentification", "UILabel"]
 - !private ["PSo29UIAccessibilityIdentification", "UIView"]
 - ["PSo29UIAccessibilityIdentification", "addLocationToView"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
+- !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "asin"]
 - !private ["PSo29UIAccessibilityIdentification", "atan2"]
@@ -1304,6 +1389,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "calculateDistance"]
 - ["PSo29UIAccessibilityIdentification", "captureDevice"]
 - ["PSo29UIAccessibilityIdentification", "captureSession"]
+- !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
 - ["PSo29UIAccessibilityIdentification", "deviceWidth"]
 - !private ["PSo29UIAccessibilityIdentification", "fatalError"]
 - !private ["PSo29UIAccessibilityIdentification", "fmod"]
@@ -1311,6 +1397,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "halfInfiniteWall1"]
 - ["PSo29UIAccessibilityIdentification", "halfInfiniteWall2"]
 - ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "isUserInteractionEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo29UIAccessibilityIdentification", "kHeight"]
 - !private ["PSo29UIAccessibilityIdentification", "kWidth"]
@@ -1322,6 +1409,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo29UIAccessibilityIdentification", "motionManager"]
 - ["PSo29UIAccessibilityIdentification", "placePointOnWall"]
+- ["PSo29UIAccessibilityIdentification", "pressedArena"]
 - !private ["PSo29UIAccessibilityIdentification", "print"]
 - ["PSo29UIAccessibilityIdentification", "radToDeg"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
@@ -1350,11 +1438,14 @@ depends-member:
 - ["PSo12UIAppearance", "DyawLabel"]
 - !private ["PSo12UIAppearance", "M_PI"]
 - !private ["PSo12UIAppearance", "Timer"]
+- !private ["PSo12UIAppearance", "UIButton"]
 - ["PSo12UIAppearance", "UIColor"]
+- !private ["PSo12UIAppearance", "UIControlEvents"]
 - !private ["PSo12UIAppearance", "UILabel"]
 - !private ["PSo12UIAppearance", "UIView"]
 - ["PSo12UIAppearance", "addLocationToView"]
 - !private ["PSo12UIAppearance", "addSubview"]
+- !private ["PSo12UIAppearance", "addTarget"]
 - !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "asin"]
 - !private ["PSo12UIAppearance", "atan2"]
@@ -1364,6 +1455,7 @@ depends-member:
 - ["PSo12UIAppearance", "calculateDistance"]
 - ["PSo12UIAppearance", "captureDevice"]
 - ["PSo12UIAppearance", "captureSession"]
+- !private ["PSo12UIAppearance", "clipsToBounds"]
 - ["PSo12UIAppearance", "deviceWidth"]
 - !private ["PSo12UIAppearance", "fatalError"]
 - !private ["PSo12UIAppearance", "fmod"]
@@ -1371,6 +1463,7 @@ depends-member:
 - ["PSo12UIAppearance", "halfInfiniteWall1"]
 - ["PSo12UIAppearance", "halfInfiniteWall2"]
 - ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "isUserInteractionEnabled"]
 - !private ["PSo12UIAppearance", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo12UIAppearance", "kHeight"]
 - !private ["PSo12UIAppearance", "kWidth"]
@@ -1382,6 +1475,7 @@ depends-member:
 - ["PSo12UIAppearance", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo12UIAppearance", "motionManager"]
 - ["PSo12UIAppearance", "placePointOnWall"]
+- ["PSo12UIAppearance", "pressedArena"]
 - !private ["PSo12UIAppearance", "print"]
 - ["PSo12UIAppearance", "radToDeg"]
 - !private ["PSo12UIAppearance", "text"]
@@ -1410,11 +1504,14 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "DyawLabel"]
 - !private ["PSo21UIAppearanceContainer", "M_PI"]
 - !private ["PSo21UIAppearanceContainer", "Timer"]
+- !private ["PSo21UIAppearanceContainer", "UIButton"]
 - ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
 - !private ["PSo21UIAppearanceContainer", "UILabel"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - ["PSo21UIAppearanceContainer", "addLocationToView"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
+- !private ["PSo21UIAppearanceContainer", "addTarget"]
 - !private ["PSo21UIAppearanceContainer", "alpha"]
 - !private ["PSo21UIAppearanceContainer", "asin"]
 - !private ["PSo21UIAppearanceContainer", "atan2"]
@@ -1424,6 +1521,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "calculateDistance"]
 - ["PSo21UIAppearanceContainer", "captureDevice"]
 - ["PSo21UIAppearanceContainer", "captureSession"]
+- !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
 - ["PSo21UIAppearanceContainer", "deviceWidth"]
 - !private ["PSo21UIAppearanceContainer", "fatalError"]
 - !private ["PSo21UIAppearanceContainer", "fmod"]
@@ -1431,6 +1529,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "halfInfiniteWall1"]
 - ["PSo21UIAppearanceContainer", "halfInfiniteWall2"]
 - ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isUserInteractionEnabled"]
 - !private ["PSo21UIAppearanceContainer", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo21UIAppearanceContainer", "kHeight"]
 - !private ["PSo21UIAppearanceContainer", "kWidth"]
@@ -1442,12 +1541,21 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo21UIAppearanceContainer", "motionManager"]
 - ["PSo21UIAppearanceContainer", "placePointOnWall"]
+- ["PSo21UIAppearanceContainer", "pressedArena"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "radToDeg"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - ["PSo21UIAppearanceContainer", "updateMotion"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "addTarget"]
+- !private ["CSo8UIButton", "backgroundColor"]
+- !private ["CSo8UIButton", "clipsToBounds"]
+- ["CSo8UIButton", "deinit"]
+- !private ["CSo8UIButton", "frame"]
+- !private ["CSo8UIButton", "init"]
+- !private ["CSo8UIButton", "isUserInteractionEnabled"]
+- !private ["CSo8UIButton", "layer"]
 - !private ["CSo7UIColor", "blue"]
 - ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "orange"]
@@ -1455,6 +1563,15 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "init"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "textColor"]
+- !private ["CSo9UIControl", "addTarget"]
+- !private ["CSo9UIControl", "backgroundColor"]
+- !private ["CSo9UIControl", "clipsToBounds"]
+- !private ["CSo9UIControl", "frame"]
+- !private ["CSo9UIControl", "init"]
+- !private ["CSo9UIControl", "isUserInteractionEnabled"]
+- !private ["CSo9UIControl", "layer"]
+- ["VSC15UIControlEvents", "deinit"]
+- !private ["VSC15UIControlEvents", "touchUpInside"]
 - !private ["PSo17UICoordinateSpace", "AVCaptureDevice"]
 - !private ["PSo17UICoordinateSpace", "AVCaptureDeviceInput"]
 - !private ["PSo17UICoordinateSpace", "AVCaptureDevicePosition"]
@@ -1477,11 +1594,14 @@ depends-member:
 - ["PSo17UICoordinateSpace", "DyawLabel"]
 - !private ["PSo17UICoordinateSpace", "M_PI"]
 - !private ["PSo17UICoordinateSpace", "Timer"]
+- !private ["PSo17UICoordinateSpace", "UIButton"]
 - ["PSo17UICoordinateSpace", "UIColor"]
+- !private ["PSo17UICoordinateSpace", "UIControlEvents"]
 - !private ["PSo17UICoordinateSpace", "UILabel"]
 - !private ["PSo17UICoordinateSpace", "UIView"]
 - ["PSo17UICoordinateSpace", "addLocationToView"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
+- !private ["PSo17UICoordinateSpace", "addTarget"]
 - !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "asin"]
 - !private ["PSo17UICoordinateSpace", "atan2"]
@@ -1491,6 +1611,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "calculateDistance"]
 - ["PSo17UICoordinateSpace", "captureDevice"]
 - ["PSo17UICoordinateSpace", "captureSession"]
+- !private ["PSo17UICoordinateSpace", "clipsToBounds"]
 - ["PSo17UICoordinateSpace", "deviceWidth"]
 - !private ["PSo17UICoordinateSpace", "fatalError"]
 - !private ["PSo17UICoordinateSpace", "fmod"]
@@ -1498,6 +1619,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "halfInfiniteWall1"]
 - ["PSo17UICoordinateSpace", "halfInfiniteWall2"]
 - ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "isUserInteractionEnabled"]
 - !private ["PSo17UICoordinateSpace", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo17UICoordinateSpace", "kHeight"]
 - !private ["PSo17UICoordinateSpace", "kWidth"]
@@ -1509,6 +1631,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo17UICoordinateSpace", "motionManager"]
 - ["PSo17UICoordinateSpace", "placePointOnWall"]
+- ["PSo17UICoordinateSpace", "pressedArena"]
 - !private ["PSo17UICoordinateSpace", "print"]
 - ["PSo17UICoordinateSpace", "radToDeg"]
 - !private ["PSo17UICoordinateSpace", "text"]
@@ -1537,11 +1660,14 @@ depends-member:
 - ["PSo13UIDynamicItem", "DyawLabel"]
 - !private ["PSo13UIDynamicItem", "M_PI"]
 - !private ["PSo13UIDynamicItem", "Timer"]
+- !private ["PSo13UIDynamicItem", "UIButton"]
 - ["PSo13UIDynamicItem", "UIColor"]
+- !private ["PSo13UIDynamicItem", "UIControlEvents"]
 - !private ["PSo13UIDynamicItem", "UILabel"]
 - !private ["PSo13UIDynamicItem", "UIView"]
 - ["PSo13UIDynamicItem", "addLocationToView"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
+- !private ["PSo13UIDynamicItem", "addTarget"]
 - !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "asin"]
 - !private ["PSo13UIDynamicItem", "atan2"]
@@ -1551,6 +1677,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "calculateDistance"]
 - ["PSo13UIDynamicItem", "captureDevice"]
 - ["PSo13UIDynamicItem", "captureSession"]
+- !private ["PSo13UIDynamicItem", "clipsToBounds"]
 - ["PSo13UIDynamicItem", "deviceWidth"]
 - !private ["PSo13UIDynamicItem", "fatalError"]
 - !private ["PSo13UIDynamicItem", "fmod"]
@@ -1558,6 +1685,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "halfInfiniteWall1"]
 - ["PSo13UIDynamicItem", "halfInfiniteWall2"]
 - ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "isUserInteractionEnabled"]
 - !private ["PSo13UIDynamicItem", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo13UIDynamicItem", "kHeight"]
 - !private ["PSo13UIDynamicItem", "kWidth"]
@@ -1569,6 +1697,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo13UIDynamicItem", "motionManager"]
 - ["PSo13UIDynamicItem", "placePointOnWall"]
+- ["PSo13UIDynamicItem", "pressedArena"]
 - !private ["PSo13UIDynamicItem", "print"]
 - ["PSo13UIDynamicItem", "radToDeg"]
 - !private ["PSo13UIDynamicItem", "text"]
@@ -1597,11 +1726,14 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "DyawLabel"]
 - !private ["PSo18UIFocusEnvironment", "M_PI"]
 - !private ["PSo18UIFocusEnvironment", "Timer"]
+- !private ["PSo18UIFocusEnvironment", "UIButton"]
 - ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
 - !private ["PSo18UIFocusEnvironment", "UILabel"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - ["PSo18UIFocusEnvironment", "addLocationToView"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
+- !private ["PSo18UIFocusEnvironment", "addTarget"]
 - !private ["PSo18UIFocusEnvironment", "alpha"]
 - !private ["PSo18UIFocusEnvironment", "asin"]
 - !private ["PSo18UIFocusEnvironment", "atan2"]
@@ -1611,6 +1743,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "calculateDistance"]
 - ["PSo18UIFocusEnvironment", "captureDevice"]
 - ["PSo18UIFocusEnvironment", "captureSession"]
+- !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
 - ["PSo18UIFocusEnvironment", "deviceWidth"]
 - !private ["PSo18UIFocusEnvironment", "fatalError"]
 - !private ["PSo18UIFocusEnvironment", "fmod"]
@@ -1618,6 +1751,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "halfInfiniteWall1"]
 - ["PSo18UIFocusEnvironment", "halfInfiniteWall2"]
 - ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isUserInteractionEnabled"]
 - !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo18UIFocusEnvironment", "kHeight"]
 - !private ["PSo18UIFocusEnvironment", "kWidth"]
@@ -1629,6 +1763,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo18UIFocusEnvironment", "motionManager"]
 - ["PSo18UIFocusEnvironment", "placePointOnWall"]
+- ["PSo18UIFocusEnvironment", "pressedArena"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "radToDeg"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -1657,11 +1792,14 @@ depends-member:
 - ["PSo11UIFocusItem", "DyawLabel"]
 - !private ["PSo11UIFocusItem", "M_PI"]
 - !private ["PSo11UIFocusItem", "Timer"]
+- !private ["PSo11UIFocusItem", "UIButton"]
 - ["PSo11UIFocusItem", "UIColor"]
+- !private ["PSo11UIFocusItem", "UIControlEvents"]
 - !private ["PSo11UIFocusItem", "UILabel"]
 - !private ["PSo11UIFocusItem", "UIView"]
 - ["PSo11UIFocusItem", "addLocationToView"]
 - !private ["PSo11UIFocusItem", "addSubview"]
+- !private ["PSo11UIFocusItem", "addTarget"]
 - !private ["PSo11UIFocusItem", "alpha"]
 - !private ["PSo11UIFocusItem", "asin"]
 - !private ["PSo11UIFocusItem", "atan2"]
@@ -1671,6 +1809,7 @@ depends-member:
 - ["PSo11UIFocusItem", "calculateDistance"]
 - ["PSo11UIFocusItem", "captureDevice"]
 - ["PSo11UIFocusItem", "captureSession"]
+- !private ["PSo11UIFocusItem", "clipsToBounds"]
 - ["PSo11UIFocusItem", "deviceWidth"]
 - !private ["PSo11UIFocusItem", "fatalError"]
 - !private ["PSo11UIFocusItem", "fmod"]
@@ -1678,6 +1817,7 @@ depends-member:
 - ["PSo11UIFocusItem", "halfInfiniteWall1"]
 - ["PSo11UIFocusItem", "halfInfiniteWall2"]
 - ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "isUserInteractionEnabled"]
 - !private ["PSo11UIFocusItem", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo11UIFocusItem", "kHeight"]
 - !private ["PSo11UIFocusItem", "kWidth"]
@@ -1689,6 +1829,7 @@ depends-member:
 - ["PSo11UIFocusItem", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo11UIFocusItem", "motionManager"]
 - ["PSo11UIFocusItem", "placePointOnWall"]
+- ["PSo11UIFocusItem", "pressedArena"]
 - !private ["PSo11UIFocusItem", "print"]
 - ["PSo11UIFocusItem", "radToDeg"]
 - !private ["PSo11UIFocusItem", "text"]
@@ -1725,11 +1866,14 @@ depends-member:
 - !private ["CSo11UIResponder", "M_PI"]
 - ["CSo11UIResponder", "NSCoder"]
 - !private ["CSo11UIResponder", "Timer"]
+- ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIControlEvents"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIView"]
 - ["CSo11UIResponder", "addLocationToView"]
 - !private ["CSo11UIResponder", "addSubview"]
+- !private ["CSo11UIResponder", "addTarget"]
 - !private ["CSo11UIResponder", "alpha"]
 - !private ["CSo11UIResponder", "asin"]
 - !private ["CSo11UIResponder", "atan2"]
@@ -1739,6 +1883,7 @@ depends-member:
 - ["CSo11UIResponder", "calculateDistance"]
 - ["CSo11UIResponder", "captureDevice"]
 - ["CSo11UIResponder", "captureSession"]
+- !private ["CSo11UIResponder", "clipsToBounds"]
 - ["CSo11UIResponder", "deviceWidth"]
 - !private ["CSo11UIResponder", "fatalError"]
 - !private ["CSo11UIResponder", "fmod"]
@@ -1746,6 +1891,7 @@ depends-member:
 - ["CSo11UIResponder", "halfInfiniteWall1"]
 - ["CSo11UIResponder", "halfInfiniteWall2"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "isUserInteractionEnabled"]
 - !private ["CSo11UIResponder", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["CSo11UIResponder", "kHeight"]
 - !private ["CSo11UIResponder", "kWidth"]
@@ -1757,6 +1903,7 @@ depends-member:
 - ["CSo11UIResponder", "locationManagerShouldDisplayHeadingCalibration"]
 - ["CSo11UIResponder", "motionManager"]
 - ["CSo11UIResponder", "placePointOnWall"]
+- ["CSo11UIResponder", "pressedArena"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "radToDeg"]
 - !private ["CSo11UIResponder", "text"]
@@ -1784,11 +1931,14 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "DyawLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "M_PI"]
 - !private ["PSo30UIResponderStandardEditActions", "Timer"]
+- !private ["PSo30UIResponderStandardEditActions", "UIButton"]
 - ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UIControlEvents"]
 - !private ["PSo30UIResponderStandardEditActions", "UILabel"]
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
 - ["PSo30UIResponderStandardEditActions", "addLocationToView"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
+- !private ["PSo30UIResponderStandardEditActions", "addTarget"]
 - !private ["PSo30UIResponderStandardEditActions", "alpha"]
 - !private ["PSo30UIResponderStandardEditActions", "asin"]
 - !private ["PSo30UIResponderStandardEditActions", "atan2"]
@@ -1798,6 +1948,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "calculateDistance"]
 - ["PSo30UIResponderStandardEditActions", "captureDevice"]
 - ["PSo30UIResponderStandardEditActions", "captureSession"]
+- !private ["PSo30UIResponderStandardEditActions", "clipsToBounds"]
 - ["PSo30UIResponderStandardEditActions", "deviceWidth"]
 - !private ["PSo30UIResponderStandardEditActions", "fatalError"]
 - !private ["PSo30UIResponderStandardEditActions", "fmod"]
@@ -1805,6 +1956,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "halfInfiniteWall1"]
 - ["PSo30UIResponderStandardEditActions", "halfInfiniteWall2"]
 - ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isUserInteractionEnabled"]
 - !private ["PSo30UIResponderStandardEditActions", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo30UIResponderStandardEditActions", "kHeight"]
 - !private ["PSo30UIResponderStandardEditActions", "kWidth"]
@@ -1816,6 +1968,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo30UIResponderStandardEditActions", "motionManager"]
 - ["PSo30UIResponderStandardEditActions", "placePointOnWall"]
+- ["PSo30UIResponderStandardEditActions", "pressedArena"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "radToDeg"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
@@ -1844,11 +1997,14 @@ depends-member:
 - ["PSo18UITraitEnvironment", "DyawLabel"]
 - !private ["PSo18UITraitEnvironment", "M_PI"]
 - !private ["PSo18UITraitEnvironment", "Timer"]
+- !private ["PSo18UITraitEnvironment", "UIButton"]
 - ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIControlEvents"]
 - !private ["PSo18UITraitEnvironment", "UILabel"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - ["PSo18UITraitEnvironment", "addLocationToView"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
+- !private ["PSo18UITraitEnvironment", "addTarget"]
 - !private ["PSo18UITraitEnvironment", "alpha"]
 - !private ["PSo18UITraitEnvironment", "asin"]
 - !private ["PSo18UITraitEnvironment", "atan2"]
@@ -1858,6 +2014,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "calculateDistance"]
 - ["PSo18UITraitEnvironment", "captureDevice"]
 - ["PSo18UITraitEnvironment", "captureSession"]
+- !private ["PSo18UITraitEnvironment", "clipsToBounds"]
 - ["PSo18UITraitEnvironment", "deviceWidth"]
 - !private ["PSo18UITraitEnvironment", "fatalError"]
 - !private ["PSo18UITraitEnvironment", "fmod"]
@@ -1865,6 +2022,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "halfInfiniteWall1"]
 - ["PSo18UITraitEnvironment", "halfInfiniteWall2"]
 - ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isUserInteractionEnabled"]
 - !private ["PSo18UITraitEnvironment", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo18UITraitEnvironment", "kHeight"]
 - !private ["PSo18UITraitEnvironment", "kWidth"]
@@ -1876,6 +2034,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo18UITraitEnvironment", "motionManager"]
 - ["PSo18UITraitEnvironment", "placePointOnWall"]
+- ["PSo18UITraitEnvironment", "pressedArena"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "radToDeg"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -1908,11 +2067,14 @@ depends-member:
 - !private ["CSo6UIView", "M_PI"]
 - ["CSo6UIView", "NSCoder"]
 - !private ["CSo6UIView", "Timer"]
+- ["CSo6UIView", "UIButton"]
 - ["CSo6UIView", "UIColor"]
+- !private ["CSo6UIView", "UIControlEvents"]
 - ["CSo6UIView", "UILabel"]
 - ["CSo6UIView", "UIView"]
 - ["CSo6UIView", "addLocationToView"]
 - !private ["CSo6UIView", "addSubview"]
+- !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "alpha"]
 - !private ["CSo6UIView", "asin"]
 - !private ["CSo6UIView", "atan2"]
@@ -1922,6 +2084,7 @@ depends-member:
 - ["CSo6UIView", "calculateDistance"]
 - ["CSo6UIView", "captureDevice"]
 - ["CSo6UIView", "captureSession"]
+- !private ["CSo6UIView", "clipsToBounds"]
 - ["CSo6UIView", "deinit"]
 - ["CSo6UIView", "deviceWidth"]
 - !private ["CSo6UIView", "fatalError"]
@@ -1930,6 +2093,7 @@ depends-member:
 - ["CSo6UIView", "halfInfiniteWall1"]
 - ["CSo6UIView", "halfInfiniteWall2"]
 - ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "isUserInteractionEnabled"]
 - !private ["CSo6UIView", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["CSo6UIView", "kHeight"]
 - !private ["CSo6UIView", "kWidth"]
@@ -1941,6 +2105,7 @@ depends-member:
 - ["CSo6UIView", "locationManagerShouldDisplayHeadingCalibration"]
 - ["CSo6UIView", "motionManager"]
 - ["CSo6UIView", "placePointOnWall"]
+- ["CSo6UIView", "pressedArena"]
 - !private ["CSo6UIView", "print"]
 - ["CSo6UIView", "radToDeg"]
 - !private ["CSo6UIView", "text"]
@@ -1979,7 +2144,9 @@ depends-member:
 - !private ["C9Projet3756VrView", "M_PI"]
 - ["C9Projet3756VrView", "NSCoder"]
 - !private ["C9Projet3756VrView", "Timer"]
+- ["C9Projet3756VrView", "UIButton"]
 - ["C9Projet3756VrView", "UIColor"]
+- !private ["C9Projet3756VrView", "UIControlEvents"]
 - ["C9Projet3756VrView", "UILabel"]
 - ["C9Projet3756VrView", "UIView"]
 - ["C9Projet3756VrView", "addLocationToView"]
@@ -2010,6 +2177,7 @@ depends-member:
 - ["C9Projet3756VrView", "locationManagerShouldDisplayHeadingCalibration"]
 - ["C9Projet3756VrView", "motionManager"]
 - ["C9Projet3756VrView", "placePointOnWall"]
+- ["C9Projet3756VrView", "pressedArena"]
 - !private ["C9Projet3756VrView", "print"]
 - ["C9Projet3756VrView", "radToDeg"]
 - ["C9Projet3756VrView", "updateMotion"]
@@ -2042,11 +2210,14 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "DyawLabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "M_PI"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "Timer"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIButton"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIControlEvents"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UILabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIView"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "addLocationToView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addTarget"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "alpha"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "asin"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "atan2"]
@@ -2056,6 +2227,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "calculateDistance"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "captureDevice"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "captureSession"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "clipsToBounds"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "deviceWidth"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "fatalError"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "fmod"]
@@ -2063,6 +2235,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "halfInfiniteWall1"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "halfInfiniteWall2"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isUserInteractionEnabled"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kHeight"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kWidth"]
@@ -2074,6 +2247,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "locationManagerShouldDisplayHeadingCalibration"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "motionManager"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "placePointOnWall"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "pressedArena"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "print"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "radToDeg"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
@@ -2122,7 +2296,9 @@ depends-member:
 - !private ["Ps9_Hashable", "RawValue"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "Timer"]
+- !private ["Ps9_Hashable", "UIButton"]
 - ["Ps9_Hashable", "UIColor"]
+- !private ["Ps9_Hashable", "UIControlEvents"]
 - !private ["Ps9_Hashable", "UILabel"]
 - !private ["Ps9_Hashable", "UIView"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
@@ -2130,6 +2306,7 @@ depends-member:
 - !private ["Ps9_Hashable", "addInput"]
 - ["Ps9_Hashable", "addLocationToView"]
 - !private ["Ps9_Hashable", "addSubview"]
+- !private ["Ps9_Hashable", "addTarget"]
 - !private ["Ps9_Hashable", "alpha"]
 - !private ["Ps9_Hashable", "asin"]
 - !private ["Ps9_Hashable", "atan2"]
@@ -2142,7 +2319,9 @@ depends-member:
 - ["Ps9_Hashable", "calculateDistance"]
 - ["Ps9_Hashable", "captureDevice"]
 - ["Ps9_Hashable", "captureSession"]
+- !private ["Ps9_Hashable", "clipsToBounds"]
 - !private ["Ps9_Hashable", "coordinate"]
+- !private ["Ps9_Hashable", "cornerRadius"]
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "desiredAccuracy"]
 - !private ["Ps9_Hashable", "deviceMotion"]
@@ -2157,6 +2336,7 @@ depends-member:
 - ["Ps9_Hashable", "halfInfiniteWall2"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "insertSublayer"]
+- !private ["Ps9_Hashable", "isUserInteractionEnabled"]
 - !private ["Ps9_Hashable", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps9_Hashable", "kHeight"]
 - !private ["Ps9_Hashable", "kWidth"]
@@ -2170,6 +2350,7 @@ depends-member:
 - ["Ps9_Hashable", "motionManager"]
 - !private ["Ps9_Hashable", "orange"]
 - ["Ps9_Hashable", "placePointOnWall"]
+- ["Ps9_Hashable", "pressedArena"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "quaternion"]
 - ["Ps9_Hashable", "radToDeg"]
@@ -2299,6 +2480,7 @@ depends-nominal:
 - "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - "Os5Never"
+- !private "Ps9OptionSet"
 - "Sq"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"
@@ -2306,7 +2488,9 @@ depends-nominal:
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps25RangeReplaceableIndexable"
 - !private "Ps16RawRepresentable"
+- "V10ObjectiveC8Selector"
 - !private "Ps8Sequence"
+- !private "Ps10SetAlgebra"
 - !private "Ps13SignedInteger"
 - "Ps12SignedNumber"
 - !private "Vs5Slice"
@@ -2319,8 +2503,11 @@ depends-nominal:
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- "CSo8UIButton"
 - "CSo7UIColor"
 - !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
+- "VSC15UIControlEvents"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
@@ -2440,4 +2627,4 @@ depends-external:
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
-interface-hash: "3024412f617553d029bdea2c600c50e3"
+interface-hash: "e13f8d447ebd13590d35369ee419d791"

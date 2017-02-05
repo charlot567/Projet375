@@ -146,6 +146,7 @@ SWIFT_CLASS("_TtC9Projet37511AppDelegate")
 @class CLLocationManager;
 @class MKMapView;
 @class CLLocation;
+@class UIButton;
 @protocol MKOverlay;
 @class MKOverlayRenderer;
 @class NSCoder;
@@ -163,6 +164,7 @@ SWIFT_CLASS("_TtC9Projet3759ArenaView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (void)back;
+- (void)pressedArenaWithSender:(UIButton * _Nonnull)sender;
 - (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (UIViewController * _Nullable)getCurrentViewController;
@@ -193,7 +195,6 @@ SWIFT_CLASS("_TtC9Projet3759LoginView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
 
 SWIFT_CLASS("_TtC9Projet3758MenuView")
 @interface MenuView : UIView
@@ -344,8 +345,9 @@ SWIFT_CLASS("_TtC9Projet3756VrView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateHeading:(CLHeading * _Nonnull)newHeading;
 - (void)placePointOnWallWithView:(UIView * _Nonnull)view degree:(CGFloat)degree;
-- (void)addLocationToViewToAdd:(CLLocationCoordinate2D)toAdd;
+- (UIButton * _Nonnull)addLocationToViewToAdd:(CLLocationCoordinate2D)toAdd;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)pressedArenaWithSender:(UIButton * _Nonnull)sender;
 - (void)updateMotion;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (double)radToDegWithRad:(double)rad;

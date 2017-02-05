@@ -6,69 +6,71 @@ provides-nominal:
 provides-member:
 - ["C9Projet3759ArenaView", ""]
 provides-dynamic-lookup:
-- "showVR"
-- "map"
-- "areneLoc"
-- "isActive"
 - "margin"
-- "controller"
-- "locationManager"
-- "locationManager"
-- "mapView"
 - "back"
 - "getCurrentViewController"
+- "showVR"
+- "areneLoc"
+- "locationManager"
+- "locationManager"
+- "map"
+- "isActive"
+- "pressedArena"
+- "mapView"
+- "controller"
 depends-top-level:
-- "ArenaView"
-- !private "MKCircleRenderer"
-- !private "kCLLocationAccuracyNearestTenMeters"
-- "MKMapViewDelegate"
-- "UIView"
-- !private "NSTextAlignment"
-- "CLLocation"
-- !private "UIImage"
-- "CGRect"
-- "CGFloat"
-- !private "UIAlertController"
-- !private "UIAlertActionStyle"
-- "UILabel"
-- !private "imageSize"
-- "BooleanLiteralType"
-- !private "UIApplication"
-- !private "VrView"
-- !private "UIFont"
-- !private "UIAlertAction"
-- !private "/"
-- !private "print"
-- !private "kHeight"
-- !private "UIColor"
-- !private "KVHome"
-- !private "MKCoordinateSpan"
-- "UIViewController"
-- "MKMapView"
-- !private "*"
-- !private "kWidth"
-- !private "StringLiteralType"
-- !private "kMasterVC"
-- !private "MKCircle"
-- !private "-"
-- !private "MKCoordinateRegion"
+- "UIButton"
 - !private "CLCircularRegion"
-- !private "UIButton"
-- "CastingPrecedence"
-- !private "kGreen"
-- "AssignmentPrecedence"
-- !private "=="
 - "MKOverlay"
-- "NSCoder"
-- !private "UIAlertControllerStyle"
+- !private "MKCoordinateRegion"
+- "CGFloat"
+- "MKMapViewDelegate"
 - "CLLocationCoordinate2D"
-- !private "kBlue"
-- "CLLocationManager"
-- !private "fatalError"
 - "CLLocationManagerDelegate"
+- !private "MKCoordinateSpan"
+- "BooleanLiteralType"
+- !private "UIAlertControllerStyle"
+- !private "UIColor"
+- !private "-"
+- !private "*"
+- !private "VrView"
+- "UIViewController"
+- "CLLocation"
 - !private "!="
-- !private "+"
+- !private "UIApplication"
+- !private "UIFont"
+- !private "NSTextAlignment"
+- !private "MKCircle"
+- !private "StringLiteralType"
 - "MKOverlayRenderer"
+- !private "/"
+- !private "UIAlertAction"
+- !private "+"
+- !private "UIImage"
+- !private "kCLLocationAccuracyNearestTenMeters"
+- "CastingPrecedence"
+- !private "kWidth"
+- "AssignmentPrecedence"
+- !private "kHeight"
+- !private "kBlue"
+- "ArenaView"
+- "UILabel"
+- "UIView"
+- !private "kGreen"
+- !private "UIAlertActionStyle"
+- !private "=="
+- !private "kMasterVC"
+- !private "UIAlertController"
+- !private "fatalError"
+- "CGRect"
+- !private "UIControlEvents"
+- !private "print"
+- !private "MKCircleRenderer"
+- "CLLocationManager"
+- !private "imageSize"
+- "NSCoder"
+- "MKMapView"
+- !private "KVHome"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -90,6 +92,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "UIButton"]
 - !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIControlEvents"]
 - !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UILabel"]
@@ -148,6 +151,7 @@ depends-member:
 - ["Ps9AnyObject", "margin"]
 - !private ["Ps9AnyObject", "present"]
 - !private ["Ps9AnyObject", "presentedViewController"]
+- ["Ps9AnyObject", "pressedArena"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "requestWhenInUseAuthorization"]
 - !private ["Ps9AnyObject", "rootViewController"]
@@ -190,8 +194,9 @@ depends-member:
 - !private ["C9Projet3759ArenaView", "UIAlertController"]
 - !private ["C9Projet3759ArenaView", "UIAlertControllerStyle"]
 - !private ["C9Projet3759ArenaView", "UIApplication"]
-- !private ["C9Projet3759ArenaView", "UIButton"]
+- ["C9Projet3759ArenaView", "UIButton"]
 - !private ["C9Projet3759ArenaView", "UIColor"]
+- !private ["C9Projet3759ArenaView", "UIControlEvents"]
 - !private ["C9Projet3759ArenaView", "UIFont"]
 - !private ["C9Projet3759ArenaView", "UIImage"]
 - ["C9Projet3759ArenaView", "UILabel"]
@@ -231,6 +236,7 @@ depends-member:
 - ["C9Projet3759ArenaView", "mapViewWillStartLocatingUser"]
 - ["C9Projet3759ArenaView", "mapViewWillStartRenderingMap"]
 - ["C9Projet3759ArenaView", "margin"]
+- ["C9Projet3759ArenaView", "pressedArena"]
 - !private ["C9Projet3759ArenaView", "print"]
 - ["C9Projet3759ArenaView", "showVR"]
 - !private ["C9Projet3759ArenaView", "titleLabel"]
@@ -269,6 +275,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "UIApplication"]
 - !private ["PSo15CALayerDelegate", "UIButton"]
 - !private ["PSo15CALayerDelegate", "UIColor"]
+- !private ["PSo15CALayerDelegate", "UIControlEvents"]
 - !private ["PSo15CALayerDelegate", "UIFont"]
 - !private ["PSo15CALayerDelegate", "UIImage"]
 - !private ["PSo15CALayerDelegate", "UILabel"]
@@ -315,6 +322,7 @@ depends-member:
 - ["PSo15CALayerDelegate", "mapViewWillStartLocatingUser"]
 - ["PSo15CALayerDelegate", "mapViewWillStartRenderingMap"]
 - ["PSo15CALayerDelegate", "margin"]
+- ["PSo15CALayerDelegate", "pressedArena"]
 - !private ["PSo15CALayerDelegate", "print"]
 - !private ["PSo15CALayerDelegate", "rootViewController"]
 - !private ["PSo15CALayerDelegate", "setImage"]
@@ -371,6 +379,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "UIApplication"]
 - !private ["PSo25CLLocationManagerDelegate", "UIButton"]
 - !private ["PSo25CLLocationManagerDelegate", "UIColor"]
+- !private ["PSo25CLLocationManagerDelegate", "UIControlEvents"]
 - !private ["PSo25CLLocationManagerDelegate", "UIFont"]
 - !private ["PSo25CLLocationManagerDelegate", "UIImage"]
 - !private ["PSo25CLLocationManagerDelegate", "UILabel"]
@@ -409,6 +418,7 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "mapViewWillStartLocatingUser"]
 - ["PSo25CLLocationManagerDelegate", "mapViewWillStartRenderingMap"]
 - !private ["PSo25CLLocationManagerDelegate", "margin"]
+- !private ["PSo25CLLocationManagerDelegate", "pressedArena"]
 - !private ["PSo25CLLocationManagerDelegate", "print"]
 - !private ["PSo25CLLocationManagerDelegate", "showVR"]
 - !private ["PSo25CLLocationManagerDelegate", "titleLabel"]
@@ -436,6 +446,7 @@ depends-member:
 - !private ["Ps7CVarArg", "UIApplication"]
 - !private ["Ps7CVarArg", "UIButton"]
 - !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "UIControlEvents"]
 - !private ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "UIImage"]
 - !private ["Ps7CVarArg", "UILabel"]
@@ -496,6 +507,7 @@ depends-member:
 - ["Ps7CVarArg", "margin"]
 - !private ["Ps7CVarArg", "present"]
 - !private ["Ps7CVarArg", "presentedViewController"]
+- ["Ps7CVarArg", "pressedArena"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "requestWhenInUseAuthorization"]
 - !private ["Ps7CVarArg", "rootViewController"]
@@ -540,6 +552,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "UIButton"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIControlEvents"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UILabel"]
@@ -602,6 +615,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "maxY"]
 - !private ["Ps28CustomDebugStringConvertible", "present"]
 - !private ["Ps28CustomDebugStringConvertible", "presentedViewController"]
+- ["Ps28CustomDebugStringConvertible", "pressedArena"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "requestWhenInUseAuthorization"]
 - !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
@@ -656,6 +670,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIApplication"]
 - !private ["Ps23CustomStringConvertible", "UIButton"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIControlEvents"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "UILabel"]
@@ -717,6 +732,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "margin"]
 - !private ["Ps23CustomStringConvertible", "present"]
 - !private ["Ps23CustomStringConvertible", "presentedViewController"]
+- ["Ps23CustomStringConvertible", "pressedArena"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "requestWhenInUseAuthorization"]
 - !private ["Ps23CustomStringConvertible", "rootViewController"]
@@ -757,6 +773,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIApplication"]
 - !private ["Ps9Equatable", "UIButton"]
 - !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIControlEvents"]
 - !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UILabel"]
@@ -823,6 +840,7 @@ depends-member:
 - !private ["Ps9Equatable", "normal"]
 - !private ["Ps9Equatable", "present"]
 - !private ["Ps9Equatable", "presentedViewController"]
+- ["Ps9Equatable", "pressedArena"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "requestWhenInUseAuthorization"]
 - !private ["Ps9Equatable", "rootViewController"]
@@ -878,6 +896,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIApplication"]
 - !private ["Ps8Hashable", "UIButton"]
 - !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIControlEvents"]
 - !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "UILabel"]
@@ -941,6 +960,7 @@ depends-member:
 - ["Ps8Hashable", "margin"]
 - !private ["Ps8Hashable", "present"]
 - !private ["Ps8Hashable", "presentedViewController"]
+- ["Ps8Hashable", "pressedArena"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "requestWhenInUseAuthorization"]
 - !private ["Ps8Hashable", "rootViewController"]
@@ -1012,6 +1032,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "UIApplication"]
 - !private ["PSo17MKMapViewDelegate", "UIButton"]
 - !private ["PSo17MKMapViewDelegate", "UIColor"]
+- !private ["PSo17MKMapViewDelegate", "UIControlEvents"]
 - !private ["PSo17MKMapViewDelegate", "UIFont"]
 - !private ["PSo17MKMapViewDelegate", "UIImage"]
 - !private ["PSo17MKMapViewDelegate", "UILabel"]
@@ -1047,6 +1068,7 @@ depends-member:
 - ["PSo17MKMapViewDelegate", "mapViewWillStartLocatingUser"]
 - ["PSo17MKMapViewDelegate", "mapViewWillStartRenderingMap"]
 - !private ["PSo17MKMapViewDelegate", "margin"]
+- !private ["PSo17MKMapViewDelegate", "pressedArena"]
 - !private ["PSo17MKMapViewDelegate", "print"]
 - !private ["PSo17MKMapViewDelegate", "showVR"]
 - !private ["PSo17MKMapViewDelegate", "titleLabel"]
@@ -1089,6 +1111,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "UIButton"]
 - !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIControlEvents"]
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UILabel"]
@@ -1142,6 +1165,7 @@ depends-member:
 - ["PSo8NSCoding", "margin"]
 - !private ["PSo8NSCoding", "present"]
 - !private ["PSo8NSCoding", "presentedViewController"]
+- ["PSo8NSCoding", "pressedArena"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "rootViewController"]
 - !private ["PSo8NSCoding", "setImage"]
@@ -1191,8 +1215,9 @@ depends-member:
 - !private ["CSo8NSObject", "UIAlertController"]
 - !private ["CSo8NSObject", "UIAlertControllerStyle"]
 - !private ["CSo8NSObject", "UIApplication"]
-- !private ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIControlEvents"]
 - !private ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UILabel"]
@@ -1252,6 +1277,7 @@ depends-member:
 - ["CSo8NSObject", "margin"]
 - !private ["CSo8NSObject", "present"]
 - !private ["CSo8NSObject", "presentedViewController"]
+- ["CSo8NSObject", "pressedArena"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "requestWhenInUseAuthorization"]
 - !private ["CSo8NSObject", "rootViewController"]
@@ -1290,6 +1316,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UIButton"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIControlEvents"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UILabel"]
@@ -1348,6 +1375,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "margin"]
 - !private ["PSo16NSObjectProtocol", "present"]
 - !private ["PSo16NSObjectProtocol", "presentedViewController"]
+- ["PSo16NSObjectProtocol", "pressedArena"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "requestWhenInUseAuthorization"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
@@ -1434,6 +1462,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "UIApplication"]
 - !private ["PSo29UIAccessibilityIdentification", "UIButton"]
 - !private ["PSo29UIAccessibilityIdentification", "UIColor"]
+- !private ["PSo29UIAccessibilityIdentification", "UIControlEvents"]
 - !private ["PSo29UIAccessibilityIdentification", "UIFont"]
 - !private ["PSo29UIAccessibilityIdentification", "UIImage"]
 - !private ["PSo29UIAccessibilityIdentification", "UILabel"]
@@ -1480,6 +1509,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "mapViewWillStartLocatingUser"]
 - ["PSo29UIAccessibilityIdentification", "mapViewWillStartRenderingMap"]
 - ["PSo29UIAccessibilityIdentification", "margin"]
+- ["PSo29UIAccessibilityIdentification", "pressedArena"]
 - !private ["PSo29UIAccessibilityIdentification", "print"]
 - !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
 - !private ["PSo29UIAccessibilityIdentification", "setImage"]
@@ -1522,6 +1552,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "UIApplication"]
 - !private ["PSo12UIAppearance", "UIButton"]
 - !private ["PSo12UIAppearance", "UIColor"]
+- !private ["PSo12UIAppearance", "UIControlEvents"]
 - !private ["PSo12UIAppearance", "UIFont"]
 - !private ["PSo12UIAppearance", "UIImage"]
 - !private ["PSo12UIAppearance", "UILabel"]
@@ -1568,6 +1599,7 @@ depends-member:
 - ["PSo12UIAppearance", "mapViewWillStartLocatingUser"]
 - ["PSo12UIAppearance", "mapViewWillStartRenderingMap"]
 - ["PSo12UIAppearance", "margin"]
+- ["PSo12UIAppearance", "pressedArena"]
 - !private ["PSo12UIAppearance", "print"]
 - !private ["PSo12UIAppearance", "rootViewController"]
 - !private ["PSo12UIAppearance", "setImage"]
@@ -1599,6 +1631,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIApplication"]
 - !private ["PSo21UIAppearanceContainer", "UIButton"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UILabel"]
@@ -1648,6 +1681,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "margin"]
 - !private ["PSo21UIAppearanceContainer", "present"]
 - !private ["PSo21UIAppearanceContainer", "presentedViewController"]
+- ["PSo21UIAppearanceContainer", "pressedArena"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "rootViewController"]
 - !private ["PSo21UIAppearanceContainer", "setImage"]
@@ -1715,6 +1749,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "UIApplication"]
 - !private ["PSo17UICoordinateSpace", "UIButton"]
 - !private ["PSo17UICoordinateSpace", "UIColor"]
+- !private ["PSo17UICoordinateSpace", "UIControlEvents"]
 - !private ["PSo17UICoordinateSpace", "UIFont"]
 - !private ["PSo17UICoordinateSpace", "UIImage"]
 - !private ["PSo17UICoordinateSpace", "UILabel"]
@@ -1761,6 +1796,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "mapViewWillStartLocatingUser"]
 - ["PSo17UICoordinateSpace", "mapViewWillStartRenderingMap"]
 - ["PSo17UICoordinateSpace", "margin"]
+- ["PSo17UICoordinateSpace", "pressedArena"]
 - !private ["PSo17UICoordinateSpace", "print"]
 - !private ["PSo17UICoordinateSpace", "rootViewController"]
 - !private ["PSo17UICoordinateSpace", "setImage"]
@@ -1792,6 +1828,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "UIApplication"]
 - !private ["PSo13UIDynamicItem", "UIButton"]
 - !private ["PSo13UIDynamicItem", "UIColor"]
+- !private ["PSo13UIDynamicItem", "UIControlEvents"]
 - !private ["PSo13UIDynamicItem", "UIFont"]
 - !private ["PSo13UIDynamicItem", "UIImage"]
 - !private ["PSo13UIDynamicItem", "UILabel"]
@@ -1838,6 +1875,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "mapViewWillStartLocatingUser"]
 - ["PSo13UIDynamicItem", "mapViewWillStartRenderingMap"]
 - ["PSo13UIDynamicItem", "margin"]
+- ["PSo13UIDynamicItem", "pressedArena"]
 - !private ["PSo13UIDynamicItem", "print"]
 - !private ["PSo13UIDynamicItem", "rootViewController"]
 - !private ["PSo13UIDynamicItem", "setImage"]
@@ -1869,6 +1907,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIApplication"]
 - !private ["PSo18UIFocusEnvironment", "UIButton"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UILabel"]
@@ -1918,6 +1957,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "margin"]
 - !private ["PSo18UIFocusEnvironment", "present"]
 - !private ["PSo18UIFocusEnvironment", "presentedViewController"]
+- ["PSo18UIFocusEnvironment", "pressedArena"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "rootViewController"]
 - !private ["PSo18UIFocusEnvironment", "setImage"]
@@ -1950,6 +1990,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "UIApplication"]
 - !private ["PSo11UIFocusItem", "UIButton"]
 - !private ["PSo11UIFocusItem", "UIColor"]
+- !private ["PSo11UIFocusItem", "UIControlEvents"]
 - !private ["PSo11UIFocusItem", "UIFont"]
 - !private ["PSo11UIFocusItem", "UIImage"]
 - !private ["PSo11UIFocusItem", "UILabel"]
@@ -1996,6 +2037,7 @@ depends-member:
 - ["PSo11UIFocusItem", "mapViewWillStartLocatingUser"]
 - ["PSo11UIFocusItem", "mapViewWillStartRenderingMap"]
 - ["PSo11UIFocusItem", "margin"]
+- ["PSo11UIFocusItem", "pressedArena"]
 - !private ["PSo11UIFocusItem", "print"]
 - !private ["PSo11UIFocusItem", "rootViewController"]
 - !private ["PSo11UIFocusItem", "setImage"]
@@ -2044,8 +2086,9 @@ depends-member:
 - !private ["CSo11UIResponder", "UIAlertController"]
 - !private ["CSo11UIResponder", "UIAlertControllerStyle"]
 - !private ["CSo11UIResponder", "UIApplication"]
-- !private ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIControlEvents"]
 - !private ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UILabel"]
@@ -2097,6 +2140,7 @@ depends-member:
 - ["CSo11UIResponder", "margin"]
 - !private ["CSo11UIResponder", "present"]
 - !private ["CSo11UIResponder", "presentedViewController"]
+- ["CSo11UIResponder", "pressedArena"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "rootViewController"]
 - !private ["CSo11UIResponder", "setImage"]
@@ -2129,6 +2173,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIApplication"]
 - !private ["PSo30UIResponderStandardEditActions", "UIButton"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UIControlEvents"]
 - !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - !private ["PSo30UIResponderStandardEditActions", "UILabel"]
@@ -2179,6 +2224,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "margin"]
 - !private ["PSo30UIResponderStandardEditActions", "present"]
 - !private ["PSo30UIResponderStandardEditActions", "presentedViewController"]
+- ["PSo30UIResponderStandardEditActions", "pressedArena"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "rootViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "setImage"]
@@ -2217,6 +2263,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIApplication"]
 - !private ["PSo18UITraitEnvironment", "UIButton"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIControlEvents"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UILabel"]
@@ -2266,6 +2313,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "margin"]
 - !private ["PSo18UITraitEnvironment", "present"]
 - !private ["PSo18UITraitEnvironment", "presentedViewController"]
+- ["PSo18UITraitEnvironment", "pressedArena"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "rootViewController"]
 - !private ["PSo18UITraitEnvironment", "setImage"]
@@ -2300,8 +2348,9 @@ depends-member:
 - !private ["CSo6UIView", "UIAlertController"]
 - !private ["CSo6UIView", "UIAlertControllerStyle"]
 - !private ["CSo6UIView", "UIApplication"]
-- !private ["CSo6UIView", "UIButton"]
+- ["CSo6UIView", "UIButton"]
 - !private ["CSo6UIView", "UIColor"]
+- !private ["CSo6UIView", "UIControlEvents"]
 - !private ["CSo6UIView", "UIFont"]
 - !private ["CSo6UIView", "UIImage"]
 - ["CSo6UIView", "UILabel"]
@@ -2350,6 +2399,7 @@ depends-member:
 - ["CSo6UIView", "mapViewWillStartLocatingUser"]
 - ["CSo6UIView", "mapViewWillStartRenderingMap"]
 - ["CSo6UIView", "margin"]
+- ["CSo6UIView", "pressedArena"]
 - !private ["CSo6UIView", "print"]
 - !private ["CSo6UIView", "rootViewController"]
 - !private ["CSo6UIView", "setImage"]
@@ -2400,6 +2450,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIApplication"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIButton"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIControlEvents"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIFont"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIImage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UILabel"]
@@ -2446,6 +2497,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "mapViewWillStartLocatingUser"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "mapViewWillStartRenderingMap"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "margin"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "pressedArena"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "print"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rootViewController"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setImage"]
@@ -2491,6 +2543,7 @@ depends-member:
 - !private ["Ps9_Hashable", "UIApplication"]
 - !private ["Ps9_Hashable", "UIButton"]
 - !private ["Ps9_Hashable", "UIColor"]
+- !private ["Ps9_Hashable", "UIControlEvents"]
 - !private ["Ps9_Hashable", "UIFont"]
 - !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "UILabel"]
@@ -2554,6 +2607,7 @@ depends-member:
 - ["Ps9_Hashable", "margin"]
 - !private ["Ps9_Hashable", "present"]
 - !private ["Ps9_Hashable", "presentedViewController"]
+- ["Ps9_Hashable", "pressedArena"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "requestWhenInUseAuthorization"]
 - !private ["Ps9_Hashable", "rootViewController"]
@@ -2805,4 +2859,4 @@ depends-external:
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
-interface-hash: "7ab9f7aa67d704051fe9c6fc19037a14"
+interface-hash: "f08a427bba7e282ac1de5948dddd7aeb"

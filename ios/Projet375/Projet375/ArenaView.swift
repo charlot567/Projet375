@@ -100,15 +100,14 @@ class ArenaView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
                         var v = VrView(frame: self.map.frame)
                         v.clipsToBounds = true
                         self.addSubview(v)
-                        v.addLocationToView(toAdd: self.areneLoc)
+                        let button = v.addLocationToView(toAdd: self.areneLoc)
+                        button.addTarget(self, action: #selector(self.pressedArena(sender:)), for: UIControlEvents.touchUpInside)
                         self.showVR=true
                     }))
                 
                     alert.addAction(UIAlertAction(title: "Non", style: UIAlertActionStyle.destructive, handler: nil))
                     self.getCurrentViewController()!.present(alert, animated: true, completion: nil)
                 }
-            } else {
-                //On affiche pas la vue VR
             }
         }
         self.map.setRegion(region, animated: false)
@@ -117,6 +116,10 @@ class ArenaView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
     func back() {
         print("back")
         kMasterVC.switchNav(index: KVHome)
+    }
+    
+    func pressedArena(sender: UIButton) {
+        print("Image")
     }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {

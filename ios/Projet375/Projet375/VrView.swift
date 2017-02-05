@@ -81,7 +81,7 @@ class VrView: UIView, CLLocationManagerDelegate {
         //221 a 255 ... 360/(255 - 221) = 10.58  disons 10 pour les tests...
         
         
-        var tim = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (Timer) in
+        _ = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (Timer) in
             self.updateMotion()
         })
         
@@ -117,28 +117,17 @@ class VrView: UIView, CLLocationManagerDelegate {
             self.addSubview(DheadingLabel)
             self.addSubview(DlocationLabel)
         }
-        
-        
-        
-        
-        
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         let hed = CGFloat(newHeading.magneticHeading)
-        
-        
-        
-        
         //Position Écrans rouge
         if (hed > 180){
             halfInfiniteWall2.frame.origin.x = halfInfiniteWall1.frame.width  * (hed - 180) / (-180)
-            
         }
         else{
             halfInfiniteWall2.frame.origin.x = halfInfiniteWall1.frame.width  * (180 - hed) / (180)
         }
-        //Posititon Écrans bleu
         if (hed <= 180) {
             halfInfiniteWall1.frame.origin.x = halfInfiniteWall1.frame.width * ( hed  / -180)
         }
@@ -161,11 +150,10 @@ class VrView: UIView, CLLocationManagerDelegate {
         }
     }
     
-    func addLocationToView(toAdd: CLLocationCoordinate2D) {
-        let distance = calculateDistance(origin: self.location, destination: toAdd)
+    func addLocationToView(toAdd: CLLocationCoordinate2D) -> UIButton {
         let bearing = calculateBearing(origin: self.location, destination: toAdd)
         
-        var view = UIView()
+        let view = UIButton()
         view.backgroundColor = UIColor.orange
         
         
@@ -177,10 +165,22 @@ class VrView: UIView, CLLocationManagerDelegate {
             halfInfiniteWall2.addSubview(view)
         }
         
+        view.clipsToBounds = true
+        view.layer.cornerRadius = view.frame.height/2
+        
+        view.isUserInteractionEnabled = true
+        
+        view.addTarget(self, action: #selector(self.pressedArena(sender:)), for: UIControlEvents.touchUpInside)
+        
+        return view
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func pressedArena(sender: UIButton) {
+        print("Image2")
     }
     
     func updateMotion() {
@@ -219,7 +219,6 @@ class VrView: UIView, CLLocationManagerDelegate {
         
         return fmod(radToDeg(rad: atan2(y, x)), 360.0) + 90.0
     }
-    
     
     func beginCameraSession() {
         do {
