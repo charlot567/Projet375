@@ -31,7 +31,7 @@ class ControllerArena: Controller {
                     let token = values["token"] as! String
                     
                     let a = Arena()
-                    a.id = id
+                    a.id = Int(id)
                     a.name = name
                     a.nbQuestionReussi = Int(nbQuestionReussi)
                     a.lat = Double(lat)
