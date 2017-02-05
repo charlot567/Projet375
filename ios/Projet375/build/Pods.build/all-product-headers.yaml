@@ -386,6 +386,33 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftCarousel/SwiftCarousel.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SwiftCarousel-Swift.h",
+          'external-contents': "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftCarousel/SwiftCarousel.framework/Headers/SwiftCarousel-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SwiftCarousel-umbrella.h",
+          'external-contents': "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Pods/Target Support Files/SwiftCarousel/SwiftCarousel-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftCarousel/SwiftCarousel.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Pods.build/Debug-iphoneos/SwiftCarousel.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers",
       'contents': [
         {

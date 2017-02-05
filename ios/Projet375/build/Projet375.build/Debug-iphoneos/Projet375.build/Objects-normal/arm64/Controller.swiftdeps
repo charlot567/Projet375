@@ -7,34 +7,32 @@ provides-member:
 - ["C9Projet37510Controller", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Controller"
-- "BooleanLiteralType"
-- "String"
-- "Void"
+- !private "StringLiteralType"
+- !private "&&"
+- !private "URLRequest"
+- !private "JSONSerialization"
+- !private "URL"
+- "UnicodeScalarType"
 - !private "NSURL"
 - !private "NSMutableURLRequest"
-- !private "&&"
-- !private "NSString"
-- !private "JSONSerialization"
-- !private "StringLiteralType"
-- "UnicodeScalarType"
-- !private "URLRequest"
-- !private "HTTPURLResponse"
-- "AssignmentPrecedence"
-- "AnyObject"
-- !private "=="
-- !private "!="
-- "CastingPrecedence"
-- "TernaryPrecedence"
+- "Void"
 - !private "print"
 - !private "URLSession"
-- !private "URL"
+- "BooleanLiteralType"
+- !private "HTTPURLResponse"
+- "String"
 - "Bool"
+- "TernaryPrecedence"
+- !private "!="
+- "AssignmentPrecedence"
+- !private "=="
+- "AnyObject"
+- "CastingPrecedence"
+- "Controller"
 depends-member:
 - !private ["Ps9AnyObject", "Encoding"]
 - !private ["Ps9AnyObject", "JSONSerialization"]
 - !private ["Ps9AnyObject", "NSMutableURLRequest"]
-- !private ["Ps9AnyObject", "NSString"]
 - !private ["Ps9AnyObject", "NSURL"]
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "URLSession"]
@@ -81,7 +79,6 @@ depends-member:
 - !private ["C9Projet37510Controller", "HTTPURLResponse"]
 - !private ["C9Projet37510Controller", "JSONSerialization"]
 - !private ["C9Projet37510Controller", "NSMutableURLRequest"]
-- !private ["C9Projet37510Controller", "NSString"]
 - !private ["C9Projet37510Controller", "NSURL"]
 - ["C9Projet37510Controller", "String"]
 - !private ["C9Projet37510Controller", "URL"]
@@ -126,7 +123,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "httpMethod"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "jsonObject"]
-- !private ["Ps23CustomStringConvertible", "rawValue"]
 - !private ["Ps23CustomStringConvertible", "resume"]
 - !private ["Ps23CustomStringConvertible", "shared"]
 - !private ["Ps23CustomStringConvertible", "statusCode"]
@@ -139,7 +135,6 @@ depends-member:
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["Sd", "deinit"]
 - ["VE10FoundationSS8Encoding", "deinit"]
-- !private ["VE10FoundationSS8Encoding", "rawValue"]
 - !private ["VE10FoundationSS8Encoding", "utf8"]
 - !private ["Ps9Equatable", "Encoding"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -150,7 +145,6 @@ depends-member:
 - !private ["Ps9Equatable", "httpMethod"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "jsonObject"]
-- !private ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "resume"]
 - !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "statusCode"]
@@ -184,7 +178,6 @@ depends-member:
 - !private ["Ps8Hashable", "httpMethod"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "jsonObject"]
-- !private ["Ps8Hashable", "rawValue"]
 - !private ["Ps8Hashable", "resume"]
 - !private ["Ps8Hashable", "shared"]
 - !private ["Ps8Hashable", "statusCode"]
@@ -273,7 +266,6 @@ depends-member:
 - !private ["Ps9OptionSet", "allowFragments"]
 - ["Sq", "deinit"]
 - !private ["Ps16RawRepresentable", "allowFragments"]
-- !private ["Ps16RawRepresentable", "rawValue"]
 - !private ["Ps16RawRepresentable", "utf8"]
 - !private ["VCSo17JSONSerialization14ReadingOptions", "allowFragments"]
 - !private ["VCSo17JSONSerialization14ReadingOptions", "deinit"]
@@ -298,7 +290,7 @@ depends-member:
 - !private ["Ps20TextOutputStreamable", "Encoding"]
 - !private ["Ps20TextOutputStreamable", "data"]
 - !private ["Ps20TextOutputStreamable", "init"]
-- ["Su", "deinit"]
+- !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
 - !private ["Vs6UInt32", "deinit"]
 - !private ["Vs6UInt64", "deinit"]
@@ -339,7 +331,6 @@ depends-member:
 - !private ["Ps9_Hashable", "httpMethod"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "jsonObject"]
-- !private ["Ps9_Hashable", "rawValue"]
 - !private ["Ps9_Hashable", "resume"]
 - !private ["Ps9_Hashable", "shared"]
 - !private ["Ps9_Hashable", "statusCode"]
@@ -413,7 +404,7 @@ depends-nominal:
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
-- "Su"
+- !private "Su"
 - !private "Vs6UInt16"
 - !private "Vs6UInt32"
 - !private "Vs6UInt64"

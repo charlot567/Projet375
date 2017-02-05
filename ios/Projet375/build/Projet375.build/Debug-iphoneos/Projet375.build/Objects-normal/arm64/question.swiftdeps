@@ -8,13 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "CLLocationCoordinate2D"
-- "String"
-- !private "StringLiteralType"
-- "AssignmentPrecedence"
-- "question"
-- "UIImage"
-- !private "print"
 - "Int"
+- "String"
+- "AssignmentPrecedence"
+- "UIImage"
+- "question"
+- !private "StringLiteralType"
+- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "categorie"]
 - !private ["Ps9AnyObject", "id"]
@@ -198,4 +198,4 @@ depends-external:
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
-interface-hash: "29101740dd9fc8ac35ceb5ffed43fa8a"
+interface-hash: "ba10754a638e7537dee30fd5cbdafe40"

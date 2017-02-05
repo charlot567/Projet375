@@ -1,0 +1,10 @@
+framework module SwiftCarousel {
+  umbrella header "SwiftCarousel-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftCarousel.__Swift {
+    exclude header "SwiftCarousel-Swift.h"
+}

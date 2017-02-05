@@ -8,19 +8,19 @@ provides-member:
 - ["O13FacebookLogin11LoginResult", "init"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Error"
+- !private "Array"
 - "Permission"
 - !private "??"
-- "AccessToken"
-- !private "String"
-- "AssignmentPrecedence"
-- !private "CastingPrecedence"
-- "FBSDKLoginManagerLoginResult"
-- !private "NSError"
-- !private "Array"
-- !private "StringLiteralType"
-- "Set"
 - "LoginResult"
+- !private "NSError"
+- !private "StringLiteralType"
+- !private "String"
+- "Error"
+- "AssignmentPrecedence"
+- "FBSDKLoginManagerLoginResult"
+- !private "CastingPrecedence"
+- "AccessToken"
+- "Set"
 depends-member:
 - ["V12FacebookCore11AccessToken", "deinit"]
 - !private ["V12FacebookCore11AccessToken", "init"]

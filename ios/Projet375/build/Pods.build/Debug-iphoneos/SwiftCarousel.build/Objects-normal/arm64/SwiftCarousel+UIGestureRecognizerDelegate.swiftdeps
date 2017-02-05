@@ -1,0 +1,121 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "C13SwiftCarousel13SwiftCarousel"
+provides-member:
+- ["C13SwiftCarousel13SwiftCarousel", ""]
+provides-dynamic-lookup:
+- "gestureRecognizer"
+depends-top-level:
+- "UIGestureRecognizerDelegate"
+- "SwiftCarousel"
+- !private "BooleanLiteralType"
+- "UIGestureRecognizer"
+- "Bool"
+depends-member:
+- ["Ps9AnyObject", "gestureRecognizer"]
+- ["Ps9AnyObject", "gestureRecognizerShouldBegin"]
+- ["Sb", "deinit"]
+- ["PSo15CALayerDelegate", "gestureRecognizer"]
+- ["PSo15CALayerDelegate", "gestureRecognizerShouldBegin"]
+- ["Ps7CVarArg", "gestureRecognizer"]
+- ["Ps7CVarArg", "gestureRecognizerShouldBegin"]
+- ["Ps28CustomDebugStringConvertible", "gestureRecognizer"]
+- ["Ps28CustomDebugStringConvertible", "gestureRecognizerShouldBegin"]
+- ["Ps23CustomStringConvertible", "gestureRecognizer"]
+- ["Ps23CustomStringConvertible", "gestureRecognizerShouldBegin"]
+- ["Ps9Equatable", "gestureRecognizer"]
+- ["Ps9Equatable", "gestureRecognizerShouldBegin"]
+- ["Ps8Hashable", "gestureRecognizer"]
+- ["Ps8Hashable", "gestureRecognizerShouldBegin"]
+- ["PSo8NSCoding", "gestureRecognizer"]
+- ["PSo8NSCoding", "gestureRecognizerShouldBegin"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "UIGestureRecognizer"]
+- ["CSo8NSObject", "gestureRecognizer"]
+- ["CSo8NSObject", "gestureRecognizerShouldBegin"]
+- ["PSo16NSObjectProtocol", "gestureRecognizer"]
+- ["PSo16NSObjectProtocol", "gestureRecognizerShouldBegin"]
+- ["C13SwiftCarousel13SwiftCarousel", "Bool"]
+- ["C13SwiftCarousel13SwiftCarousel", "UIGestureRecognizer"]
+- ["C13SwiftCarousel13SwiftCarousel", "deinit"]
+- ["C13SwiftCarousel13SwiftCarousel", "gestureRecognizer"]
+- ["C13SwiftCarousel13SwiftCarousel", "gestureRecognizerShouldBegin"]
+- ["PSo29UIAccessibilityIdentification", "gestureRecognizer"]
+- ["PSo29UIAccessibilityIdentification", "gestureRecognizerShouldBegin"]
+- ["PSo12UIAppearance", "gestureRecognizer"]
+- ["PSo12UIAppearance", "gestureRecognizerShouldBegin"]
+- ["PSo21UIAppearanceContainer", "gestureRecognizer"]
+- ["PSo21UIAppearanceContainer", "gestureRecognizerShouldBegin"]
+- ["PSo17UICoordinateSpace", "gestureRecognizer"]
+- ["PSo17UICoordinateSpace", "gestureRecognizerShouldBegin"]
+- ["PSo13UIDynamicItem", "gestureRecognizer"]
+- ["PSo13UIDynamicItem", "gestureRecognizerShouldBegin"]
+- ["PSo18UIFocusEnvironment", "gestureRecognizer"]
+- ["PSo18UIFocusEnvironment", "gestureRecognizerShouldBegin"]
+- ["PSo11UIFocusItem", "gestureRecognizer"]
+- ["PSo11UIFocusItem", "gestureRecognizerShouldBegin"]
+- ["PSo27UIGestureRecognizerDelegate", "gestureRecognizer"]
+- ["PSo27UIGestureRecognizerDelegate", "gestureRecognizerShouldBegin"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "UIGestureRecognizer"]
+- ["CSo11UIResponder", "gestureRecognizer"]
+- ["CSo11UIResponder", "gestureRecognizerShouldBegin"]
+- ["PSo30UIResponderStandardEditActions", "gestureRecognizer"]
+- ["PSo30UIResponderStandardEditActions", "gestureRecognizerShouldBegin"]
+- ["PSo20UIScrollViewDelegate", "gestureRecognizer"]
+- ["PSo20UIScrollViewDelegate", "gestureRecognizerShouldBegin"]
+- ["PSo18UITraitEnvironment", "gestureRecognizer"]
+- ["PSo18UITraitEnvironment", "gestureRecognizerShouldBegin"]
+- ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "UIGestureRecognizer"]
+- ["CSo6UIView", "gestureRecognizer"]
+- ["CSo6UIView", "gestureRecognizerShouldBegin"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "gestureRecognizer"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "gestureRecognizerShouldBegin"]
+- ["Ps9_Hashable", "gestureRecognizer"]
+- ["Ps9_Hashable", "gestureRecognizerShouldBegin"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C13SwiftCarousel13SwiftCarousel"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "PSo27UIGestureRecognizerDelegate"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo20UIScrollViewDelegate"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Pods/Target Support Files/SwiftCarousel/SwiftCarousel-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Pods.build/Debug-iphoneos/SwiftCarousel.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "cafc8550608dffd2da472dfb691431ac"
