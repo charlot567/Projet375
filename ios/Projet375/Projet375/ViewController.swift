@@ -167,7 +167,7 @@ class ViewController: UIViewController {
         }
         
         else if(index == KVCart) {
-            displayAlert(currentViewController: kMasterVC, title: "Info", message: "Page panier")
+            displayAlert(currentViewController: kMasterVC, title: "Info", message: "Boutique")
         }
         self.currentViewIndex = index
         

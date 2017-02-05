@@ -38,7 +38,7 @@ public class Controller {
                     let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String : AnyObject]
                     print(json)
                     //  If the request work
-                    if(json!["status"] as! String == "1") {
+                    if(json!["status"] as! String == "1" || json!["status"] as! String == "0") {
                         completitionHandler(true, json as AnyObject?)
                     }
                         
