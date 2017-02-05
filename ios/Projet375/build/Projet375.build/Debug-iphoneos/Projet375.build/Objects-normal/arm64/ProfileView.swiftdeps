@@ -6,38 +6,45 @@ provides-nominal:
 provides-member:
 - ["C9Projet37511ProfileView", ""]
 provides-dynamic-lookup:
+- "showPage"
 - "back"
 depends-top-level:
-- !private "kMasterVC"
-- !private "+"
-- !private "imageSize"
-- "UILabel"
-- !private "kWidth"
-- !private "kGreen"
-- "ProfileView"
-- "NSCoder"
-- "AssignmentPrecedence"
-- !private "kBlue"
-- !private "UIButton"
-- !private "fatalError"
-- !private "StringLiteralType"
-- !private "UIImage"
-- !private "UIFont"
-- !private "BooleanLiteralType"
-- !private "kHeight"
-- !private "-"
-- !private "/"
-- "CGRect"
 - !private "*"
-- !private "print"
+- "UIImageView"
+- !private "-"
+- !private "fatalError"
+- !private "BooleanLiteralType"
+- !private "kGreen"
+- !private "UIFont"
+- !private "kMasterVC"
 - !private "KVHome"
+- !private "UIColor"
+- !private "kCurrentUser"
+- !private "StringLiteralType"
+- !private "kWidth"
+- !private "imageSize"
+- !private "/"
+- !private "kHeight"
+- "AssignmentPrecedence"
+- !private "UIImage"
+- !private "kBlue"
+- !private "+"
+- !private "!="
+- "NSCoder"
+- "UILabel"
+- !private "UIButton"
+- "ProfileView"
+- !private "print"
+- "CGRect"
 - "UIView"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "KVHome"]
 - !private ["Ps9AnyObject", "UIButton"]
+- !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "UIImageView"]
 - !private ["Ps9AnyObject", "UILabel"]
 - !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "addSubview"]
@@ -45,19 +52,32 @@ depends-member:
 - !private ["Ps9AnyObject", "adjustsFontSizeToFitWidth"]
 - ["Ps9AnyObject", "back"]
 - !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "borderColor"]
+- !private ["Ps9AnyObject", "borderWidth"]
+- !private ["Ps9AnyObject", "cgColor"]
+- !private ["Ps9AnyObject", "clipsToBounds"]
+- !private ["Ps9AnyObject", "completeName"]
+- !private ["Ps9AnyObject", "cornerRadius"]
 - !private ["Ps9AnyObject", "fatalError"]
 - !private ["Ps9AnyObject", "font"]
 - !private ["Ps9AnyObject", "frame"]
+- !private ["Ps9AnyObject", "getProfileImage"]
 - !private ["Ps9AnyObject", "h"]
+- !private ["Ps9AnyObject", "image"]
 - !private ["Ps9AnyObject", "imageSize"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "kBlue"]
+- !private ["Ps9AnyObject", "kCurrentUser"]
 - !private ["Ps9AnyObject", "kGreen"]
 - !private ["Ps9AnyObject", "kHeight"]
 - !private ["Ps9AnyObject", "kMasterVC"]
 - !private ["Ps9AnyObject", "kWidth"]
+- !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "maxY"]
 - !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "profileImageView"]
 - !private ["Ps9AnyObject", "setImage"]
+- ["Ps9AnyObject", "showPage"]
 - !private ["Ps9AnyObject", "size"]
 - !private ["Ps9AnyObject", "switchNav"]
 - !private ["Ps9AnyObject", "text"]
@@ -65,15 +85,23 @@ depends-member:
 - !private ["Ps9AnyObject", "textColor"]
 - ["Ps9AnyObject", "titleLabel"]
 - ["Ps9AnyObject", "topNavBar"]
+- ["Ps9AnyObject", "usernamelabel"]
 - !private ["Ps9AnyObject", "white"]
 - ["Ps9AnyObject", ""]
 - !private ["P12FacebookCore26AppEventParameterValueType", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
+- !private ["CSo7CALayer", "borderColor"]
+- !private ["CSo7CALayer", "borderWidth"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- ["CSo7CALayer", "deinit"]
 - !private ["PSo15CALayerDelegate", "CGRect"]
 - !private ["PSo15CALayerDelegate", "KVHome"]
 - !private ["PSo15CALayerDelegate", "UIButton"]
+- !private ["PSo15CALayerDelegate", "UIColor"]
 - !private ["PSo15CALayerDelegate", "UIFont"]
 - !private ["PSo15CALayerDelegate", "UIImage"]
+- !private ["PSo15CALayerDelegate", "UIImageView"]
 - !private ["PSo15CALayerDelegate", "UILabel"]
 - !private ["PSo15CALayerDelegate", "UIView"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
@@ -81,25 +109,37 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "adjustsFontSizeToFitWidth"]
 - ["PSo15CALayerDelegate", "back"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "clipsToBounds"]
 - !private ["PSo15CALayerDelegate", "fatalError"]
 - !private ["PSo15CALayerDelegate", "font"]
 - !private ["PSo15CALayerDelegate", "frame"]
 - !private ["PSo15CALayerDelegate", "h"]
+- !private ["PSo15CALayerDelegate", "image"]
 - !private ["PSo15CALayerDelegate", "imageSize"]
 - ["PSo15CALayerDelegate", "init"]
 - !private ["PSo15CALayerDelegate", "kBlue"]
+- !private ["PSo15CALayerDelegate", "kCurrentUser"]
 - !private ["PSo15CALayerDelegate", "kGreen"]
 - !private ["PSo15CALayerDelegate", "kHeight"]
 - !private ["PSo15CALayerDelegate", "kMasterVC"]
 - !private ["PSo15CALayerDelegate", "kWidth"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo15CALayerDelegate", "maxY"]
 - !private ["PSo15CALayerDelegate", "print"]
+- ["PSo15CALayerDelegate", "profileImageView"]
 - !private ["PSo15CALayerDelegate", "setImage"]
+- ["PSo15CALayerDelegate", "showPage"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "textAlignment"]
 - !private ["PSo15CALayerDelegate", "textColor"]
 - ["PSo15CALayerDelegate", "titleLabel"]
 - ["PSo15CALayerDelegate", "topNavBar"]
+- ["PSo15CALayerDelegate", "usernamelabel"]
 - ["PSo15CALayerDelegate", ""]
+- !private ["PSo13CAMediaTiming", "borderColor"]
+- !private ["PSo13CAMediaTiming", "borderWidth"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
+- ["CSo7CGColor", "deinit"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - ["VSC6CGRect", "deinit"]
 - !private ["VSC6CGRect", "init"]
@@ -107,8 +147,10 @@ depends-member:
 - !private ["Ps7CVarArg", "CGRect"]
 - !private ["Ps7CVarArg", "KVHome"]
 - !private ["Ps7CVarArg", "UIButton"]
+- !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "UIImage"]
+- !private ["Ps7CVarArg", "UIImageView"]
 - !private ["Ps7CVarArg", "UILabel"]
 - !private ["Ps7CVarArg", "UIView"]
 - !private ["Ps7CVarArg", "addSubview"]
@@ -116,19 +158,30 @@ depends-member:
 - !private ["Ps7CVarArg", "adjustsFontSizeToFitWidth"]
 - ["Ps7CVarArg", "back"]
 - !private ["Ps7CVarArg", "backgroundColor"]
+- !private ["Ps7CVarArg", "borderColor"]
+- !private ["Ps7CVarArg", "borderWidth"]
+- !private ["Ps7CVarArg", "cgColor"]
+- !private ["Ps7CVarArg", "clipsToBounds"]
+- !private ["Ps7CVarArg", "cornerRadius"]
 - !private ["Ps7CVarArg", "fatalError"]
 - !private ["Ps7CVarArg", "font"]
 - !private ["Ps7CVarArg", "frame"]
 - !private ["Ps7CVarArg", "h"]
+- !private ["Ps7CVarArg", "image"]
 - !private ["Ps7CVarArg", "imageSize"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "kBlue"]
+- !private ["Ps7CVarArg", "kCurrentUser"]
 - !private ["Ps7CVarArg", "kGreen"]
 - !private ["Ps7CVarArg", "kHeight"]
 - !private ["Ps7CVarArg", "kMasterVC"]
 - !private ["Ps7CVarArg", "kWidth"]
+- !private ["Ps7CVarArg", "layer"]
+- !private ["Ps7CVarArg", "maxY"]
 - !private ["Ps7CVarArg", "print"]
+- ["Ps7CVarArg", "profileImageView"]
 - !private ["Ps7CVarArg", "setImage"]
+- ["Ps7CVarArg", "showPage"]
 - !private ["Ps7CVarArg", "size"]
 - !private ["Ps7CVarArg", "switchNav"]
 - !private ["Ps7CVarArg", "text"]
@@ -136,14 +189,18 @@ depends-member:
 - !private ["Ps7CVarArg", "textColor"]
 - ["Ps7CVarArg", "titleLabel"]
 - ["Ps7CVarArg", "topNavBar"]
+- ["Ps7CVarArg", "usernamelabel"]
 - !private ["Ps7CVarArg", "white"]
 - ["Ps7CVarArg", ""]
+- !private ["Vs9Character", "deinit"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRect"]
 - !private ["Ps28CustomDebugStringConvertible", "KVHome"]
 - !private ["Ps28CustomDebugStringConvertible", "UIButton"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImageView"]
 - !private ["Ps28CustomDebugStringConvertible", "UILabel"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
@@ -151,19 +208,30 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "adjustsFontSizeToFitWidth"]
 - ["Ps28CustomDebugStringConvertible", "back"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "borderColor"]
+- !private ["Ps28CustomDebugStringConvertible", "borderWidth"]
+- !private ["Ps28CustomDebugStringConvertible", "cgColor"]
+- !private ["Ps28CustomDebugStringConvertible", "clipsToBounds"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - !private ["Ps28CustomDebugStringConvertible", "fatalError"]
 - !private ["Ps28CustomDebugStringConvertible", "font"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - !private ["Ps28CustomDebugStringConvertible", "h"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
 - !private ["Ps28CustomDebugStringConvertible", "imageSize"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "kBlue"]
+- !private ["Ps28CustomDebugStringConvertible", "kCurrentUser"]
 - !private ["Ps28CustomDebugStringConvertible", "kGreen"]
 - !private ["Ps28CustomDebugStringConvertible", "kHeight"]
 - !private ["Ps28CustomDebugStringConvertible", "kMasterVC"]
 - !private ["Ps28CustomDebugStringConvertible", "kWidth"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
+- !private ["Ps28CustomDebugStringConvertible", "maxY"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- ["Ps28CustomDebugStringConvertible", "profileImageView"]
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
+- ["Ps28CustomDebugStringConvertible", "showPage"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
 - !private ["Ps28CustomDebugStringConvertible", "switchNav"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
@@ -171,35 +239,52 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - ["Ps28CustomDebugStringConvertible", "titleLabel"]
 - ["Ps28CustomDebugStringConvertible", "topNavBar"]
+- ["Ps28CustomDebugStringConvertible", "usernamelabel"]
 - !private ["Ps28CustomDebugStringConvertible", "white"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "CGRect"]
 - !private ["Ps23CustomStringConvertible", "KVHome"]
 - !private ["Ps23CustomStringConvertible", "UIButton"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "UIImageView"]
 - !private ["Ps23CustomStringConvertible", "UILabel"]
 - !private ["Ps23CustomStringConvertible", "UIView"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "addTarget"]
 - !private ["Ps23CustomStringConvertible", "adjustsFontSizeToFitWidth"]
 - ["Ps23CustomStringConvertible", "back"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "borderColor"]
+- !private ["Ps23CustomStringConvertible", "borderWidth"]
+- !private ["Ps23CustomStringConvertible", "cgColor"]
+- !private ["Ps23CustomStringConvertible", "clipsToBounds"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - !private ["Ps23CustomStringConvertible", "fatalError"]
 - !private ["Ps23CustomStringConvertible", "font"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - !private ["Ps23CustomStringConvertible", "h"]
+- !private ["Ps23CustomStringConvertible", "image"]
 - !private ["Ps23CustomStringConvertible", "imageSize"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "kBlue"]
+- !private ["Ps23CustomStringConvertible", "kCurrentUser"]
 - !private ["Ps23CustomStringConvertible", "kGreen"]
 - !private ["Ps23CustomStringConvertible", "kHeight"]
 - !private ["Ps23CustomStringConvertible", "kMasterVC"]
 - !private ["Ps23CustomStringConvertible", "kWidth"]
+- !private ["Ps23CustomStringConvertible", "layer"]
+- !private ["Ps23CustomStringConvertible", "maxY"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- ["Ps23CustomStringConvertible", "profileImageView"]
 - !private ["Ps23CustomStringConvertible", "setImage"]
+- ["Ps23CustomStringConvertible", "showPage"]
 - !private ["Ps23CustomStringConvertible", "size"]
 - !private ["Ps23CustomStringConvertible", "switchNav"]
 - !private ["Ps23CustomStringConvertible", "text"]
@@ -207,35 +292,51 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "textColor"]
 - ["Ps23CustomStringConvertible", "titleLabel"]
 - ["Ps23CustomStringConvertible", "topNavBar"]
+- ["Ps23CustomStringConvertible", "usernamelabel"]
 - !private ["Ps23CustomStringConvertible", "white"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "KVHome"]
 - !private ["Ps9Equatable", "UIButton"]
+- !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "UIImageView"]
 - !private ["Ps9Equatable", "UILabel"]
 - !private ["Ps9Equatable", "UIView"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "addTarget"]
 - !private ["Ps9Equatable", "adjustsFontSizeToFitWidth"]
 - ["Ps9Equatable", "back"]
 - !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "borderColor"]
+- !private ["Ps9Equatable", "borderWidth"]
 - !private ["Ps9Equatable", "center"]
+- !private ["Ps9Equatable", "cgColor"]
+- !private ["Ps9Equatable", "clipsToBounds"]
+- !private ["Ps9Equatable", "cornerRadius"]
 - !private ["Ps9Equatable", "fatalError"]
 - !private ["Ps9Equatable", "font"]
 - !private ["Ps9Equatable", "frame"]
 - !private ["Ps9Equatable", "h"]
+- !private ["Ps9Equatable", "image"]
 - !private ["Ps9Equatable", "imageSize"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "kBlue"]
+- !private ["Ps9Equatable", "kCurrentUser"]
 - !private ["Ps9Equatable", "kGreen"]
 - !private ["Ps9Equatable", "kHeight"]
 - !private ["Ps9Equatable", "kMasterVC"]
 - !private ["Ps9Equatable", "kWidth"]
+- !private ["Ps9Equatable", "layer"]
+- !private ["Ps9Equatable", "maxY"]
 - !private ["Ps9Equatable", "normal"]
 - !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "profileImageView"]
 - !private ["Ps9Equatable", "setImage"]
+- ["Ps9Equatable", "showPage"]
 - !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "switchNav"]
 - !private ["Ps9Equatable", "text"]
@@ -244,41 +345,58 @@ depends-member:
 - ["Ps9Equatable", "titleLabel"]
 - ["Ps9Equatable", "topNavBar"]
 - !private ["Ps9Equatable", "touchUpInside"]
+- ["Ps9Equatable", "usernamelabel"]
 - !private ["Ps9Equatable", "white"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "normal"]
 - !private ["Ps25ExpressibleByArrayLiteral", "touchUpInside"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps23ExpressibleByNilLiteral", "white"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "CGRect"]
 - !private ["Ps8Hashable", "KVHome"]
 - !private ["Ps8Hashable", "UIButton"]
+- !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "UIImageView"]
 - !private ["Ps8Hashable", "UILabel"]
 - !private ["Ps8Hashable", "UIView"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "addTarget"]
 - !private ["Ps8Hashable", "adjustsFontSizeToFitWidth"]
 - ["Ps8Hashable", "back"]
 - !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "borderColor"]
+- !private ["Ps8Hashable", "borderWidth"]
 - !private ["Ps8Hashable", "center"]
+- !private ["Ps8Hashable", "cgColor"]
+- !private ["Ps8Hashable", "clipsToBounds"]
+- !private ["Ps8Hashable", "cornerRadius"]
 - !private ["Ps8Hashable", "fatalError"]
 - !private ["Ps8Hashable", "font"]
 - !private ["Ps8Hashable", "frame"]
 - !private ["Ps8Hashable", "h"]
+- !private ["Ps8Hashable", "image"]
 - !private ["Ps8Hashable", "imageSize"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "kBlue"]
+- !private ["Ps8Hashable", "kCurrentUser"]
 - !private ["Ps8Hashable", "kGreen"]
 - !private ["Ps8Hashable", "kHeight"]
 - !private ["Ps8Hashable", "kMasterVC"]
 - !private ["Ps8Hashable", "kWidth"]
+- !private ["Ps8Hashable", "layer"]
+- !private ["Ps8Hashable", "maxY"]
 - !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "profileImageView"]
 - !private ["Ps8Hashable", "setImage"]
+- ["Ps8Hashable", "showPage"]
 - !private ["Ps8Hashable", "size"]
 - !private ["Ps8Hashable", "switchNav"]
 - !private ["Ps8Hashable", "text"]
@@ -286,18 +404,26 @@ depends-member:
 - !private ["Ps8Hashable", "textColor"]
 - ["Ps8Hashable", "titleLabel"]
 - ["Ps8Hashable", "topNavBar"]
+- ["Ps8Hashable", "usernamelabel"]
 - !private ["Ps8Hashable", "white"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
 - !private ["SQ", "white"]
 - ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "KVHome"]
 - !private ["PSo8NSCoding", "UIButton"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "UIImageView"]
 - !private ["PSo8NSCoding", "UILabel"]
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "addSubview"]
@@ -305,19 +431,30 @@ depends-member:
 - !private ["PSo8NSCoding", "adjustsFontSizeToFitWidth"]
 - ["PSo8NSCoding", "back"]
 - !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "borderColor"]
+- !private ["PSo8NSCoding", "borderWidth"]
+- !private ["PSo8NSCoding", "cgColor"]
+- !private ["PSo8NSCoding", "clipsToBounds"]
+- !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "fatalError"]
 - !private ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "h"]
+- !private ["PSo8NSCoding", "image"]
 - !private ["PSo8NSCoding", "imageSize"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "kBlue"]
+- !private ["PSo8NSCoding", "kCurrentUser"]
 - !private ["PSo8NSCoding", "kGreen"]
 - !private ["PSo8NSCoding", "kHeight"]
 - !private ["PSo8NSCoding", "kMasterVC"]
 - !private ["PSo8NSCoding", "kWidth"]
+- !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "maxY"]
 - !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "profileImageView"]
 - !private ["PSo8NSCoding", "setImage"]
+- ["PSo8NSCoding", "showPage"]
 - !private ["PSo8NSCoding", "size"]
 - !private ["PSo8NSCoding", "switchNav"]
 - !private ["PSo8NSCoding", "text"]
@@ -325,8 +462,10 @@ depends-member:
 - !private ["PSo8NSCoding", "textColor"]
 - ["PSo8NSCoding", "titleLabel"]
 - ["PSo8NSCoding", "topNavBar"]
+- ["PSo8NSCoding", "usernamelabel"]
 - !private ["PSo8NSCoding", "white"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "cgColor"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "white"]
 - !private ["PSo26NSExtensionRequestHandling", "switchNav"]
@@ -335,8 +474,10 @@ depends-member:
 - !private ["CSo8NSObject", "KVHome"]
 - ["CSo8NSObject", "NSCoder"]
 - !private ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "addSubview"]
@@ -344,19 +485,30 @@ depends-member:
 - !private ["CSo8NSObject", "adjustsFontSizeToFitWidth"]
 - ["CSo8NSObject", "back"]
 - !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "borderColor"]
+- !private ["CSo8NSObject", "borderWidth"]
+- !private ["CSo8NSObject", "cgColor"]
+- !private ["CSo8NSObject", "clipsToBounds"]
+- !private ["CSo8NSObject", "cornerRadius"]
 - !private ["CSo8NSObject", "fatalError"]
 - !private ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "h"]
+- !private ["CSo8NSObject", "image"]
 - !private ["CSo8NSObject", "imageSize"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "kBlue"]
+- !private ["CSo8NSObject", "kCurrentUser"]
 - !private ["CSo8NSObject", "kGreen"]
 - !private ["CSo8NSObject", "kHeight"]
 - !private ["CSo8NSObject", "kMasterVC"]
 - !private ["CSo8NSObject", "kWidth"]
+- !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "maxY"]
 - !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "profileImageView"]
 - !private ["CSo8NSObject", "setImage"]
+- ["CSo8NSObject", "showPage"]
 - !private ["CSo8NSObject", "size"]
 - !private ["CSo8NSObject", "switchNav"]
 - !private ["CSo8NSObject", "text"]
@@ -364,12 +516,15 @@ depends-member:
 - !private ["CSo8NSObject", "textColor"]
 - ["CSo8NSObject", "titleLabel"]
 - ["CSo8NSObject", "topNavBar"]
+- ["CSo8NSObject", "usernamelabel"]
 - !private ["CSo8NSObject", "white"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "KVHome"]
 - !private ["PSo16NSObjectProtocol", "UIButton"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UIImageView"]
 - !private ["PSo16NSObjectProtocol", "UILabel"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
@@ -377,19 +532,30 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "adjustsFontSizeToFitWidth"]
 - ["PSo16NSObjectProtocol", "back"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "borderColor"]
+- !private ["PSo16NSObjectProtocol", "borderWidth"]
+- !private ["PSo16NSObjectProtocol", "cgColor"]
+- !private ["PSo16NSObjectProtocol", "clipsToBounds"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "fatalError"]
 - !private ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "h"]
+- !private ["PSo16NSObjectProtocol", "image"]
 - !private ["PSo16NSObjectProtocol", "imageSize"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "kBlue"]
+- !private ["PSo16NSObjectProtocol", "kCurrentUser"]
 - !private ["PSo16NSObjectProtocol", "kGreen"]
 - !private ["PSo16NSObjectProtocol", "kHeight"]
 - !private ["PSo16NSObjectProtocol", "kMasterVC"]
 - !private ["PSo16NSObjectProtocol", "kWidth"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "maxY"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "profileImageView"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
+- ["PSo16NSObjectProtocol", "showPage"]
 - !private ["PSo16NSObjectProtocol", "size"]
 - !private ["PSo16NSObjectProtocol", "switchNav"]
 - !private ["PSo16NSObjectProtocol", "text"]
@@ -397,8 +563,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "textColor"]
 - ["PSo16NSObjectProtocol", "titleLabel"]
 - ["PSo16NSObjectProtocol", "topNavBar"]
+- ["PSo16NSObjectProtocol", "usernamelabel"]
 - !private ["PSo16NSObjectProtocol", "white"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "cgColor"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "size"]
 - !private ["PSo14NSSecureCoding", "white"]
@@ -413,8 +581,10 @@ depends-member:
 - !private ["C9Projet37511ProfileView", "KVHome"]
 - ["C9Projet37511ProfileView", "NSCoder"]
 - !private ["C9Projet37511ProfileView", "UIButton"]
+- !private ["C9Projet37511ProfileView", "UIColor"]
 - !private ["C9Projet37511ProfileView", "UIFont"]
 - !private ["C9Projet37511ProfileView", "UIImage"]
+- ["C9Projet37511ProfileView", "UIImageView"]
 - ["C9Projet37511ProfileView", "UILabel"]
 - ["C9Projet37511ProfileView", "UIView"]
 - !private ["C9Projet37511ProfileView", "addSubview"]
@@ -425,13 +595,17 @@ depends-member:
 - !private ["C9Projet37511ProfileView", "imageSize"]
 - ["C9Projet37511ProfileView", "init"]
 - !private ["C9Projet37511ProfileView", "kBlue"]
+- !private ["C9Projet37511ProfileView", "kCurrentUser"]
 - !private ["C9Projet37511ProfileView", "kGreen"]
 - !private ["C9Projet37511ProfileView", "kHeight"]
 - !private ["C9Projet37511ProfileView", "kMasterVC"]
 - !private ["C9Projet37511ProfileView", "kWidth"]
 - !private ["C9Projet37511ProfileView", "print"]
+- !private ["C9Projet37511ProfileView", "profileImageView"]
+- ["C9Projet37511ProfileView", "showPage"]
 - !private ["C9Projet37511ProfileView", "titleLabel"]
 - !private ["C9Projet37511ProfileView", "topNavBar"]
+- !private ["C9Projet37511ProfileView", "usernamelabel"]
 - !private ["Ps16RawRepresentable", "center"]
 - !private ["Ps16RawRepresentable", "normal"]
 - !private ["Ps16RawRepresentable", "touchUpInside"]
@@ -447,8 +621,10 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "CGRect"]
 - !private ["PSo29UIAccessibilityIdentification", "KVHome"]
 - !private ["PSo29UIAccessibilityIdentification", "UIButton"]
+- !private ["PSo29UIAccessibilityIdentification", "UIColor"]
 - !private ["PSo29UIAccessibilityIdentification", "UIFont"]
 - !private ["PSo29UIAccessibilityIdentification", "UIImage"]
+- !private ["PSo29UIAccessibilityIdentification", "UIImageView"]
 - !private ["PSo29UIAccessibilityIdentification", "UILabel"]
 - !private ["PSo29UIAccessibilityIdentification", "UIView"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
@@ -456,31 +632,41 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "adjustsFontSizeToFitWidth"]
 - ["PSo29UIAccessibilityIdentification", "back"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
 - !private ["PSo29UIAccessibilityIdentification", "fatalError"]
 - !private ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "h"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "imageSize"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "kBlue"]
+- !private ["PSo29UIAccessibilityIdentification", "kCurrentUser"]
 - !private ["PSo29UIAccessibilityIdentification", "kGreen"]
 - !private ["PSo29UIAccessibilityIdentification", "kHeight"]
 - !private ["PSo29UIAccessibilityIdentification", "kMasterVC"]
 - !private ["PSo29UIAccessibilityIdentification", "kWidth"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo29UIAccessibilityIdentification", "maxY"]
 - !private ["PSo29UIAccessibilityIdentification", "print"]
+- ["PSo29UIAccessibilityIdentification", "profileImageView"]
 - !private ["PSo29UIAccessibilityIdentification", "setImage"]
+- ["PSo29UIAccessibilityIdentification", "showPage"]
 - !private ["PSo29UIAccessibilityIdentification", "size"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textAlignment"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - ["PSo29UIAccessibilityIdentification", "titleLabel"]
 - ["PSo29UIAccessibilityIdentification", "topNavBar"]
+- ["PSo29UIAccessibilityIdentification", "usernamelabel"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["PSo12UIAppearance", "CGRect"]
 - !private ["PSo12UIAppearance", "KVHome"]
 - !private ["PSo12UIAppearance", "UIButton"]
+- !private ["PSo12UIAppearance", "UIColor"]
 - !private ["PSo12UIAppearance", "UIFont"]
 - !private ["PSo12UIAppearance", "UIImage"]
+- !private ["PSo12UIAppearance", "UIImageView"]
 - !private ["PSo12UIAppearance", "UILabel"]
 - !private ["PSo12UIAppearance", "UIView"]
 - !private ["PSo12UIAppearance", "addSubview"]
@@ -488,30 +674,40 @@ depends-member:
 - !private ["PSo12UIAppearance", "adjustsFontSizeToFitWidth"]
 - ["PSo12UIAppearance", "back"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "clipsToBounds"]
 - !private ["PSo12UIAppearance", "fatalError"]
 - !private ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "h"]
+- !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "imageSize"]
 - ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "kBlue"]
+- !private ["PSo12UIAppearance", "kCurrentUser"]
 - !private ["PSo12UIAppearance", "kGreen"]
 - !private ["PSo12UIAppearance", "kHeight"]
 - !private ["PSo12UIAppearance", "kMasterVC"]
 - !private ["PSo12UIAppearance", "kWidth"]
+- !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo12UIAppearance", "maxY"]
 - !private ["PSo12UIAppearance", "print"]
+- ["PSo12UIAppearance", "profileImageView"]
 - !private ["PSo12UIAppearance", "setImage"]
+- ["PSo12UIAppearance", "showPage"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textAlignment"]
 - !private ["PSo12UIAppearance", "textColor"]
 - ["PSo12UIAppearance", "titleLabel"]
 - ["PSo12UIAppearance", "topNavBar"]
+- ["PSo12UIAppearance", "usernamelabel"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "KVHome"]
 - !private ["PSo21UIAppearanceContainer", "UIButton"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "UIImageView"]
 - !private ["PSo21UIAppearanceContainer", "UILabel"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
@@ -519,31 +715,40 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "adjustsFontSizeToFitWidth"]
 - ["PSo21UIAppearanceContainer", "back"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
 - !private ["PSo21UIAppearanceContainer", "fatalError"]
 - !private ["PSo21UIAppearanceContainer", "font"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - !private ["PSo21UIAppearanceContainer", "h"]
+- !private ["PSo21UIAppearanceContainer", "image"]
 - !private ["PSo21UIAppearanceContainer", "imageSize"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "kBlue"]
+- !private ["PSo21UIAppearanceContainer", "kCurrentUser"]
 - !private ["PSo21UIAppearanceContainer", "kGreen"]
 - !private ["PSo21UIAppearanceContainer", "kHeight"]
 - !private ["PSo21UIAppearanceContainer", "kMasterVC"]
 - !private ["PSo21UIAppearanceContainer", "kWidth"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "maxY"]
 - !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "profileImageView"]
 - !private ["PSo21UIAppearanceContainer", "setImage"]
+- ["PSo21UIAppearanceContainer", "showPage"]
 - !private ["PSo21UIAppearanceContainer", "switchNav"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textAlignment"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - ["PSo21UIAppearanceContainer", "titleLabel"]
 - ["PSo21UIAppearanceContainer", "topNavBar"]
+- ["PSo21UIAppearanceContainer", "usernamelabel"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "addTarget"]
 - ["CSo8UIButton", "deinit"]
 - !private ["CSo8UIButton", "frame"]
 - !private ["CSo8UIButton", "init"]
 - !private ["CSo8UIButton", "setImage"]
+- !private ["CSo7UIColor", "cgColor"]
 - ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "white"]
 - !private ["PSo18UIContentContainer", "switchNav"]
@@ -565,8 +770,10 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "CGRect"]
 - !private ["PSo17UICoordinateSpace", "KVHome"]
 - !private ["PSo17UICoordinateSpace", "UIButton"]
+- !private ["PSo17UICoordinateSpace", "UIColor"]
 - !private ["PSo17UICoordinateSpace", "UIFont"]
 - !private ["PSo17UICoordinateSpace", "UIImage"]
+- !private ["PSo17UICoordinateSpace", "UIImageView"]
 - !private ["PSo17UICoordinateSpace", "UILabel"]
 - !private ["PSo17UICoordinateSpace", "UIView"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
@@ -574,30 +781,40 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "adjustsFontSizeToFitWidth"]
 - ["PSo17UICoordinateSpace", "back"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "clipsToBounds"]
 - !private ["PSo17UICoordinateSpace", "fatalError"]
 - !private ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "h"]
+- !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "imageSize"]
 - ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "kBlue"]
+- !private ["PSo17UICoordinateSpace", "kCurrentUser"]
 - !private ["PSo17UICoordinateSpace", "kGreen"]
 - !private ["PSo17UICoordinateSpace", "kHeight"]
 - !private ["PSo17UICoordinateSpace", "kMasterVC"]
 - !private ["PSo17UICoordinateSpace", "kWidth"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo17UICoordinateSpace", "maxY"]
 - !private ["PSo17UICoordinateSpace", "print"]
+- ["PSo17UICoordinateSpace", "profileImageView"]
 - !private ["PSo17UICoordinateSpace", "setImage"]
+- ["PSo17UICoordinateSpace", "showPage"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textAlignment"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
 - ["PSo17UICoordinateSpace", "titleLabel"]
 - ["PSo17UICoordinateSpace", "topNavBar"]
+- ["PSo17UICoordinateSpace", "usernamelabel"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "CGRect"]
 - !private ["PSo13UIDynamicItem", "KVHome"]
 - !private ["PSo13UIDynamicItem", "UIButton"]
+- !private ["PSo13UIDynamicItem", "UIColor"]
 - !private ["PSo13UIDynamicItem", "UIFont"]
 - !private ["PSo13UIDynamicItem", "UIImage"]
+- !private ["PSo13UIDynamicItem", "UIImageView"]
 - !private ["PSo13UIDynamicItem", "UILabel"]
 - !private ["PSo13UIDynamicItem", "UIView"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
@@ -605,30 +822,40 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "adjustsFontSizeToFitWidth"]
 - ["PSo13UIDynamicItem", "back"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "clipsToBounds"]
 - !private ["PSo13UIDynamicItem", "fatalError"]
 - !private ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "h"]
+- !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "imageSize"]
 - ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "kBlue"]
+- !private ["PSo13UIDynamicItem", "kCurrentUser"]
 - !private ["PSo13UIDynamicItem", "kGreen"]
 - !private ["PSo13UIDynamicItem", "kHeight"]
 - !private ["PSo13UIDynamicItem", "kMasterVC"]
 - !private ["PSo13UIDynamicItem", "kWidth"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo13UIDynamicItem", "maxY"]
 - !private ["PSo13UIDynamicItem", "print"]
+- ["PSo13UIDynamicItem", "profileImageView"]
 - !private ["PSo13UIDynamicItem", "setImage"]
+- ["PSo13UIDynamicItem", "showPage"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textAlignment"]
 - !private ["PSo13UIDynamicItem", "textColor"]
 - ["PSo13UIDynamicItem", "titleLabel"]
 - ["PSo13UIDynamicItem", "topNavBar"]
+- ["PSo13UIDynamicItem", "usernamelabel"]
 - ["PSo13UIDynamicItem", ""]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "KVHome"]
 - !private ["PSo18UIFocusEnvironment", "UIButton"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "UIImageView"]
 - !private ["PSo18UIFocusEnvironment", "UILabel"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
@@ -636,31 +863,41 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "adjustsFontSizeToFitWidth"]
 - ["PSo18UIFocusEnvironment", "back"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
 - !private ["PSo18UIFocusEnvironment", "fatalError"]
 - !private ["PSo18UIFocusEnvironment", "font"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - !private ["PSo18UIFocusEnvironment", "h"]
+- !private ["PSo18UIFocusEnvironment", "image"]
 - !private ["PSo18UIFocusEnvironment", "imageSize"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "kBlue"]
+- !private ["PSo18UIFocusEnvironment", "kCurrentUser"]
 - !private ["PSo18UIFocusEnvironment", "kGreen"]
 - !private ["PSo18UIFocusEnvironment", "kHeight"]
 - !private ["PSo18UIFocusEnvironment", "kMasterVC"]
 - !private ["PSo18UIFocusEnvironment", "kWidth"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "maxY"]
 - !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "profileImageView"]
 - !private ["PSo18UIFocusEnvironment", "setImage"]
+- ["PSo18UIFocusEnvironment", "showPage"]
 - !private ["PSo18UIFocusEnvironment", "switchNav"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textAlignment"]
 - !private ["PSo18UIFocusEnvironment", "textColor"]
 - ["PSo18UIFocusEnvironment", "titleLabel"]
 - ["PSo18UIFocusEnvironment", "topNavBar"]
+- ["PSo18UIFocusEnvironment", "usernamelabel"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "CGRect"]
 - !private ["PSo11UIFocusItem", "KVHome"]
 - !private ["PSo11UIFocusItem", "UIButton"]
+- !private ["PSo11UIFocusItem", "UIColor"]
 - !private ["PSo11UIFocusItem", "UIFont"]
 - !private ["PSo11UIFocusItem", "UIImage"]
+- !private ["PSo11UIFocusItem", "UIImageView"]
 - !private ["PSo11UIFocusItem", "UILabel"]
 - !private ["PSo11UIFocusItem", "UIView"]
 - !private ["PSo11UIFocusItem", "addSubview"]
@@ -668,29 +905,44 @@ depends-member:
 - !private ["PSo11UIFocusItem", "adjustsFontSizeToFitWidth"]
 - ["PSo11UIFocusItem", "back"]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
+- !private ["PSo11UIFocusItem", "clipsToBounds"]
 - !private ["PSo11UIFocusItem", "fatalError"]
 - !private ["PSo11UIFocusItem", "font"]
 - !private ["PSo11UIFocusItem", "frame"]
 - !private ["PSo11UIFocusItem", "h"]
+- !private ["PSo11UIFocusItem", "image"]
 - !private ["PSo11UIFocusItem", "imageSize"]
 - ["PSo11UIFocusItem", "init"]
 - !private ["PSo11UIFocusItem", "kBlue"]
+- !private ["PSo11UIFocusItem", "kCurrentUser"]
 - !private ["PSo11UIFocusItem", "kGreen"]
 - !private ["PSo11UIFocusItem", "kHeight"]
 - !private ["PSo11UIFocusItem", "kMasterVC"]
 - !private ["PSo11UIFocusItem", "kWidth"]
+- !private ["PSo11UIFocusItem", "layer"]
+- !private ["PSo11UIFocusItem", "maxY"]
 - !private ["PSo11UIFocusItem", "print"]
+- ["PSo11UIFocusItem", "profileImageView"]
 - !private ["PSo11UIFocusItem", "setImage"]
+- ["PSo11UIFocusItem", "showPage"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "textAlignment"]
 - !private ["PSo11UIFocusItem", "textColor"]
 - ["PSo11UIFocusItem", "titleLabel"]
 - ["PSo11UIFocusItem", "topNavBar"]
+- ["PSo11UIFocusItem", "usernamelabel"]
 - ["PSo11UIFocusItem", ""]
 - !private ["CSo6UIFont", "init"]
 - ["CSo7UIImage", "deinit"]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo7UIImage", "size"]
+- !private ["CSo11UIImageView", "clipsToBounds"]
+- ["CSo11UIImageView", "deinit"]
+- !private ["CSo11UIImageView", "frame"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo11UIImageView", "init"]
+- !private ["CSo11UIImageView", "layer"]
+- !private ["CSo11UIImageView", "maxY"]
 - !private ["CSo7UILabel", "adjustsFontSizeToFitWidth"]
 - ["CSo7UILabel", "deinit"]
 - !private ["CSo7UILabel", "font"]
@@ -703,8 +955,10 @@ depends-member:
 - !private ["CSo11UIResponder", "KVHome"]
 - ["CSo11UIResponder", "NSCoder"]
 - !private ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "addSubview"]
@@ -712,30 +966,40 @@ depends-member:
 - !private ["CSo11UIResponder", "adjustsFontSizeToFitWidth"]
 - ["CSo11UIResponder", "back"]
 - !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "clipsToBounds"]
 - !private ["CSo11UIResponder", "fatalError"]
 - !private ["CSo11UIResponder", "font"]
 - !private ["CSo11UIResponder", "frame"]
 - !private ["CSo11UIResponder", "h"]
+- !private ["CSo11UIResponder", "image"]
 - !private ["CSo11UIResponder", "imageSize"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "kBlue"]
+- !private ["CSo11UIResponder", "kCurrentUser"]
 - !private ["CSo11UIResponder", "kGreen"]
 - !private ["CSo11UIResponder", "kHeight"]
 - !private ["CSo11UIResponder", "kMasterVC"]
 - !private ["CSo11UIResponder", "kWidth"]
+- !private ["CSo11UIResponder", "layer"]
+- !private ["CSo11UIResponder", "maxY"]
 - !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "profileImageView"]
 - !private ["CSo11UIResponder", "setImage"]
+- ["CSo11UIResponder", "showPage"]
 - !private ["CSo11UIResponder", "switchNav"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textAlignment"]
 - !private ["CSo11UIResponder", "textColor"]
 - ["CSo11UIResponder", "titleLabel"]
 - ["CSo11UIResponder", "topNavBar"]
+- ["CSo11UIResponder", "usernamelabel"]
 - !private ["PSo30UIResponderStandardEditActions", "CGRect"]
 - !private ["PSo30UIResponderStandardEditActions", "KVHome"]
 - !private ["PSo30UIResponderStandardEditActions", "UIButton"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
+- !private ["PSo30UIResponderStandardEditActions", "UIImageView"]
 - !private ["PSo30UIResponderStandardEditActions", "UILabel"]
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
@@ -743,32 +1007,42 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "adjustsFontSizeToFitWidth"]
 - ["PSo30UIResponderStandardEditActions", "back"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
+- !private ["PSo30UIResponderStandardEditActions", "clipsToBounds"]
 - !private ["PSo30UIResponderStandardEditActions", "fatalError"]
 - !private ["PSo30UIResponderStandardEditActions", "font"]
 - !private ["PSo30UIResponderStandardEditActions", "frame"]
 - !private ["PSo30UIResponderStandardEditActions", "h"]
+- !private ["PSo30UIResponderStandardEditActions", "image"]
 - !private ["PSo30UIResponderStandardEditActions", "imageSize"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "kBlue"]
+- !private ["PSo30UIResponderStandardEditActions", "kCurrentUser"]
 - !private ["PSo30UIResponderStandardEditActions", "kGreen"]
 - !private ["PSo30UIResponderStandardEditActions", "kHeight"]
 - !private ["PSo30UIResponderStandardEditActions", "kMasterVC"]
 - !private ["PSo30UIResponderStandardEditActions", "kWidth"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
+- !private ["PSo30UIResponderStandardEditActions", "maxY"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
+- ["PSo30UIResponderStandardEditActions", "profileImageView"]
 - !private ["PSo30UIResponderStandardEditActions", "setImage"]
+- ["PSo30UIResponderStandardEditActions", "showPage"]
 - !private ["PSo30UIResponderStandardEditActions", "switchNav"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "textAlignment"]
 - !private ["PSo30UIResponderStandardEditActions", "textColor"]
 - ["PSo30UIResponderStandardEditActions", "titleLabel"]
 - ["PSo30UIResponderStandardEditActions", "topNavBar"]
+- ["PSo30UIResponderStandardEditActions", "usernamelabel"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "switchNav"]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "KVHome"]
 - !private ["PSo18UITraitEnvironment", "UIButton"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "UIImageView"]
 - !private ["PSo18UITraitEnvironment", "UILabel"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
@@ -776,32 +1050,42 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "adjustsFontSizeToFitWidth"]
 - ["PSo18UITraitEnvironment", "back"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "clipsToBounds"]
 - !private ["PSo18UITraitEnvironment", "fatalError"]
 - !private ["PSo18UITraitEnvironment", "font"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - !private ["PSo18UITraitEnvironment", "h"]
+- !private ["PSo18UITraitEnvironment", "image"]
 - !private ["PSo18UITraitEnvironment", "imageSize"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "kBlue"]
+- !private ["PSo18UITraitEnvironment", "kCurrentUser"]
 - !private ["PSo18UITraitEnvironment", "kGreen"]
 - !private ["PSo18UITraitEnvironment", "kHeight"]
 - !private ["PSo18UITraitEnvironment", "kMasterVC"]
 - !private ["PSo18UITraitEnvironment", "kWidth"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "maxY"]
 - !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "profileImageView"]
 - !private ["PSo18UITraitEnvironment", "setImage"]
+- ["PSo18UITraitEnvironment", "showPage"]
 - !private ["PSo18UITraitEnvironment", "switchNav"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textAlignment"]
 - !private ["PSo18UITraitEnvironment", "textColor"]
 - ["PSo18UITraitEnvironment", "titleLabel"]
 - ["PSo18UITraitEnvironment", "topNavBar"]
+- ["PSo18UITraitEnvironment", "usernamelabel"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "CGRect"]
 - !private ["CSo6UIView", "KVHome"]
 - ["CSo6UIView", "NSCoder"]
 - !private ["CSo6UIView", "UIButton"]
+- !private ["CSo6UIView", "UIColor"]
 - !private ["CSo6UIView", "UIFont"]
 - !private ["CSo6UIView", "UIImage"]
+- ["CSo6UIView", "UIImageView"]
 - ["CSo6UIView", "UILabel"]
 - ["CSo6UIView", "UIView"]
 - !private ["CSo6UIView", "addSubview"]
@@ -809,34 +1093,51 @@ depends-member:
 - !private ["CSo6UIView", "adjustsFontSizeToFitWidth"]
 - ["CSo6UIView", "back"]
 - !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "clipsToBounds"]
 - ["CSo6UIView", "deinit"]
 - !private ["CSo6UIView", "fatalError"]
 - !private ["CSo6UIView", "font"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "h"]
+- !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "imageSize"]
 - ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "kBlue"]
+- !private ["CSo6UIView", "kCurrentUser"]
 - !private ["CSo6UIView", "kGreen"]
 - !private ["CSo6UIView", "kHeight"]
 - !private ["CSo6UIView", "kMasterVC"]
 - !private ["CSo6UIView", "kWidth"]
+- !private ["CSo6UIView", "layer"]
+- !private ["CSo6UIView", "maxY"]
 - !private ["CSo6UIView", "print"]
+- ["CSo6UIView", "profileImageView"]
 - !private ["CSo6UIView", "setImage"]
+- ["CSo6UIView", "showPage"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textAlignment"]
 - !private ["CSo6UIView", "textColor"]
 - ["CSo6UIView", "titleLabel"]
 - ["CSo6UIView", "topNavBar"]
+- ["CSo6UIView", "usernamelabel"]
 - ["CSo6UIView", ""]
 - !private ["CSo16UIViewController", "switchNav"]
 - ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["C9Projet3754User", "completeName"]
+- !private ["C9Projet3754User", "getProfileImage"]
 - !private ["C9Projet37514ViewController", "switchNav"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGRect"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "KVHome"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIButton"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIFont"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIImage"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIImageView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UILabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
@@ -844,29 +1145,39 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "adjustsFontSizeToFitWidth"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "back"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "clipsToBounds"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "fatalError"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "font"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "h"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "imageSize"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kBlue"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kCurrentUser"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kGreen"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kHeight"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kMasterVC"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kWidth"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "maxY"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "print"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "profileImageView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setImage"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "showPage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textAlignment"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textColor"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleLabel"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "topNavBar"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "usernamelabel"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByColorLiteral", "cgColor"]
 - !private ["Ps26_ExpressibleByColorLiteral", "white"]
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - !private ["Ps26_ExpressibleByImageLiteral", "size"]
@@ -874,29 +1185,43 @@ depends-member:
 - !private ["Ps9_Hashable", "CGRect"]
 - !private ["Ps9_Hashable", "KVHome"]
 - !private ["Ps9_Hashable", "UIButton"]
+- !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "UIFont"]
 - !private ["Ps9_Hashable", "UIImage"]
+- !private ["Ps9_Hashable", "UIImageView"]
 - !private ["Ps9_Hashable", "UILabel"]
 - !private ["Ps9_Hashable", "UIView"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addSubview"]
 - !private ["Ps9_Hashable", "addTarget"]
 - !private ["Ps9_Hashable", "adjustsFontSizeToFitWidth"]
 - ["Ps9_Hashable", "back"]
 - !private ["Ps9_Hashable", "backgroundColor"]
+- !private ["Ps9_Hashable", "borderColor"]
+- !private ["Ps9_Hashable", "borderWidth"]
 - !private ["Ps9_Hashable", "center"]
+- !private ["Ps9_Hashable", "cgColor"]
+- !private ["Ps9_Hashable", "clipsToBounds"]
+- !private ["Ps9_Hashable", "cornerRadius"]
 - !private ["Ps9_Hashable", "fatalError"]
 - !private ["Ps9_Hashable", "font"]
 - !private ["Ps9_Hashable", "frame"]
 - !private ["Ps9_Hashable", "h"]
+- !private ["Ps9_Hashable", "image"]
 - !private ["Ps9_Hashable", "imageSize"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "kBlue"]
+- !private ["Ps9_Hashable", "kCurrentUser"]
 - !private ["Ps9_Hashable", "kGreen"]
 - !private ["Ps9_Hashable", "kHeight"]
 - !private ["Ps9_Hashable", "kMasterVC"]
 - !private ["Ps9_Hashable", "kWidth"]
+- !private ["Ps9_Hashable", "layer"]
+- !private ["Ps9_Hashable", "maxY"]
 - !private ["Ps9_Hashable", "print"]
+- ["Ps9_Hashable", "profileImageView"]
 - !private ["Ps9_Hashable", "setImage"]
+- ["Ps9_Hashable", "showPage"]
 - !private ["Ps9_Hashable", "size"]
 - !private ["Ps9_Hashable", "switchNav"]
 - !private ["Ps9_Hashable", "text"]
@@ -904,34 +1229,48 @@ depends-member:
 - !private ["Ps9_Hashable", "textColor"]
 - ["Ps9_Hashable", "titleLabel"]
 - ["Ps9_Hashable", "topNavBar"]
+- ["Ps9_Hashable", "usernamelabel"]
 - !private ["Ps9_Hashable", "white"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "white"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:
 - "Ps9AnyObject"
 - !private "P12FacebookCore26AppEventParameterValueType"
 - "Sb"
+- "CSo7CALayer"
 - "PSo15CALayerDelegate"
+- !private "PSo13CAMediaTiming"
+- "CSo7CGColor"
 - "V12CoreGraphics7CGFloat"
 - "VSC6CGRect"
 - "VSC6CGSize"
 - "Ps7CVarArg"
+- !private "Vs9Character"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- !private "Sd"
 - "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
 - "Ps8Hashable"
 - "SQ"
 - "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - "PSo8NSCoding"
@@ -970,6 +1309,7 @@ depends-nominal:
 - "PSo11UIFocusItem"
 - !private "CSo6UIFont"
 - "CSo7UIImage"
+- "CSo11UIImageView"
 - "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
@@ -978,8 +1318,15 @@ depends-nominal:
 - "CSo6UIView"
 - !private "CSo16UIViewController"
 - "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "C9Projet3754User"
 - !private "C9Projet37514ViewController"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
@@ -989,6 +1336,7 @@ depends-nominal:
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -1001,72 +1349,72 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/arm64.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFExecutor.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm64.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
-interface-hash: "d56a12558bf8ed0d5a044b6bad63d34b"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
+interface-hash: "34e542199b6a7c63949ff542e33ae572"

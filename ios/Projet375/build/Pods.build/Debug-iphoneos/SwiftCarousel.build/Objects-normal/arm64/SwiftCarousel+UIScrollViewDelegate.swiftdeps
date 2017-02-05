@@ -11,24 +11,24 @@ provides-dynamic-lookup:
 - "scrollViewDidEndScrollingAnimation"
 - "scrollViewDidEndDecelerating"
 depends-top-level:
-- !private "||"
-- "Bool"
-- !private "<="
-- "UIScrollView"
+- !private ">"
 - !private "BooleanLiteralType"
 - "SwiftCarousel"
-- !private "<"
-- !private "+="
+- !private "*"
 - !private "/"
 - "CGPoint"
 - !private "-"
 - !private "+"
+- "Bool"
 - !private ">="
 - "UnsafeMutablePointer"
-- !private ">"
-- !private "*"
 - "AssignmentPrecedence"
+- "UIScrollView"
+- !private "<"
 - "UIScrollViewDelegate"
+- !private "+="
+- !private "||"
+- !private "<="
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "center"]
@@ -818,8 +818,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/Pods/Target Support Files/SwiftCarousel/SwiftCarousel-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Pods.build/Debug-iphoneos/SwiftCarousel.build/unextended-module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Pods/Target Support Files/SwiftCarousel/SwiftCarousel-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Pods.build/Debug-iphoneos/SwiftCarousel.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"

@@ -209,6 +209,7 @@ SWIFT_CLASS("_TtC9Projet37511ProfileView")
 @interface ProfileView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)back;
+- (void)showPage;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -254,12 +255,15 @@ SWIFT_CLASS("_TtC9Projet37512QuestionView")
 - (void)userHasLost;
 @end
 
+@class UIImageView;
 
 SWIFT_CLASS("_TtC9Projet37516RandomPickerView")
 @interface RandomPickerView : UIView
 @property (nonatomic, strong) QuestionView * _Null_unspecified questionView;
 @property (nonatomic, strong) UILabel * _Null_unspecified firstLabel;
 @property (nonatomic, strong) UILabel * _Null_unspecified secondLabel;
+@property (nonatomic, strong) UILabel * _Null_unspecified opposantName;
+@property (nonatomic, strong) UIImageView * _Null_unspecified opposentImageView;
 - (void)generateCategory;
 - (void)clickToPlayWithButton:(UIButton * _Nonnull)button;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

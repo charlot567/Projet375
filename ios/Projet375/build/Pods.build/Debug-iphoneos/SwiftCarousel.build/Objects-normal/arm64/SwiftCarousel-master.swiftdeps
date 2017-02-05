@@ -1,12 +1,12 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "2a34cd577cda4f7837dbe80b96dcc3ba"
-build_time: [539600187, 877877000]
+options: "add892a6c8f7bfc67aacb1eb7e2b6151"
+build_time: [539625499, 438601000]
 inputs:
-  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarousel+UIGestureRecognizerDelegate.swift": [539592798, 0]
-  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarousel+UIScrollViewDelegate.swift": [539592798, 0]
-  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarousel.swift": [539592798, 0]
-  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarouselDelegate.swift": [539592798, 0]
-  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarouselError.swift": [539592798, 0]
-  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarouselResizeType.swift": [539592798, 0]
-  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarouselScroll.swift": [539592798, 0]
-  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/UIView+SwiftCarousel.swift": [539592798, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Pods/SwiftCarousel/Source/SwiftCarousel+UIGestureRecognizerDelegate.swift": [539616052, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Pods/SwiftCarousel/Source/SwiftCarousel+UIScrollViewDelegate.swift": [539616052, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Pods/SwiftCarousel/Source/SwiftCarousel.swift": [539616052, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Pods/SwiftCarousel/Source/SwiftCarouselDelegate.swift": [539616052, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Pods/SwiftCarousel/Source/SwiftCarouselError.swift": [539616052, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Pods/SwiftCarousel/Source/SwiftCarouselResizeType.swift": [539616052, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Pods/SwiftCarousel/Source/SwiftCarouselScroll.swift": [539616052, 0]
+  "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Pods/SwiftCarousel/Source/UIView+SwiftCarousel.swift": [539616052, 0]
