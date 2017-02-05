@@ -10,6 +10,7 @@ import UIKit
 import CoreMotion
 import AVFoundation
 import CoreLocation
+import SwiftSpinner
 
 class VrView: UIView, CLLocationManagerDelegate {
     
@@ -34,6 +35,8 @@ class VrView: UIView, CLLocationManagerDelegate {
     
     var deviceWidth = CGFloat(0)
     var view: UIButton!
+    
+    var questionView: QuestionView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -210,7 +213,26 @@ class VrView: UIView, CLLocationManagerDelegate {
     }
     
     func pressedArena() {
-        print("Image2")
+        print("Image5")
+        SwiftSpinner.show("Chargement...")
+        let randomNum:UInt32 = arc4random_uniform(4)
+        ControllerQuestion.getQuestion(location: nil, cat: Int(randomNum)) { (success: Bool, q: question?) in
+            
+            if(success && q != nil) {
+                let match = Match()
+                match.state = kNewMatch
+                
+                DispatchQueue.main.sync {
+                    self.questionView = QuestionView(frame: kMasterVC.view.frame, q: q!, match: match, background: true, isArena: true)
+                    self.addSubview(self.questionView)
+                    SwiftSpinner.hide()
+                }
+            }
+            
+            else {
+                displayAlert(currentViewController: kMasterVC, title: "Errer", message: "Erreur lors de la récupération des questions")
+            }
+        }
     }
     
     func updateMotion() {

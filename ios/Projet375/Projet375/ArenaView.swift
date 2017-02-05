@@ -128,6 +128,18 @@ class ArenaView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
     
     func back() {
         print("back")
+        
+        if(nbQuestionReussiUser > arena.nbQuestionReussi) {
+            ControllerArena.setArena(arenaId: arena.id, nbQuestionReussi: nbQuestionReussiUser, completitionHandler: { (success: Bool) in
+                print(success)
+            })
+            
+        }
+        
+        
+        
+        nbQuestionReussiUser = 0
+        
         kMasterVC.switchNav(index: KVHome)
     }
     

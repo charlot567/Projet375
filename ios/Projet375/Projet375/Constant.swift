@@ -54,3 +54,5 @@ let KVChart = 6
 
 var kUserCurrentTurn: Int = 0
 var kGoodAnswer: Int = 0
+
+var nbQuestionReussiUser: Int = 0

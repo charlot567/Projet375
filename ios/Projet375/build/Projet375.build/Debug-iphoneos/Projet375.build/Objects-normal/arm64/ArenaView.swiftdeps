@@ -6,74 +6,78 @@ provides-nominal:
 provides-member:
 - ["C9Projet3759ArenaView", ""]
 provides-dynamic-lookup:
+- "margin"
 - "load"
+- "mapView"
+- "getCurrentViewController"
+- "pressedArena"
 - "controller"
+- "back"
 - "isActive"
 - "areneLoc"
-- "margin"
-- "getCurrentViewController"
-- "map"
 - "locationManager"
 - "locationManager"
-- "mapView"
-- "back"
-- "v"
 - "showVR"
-- "pressedArena"
+- "v"
+- "map"
 depends-top-level:
-- !private "UIControlEvents"
-- !private "fatalError"
-- "ArenaView"
-- !private "UIAlertActionStyle"
 - "UIViewController"
-- !private "kGreen"
+- "MKOverlayRenderer"
+- !private "Bool"
+- !private "UIAlertActionStyle"
+- !private "MKCircleRenderer"
+- !private "MKCoordinateSpan"
+- !private "UIAlertAction"
+- !private "-"
+- !private "UIApplication"
+- "NSCoder"
+- !private "UIImage"
+- !private "MKCoordinateRegion"
+- !private "MKCircle"
+- !private "KVHome"
+- !private "kBlue"
+- !private "/"
+- !private "UIAlertController"
+- "CGFloat"
+- !private "nbQuestionReussiUser"
+- "CLLocation"
+- !private "!="
+- !private "UIAlertControllerStyle"
+- !private "NSTextAlignment"
+- "CLLocationManager"
+- "MKMapView"
+- "CLLocationManagerDelegate"
+- "CLLocationCoordinate2D"
 - !private "+"
 - !private "kHeight"
-- "CGRect"
-- "MKOverlayRenderer"
-- !private "UIApplication"
-- !private "kWidth"
-- !private "*"
-- "MKMapViewDelegate"
-- !private "CLCircularRegion"
-- "UIView"
-- "NSCoder"
-- "UIButton"
-- "CGFloat"
-- !private "print"
-- !private "MKCircleRenderer"
-- "UILabel"
-- !private "NSTextAlignment"
-- "VrView"
-- !private "kMasterVC"
-- !private "kCLLocationAccuracyNearestTenMeters"
-- !private "UIFont"
-- "MKMapView"
-- "BooleanLiteralType"
-- "CLLocationCoordinate2D"
 - !private "UIColor"
-- "CLLocationManager"
-- "CLLocationManagerDelegate"
-- "Arena"
+- "BooleanLiteralType"
+- !private "fatalError"
+- !private "kWidth"
+- !private "kCLLocationAccuracyNearestTenMeters"
+- !private ">"
+- !private "UIFont"
 - !private "StringLiteralType"
-- !private "UIAlertControllerStyle"
-- "MKOverlay"
-- "CLLocation"
+- "ArenaView"
+- !private "imageSize"
+- !private "kGreen"
+- !private "UIControlEvents"
+- "Arena"
 - "AssignmentPrecedence"
 - !private "=="
 - "CastingPrecedence"
-- !private "MKCircle"
-- !private "!="
-- !private "kBlue"
-- !private "KVHome"
-- !private "UIImage"
-- !private "imageSize"
-- !private "MKCoordinateRegion"
-- !private "UIAlertController"
-- !private "-"
-- !private "/"
-- !private "MKCoordinateSpan"
-- !private "UIAlertAction"
+- !private "ControllerArena"
+- "UIButton"
+- "MKMapViewDelegate"
+- !private "*"
+- "UIView"
+- "UILabel"
+- "VrView"
+- "CGRect"
+- "MKOverlay"
+- !private "print"
+- !private "CLCircularRegion"
+- !private "kMasterVC"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -81,6 +85,7 @@ depends-member:
 - !private ["Ps9AnyObject", "CLCircularRegion"]
 - ["Ps9AnyObject", "CLLocationCoordinate2D"]
 - ["Ps9AnyObject", "CLLocationManager"]
+- !private ["Ps9AnyObject", "ControllerArena"]
 - !private ["Ps9AnyObject", "KVHome"]
 - !private ["Ps9AnyObject", "MKCircle"]
 - !private ["Ps9AnyObject", "MKCircleRenderer"]
@@ -126,6 +131,7 @@ depends-member:
 - ["Ps9AnyObject", "getCurrentViewController"]
 - !private ["Ps9AnyObject", "h"]
 - ["Ps9AnyObject", "hintOverlay"]
+- !private ["Ps9AnyObject", "id"]
 - !private ["Ps9AnyObject", "imageSize"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "isActive"]
@@ -154,12 +160,15 @@ depends-member:
 - ["Ps9AnyObject", "mapViewWillStartLocatingUser"]
 - ["Ps9AnyObject", "mapViewWillStartRenderingMap"]
 - ["Ps9AnyObject", "margin"]
+- !private ["Ps9AnyObject", "nbQuestionReussi"]
+- !private ["Ps9AnyObject", "nbQuestionReussiUser"]
 - !private ["Ps9AnyObject", "present"]
 - !private ["Ps9AnyObject", "presentedViewController"]
 - ["Ps9AnyObject", "pressedArena"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "requestWhenInUseAuthorization"]
 - !private ["Ps9AnyObject", "rootViewController"]
+- !private ["Ps9AnyObject", "setArena"]
 - !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "setRegion"]
 - !private ["Ps9AnyObject", "shared"]
@@ -179,13 +188,17 @@ depends-member:
 - !private ["Ps9AnyObject", "withAlphaComponent"]
 - ["Ps9AnyObject", ""]
 - !private ["P12FacebookCore26AppEventParameterValueType", "init"]
+- !private ["C9Projet3755Arena", "id"]
+- !private ["C9Projet3755Arena", "nbQuestionReussi"]
 - ["C9Projet3759ArenaView", "Arena"]
+- !private ["C9Projet3759ArenaView", "Bool"]
 - ["C9Projet3759ArenaView", "CGFloat"]
 - ["C9Projet3759ArenaView", "CGRect"]
 - !private ["C9Projet3759ArenaView", "CLCircularRegion"]
 - ["C9Projet3759ArenaView", "CLLocation"]
 - ["C9Projet3759ArenaView", "CLLocationCoordinate2D"]
 - ["C9Projet3759ArenaView", "CLLocationManager"]
+- !private ["C9Projet3759ArenaView", "ControllerArena"]
 - !private ["C9Projet3759ArenaView", "KVHome"]
 - !private ["C9Projet3759ArenaView", "MKCircle"]
 - !private ["C9Projet3759ArenaView", "MKCircleRenderer"]
@@ -245,6 +258,7 @@ depends-member:
 - ["C9Projet3759ArenaView", "mapViewWillStartLocatingUser"]
 - ["C9Projet3759ArenaView", "mapViewWillStartRenderingMap"]
 - ["C9Projet3759ArenaView", "margin"]
+- !private ["C9Projet3759ArenaView", "nbQuestionReussiUser"]
 - ["C9Projet3759ArenaView", "pressedArena"]
 - !private ["C9Projet3759ArenaView", "print"]
 - ["C9Projet3759ArenaView", "showVR"]
@@ -271,6 +285,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "CLCircularRegion"]
 - ["PSo15CALayerDelegate", "CLLocationCoordinate2D"]
 - ["PSo15CALayerDelegate", "CLLocationManager"]
+- !private ["PSo15CALayerDelegate", "ControllerArena"]
 - !private ["PSo15CALayerDelegate", "KVHome"]
 - !private ["PSo15CALayerDelegate", "MKCircle"]
 - !private ["PSo15CALayerDelegate", "MKCircleRenderer"]
@@ -334,6 +349,7 @@ depends-member:
 - ["PSo15CALayerDelegate", "mapViewWillStartLocatingUser"]
 - ["PSo15CALayerDelegate", "mapViewWillStartRenderingMap"]
 - ["PSo15CALayerDelegate", "margin"]
+- !private ["PSo15CALayerDelegate", "nbQuestionReussiUser"]
 - ["PSo15CALayerDelegate", "pressedArena"]
 - !private ["PSo15CALayerDelegate", "print"]
 - !private ["PSo15CALayerDelegate", "rootViewController"]
@@ -378,6 +394,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "CLCircularRegion"]
 - ["PSo25CLLocationManagerDelegate", "CLLocationCoordinate2D"]
 - ["PSo25CLLocationManagerDelegate", "CLLocationManager"]
+- !private ["PSo25CLLocationManagerDelegate", "ControllerArena"]
 - !private ["PSo25CLLocationManagerDelegate", "KVHome"]
 - !private ["PSo25CLLocationManagerDelegate", "MKCircle"]
 - !private ["PSo25CLLocationManagerDelegate", "MKCircleRenderer"]
@@ -433,6 +450,7 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "mapViewWillStartLocatingUser"]
 - ["PSo25CLLocationManagerDelegate", "mapViewWillStartRenderingMap"]
 - !private ["PSo25CLLocationManagerDelegate", "margin"]
+- !private ["PSo25CLLocationManagerDelegate", "nbQuestionReussiUser"]
 - !private ["PSo25CLLocationManagerDelegate", "pressedArena"]
 - !private ["PSo25CLLocationManagerDelegate", "print"]
 - !private ["PSo25CLLocationManagerDelegate", "showVR"]
@@ -447,6 +465,7 @@ depends-member:
 - !private ["Ps7CVarArg", "CLCircularRegion"]
 - ["Ps7CVarArg", "CLLocationCoordinate2D"]
 - ["Ps7CVarArg", "CLLocationManager"]
+- !private ["Ps7CVarArg", "ControllerArena"]
 - !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "KVHome"]
 - !private ["Ps7CVarArg", "MKCircle"]
@@ -523,6 +542,7 @@ depends-member:
 - ["Ps7CVarArg", "mapViewWillStartLocatingUser"]
 - ["Ps7CVarArg", "mapViewWillStartRenderingMap"]
 - ["Ps7CVarArg", "margin"]
+- !private ["Ps7CVarArg", "nbQuestionReussiUser"]
 - !private ["Ps7CVarArg", "present"]
 - !private ["Ps7CVarArg", "presentedViewController"]
 - ["Ps7CVarArg", "pressedArena"]
@@ -551,11 +571,14 @@ depends-member:
 - !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "last"]
 - !private ["Ps10Comparable", "init"]
+- !private ["C9Projet37510Controller", "setArena"]
+- !private ["C9Projet37515ControllerArena", "setArena"]
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRect"]
 - !private ["Ps28CustomDebugStringConvertible", "CLCircularRegion"]
 - ["Ps28CustomDebugStringConvertible", "CLLocationCoordinate2D"]
 - ["Ps28CustomDebugStringConvertible", "CLLocationManager"]
+- !private ["Ps28CustomDebugStringConvertible", "ControllerArena"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "KVHome"]
 - !private ["Ps28CustomDebugStringConvertible", "MKCircle"]
@@ -634,6 +657,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "mapViewWillStartRenderingMap"]
 - ["Ps28CustomDebugStringConvertible", "margin"]
 - !private ["Ps28CustomDebugStringConvertible", "maxY"]
+- !private ["Ps28CustomDebugStringConvertible", "nbQuestionReussiUser"]
 - !private ["Ps28CustomDebugStringConvertible", "present"]
 - !private ["Ps28CustomDebugStringConvertible", "presentedViewController"]
 - ["Ps28CustomDebugStringConvertible", "pressedArena"]
@@ -677,6 +701,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "CLCircularRegion"]
 - ["Ps23CustomStringConvertible", "CLLocationCoordinate2D"]
 - ["Ps23CustomStringConvertible", "CLLocationManager"]
+- !private ["Ps23CustomStringConvertible", "ControllerArena"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "KVHome"]
 - !private ["Ps23CustomStringConvertible", "MKCircle"]
@@ -754,6 +779,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "mapViewWillStartLocatingUser"]
 - ["Ps23CustomStringConvertible", "mapViewWillStartRenderingMap"]
 - ["Ps23CustomStringConvertible", "margin"]
+- !private ["Ps23CustomStringConvertible", "nbQuestionReussiUser"]
 - !private ["Ps23CustomStringConvertible", "present"]
 - !private ["Ps23CustomStringConvertible", "presentedViewController"]
 - ["Ps23CustomStringConvertible", "pressedArena"]
@@ -784,6 +810,7 @@ depends-member:
 - !private ["Ps9Equatable", "CLCircularRegion"]
 - ["Ps9Equatable", "CLLocationCoordinate2D"]
 - ["Ps9Equatable", "CLLocationManager"]
+- !private ["Ps9Equatable", "ControllerArena"]
 - !private ["Ps9Equatable", "KVHome"]
 - !private ["Ps9Equatable", "MKCircle"]
 - !private ["Ps9Equatable", "MKCircleRenderer"]
@@ -864,6 +891,7 @@ depends-member:
 - ["Ps9Equatable", "mapViewWillStartRenderingMap"]
 - ["Ps9Equatable", "margin"]
 - !private ["Ps9Equatable", "maxY"]
+- !private ["Ps9Equatable", "nbQuestionReussiUser"]
 - !private ["Ps9Equatable", "normal"]
 - !private ["Ps9Equatable", "present"]
 - !private ["Ps9Equatable", "presentedViewController"]
@@ -910,6 +938,7 @@ depends-member:
 - !private ["Ps8Hashable", "CLCircularRegion"]
 - ["Ps8Hashable", "CLLocationCoordinate2D"]
 - ["Ps8Hashable", "CLLocationManager"]
+- !private ["Ps8Hashable", "ControllerArena"]
 - !private ["Ps8Hashable", "KVHome"]
 - !private ["Ps8Hashable", "MKCircle"]
 - !private ["Ps8Hashable", "MKCircleRenderer"]
@@ -988,6 +1017,7 @@ depends-member:
 - ["Ps8Hashable", "mapViewWillStartLocatingUser"]
 - ["Ps8Hashable", "mapViewWillStartRenderingMap"]
 - ["Ps8Hashable", "margin"]
+- !private ["Ps8Hashable", "nbQuestionReussiUser"]
 - !private ["Ps8Hashable", "present"]
 - !private ["Ps8Hashable", "presentedViewController"]
 - ["Ps8Hashable", "pressedArena"]
@@ -1049,6 +1079,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "CLCircularRegion"]
 - ["PSo17MKMapViewDelegate", "CLLocationCoordinate2D"]
 - ["PSo17MKMapViewDelegate", "CLLocationManager"]
+- !private ["PSo17MKMapViewDelegate", "ControllerArena"]
 - !private ["PSo17MKMapViewDelegate", "KVHome"]
 - !private ["PSo17MKMapViewDelegate", "MKCircle"]
 - !private ["PSo17MKMapViewDelegate", "MKCircleRenderer"]
@@ -1101,6 +1132,7 @@ depends-member:
 - ["PSo17MKMapViewDelegate", "mapViewWillStartLocatingUser"]
 - ["PSo17MKMapViewDelegate", "mapViewWillStartRenderingMap"]
 - !private ["PSo17MKMapViewDelegate", "margin"]
+- !private ["PSo17MKMapViewDelegate", "nbQuestionReussiUser"]
 - !private ["PSo17MKMapViewDelegate", "pressedArena"]
 - !private ["PSo17MKMapViewDelegate", "print"]
 - !private ["PSo17MKMapViewDelegate", "showVR"]
@@ -1131,6 +1163,7 @@ depends-member:
 - !private ["PSo8NSCoding", "CLCircularRegion"]
 - ["PSo8NSCoding", "CLLocationCoordinate2D"]
 - ["PSo8NSCoding", "CLLocationManager"]
+- !private ["PSo8NSCoding", "ControllerArena"]
 - !private ["PSo8NSCoding", "KVHome"]
 - !private ["PSo8NSCoding", "MKCircle"]
 - !private ["PSo8NSCoding", "MKCircleRenderer"]
@@ -1199,6 +1232,7 @@ depends-member:
 - ["PSo8NSCoding", "mapViewWillStartLocatingUser"]
 - ["PSo8NSCoding", "mapViewWillStartRenderingMap"]
 - ["PSo8NSCoding", "margin"]
+- !private ["PSo8NSCoding", "nbQuestionReussiUser"]
 - !private ["PSo8NSCoding", "present"]
 - !private ["PSo8NSCoding", "presentedViewController"]
 - ["PSo8NSCoding", "pressedArena"]
@@ -1232,12 +1266,14 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "switchNav"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Arena"]
+- !private ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "CLCircularRegion"]
 - ["CSo8NSObject", "CLLocation"]
 - ["CSo8NSObject", "CLLocationCoordinate2D"]
 - ["CSo8NSObject", "CLLocationManager"]
+- !private ["CSo8NSObject", "ControllerArena"]
 - !private ["CSo8NSObject", "KVHome"]
 - !private ["CSo8NSObject", "MKCircle"]
 - !private ["CSo8NSObject", "MKCircleRenderer"]
@@ -1315,6 +1351,7 @@ depends-member:
 - ["CSo8NSObject", "mapViewWillStartLocatingUser"]
 - ["CSo8NSObject", "mapViewWillStartRenderingMap"]
 - ["CSo8NSObject", "margin"]
+- !private ["CSo8NSObject", "nbQuestionReussiUser"]
 - !private ["CSo8NSObject", "present"]
 - !private ["CSo8NSObject", "presentedViewController"]
 - ["CSo8NSObject", "pressedArena"]
@@ -1343,6 +1380,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CLCircularRegion"]
 - ["PSo16NSObjectProtocol", "CLLocationCoordinate2D"]
 - ["PSo16NSObjectProtocol", "CLLocationManager"]
+- !private ["PSo16NSObjectProtocol", "ControllerArena"]
 - !private ["PSo16NSObjectProtocol", "KVHome"]
 - !private ["PSo16NSObjectProtocol", "MKCircle"]
 - !private ["PSo16NSObjectProtocol", "MKCircleRenderer"]
@@ -1416,6 +1454,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "mapViewWillStartLocatingUser"]
 - ["PSo16NSObjectProtocol", "mapViewWillStartRenderingMap"]
 - ["PSo16NSObjectProtocol", "margin"]
+- !private ["PSo16NSObjectProtocol", "nbQuestionReussiUser"]
 - !private ["PSo16NSObjectProtocol", "present"]
 - !private ["PSo16NSObjectProtocol", "presentedViewController"]
 - ["PSo16NSObjectProtocol", "pressedArena"]
@@ -1492,6 +1531,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "CLCircularRegion"]
 - ["PSo29UIAccessibilityIdentification", "CLLocationCoordinate2D"]
 - ["PSo29UIAccessibilityIdentification", "CLLocationManager"]
+- !private ["PSo29UIAccessibilityIdentification", "ControllerArena"]
 - !private ["PSo29UIAccessibilityIdentification", "KVHome"]
 - !private ["PSo29UIAccessibilityIdentification", "MKCircle"]
 - !private ["PSo29UIAccessibilityIdentification", "MKCircleRenderer"]
@@ -1555,6 +1595,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "mapViewWillStartLocatingUser"]
 - ["PSo29UIAccessibilityIdentification", "mapViewWillStartRenderingMap"]
 - ["PSo29UIAccessibilityIdentification", "margin"]
+- !private ["PSo29UIAccessibilityIdentification", "nbQuestionReussiUser"]
 - ["PSo29UIAccessibilityIdentification", "pressedArena"]
 - !private ["PSo29UIAccessibilityIdentification", "print"]
 - !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
@@ -1585,6 +1626,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "CLCircularRegion"]
 - ["PSo12UIAppearance", "CLLocationCoordinate2D"]
 - ["PSo12UIAppearance", "CLLocationManager"]
+- !private ["PSo12UIAppearance", "ControllerArena"]
 - !private ["PSo12UIAppearance", "KVHome"]
 - !private ["PSo12UIAppearance", "MKCircle"]
 - !private ["PSo12UIAppearance", "MKCircleRenderer"]
@@ -1648,6 +1690,7 @@ depends-member:
 - ["PSo12UIAppearance", "mapViewWillStartLocatingUser"]
 - ["PSo12UIAppearance", "mapViewWillStartRenderingMap"]
 - ["PSo12UIAppearance", "margin"]
+- !private ["PSo12UIAppearance", "nbQuestionReussiUser"]
 - ["PSo12UIAppearance", "pressedArena"]
 - !private ["PSo12UIAppearance", "print"]
 - !private ["PSo12UIAppearance", "rootViewController"]
@@ -1667,6 +1710,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "CLCircularRegion"]
 - ["PSo21UIAppearanceContainer", "CLLocationCoordinate2D"]
 - ["PSo21UIAppearanceContainer", "CLLocationManager"]
+- !private ["PSo21UIAppearanceContainer", "ControllerArena"]
 - !private ["PSo21UIAppearanceContainer", "KVHome"]
 - !private ["PSo21UIAppearanceContainer", "MKCircle"]
 - !private ["PSo21UIAppearanceContainer", "MKCircleRenderer"]
@@ -1731,6 +1775,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "mapViewWillStartLocatingUser"]
 - ["PSo21UIAppearanceContainer", "mapViewWillStartRenderingMap"]
 - ["PSo21UIAppearanceContainer", "margin"]
+- !private ["PSo21UIAppearanceContainer", "nbQuestionReussiUser"]
 - !private ["PSo21UIAppearanceContainer", "present"]
 - !private ["PSo21UIAppearanceContainer", "presentedViewController"]
 - ["PSo21UIAppearanceContainer", "pressedArena"]
@@ -1788,6 +1833,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "CLCircularRegion"]
 - ["PSo17UICoordinateSpace", "CLLocationCoordinate2D"]
 - ["PSo17UICoordinateSpace", "CLLocationManager"]
+- !private ["PSo17UICoordinateSpace", "ControllerArena"]
 - !private ["PSo17UICoordinateSpace", "KVHome"]
 - !private ["PSo17UICoordinateSpace", "MKCircle"]
 - !private ["PSo17UICoordinateSpace", "MKCircleRenderer"]
@@ -1851,6 +1897,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "mapViewWillStartLocatingUser"]
 - ["PSo17UICoordinateSpace", "mapViewWillStartRenderingMap"]
 - ["PSo17UICoordinateSpace", "margin"]
+- !private ["PSo17UICoordinateSpace", "nbQuestionReussiUser"]
 - ["PSo17UICoordinateSpace", "pressedArena"]
 - !private ["PSo17UICoordinateSpace", "print"]
 - !private ["PSo17UICoordinateSpace", "rootViewController"]
@@ -1870,6 +1917,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "CLCircularRegion"]
 - ["PSo13UIDynamicItem", "CLLocationCoordinate2D"]
 - ["PSo13UIDynamicItem", "CLLocationManager"]
+- !private ["PSo13UIDynamicItem", "ControllerArena"]
 - !private ["PSo13UIDynamicItem", "KVHome"]
 - !private ["PSo13UIDynamicItem", "MKCircle"]
 - !private ["PSo13UIDynamicItem", "MKCircleRenderer"]
@@ -1933,6 +1981,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "mapViewWillStartLocatingUser"]
 - ["PSo13UIDynamicItem", "mapViewWillStartRenderingMap"]
 - ["PSo13UIDynamicItem", "margin"]
+- !private ["PSo13UIDynamicItem", "nbQuestionReussiUser"]
 - ["PSo13UIDynamicItem", "pressedArena"]
 - !private ["PSo13UIDynamicItem", "print"]
 - !private ["PSo13UIDynamicItem", "rootViewController"]
@@ -1952,6 +2001,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "CLCircularRegion"]
 - ["PSo18UIFocusEnvironment", "CLLocationCoordinate2D"]
 - ["PSo18UIFocusEnvironment", "CLLocationManager"]
+- !private ["PSo18UIFocusEnvironment", "ControllerArena"]
 - !private ["PSo18UIFocusEnvironment", "KVHome"]
 - !private ["PSo18UIFocusEnvironment", "MKCircle"]
 - !private ["PSo18UIFocusEnvironment", "MKCircleRenderer"]
@@ -2016,6 +2066,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "mapViewWillStartLocatingUser"]
 - ["PSo18UIFocusEnvironment", "mapViewWillStartRenderingMap"]
 - ["PSo18UIFocusEnvironment", "margin"]
+- !private ["PSo18UIFocusEnvironment", "nbQuestionReussiUser"]
 - !private ["PSo18UIFocusEnvironment", "present"]
 - !private ["PSo18UIFocusEnvironment", "presentedViewController"]
 - ["PSo18UIFocusEnvironment", "pressedArena"]
@@ -2038,6 +2089,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "CLCircularRegion"]
 - ["PSo11UIFocusItem", "CLLocationCoordinate2D"]
 - ["PSo11UIFocusItem", "CLLocationManager"]
+- !private ["PSo11UIFocusItem", "ControllerArena"]
 - !private ["PSo11UIFocusItem", "KVHome"]
 - !private ["PSo11UIFocusItem", "MKCircle"]
 - !private ["PSo11UIFocusItem", "MKCircleRenderer"]
@@ -2101,6 +2153,7 @@ depends-member:
 - ["PSo11UIFocusItem", "mapViewWillStartLocatingUser"]
 - ["PSo11UIFocusItem", "mapViewWillStartRenderingMap"]
 - ["PSo11UIFocusItem", "margin"]
+- !private ["PSo11UIFocusItem", "nbQuestionReussiUser"]
 - ["PSo11UIFocusItem", "pressedArena"]
 - !private ["PSo11UIFocusItem", "print"]
 - !private ["PSo11UIFocusItem", "rootViewController"]
@@ -2131,12 +2184,14 @@ depends-member:
 - !private ["CSo7UILabel", "textAlignment"]
 - !private ["CSo7UILabel", "textColor"]
 - ["CSo11UIResponder", "Arena"]
+- !private ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "CLCircularRegion"]
 - ["CSo11UIResponder", "CLLocation"]
 - ["CSo11UIResponder", "CLLocationCoordinate2D"]
 - ["CSo11UIResponder", "CLLocationManager"]
+- !private ["CSo11UIResponder", "ControllerArena"]
 - !private ["CSo11UIResponder", "KVHome"]
 - !private ["CSo11UIResponder", "MKCircle"]
 - !private ["CSo11UIResponder", "MKCircleRenderer"]
@@ -2206,6 +2261,7 @@ depends-member:
 - ["CSo11UIResponder", "mapViewWillStartLocatingUser"]
 - ["CSo11UIResponder", "mapViewWillStartRenderingMap"]
 - ["CSo11UIResponder", "margin"]
+- !private ["CSo11UIResponder", "nbQuestionReussiUser"]
 - !private ["CSo11UIResponder", "present"]
 - !private ["CSo11UIResponder", "presentedViewController"]
 - ["CSo11UIResponder", "pressedArena"]
@@ -2228,6 +2284,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "CLCircularRegion"]
 - ["PSo30UIResponderStandardEditActions", "CLLocationCoordinate2D"]
 - ["PSo30UIResponderStandardEditActions", "CLLocationManager"]
+- !private ["PSo30UIResponderStandardEditActions", "ControllerArena"]
 - !private ["PSo30UIResponderStandardEditActions", "KVHome"]
 - !private ["PSo30UIResponderStandardEditActions", "MKCircle"]
 - !private ["PSo30UIResponderStandardEditActions", "MKCircleRenderer"]
@@ -2293,6 +2350,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "mapViewWillStartLocatingUser"]
 - ["PSo30UIResponderStandardEditActions", "mapViewWillStartRenderingMap"]
 - ["PSo30UIResponderStandardEditActions", "margin"]
+- !private ["PSo30UIResponderStandardEditActions", "nbQuestionReussiUser"]
 - !private ["PSo30UIResponderStandardEditActions", "present"]
 - !private ["PSo30UIResponderStandardEditActions", "presentedViewController"]
 - ["PSo30UIResponderStandardEditActions", "pressedArena"]
@@ -2321,6 +2379,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "CLCircularRegion"]
 - ["PSo18UITraitEnvironment", "CLLocationCoordinate2D"]
 - ["PSo18UITraitEnvironment", "CLLocationManager"]
+- !private ["PSo18UITraitEnvironment", "ControllerArena"]
 - !private ["PSo18UITraitEnvironment", "KVHome"]
 - !private ["PSo18UITraitEnvironment", "MKCircle"]
 - !private ["PSo18UITraitEnvironment", "MKCircleRenderer"]
@@ -2385,6 +2444,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "mapViewWillStartLocatingUser"]
 - ["PSo18UITraitEnvironment", "mapViewWillStartRenderingMap"]
 - ["PSo18UITraitEnvironment", "margin"]
+- !private ["PSo18UITraitEnvironment", "nbQuestionReussiUser"]
 - !private ["PSo18UITraitEnvironment", "present"]
 - !private ["PSo18UITraitEnvironment", "presentedViewController"]
 - ["PSo18UITraitEnvironment", "pressedArena"]
@@ -2403,12 +2463,14 @@ depends-member:
 - ["PSo18UITraitEnvironment", "v"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "Arena"]
+- !private ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "CGFloat"]
 - ["CSo6UIView", "CGRect"]
 - !private ["CSo6UIView", "CLCircularRegion"]
 - ["CSo6UIView", "CLLocation"]
 - ["CSo6UIView", "CLLocationCoordinate2D"]
 - ["CSo6UIView", "CLLocationManager"]
+- !private ["CSo6UIView", "ControllerArena"]
 - !private ["CSo6UIView", "KVHome"]
 - !private ["CSo6UIView", "MKCircle"]
 - !private ["CSo6UIView", "MKCircleRenderer"]
@@ -2477,6 +2539,7 @@ depends-member:
 - ["CSo6UIView", "mapViewWillStartLocatingUser"]
 - ["CSo6UIView", "mapViewWillStartRenderingMap"]
 - ["CSo6UIView", "margin"]
+- !private ["CSo6UIView", "nbQuestionReussiUser"]
 - ["CSo6UIView", "pressedArena"]
 - !private ["CSo6UIView", "print"]
 - !private ["CSo6UIView", "rootViewController"]
@@ -2516,6 +2579,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CLCircularRegion"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "CLLocationCoordinate2D"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "CLLocationManager"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "ControllerArena"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "KVHome"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "MKCircle"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "MKCircleRenderer"]
@@ -2579,6 +2643,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "mapViewWillStartLocatingUser"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "mapViewWillStartRenderingMap"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "margin"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "nbQuestionReussiUser"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "pressedArena"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "print"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rootViewController"]
@@ -2612,6 +2677,7 @@ depends-member:
 - !private ["Ps9_Hashable", "CLCircularRegion"]
 - ["Ps9_Hashable", "CLLocationCoordinate2D"]
 - ["Ps9_Hashable", "CLLocationManager"]
+- !private ["Ps9_Hashable", "ControllerArena"]
 - !private ["Ps9_Hashable", "KVHome"]
 - !private ["Ps9_Hashable", "MKCircle"]
 - !private ["Ps9_Hashable", "MKCircleRenderer"]
@@ -2690,6 +2756,7 @@ depends-member:
 - ["Ps9_Hashable", "mapViewWillStartLocatingUser"]
 - ["Ps9_Hashable", "mapViewWillStartRenderingMap"]
 - ["Ps9_Hashable", "margin"]
+- !private ["Ps9_Hashable", "nbQuestionReussiUser"]
 - !private ["Ps9_Hashable", "present"]
 - !private ["Ps9_Hashable", "presentedViewController"]
 - ["Ps9_Hashable", "pressedArena"]
@@ -2731,6 +2798,7 @@ depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
 - !private "P12FacebookCore26AppEventParameterValueType"
+- !private "C9Projet3755Arena"
 - "C9Projet3759ArenaView"
 - "Sa"
 - !private "Ps23BidirectionalCollection"
@@ -2752,6 +2820,8 @@ depends-nominal:
 - "Ps7CVarArg"
 - !private "Ps10Collection"
 - !private "Ps10Comparable"
+- !private "C9Projet37510Controller"
+- !private "C9Projet37515ControllerArena"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
@@ -2881,6 +2951,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/arm64.swiftmodule"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
@@ -2939,10 +3014,5 @@ depends-external:
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
 interface-hash: "402525a6c13b824efd4053243df20b17"

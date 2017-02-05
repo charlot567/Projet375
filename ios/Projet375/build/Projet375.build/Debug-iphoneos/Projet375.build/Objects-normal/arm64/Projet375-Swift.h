@@ -243,6 +243,7 @@ SWIFT_CLASS("_TtC9Projet37512QuestionView")
 @property (nonatomic, strong) UILongPressGestureRecognizer * _Nonnull lgpr;
 @property (nonatomic) BOOL hasAnswer;
 @property (nonatomic) BOOL background;
+@property (nonatomic) BOOL isArena;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)createHeaderWithCat:(NSString * _Nonnull)cat;
@@ -350,6 +351,7 @@ SWIFT_CLASS("_TtC9Projet3756VrView")
 @property (nonatomic, strong) UITapGestureRecognizer * _Nonnull touchGR;
 @property (nonatomic) CGFloat deviceWidth;
 @property (nonatomic, strong) UIButton * _Null_unspecified view;
+@property (nonatomic, strong) QuestionView * _Null_unspecified questionView;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateHeading:(CLHeading * _Nonnull)newHeading;
 - (void)placePointOnWallWithView:(UIView * _Nonnull)view degree:(CGFloat)degree;

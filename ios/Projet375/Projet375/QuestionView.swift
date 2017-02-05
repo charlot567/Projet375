@@ -30,7 +30,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
     var hasAnswer = false
     var match: Match!
     var background: Bool
-    
+    var isArena = true
     var que = question(id: -1, type: -1, categorie: "", quest: "", reponse: ["","","",""], reponseImage: [UIImage()], reponseId: -1, location: CLLocationCoordinate2D())
     
     override init(frame: CGRect) {
@@ -55,8 +55,9 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         
     }
     
-    init(frame: CGRect, q: question, match: Match, background: Bool) {
+    init(frame: CGRect, q: question, match: Match?, background: Bool, isArena: Bool) {
         self.match = match
+        self.isArena = isArena
         navBar = UINavigationBar()
         questionLabel = UILabel()
         buttons = []

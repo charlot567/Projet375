@@ -64,6 +64,10 @@ class ResultView: UIView {
         replayBtn.layer.borderColor = UIColor.white.cgColor
         replayBtn.addTarget(self, action: #selector(replayBtn(button:)), for: .touchUpInside)
         self.addSubview(replayBtn)
+        
+        if(success) {
+            nbQuestionReussiUser += 1
+        }
     }
     
     func replayBtn(button: UIButton) {

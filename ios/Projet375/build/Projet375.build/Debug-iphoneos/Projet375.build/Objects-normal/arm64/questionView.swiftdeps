@@ -6,109 +6,110 @@ provides-nominal:
 provides-member:
 - ["C9Projet37512QuestionView", ""]
 provides-dynamic-lookup:
-- "displayRegularAnswer"
-- "mapView"
-- "marginB"
-- "navBar"
+- "headerHeight"
+- "hasAnswer"
 - "displayResultView"
-- "timer"
-- "buttons"
-- "map"
-- "lgpr"
+- "displayMapAnswer"
+- "mapMargin"
+- "userHasWon"
+- "questionLabel"
+- "resultView"
 - "locationManager"
 - "locationManager"
 - "pressed"
-- "time"
-- "loadingBar"
-- "questionLabel"
-- "timesUp"
-- "verticalMargin"
-- "displayMapAnswer"
-- "timeLabel"
-- "createHeader"
-- "createMapContent"
-- "headerHeight"
-- "hasAnswer"
-- "resultView"
-- "margin"
-- "userHasLost"
-- "mapMargin"
-- "userHasWon"
-- "background"
 - "createRegularContent"
+- "createMapContent"
+- "margin"
+- "navBar"
+- "timer"
+- "createHeader"
+- "buttons"
+- "marginB"
+- "background"
+- "mapView"
+- "displayRegularAnswer"
+- "time"
+- "isArena"
+- "userHasLost"
+- "map"
+- "verticalMargin"
+- "timeLabel"
+- "lgpr"
+- "loadingBar"
 - "checkAnswer"
+- "timesUp"
 depends-top-level:
-- !private "MKCircleRenderer"
 - "StringLiteralType"
+- "UINavigationBar"
 - "MKMapViewDelegate"
-- "question"
+- "CLLocationManagerDelegate"
+- !private "-"
 - "Array"
+- "UILabel"
+- !private "!="
+- "BooleanLiteralType"
+- !private "kBeige"
+- "MKMapView"
+- "CGRect"
+- "UIImage"
+- !private "..."
+- "MKOverlay"
+- !private "kTypeRegular"
+- !private "DispatchQueue"
 - !private "+="
 - !private "kRed"
-- !private "DispatchQueue"
-- "UIImage"
-- "CLLocation"
-- "MKMapView"
-- !private "kHeight"
-- !private "kTypeRegular"
-- !private "kBlue"
-- "CLLocationCoordinate2D"
-- "UIView"
-- "BooleanLiteralType"
-- "CLLocationManager"
-- "UILabel"
-- !private "print"
-- !private "+"
-- !private "kTypeMap"
-- "Timer"
-- "MKOverlay"
-- !private "/"
-- !private "-"
-- "String"
-- !private "MKPointAnnotation"
-- !private "UIFont"
-- !private "UINavigationItem"
-- "CGFloat"
 - "QuestionView"
-- "Match"
-- !private "MKCircle"
-- "ResultView"
-- !private "UIControlEvents"
-- "Bool"
-- !private "UIColor"
-- !private "NSTextAlignment"
-- !private "fatalError"
+- "CGFloat"
 - "UILongPressGestureRecognizer"
-- !private "kBeige"
-- "NSCoder"
-- !private "NSForegroundColorAttributeName"
-- !private "MKCoordinateRegion"
-- "UIButton"
-- "MKOverlayRenderer"
-- !private "..."
-- !private "Dictionary"
-- !private "kGoodAnswer"
-- !private "kPurple"
-- "CLLocationManagerDelegate"
-- !private "UIBarStyle"
-- !private "!="
-- !private "CLCircularRegion"
-- "TernaryPrecedence"
 - !private "Int"
 - !private "kColorForCategories"
-- !private ">"
-- "UINavigationBar"
-- !private "*"
-- !private "~="
-- "AssignmentPrecedence"
-- !private "UnicodeScalarType"
-- !private "=="
-- "CGRect"
-- !private "kCLLocationAccuracyNearestTenMeters"
-- "CastingPrecedence"
-- !private "kGreen"
-- !private "UIGestureRecognizerState"
+- !private "kBlue"
+- !private "MKPointAnnotation"
 - !private "MKCoordinateSpan"
+- !private "UIGestureRecognizerState"
+- !private "*"
+- "question"
+- !private "UIColor"
+- !private "UIBarStyle"
+- !private "kCLLocationAccuracyNearestTenMeters"
+- "NSCoder"
+- !private ">"
+- "CLLocationCoordinate2D"
+- "MKOverlayRenderer"
+- !private "kPurple"
+- !private "kGoodAnswer"
+- !private "NSForegroundColorAttributeName"
+- !private "+"
+- !private "MKCoordinateRegion"
+- "CLLocationManager"
+- !private "kTypeMap"
+- !private "UIFont"
+- !private "print"
+- !private "fatalError"
+- !private "kHeight"
+- !private "kGreen"
+- !private "MKCircleRenderer"
+- !private "UINavigationItem"
+- !private "Dictionary"
+- !private "CLCircularRegion"
+- "TernaryPrecedence"
+- !private "UnicodeScalarType"
+- "Bool"
+- !private "UIControlEvents"
+- !private "NSTextAlignment"
+- "Match"
+- "String"
+- !private "=="
+- "UIButton"
+- "ResultView"
+- "AssignmentPrecedence"
+- !private "~="
+- "CastingPrecedence"
+- !private "MKCircle"
+- "UIView"
+- "CLLocation"
+- "Timer"
+- !private "/"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - ["Ps16AbsoluteValuable", "init"]
@@ -183,6 +184,7 @@ depends-member:
 - ["Ps9AnyObject", "headerHeight"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "invalidate"]
+- ["Ps9AnyObject", "isArena"]
 - !private ["Ps9AnyObject", "isEnabled"]
 - !private ["Ps9AnyObject", "isScrollEnabled"]
 - !private ["Ps9AnyObject", "isZoomEnabled"]
@@ -371,6 +373,7 @@ depends-member:
 - ["PSo15CALayerDelegate", "hasAnswer"]
 - ["PSo15CALayerDelegate", "headerHeight"]
 - ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", "isArena"]
 - !private ["PSo15CALayerDelegate", "isEnabled"]
 - !private ["PSo15CALayerDelegate", "isScrollEnabled"]
 - !private ["PSo15CALayerDelegate", "isZoomEnabled"]
@@ -507,6 +510,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "frame"]
 - !private ["PSo25CLLocationManagerDelegate", "hasAnswer"]
 - !private ["PSo25CLLocationManagerDelegate", "headerHeight"]
+- !private ["PSo25CLLocationManagerDelegate", "isArena"]
 - !private ["PSo25CLLocationManagerDelegate", "kBeige"]
 - !private ["PSo25CLLocationManagerDelegate", "kBlue"]
 - !private ["PSo25CLLocationManagerDelegate", "kCLLocationAccuracyNearestTenMeters"]
@@ -636,6 +640,7 @@ depends-member:
 - ["Ps7CVarArg", "headerHeight"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "invalidate"]
+- ["Ps7CVarArg", "isArena"]
 - !private ["Ps7CVarArg", "isEnabled"]
 - !private ["Ps7CVarArg", "isScrollEnabled"]
 - !private ["Ps7CVarArg", "isZoomEnabled"]
@@ -815,6 +820,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "height"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "invalidate"]
+- ["Ps28CustomDebugStringConvertible", "isArena"]
 - !private ["Ps28CustomDebugStringConvertible", "isEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "isScrollEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "isZoomEnabled"]
@@ -1009,6 +1015,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "headerHeight"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "invalidate"]
+- ["Ps23CustomStringConvertible", "isArena"]
 - !private ["Ps23CustomStringConvertible", "isEnabled"]
 - !private ["Ps23CustomStringConvertible", "isScrollEnabled"]
 - !private ["Ps23CustomStringConvertible", "isZoomEnabled"]
@@ -1192,6 +1199,7 @@ depends-member:
 - !private ["Ps9Equatable", "height"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "invalidate"]
+- ["Ps9Equatable", "isArena"]
 - !private ["Ps9Equatable", "isEnabled"]
 - !private ["Ps9Equatable", "isScrollEnabled"]
 - !private ["Ps9Equatable", "isZoomEnabled"]
@@ -1380,6 +1388,7 @@ depends-member:
 - ["Ps8Hashable", "headerHeight"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "invalidate"]
+- ["Ps8Hashable", "isArena"]
 - !private ["Ps8Hashable", "isEnabled"]
 - !private ["Ps8Hashable", "isScrollEnabled"]
 - !private ["Ps8Hashable", "isZoomEnabled"]
@@ -1571,6 +1580,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "frame"]
 - !private ["PSo17MKMapViewDelegate", "hasAnswer"]
 - !private ["PSo17MKMapViewDelegate", "headerHeight"]
+- !private ["PSo17MKMapViewDelegate", "isArena"]
 - !private ["PSo17MKMapViewDelegate", "kBeige"]
 - !private ["PSo17MKMapViewDelegate", "kBlue"]
 - !private ["PSo17MKMapViewDelegate", "kCLLocationAccuracyNearestTenMeters"]
@@ -1631,7 +1641,6 @@ depends-member:
 - !private ["CSo17MKPointAnnotation", "init"]
 - !private ["CSo7MKShape", "coordinate"]
 - !private ["CSo7MKShape", "init"]
-- ["C9Projet3755Match", "deinit"]
 - !private ["Ps10MirrorPath", "IntegerLiteralType"]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
@@ -1719,6 +1728,7 @@ depends-member:
 - ["PSo8NSCoding", "hasAnswer"]
 - ["PSo8NSCoding", "headerHeight"]
 - ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "isArena"]
 - !private ["PSo8NSCoding", "isEnabled"]
 - !private ["PSo8NSCoding", "isScrollEnabled"]
 - !private ["PSo8NSCoding", "isZoomEnabled"]
@@ -1873,6 +1883,7 @@ depends-member:
 - ["CSo8NSObject", "headerHeight"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "invalidate"]
+- ["CSo8NSObject", "isArena"]
 - !private ["CSo8NSObject", "isEnabled"]
 - !private ["CSo8NSObject", "isScrollEnabled"]
 - !private ["CSo8NSObject", "isZoomEnabled"]
@@ -2017,6 +2028,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "headerHeight"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "invalidate"]
+- ["PSo16NSObjectProtocol", "isArena"]
 - !private ["PSo16NSObjectProtocol", "isEnabled"]
 - !private ["PSo16NSObjectProtocol", "isScrollEnabled"]
 - !private ["PSo16NSObjectProtocol", "isZoomEnabled"]
@@ -2164,6 +2176,7 @@ depends-member:
 - ["C9Projet37512QuestionView", "hasAnswer"]
 - ["C9Projet37512QuestionView", "headerHeight"]
 - ["C9Projet37512QuestionView", "init"]
+- ["C9Projet37512QuestionView", "isArena"]
 - !private ["C9Projet37512QuestionView", "kBeige"]
 - !private ["C9Projet37512QuestionView", "kBlue"]
 - !private ["C9Projet37512QuestionView", "kCLLocationAccuracyNearestTenMeters"]
@@ -2358,6 +2371,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "hasAnswer"]
 - ["PSo29UIAccessibilityIdentification", "headerHeight"]
 - ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "isArena"]
 - !private ["PSo29UIAccessibilityIdentification", "isEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "isScrollEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "isZoomEnabled"]
@@ -2475,6 +2489,7 @@ depends-member:
 - ["PSo12UIAppearance", "hasAnswer"]
 - ["PSo12UIAppearance", "headerHeight"]
 - ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "isArena"]
 - !private ["PSo12UIAppearance", "isEnabled"]
 - !private ["PSo12UIAppearance", "isScrollEnabled"]
 - !private ["PSo12UIAppearance", "isZoomEnabled"]
@@ -2592,6 +2607,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "hasAnswer"]
 - ["PSo21UIAppearanceContainer", "headerHeight"]
 - ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "isArena"]
 - !private ["PSo21UIAppearanceContainer", "isEnabled"]
 - !private ["PSo21UIAppearanceContainer", "isScrollEnabled"]
 - !private ["PSo21UIAppearanceContainer", "isZoomEnabled"]
@@ -2761,6 +2777,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "hasAnswer"]
 - ["PSo17UICoordinateSpace", "headerHeight"]
 - ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "isArena"]
 - !private ["PSo17UICoordinateSpace", "isEnabled"]
 - !private ["PSo17UICoordinateSpace", "isScrollEnabled"]
 - !private ["PSo17UICoordinateSpace", "isZoomEnabled"]
@@ -2878,6 +2895,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "hasAnswer"]
 - ["PSo13UIDynamicItem", "headerHeight"]
 - ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "isArena"]
 - !private ["PSo13UIDynamicItem", "isEnabled"]
 - !private ["PSo13UIDynamicItem", "isScrollEnabled"]
 - !private ["PSo13UIDynamicItem", "isZoomEnabled"]
@@ -2995,6 +3013,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "hasAnswer"]
 - ["PSo18UIFocusEnvironment", "headerHeight"]
 - ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "isArena"]
 - !private ["PSo18UIFocusEnvironment", "isEnabled"]
 - !private ["PSo18UIFocusEnvironment", "isScrollEnabled"]
 - !private ["PSo18UIFocusEnvironment", "isZoomEnabled"]
@@ -3112,6 +3131,7 @@ depends-member:
 - ["PSo11UIFocusItem", "hasAnswer"]
 - ["PSo11UIFocusItem", "headerHeight"]
 - ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", "isArena"]
 - !private ["PSo11UIFocusItem", "isEnabled"]
 - !private ["PSo11UIFocusItem", "isScrollEnabled"]
 - !private ["PSo11UIFocusItem", "isZoomEnabled"]
@@ -3277,6 +3297,7 @@ depends-member:
 - ["CSo11UIResponder", "hasAnswer"]
 - ["CSo11UIResponder", "headerHeight"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "isArena"]
 - !private ["CSo11UIResponder", "isEnabled"]
 - !private ["CSo11UIResponder", "isScrollEnabled"]
 - !private ["CSo11UIResponder", "isZoomEnabled"]
@@ -3393,6 +3414,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "hasAnswer"]
 - ["PSo30UIResponderStandardEditActions", "headerHeight"]
 - ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "isArena"]
 - !private ["PSo30UIResponderStandardEditActions", "isEnabled"]
 - !private ["PSo30UIResponderStandardEditActions", "isScrollEnabled"]
 - !private ["PSo30UIResponderStandardEditActions", "isZoomEnabled"]
@@ -3510,6 +3532,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "hasAnswer"]
 - ["PSo18UITraitEnvironment", "headerHeight"]
 - ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "isArena"]
 - !private ["PSo18UITraitEnvironment", "isEnabled"]
 - !private ["PSo18UITraitEnvironment", "isScrollEnabled"]
 - !private ["PSo18UITraitEnvironment", "isZoomEnabled"]
@@ -3635,6 +3658,7 @@ depends-member:
 - ["CSo6UIView", "hasAnswer"]
 - ["CSo6UIView", "headerHeight"]
 - ["CSo6UIView", "init"]
+- ["CSo6UIView", "isArena"]
 - !private ["CSo6UIView", "isEnabled"]
 - !private ["CSo6UIView", "isScrollEnabled"]
 - !private ["CSo6UIView", "isZoomEnabled"]
@@ -3771,6 +3795,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "hasAnswer"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "headerHeight"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "isArena"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isEnabled"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isScrollEnabled"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isZoomEnabled"]
@@ -3938,6 +3963,7 @@ depends-member:
 - ["Ps9_Hashable", "headerHeight"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "invalidate"]
+- ["Ps9_Hashable", "isArena"]
 - !private ["Ps9_Hashable", "isEnabled"]
 - !private ["Ps9_Hashable", "isScrollEnabled"]
 - !private ["Ps9_Hashable", "isZoomEnabled"]
@@ -4143,7 +4169,6 @@ depends-nominal:
 - !private "CSo17MKOverlayRenderer"
 - "CSo17MKPointAnnotation"
 - !private "CSo7MKShape"
-- "C9Projet3755Match"
 - "Ps10MirrorPath"
 - "Ps17MutableCollection"
 - "Ps16MutableIndexable"
@@ -4251,6 +4276,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/arm64.swiftmodule"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
@@ -4309,10 +4339,5 @@ depends-external:
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
-interface-hash: "2542c7f9b0d78b7fd9dff6d4850049a6"
+interface-hash: "d700cf07a5d7fc731113189d83fea0e1"

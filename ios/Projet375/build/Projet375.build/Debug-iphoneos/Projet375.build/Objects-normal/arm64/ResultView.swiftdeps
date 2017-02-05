@@ -8,45 +8,46 @@ provides-member:
 provides-dynamic-lookup:
 - "replayBtn"
 depends-top-level:
-- !private "&&"
-- !private "=="
-- !private "StringLiteralType"
-- "NSCoder"
-- !private "!"
-- !private "kNewMatch"
 - !private "ControllerMatch"
-- !private "UIFont"
-- !private "displayAlert"
-- !private "UITextView"
-- !private "+="
-- !private "-"
-- "String"
 - "UIColor"
-- !private ">"
-- !private "BooleanLiteralType"
 - "ResultView"
-- !private "/"
-- !private "*"
-- "Bool"
-- "Match"
-- !private "kMasterVC"
 - !private "fatalError"
-- !private "UIControlState"
-- !private "print"
-- !private "!="
-- !private "UnicodeScalarType"
-- !private "kGoodAnswer"
-- !private "+"
-- "UIButton"
-- "TernaryPrecedence"
-- !private "kWidth"
-- "CGRect"
-- !private "kUserCurrentTurn"
-- "UIView"
 - "AssignmentPrecedence"
 - !private "UILabel"
+- "Bool"
+- !private "kWidth"
 - !private "kHeight"
+- "String"
+- "Match"
+- !private "=="
+- !private "-"
+- !private "nbQuestionReussiUser"
+- !private "*"
 - !private "kCurrentUser"
+- !private "UIFont"
+- !private "UIControlState"
+- "TernaryPrecedence"
+- !private ">"
+- !private "kNewMatch"
+- !private "+="
+- !private "UITextView"
+- "NSCoder"
+- !private "kMasterVC"
+- !private "displayAlert"
+- !private "/"
+- !private "kGoodAnswer"
+- !private "&&"
+- !private "StringLiteralType"
+- !private "kUserCurrentTurn"
+- "CGRect"
+- !private "!="
+- !private "BooleanLiteralType"
+- !private "!"
+- !private "UnicodeScalarType"
+- "UIView"
+- !private "print"
+- "UIButton"
+- !private "+"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "ControllerMatch"]
@@ -84,6 +85,7 @@ depends-member:
 - !private ["Ps9AnyObject", "layer"]
 - ["Ps9AnyObject", "match"]
 - !private ["Ps9AnyObject", "maxY"]
+- !private ["Ps9AnyObject", "nbQuestionReussiUser"]
 - !private ["Ps9AnyObject", "numberOfLines"]
 - !private ["Ps9AnyObject", "opposantPlayerId"]
 - !private ["Ps9AnyObject", "opposantToken"]
@@ -139,6 +141,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "layer"]
 - ["PSo15CALayerDelegate", "match"]
 - !private ["PSo15CALayerDelegate", "maxY"]
+- !private ["PSo15CALayerDelegate", "nbQuestionReussiUser"]
 - !private ["PSo15CALayerDelegate", "numberOfLines"]
 - !private ["PSo15CALayerDelegate", "print"]
 - ["PSo15CALayerDelegate", "replayBtn"]
@@ -190,6 +193,7 @@ depends-member:
 - !private ["Ps7CVarArg", "layer"]
 - ["Ps7CVarArg", "match"]
 - !private ["Ps7CVarArg", "maxY"]
+- !private ["Ps7CVarArg", "nbQuestionReussiUser"]
 - !private ["Ps7CVarArg", "numberOfLines"]
 - !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "replayBtn"]
@@ -245,6 +249,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - ["Ps28CustomDebugStringConvertible", "match"]
 - !private ["Ps28CustomDebugStringConvertible", "maxY"]
+- !private ["Ps28CustomDebugStringConvertible", "nbQuestionReussiUser"]
 - !private ["Ps28CustomDebugStringConvertible", "numberOfLines"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "replayBtn"]
@@ -300,6 +305,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "layer"]
 - ["Ps23CustomStringConvertible", "match"]
 - !private ["Ps23CustomStringConvertible", "maxY"]
+- !private ["Ps23CustomStringConvertible", "nbQuestionReussiUser"]
 - !private ["Ps23CustomStringConvertible", "numberOfLines"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "replayBtn"]
@@ -352,6 +358,7 @@ depends-member:
 - !private ["Ps9Equatable", "layer"]
 - ["Ps9Equatable", "match"]
 - !private ["Ps9Equatable", "maxY"]
+- !private ["Ps9Equatable", "nbQuestionReussiUser"]
 - !private ["Ps9Equatable", "normal"]
 - !private ["Ps9Equatable", "numberOfLines"]
 - !private ["Ps9Equatable", "print"]
@@ -416,6 +423,7 @@ depends-member:
 - !private ["Ps8Hashable", "layer"]
 - ["Ps8Hashable", "match"]
 - !private ["Ps8Hashable", "maxY"]
+- !private ["Ps8Hashable", "nbQuestionReussiUser"]
 - !private ["Ps8Hashable", "numberOfLines"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "replayBtn"]
@@ -480,6 +488,7 @@ depends-member:
 - !private ["PSo8NSCoding", "layer"]
 - ["PSo8NSCoding", "match"]
 - !private ["PSo8NSCoding", "maxY"]
+- !private ["PSo8NSCoding", "nbQuestionReussiUser"]
 - !private ["PSo8NSCoding", "numberOfLines"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "replayBtn"]
@@ -542,6 +551,7 @@ depends-member:
 - !private ["CSo8NSObject", "layer"]
 - ["CSo8NSObject", "match"]
 - !private ["CSo8NSObject", "maxY"]
+- !private ["CSo8NSObject", "nbQuestionReussiUser"]
 - !private ["CSo8NSObject", "numberOfLines"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "replayBtn"]
@@ -589,6 +599,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "layer"]
 - ["PSo16NSObjectProtocol", "match"]
 - !private ["PSo16NSObjectProtocol", "maxY"]
+- !private ["PSo16NSObjectProtocol", "nbQuestionReussiUser"]
 - !private ["PSo16NSObjectProtocol", "numberOfLines"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "replayBtn"]
@@ -644,6 +655,7 @@ depends-member:
 - !private ["C9Projet37510ResultView", "kUserCurrentTurn"]
 - !private ["C9Projet37510ResultView", "kWidth"]
 - ["C9Projet37510ResultView", "match"]
+- !private ["C9Projet37510ResultView", "nbQuestionReussiUser"]
 - !private ["C9Projet37510ResultView", "print"]
 - ["C9Projet37510ResultView", "replayBtn"]
 - ["V10ObjectiveC8Selector", "deinit"]
@@ -687,6 +699,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - ["PSo29UIAccessibilityIdentification", "match"]
 - !private ["PSo29UIAccessibilityIdentification", "maxY"]
+- !private ["PSo29UIAccessibilityIdentification", "nbQuestionReussiUser"]
 - !private ["PSo29UIAccessibilityIdentification", "numberOfLines"]
 - !private ["PSo29UIAccessibilityIdentification", "print"]
 - ["PSo29UIAccessibilityIdentification", "replayBtn"]
@@ -726,6 +739,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "layer"]
 - ["PSo12UIAppearance", "match"]
 - !private ["PSo12UIAppearance", "maxY"]
+- !private ["PSo12UIAppearance", "nbQuestionReussiUser"]
 - !private ["PSo12UIAppearance", "numberOfLines"]
 - !private ["PSo12UIAppearance", "print"]
 - ["PSo12UIAppearance", "replayBtn"]
@@ -766,6 +780,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - ["PSo21UIAppearanceContainer", "match"]
 - !private ["PSo21UIAppearanceContainer", "maxY"]
+- !private ["PSo21UIAppearanceContainer", "nbQuestionReussiUser"]
 - !private ["PSo21UIAppearanceContainer", "numberOfLines"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "replayBtn"]
@@ -845,6 +860,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "layer"]
 - ["PSo17UICoordinateSpace", "match"]
 - !private ["PSo17UICoordinateSpace", "maxY"]
+- !private ["PSo17UICoordinateSpace", "nbQuestionReussiUser"]
 - !private ["PSo17UICoordinateSpace", "numberOfLines"]
 - !private ["PSo17UICoordinateSpace", "print"]
 - ["PSo17UICoordinateSpace", "replayBtn"]
@@ -884,6 +900,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "layer"]
 - ["PSo13UIDynamicItem", "match"]
 - !private ["PSo13UIDynamicItem", "maxY"]
+- !private ["PSo13UIDynamicItem", "nbQuestionReussiUser"]
 - !private ["PSo13UIDynamicItem", "numberOfLines"]
 - !private ["PSo13UIDynamicItem", "print"]
 - ["PSo13UIDynamicItem", "replayBtn"]
@@ -924,6 +941,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "layer"]
 - ["PSo18UIFocusEnvironment", "match"]
 - !private ["PSo18UIFocusEnvironment", "maxY"]
+- !private ["PSo18UIFocusEnvironment", "nbQuestionReussiUser"]
 - !private ["PSo18UIFocusEnvironment", "numberOfLines"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "replayBtn"]
@@ -965,6 +983,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "layer"]
 - ["PSo11UIFocusItem", "match"]
 - !private ["PSo11UIFocusItem", "maxY"]
+- !private ["PSo11UIFocusItem", "nbQuestionReussiUser"]
 - !private ["PSo11UIFocusItem", "numberOfLines"]
 - !private ["PSo11UIFocusItem", "print"]
 - ["PSo11UIFocusItem", "replayBtn"]
@@ -1029,6 +1048,7 @@ depends-member:
 - !private ["CSo11UIResponder", "layer"]
 - ["CSo11UIResponder", "match"]
 - !private ["CSo11UIResponder", "maxY"]
+- !private ["CSo11UIResponder", "nbQuestionReussiUser"]
 - !private ["CSo11UIResponder", "numberOfLines"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "replayBtn"]
@@ -1070,6 +1090,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
 - ["PSo30UIResponderStandardEditActions", "match"]
 - !private ["PSo30UIResponderStandardEditActions", "maxY"]
+- !private ["PSo30UIResponderStandardEditActions", "nbQuestionReussiUser"]
 - !private ["PSo30UIResponderStandardEditActions", "numberOfLines"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "replayBtn"]
@@ -1152,6 +1173,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "layer"]
 - ["PSo18UITraitEnvironment", "match"]
 - !private ["PSo18UITraitEnvironment", "maxY"]
+- !private ["PSo18UITraitEnvironment", "nbQuestionReussiUser"]
 - !private ["PSo18UITraitEnvironment", "numberOfLines"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "replayBtn"]
@@ -1198,6 +1220,7 @@ depends-member:
 - !private ["CSo6UIView", "layer"]
 - ["CSo6UIView", "match"]
 - !private ["CSo6UIView", "maxY"]
+- !private ["CSo6UIView", "nbQuestionReussiUser"]
 - !private ["CSo6UIView", "numberOfLines"]
 - !private ["CSo6UIView", "print"]
 - ["CSo6UIView", "replayBtn"]
@@ -1250,6 +1273,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "match"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "maxY"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "nbQuestionReussiUser"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "numberOfLines"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "print"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "replayBtn"]
@@ -1311,6 +1335,7 @@ depends-member:
 - !private ["Ps9_Hashable", "layer"]
 - ["Ps9_Hashable", "match"]
 - !private ["Ps9_Hashable", "maxY"]
+- !private ["Ps9_Hashable", "nbQuestionReussiUser"]
 - !private ["Ps9_Hashable", "numberOfLines"]
 - !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "replayBtn"]
@@ -1449,6 +1474,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/arm64.swiftmodule"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
@@ -1507,10 +1537,5 @@ depends-external:
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
 interface-hash: "6a042c590b856f9a245eb01510f1549e"

@@ -65,8 +65,10 @@ class ControllerArena: Controller {
     
     static func setArena(arenaId: Int, nbQuestionReussi: Int, completitionHandler: @escaping (_ success: Bool) -> Void) {
         
-        getData(url: "\(kBaseUrl)/get_arena.php", postParameterAsString: "arenaId=\(arenaId)&nombre_question\(nbQuestionReussi)&facebook_id\(kCurrentUser.fbId)") { (success, jsonResult) in
-            
+        getData(url: "\(kBaseUrl)/set_arena.php", postParameterAsString: "id=\(1)&nombre_question=\(nbQuestionReussi)&facebook_id=\(kCurrentUser.fbId!)") { (success, jsonResult) in
+            print(nbQuestionReussi)
+            print(kCurrentUser.fbId)
+            print(jsonResult)
             completitionHandler(success)
         }
     }
