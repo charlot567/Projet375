@@ -56,6 +56,7 @@ class ViewController: UIViewController {
             }
         } else { self.switchNav(index: KVLogIn) }
     
+        kCurrentUser.getProfileImage { (image: UIImage?) in }
     }
     
     func switchNav(index: Int) {
@@ -124,6 +125,7 @@ class ViewController: UIViewController {
                 self.profileView.x = 0
             })
             
+            self.profileView.showPage()
             self.view.addSubview(profileView)
         }
         

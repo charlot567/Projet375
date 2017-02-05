@@ -12,6 +12,8 @@ class ProfileView: UIView {
     
     private var topNavBar: UIView!
     private var titleLabel: UILabel!
+    private var profileImageView: UIImageView!
+    private var usernamelabel: UILabel!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,8 +23,8 @@ class ProfileView: UIView {
         topNavBar.backgroundColor = kBlue
         self.addSubview(topNavBar)
         
-        let gap = kWidth / 20
-        let textHeight = topNavBar.h * 0.3
+        var gap = kWidth / 20
+        var textHeight = topNavBar.h * 0.3
         let fontSize = textHeight
         titleLabel = UILabel()
         titleLabel.frame = CGRect(x: gap, y: topNavBar.h / 2 - textHeight / 2 + textHeight * 0.3, width: kWidth - gap * 2, height: textHeight)
@@ -43,15 +45,43 @@ class ProfileView: UIView {
         
         self.backgroundColor = kGreen
         
-//        
-//        let profileImageWidth = kWidth / 6
-//        let profileImageView = UIImageView()
-//        profileImageView.frame = cgrect
+        let profileImageWidth = kWidth / 3
+        profileImageView = UIImageView()
+        profileImageView.frame = CGRect(x: kWidth / 2 - profileImageWidth / 2, y: topNavBar.maxY + profileImageWidth / 2, width: profileImageWidth, height: profileImageWidth)
+        profileImageView.clipsToBounds = true
+        profileImageView.layer.cornerRadius = profileImageWidth / 2
+        profileImageView.layer.borderColor = UIColor.white.cgColor
+        profileImageView.layer.borderWidth = 1
+        self.addSubview(profileImageView)
+        
+        textHeight = kHeight / 20
+        gap = kWidth / 20
+        usernamelabel = UILabel()
+        usernamelabel.frame = CGRect(x: gap, y: profileImageView.maxY + gap, width: kWidth - gap * 2, height: textHeight)
+        usernamelabel.font = UIFont(name: "Helvetica", size: textHeight * 0.8)
+        usernamelabel.textColor = UIColor.white
+        usernamelabel.textAlignment = .center
+        self.addSubview(usernamelabel)
+        
     }
     
     func back() {
         print("back")
         kMasterVC.switchNav(index: KVHome)
+    }
+    
+    func showPage() {
+        
+        usernamelabel.text = "\(kCurrentUser.completeName)"
+        
+        kCurrentUser.getProfileImage { (image: UIImage?) in
+            if(image != nil) {
+                
+            
+                    self.profileImageView.image = image
+                
+            }
+        }
     }
     
     
