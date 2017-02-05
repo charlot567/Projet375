@@ -60,5 +60,7 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>In order to get question close to you</string>
+	<key>NSCameraUsageDescription</key>
+	<string>In order to add Virtual Reality feature</string>
 </dict>
 </plist>

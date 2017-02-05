@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F22059F1E4721CC0035383F /* ArenaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F22059E1E4721CC0035383F /* ArenaView.swift */; };
+		2F2205A11E4741270035383F /* VrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2205A01E4741270035383F /* VrView.swift */; };
 		2F6C4D2F1E46416200BE70D1 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6C4D2E1E46416200BE70D1 /* QuestionView.swift */; };
 		2F6C4D311E46646400BE70D1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6C4D301E46646400BE70D1 /* Question.swift */; };
 		A70A9BA71E4635F8001D0FAE /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A70A9BA61E4635F8001D0FAE /* fontawesome-webfont.ttf */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F22059E1E4721CC0035383F /* ArenaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArenaView.swift; sourceTree = "<group>"; };
+		2F2205A01E4741270035383F /* VrView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VrView.swift; sourceTree = "<group>"; };
 		2F6C4D2E1E46416200BE70D1 /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		2F6C4D301E46646400BE70D1 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		3EF146C97C101C8D444D4A19 /* Pods_Projet375.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Projet375.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +117,7 @@
 		A70A9BA31E4635CC001D0FAE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2F2205A01E4741270035383F /* VrView.swift */,
 				A7F0D6111E4643890087E967 /* LoginView.swift */,
 				2F6C4D2E1E46416200BE70D1 /* QuestionView.swift */,
 				A7B461001E468E24003F3DDF /* MenuView.swift */,
@@ -120,6 +125,7 @@
 				A7B461061E46D60F003F3DDF /* ResultView.swift */,
 				A7B461101E46F28A003F3DDF /* ChartView.swift */,
 				A7B461121E470FC2003F3DDF /* ProfileView.swift */,
+				2F22059E1E4721CC0035383F /* ArenaView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -332,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F6C4D2F1E46416200BE70D1 /* QuestionView.swift in Sources */,
+				2F2205A11E4741270035383F /* VrView.swift in Sources */,
 				A7B461091E46E177003F3DDF /* ControllerMatch.swift in Sources */,
 				A7B461011E468E24003F3DDF /* MenuView.swift in Sources */,
 				A7B461111E46F28A003F3DDF /* ChartView.swift in Sources */,
@@ -349,6 +356,7 @@
 				A70A9BA91E463623001D0FAE /* Constant.swift in Sources */,
 				A7B4610D1E46F0C0003F3DDF /* ControllerChart.swift in Sources */,
 				A7F0D60E1E463E770087E967 /* User.swift in Sources */,
+				2F22059F1E4721CC0035383F /* ArenaView.swift in Sources */,
 				A70A9BAB1E463659001D0FAE /* Extensions.swift in Sources */,
 				A7B461131E470FC2003F3DDF /* ProfileView.swift in Sources */,
 				A7F0D6181E4659810087E967 /* ControllerUser.swift in Sources */,

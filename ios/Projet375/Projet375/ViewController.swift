@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     private var loginView: LoginView!
     private var randomView: RandomPickerView!
     private var chartView: ChartView!
+    private var arenaView: ArenaView!
     private var profileView: ProfileView!
     var currentMatch: Match!
     
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
         loginView = LoginView(frame: self.view.frame)
         chartView = ChartView(frame: self.view.frame)
         profileView = ProfileView(frame: self.view.frame)
+        arenaView = ArenaView(frame: self.view.frame)
 //        randomView = RandomPickerView(frame: self.view.frame)
         
         self.currentViewIndex = KVLogIn
@@ -65,26 +67,37 @@ class ViewController: UIViewController {
             UIView.animate(withDuration: 0.5, animations: { 
                 self.chartView.x = kWidth
             })
+            arenaView.isActive = false
         }
         
         if(self.currentViewIndex == KVProfile) {
             UIView.animate(withDuration: 0.5, animations: {
                 self.profileView.x = kWidth
             })
+            arenaView.isActive = false
+        }
+        
+        if(self.currentViewIndex == KVArena) {
+            arenaView.isActive = false
+            UIView.animate(withDuration: 0.5, animations: {
+                self.arenaView.x = kWidth
+            })
         }
         
         if(index == KVHome && self.currentViewIndex != KVChart && self.currentViewIndex != KVProfile) {
             self.view.addSubview(menuView)
             self.menuView.setUsernameLabel(name: kCurrentUser.firstName)
+            arenaView.isActive = false
         }
         
         else if(index == KVLogIn) {
             self.view.addSubview(loginView)
+            arenaView.isActive = false
         }
             
         else if(index == KVChart) {
             chartView.x = kWidth
-            
+            arenaView.isActive = false
             UIView.animate(withDuration: 0.5, animations: {
                 self.chartView.x = 0
             })
@@ -93,8 +106,19 @@ class ViewController: UIViewController {
             self.view.addSubview(chartView)
         }
             
+        else if(index == KVArena) {
+            arenaView.x = kWidth
+            arenaView.isActive = true
+            
+            UIView.animate(withDuration: 0.5, animations: {
+                self.arenaView.x = 0
+            })
+            self.view.addSubview(arenaView)
+        }
+            
         else if(index == KVProfile) {
             profileView.x = kWidth
+            arenaView.isActive = false
             
             UIView.animate(withDuration: 0.5, animations: {
                 self.profileView.x = 0

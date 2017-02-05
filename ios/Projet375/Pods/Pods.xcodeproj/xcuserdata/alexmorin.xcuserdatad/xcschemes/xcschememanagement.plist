@@ -34,6 +34,11 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>SwiftCarousel.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>SwiftSpinner.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -72,12 +77,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>D0B119FC0CFF4F30E112D5707EDF470A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D35C791D9B8B826EEBC12283E5C7136A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>DDBCFDE490CDFDABF6F16A26F346932D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF396CB236FB5A5B1460C71F178B0040</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC4BD307D56BB72176514A4A8E35F240</key>
 		<dict>
 			<key>primary</key>
 			<true/>

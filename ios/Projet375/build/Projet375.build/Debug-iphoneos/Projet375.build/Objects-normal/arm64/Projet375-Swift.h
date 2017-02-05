@@ -117,9 +117,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import Foundation;
-@import CoreGraphics;
 @import MapKit;
 @import CoreLocation;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -143,8 +143,41 @@ SWIFT_CLASS("_TtC9Projet37511AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class LoginButton;
+@class CLLocationManager;
+@class MKMapView;
+@class CLLocation;
+@protocol MKOverlay;
+@class MKOverlayRenderer;
 @class NSCoder;
+@class UIViewController;
+
+SWIFT_CLASS("_TtC9Projet3759ArenaView")
+@interface ArenaView : UIView <MKMapViewDelegate, CLLocationManagerDelegate>
+@property (nonatomic) BOOL showVR;
+@property (nonatomic, weak) UIViewController * _Null_unspecified controller;
+@property (nonatomic) BOOL isActive;
+@property (nonatomic) CLLocationCoordinate2D areneLoc;
+@property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
+@property (nonatomic, strong) MKMapView * _Nonnull map;
+@property (nonatomic, readonly) CGFloat margin;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
+- (void)back;
+- (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (UIViewController * _Nullable)getCurrentViewController;
+@end
+
+
+SWIFT_CLASS("_TtC9Projet3759ChartView")
+@interface ChartView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)back;
+- (void)loadData;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class LoginButton;
 
 SWIFT_CLASS("_TtC9Projet3759LoginView")
 @interface LoginView : UIView
@@ -158,6 +191,87 @@ SWIFT_CLASS("_TtC9Projet3759LoginView")
 - (void)loginSuccessWithSocial:(NSString * _Nonnull)social userId:(NSString * _Nonnull)userId;
 - (void)logoutWithSocial:(NSString * _Nonnull)social;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+
+SWIFT_CLASS("_TtC9Projet3758MenuView")
+@interface MenuView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)logout;
+- (void)selectMenuItemWithButton:(UIButton * _Nonnull)button;
+- (void)setUsernameLabelWithName:(NSString * _Nonnull)name;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9Projet37511ProfileView")
+@interface ProfileView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)back;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class ResultView;
+@class UINavigationBar;
+@class UILabel;
+@class NSTimer;
+@class UILongPressGestureRecognizer;
+
+SWIFT_CLASS("_TtC9Projet37512QuestionView")
+@interface QuestionView : UIView <MKMapViewDelegate, CLLocationManagerDelegate>
+@property (nonatomic, strong) ResultView * _Null_unspecified resultView;
+@property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
+@property (nonatomic, strong) UINavigationBar * _Nonnull navBar;
+@property (nonatomic, strong) UILabel * _Nonnull questionLabel;
+@property (nonatomic, readonly) CGFloat margin;
+@property (nonatomic, readonly) CGFloat marginB;
+@property (nonatomic, readonly) CGFloat verticalMargin;
+@property (nonatomic, readonly) CGFloat mapMargin;
+@property (nonatomic, copy) NSArray<UIButton *> * _Nonnull buttons;
+@property (nonatomic, strong) UIView * _Nonnull loadingBar;
+@property (nonatomic) NSInteger time;
+@property (nonatomic, strong) NSTimer * _Nonnull timer;
+@property (nonatomic, strong) UILabel * _Nonnull timeLabel;
+@property (nonatomic) CGFloat headerHeight;
+@property (nonatomic, strong) MKMapView * _Nonnull map;
+@property (nonatomic, strong) UILongPressGestureRecognizer * _Nonnull lgpr;
+@property (nonatomic) BOOL hasAnswer;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)createHeaderWithCat:(NSString * _Nonnull)cat;
+- (void)createRegularContent;
+- (void)checkAnswerWithSender:(UIButton * _Nonnull)sender;
+- (void)displayResultView;
+- (void)timesUp;
+- (void)createMapContent;
+- (void)pressedWithSender:(UILongPressGestureRecognizer * _Nonnull)sender;
+- (void)displayMapAnswer;
+- (void)displayRegularAnswer;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
+- (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay;
+- (void)userHasWon;
+- (void)userHasLost;
+@end
+
+
+SWIFT_CLASS("_TtC9Projet37516RandomPickerView")
+@interface RandomPickerView : UIView
+@property (nonatomic, strong) QuestionView * _Null_unspecified questionView;
+@property (nonatomic, strong) UILabel * _Null_unspecified firstLabel;
+@property (nonatomic, strong) UILabel * _Null_unspecified secondLabel;
+- (void)generateCategory;
+- (void)clickToPlayWithButton:(UIButton * _Nonnull)button;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC9Projet37510ResultView")
+@interface ResultView : UIView
+- (void)replayBtnWithButton:(UIButton * _Nonnull)button;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 @class UIEvent;
@@ -193,52 +307,48 @@ SWIFT_CLASS("_TtC9Projet37514ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
 - (void)switchNavWithIndex:(NSInteger)index;
+- (void)resultToQuestion;
+- (void)resultToMenu;
 - (void)didReceiveMemoryWarning;
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class CLLocationManager;
-@class UINavigationBar;
-@class NSTimer;
-@class MKMapView;
-@class UILongPressGestureRecognizer;
-@class CLLocation;
-@protocol MKOverlay;
-@class MKOverlayRenderer;
+@class UIColor;
+@class CMMotionManager;
+@class AVCaptureDevice;
+@class AVCaptureSession;
+@class CLHeading;
 
-SWIFT_CLASS("_TtC9Projet37512questionView")
-@interface questionView : UIView <MKMapViewDelegate, CLLocationManagerDelegate>
-@property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
-@property (nonatomic, strong) UINavigationBar * _Nonnull navBar;
-@property (nonatomic, strong) UILabel * _Nonnull questionLabel;
-@property (nonatomic, readonly) CGFloat margin;
-@property (nonatomic, readonly) CGFloat marginB;
-@property (nonatomic, readonly) CGFloat verticalMargin;
-@property (nonatomic, readonly) CGFloat mapMargin;
-@property (nonatomic, copy) NSArray<UIButton *> * _Nonnull buttons;
-@property (nonatomic, strong) UIView * _Nonnull loadingBar;
-@property (nonatomic) NSInteger time;
-@property (nonatomic, strong) NSTimer * _Nonnull timer;
-@property (nonatomic, strong) UILabel * _Nonnull timeLabel;
-@property (nonatomic) CGFloat headerHeight;
-@property (nonatomic, strong) MKMapView * _Nonnull map;
-@property (nonatomic, strong) UILongPressGestureRecognizer * _Nonnull lgpr;
-@property (nonatomic) BOOL hasAnswer;
+SWIFT_CLASS("_TtC9Projet3756VrView")
+@interface VrView : UIView <CLLocationManagerDelegate>
+@property (nonatomic, strong) UILabel * _Null_unspecified DyawLabel;
+@property (nonatomic, strong) UILabel * _Null_unspecified DpitchLabel;
+@property (nonatomic, strong) UILabel * _Null_unspecified DrollLabel;
+@property (nonatomic, strong) UILabel * _Null_unspecified DheadingLabel;
+@property (nonatomic, strong) UILabel * _Null_unspecified DlocationLabel;
+@property (nonatomic) CLLocationCoordinate2D location;
+@property (nonatomic, readonly) BOOL DEBUG;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull DebugColor;
+@property (nonatomic, strong) CMMotionManager * _Null_unspecified motionManager;
+@property (nonatomic, strong) AVCaptureDevice * _Nullable captureDevice;
+@property (nonatomic, strong) AVCaptureSession * _Null_unspecified captureSession;
+@property (nonatomic, strong) CLLocationManager * _Null_unspecified locationManager;
+@property (nonatomic, strong) UIView * _Null_unspecified halfInfiniteWall1;
+@property (nonatomic, strong) UIView * _Null_unspecified halfInfiniteWall2;
+@property (nonatomic) CGFloat deviceWidth;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateHeading:(CLHeading * _Nonnull)newHeading;
+- (void)placePointOnWallWithView:(UIView * _Nonnull)view degree:(CGFloat)degree;
+- (void)addLocationToViewToAdd:(CLLocationCoordinate2D)toAdd;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)createHeaderWithCat:(NSString * _Nonnull)cat;
-- (void)createRegularContent;
-- (void)checkAnswerWithSender:(UIButton * _Nonnull)sender;
-- (void)timesUp;
-- (void)createMapContent;
-- (void)pressedWithSender:(UILongPressGestureRecognizer * _Nonnull)sender;
-- (void)displayMapAnswer;
-- (void)displayRegularAnswer;
+- (void)updateMotion;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
-- (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay;
-- (void)userHasWon;
-- (void)userHasLost;
+- (double)radToDegWithRad:(double)rad;
+- (double)calculateDistanceWithOrigin:(CLLocationCoordinate2D)origin destination:(CLLocationCoordinate2D)destination;
+- (double)calculateBearingWithOrigin:(CLLocationCoordinate2D)origin destination:(CLLocationCoordinate2D)destination;
+- (void)beginCameraSession;
 @end
 
 #pragma clang diagnostic pop
