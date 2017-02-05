@@ -29,6 +29,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
     var map: MKMapView
     var lgpr: UILongPressGestureRecognizer
     var hasAnswer = false
+    var match: Match!
     
     var que = question(id: -1, type: -1, categorie: "", quest: "", reponse: ["","","",""], reponseImage: [UIImage()], reponseId: -1, location: CLLocationCoordinate2D())
     
@@ -53,8 +54,8 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         
     }
     
-    init(frame: CGRect, q: question) {
-        
+    init(frame: CGRect, q: question, match: Match) {
+        self.match = match
         navBar = UINavigationBar()
         questionLabel = UILabel()
         buttons = []
@@ -186,6 +187,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
             sender.setTitleColor(UIColor.green, for: [])
             hasAnswer = true
             userHasWon()
+            kGoodAnswer += 1
         } else {
             sender.layer.borderWidth = 4
             sender.layer.borderColor = (UIColor.red).cgColor
@@ -195,9 +197,10 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
             userHasLost()
         }
         
-        self.resultView = ResultView(frame: self.frame, bgColor: self.backgroundColor!, success: sender.tag == que.reponseId, goodAnswer: sender.titleLabel!.text)
+        self.resultView = ResultView(frame: self.frame, bgColor: self.backgroundColor!, success: sender.tag == que.reponseId, goodAnswer: sender.titleLabel!.text, match: match)
         
-//        self.loadingBar.stopAl
+        self.timer.invalidate()
+        self.loadingBar.layer.removeAllAnimations()
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(displayResultView), userInfo: nil, repeats: false)
     }
     

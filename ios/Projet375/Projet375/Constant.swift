@@ -23,6 +23,8 @@ let kPurple: UIColor = UIColor(colorLiteralRed: 148/255, green: 75/255, blue: 64
 //Les urls de l'API
 let kBaseUrl:String = "http://79.170.44.147/projet-375.org/API"
 
+let kNewMatch = 0
+let kOldMatch = 1
 
 //Les catégories de questions
 let kCat1:String = "Géographie"
@@ -50,3 +52,4 @@ let KVProfile = 5
 let KVChart = 6
 
 var kUserCurrentTurn: Int = 0
+var kGoodAnswer: Int = 0

@@ -108,26 +108,35 @@ class RandomPickerView: UIView {
         let tag = button.tag
         print("Play: \(tag)")
         
-        
-        ControllerQuestion.getQuestion(location: nil, cat: button.tag/**toreplace with button.tag*/) { (success: Bool, q: question?) in
+        ControllerMatch.getMatch { (succesMatch: Bool, match: Match?) in
             
-            
-            if(success && q != nil) {
-                print("Question récupéré")
-                
-                DispatchQueue.main.sync {
-                    self.questionView = QuestionView(frame: self.frame, q: q!)
-                    self.questionView.layer.zPosition = 101
-                    self.addSubview(self.questionView)
+            if(succesMatch && match != nil) {
+                ControllerQuestion.getQuestion(location: nil, cat: button.tag/**toreplace with button.tag*/) { (success: Bool, q: question?) in
                     
-                    SwiftSpinner.hide()
+                    
+                    if(success && q != nil) {
+                        print("Question récupéré")
+                        
+                        DispatchQueue.main.sync {
+                            self.questionView = QuestionView(frame: self.frame, q: q!, match: match!)
+                            self.questionView.layer.zPosition = 101
+                            self.addSubview(self.questionView)
+                            
+                            SwiftSpinner.hide()
+                        }
+                    }
+                        
+                    else {
+                        displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Erreur lors de la récupération de la question")
+                    }
                 }
             }
-                
+            
             else {
-                displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Erreur lors de la récupération de la question")
+                displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Erreur lors de la récupération du match")
             }
         }
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

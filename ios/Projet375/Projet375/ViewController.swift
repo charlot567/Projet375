@@ -70,6 +70,9 @@ class ViewController: UIViewController {
             randomView.generateCategory()
         }
         
+        else if(index == KVCart) {
+            displayAlert(currentViewController: kMasterVC, title: "Info", message: "Page panier")
+        }
         self.currentViewIndex = index
         
         print(index)

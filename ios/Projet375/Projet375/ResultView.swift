@@ -10,9 +10,10 @@ import UIKit
 
 class ResultView: UIView {
     
-    init(frame: CGRect, bgColor: UIColor, success: Bool, goodAnswer: String?) {
+    var match: Match!
+    init(frame: CGRect, bgColor: UIColor, success: Bool, goodAnswer: String?, match: Match) {
         super.init(frame: frame)
-        
+        self.match = match
         kUserCurrentTurn += 1
         
         self.backgroundColor = bgColor
@@ -42,6 +43,32 @@ class ResultView: UIView {
     func replayBtn(button: UIButton) {
         if(button.titleLabel!.text == "Terminer") {
             kMasterVC.resultToMenu()
+            kUserCurrentTurn = 0
+            
+            if(match.state == kNewMatch) {
+                //  Send stats to create new match
+                //  SetMatch
+            }
+            
+            else {
+                //  Send final score of the game + say the result to the user
+                
+                if(kGoodAnswer > match.score) {
+                    displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez gagnez le match! \(kGoodAnswer)-\(match.score)")
+                }
+                
+                else if(kGoodAnswer == match.score) {
+                    displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez égalisé le match! \(kGoodAnswer)-\(match.score)")
+                }
+                
+                else {
+                    displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez perdu le match! \(kGoodAnswer)-\(match.score)")
+                }
+                
+                //  SetScore
+            }
+            
+            kGoodAnswer = 0
         }
         
         else {
