@@ -238,6 +238,7 @@ SWIFT_CLASS("_TtC9Projet37512QuestionView")
 @property (nonatomic, strong) MKMapView * _Nonnull map;
 @property (nonatomic, strong) UILongPressGestureRecognizer * _Nonnull lgpr;
 @property (nonatomic) BOOL hasAnswer;
+@property (nonatomic) BOOL background;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)createHeaderWithCat:(NSString * _Nonnull)cat;
@@ -323,6 +324,7 @@ SWIFT_CLASS("_TtC9Projet37514ViewController")
 @class CMMotionManager;
 @class AVCaptureDevice;
 @class AVCaptureSession;
+@class UITapGestureRecognizer;
 @class CLHeading;
 
 SWIFT_CLASS("_TtC9Projet3756VrView")
@@ -341,13 +343,15 @@ SWIFT_CLASS("_TtC9Projet3756VrView")
 @property (nonatomic, strong) CLLocationManager * _Null_unspecified locationManager;
 @property (nonatomic, strong) UIView * _Null_unspecified halfInfiniteWall1;
 @property (nonatomic, strong) UIView * _Null_unspecified halfInfiniteWall2;
+@property (nonatomic, strong) UITapGestureRecognizer * _Nonnull touchGR;
 @property (nonatomic) CGFloat deviceWidth;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateHeading:(CLHeading * _Nonnull)newHeading;
 - (void)placePointOnWallWithView:(UIView * _Nonnull)view degree:(CGFloat)degree;
 - (UIButton * _Nonnull)addLocationToViewToAdd:(CLLocationCoordinate2D)toAdd;
+- (void)addViewToLocationWithView:(UIView * _Nonnull)view toAdd:(CLLocationCoordinate2D)toAdd;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)pressedArenaWithSender:(UIButton * _Nonnull)sender;
+- (void)pressedArena;
 - (void)updateMotion;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (double)radToDegWithRad:(double)rad;

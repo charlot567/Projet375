@@ -100,6 +100,10 @@ class ArenaView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
                         var v = VrView(frame: self.map.frame)
                         v.clipsToBounds = true
                         self.addSubview(v)
+                        
+                        //QuestionView(frame: CGRect(x:,y:,width), q: <#T##question#>, match: <#T##Match#>, background: false)
+                        
+                        //v.addViewToLocation(view: , toAdd: <#T##CLLocationCoordinate2D#>)
                         let button = v.addLocationToView(toAdd: self.areneLoc)
                         button.addTarget(self, action: #selector(self.pressedArena(sender:)), for: UIControlEvents.touchUpInside)
                         self.showVR=true

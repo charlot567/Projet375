@@ -28,6 +28,8 @@ class VrView: UIView, CLLocationManagerDelegate {
     var locationManager: CLLocationManager!
     var halfInfiniteWall1: UIView!
     var halfInfiniteWall2: UIView!
+
+    var touchGR = UITapGestureRecognizer()
     
     var deviceWidth = CGFloat(0)
     
@@ -47,7 +49,6 @@ class VrView: UIView, CLLocationManagerDelegate {
                             self.captureDevice = device as? AVCaptureDevice
                         }
                     }
-                    
                 }
                 if(self.captureDevice != nil) {
                     self.beginCameraSession()
@@ -56,6 +57,11 @@ class VrView: UIView, CLLocationManagerDelegate {
                 print("Impossible de lancer la camera")
             }
         }
+        
+        touchGR.numberOfTapsRequired = 1
+        touchGR.addTarget(self, action: #selector(pressedArena))
+        
+        self.addGestureRecognizer(touchGR)
         
         deviceWidth = self.frame.width
         
@@ -73,13 +79,8 @@ class VrView: UIView, CLLocationManagerDelegate {
         halfInfiniteWall1 = UIView(frame: CGRect(x: 0, y: 0, width: self.frame.width*5, height: self.frame.height))
         halfInfiniteWall2 = UIView(frame: CGRect(x: halfInfiniteWall1.frame.width, y: 0, width: self.frame.width*5, height: self.frame.height))
         
-        self.addSubview(halfInfiniteWall1)
         self.addSubview(halfInfiniteWall2)
-        
-        
-        
-        //221 a 255 ... 360/(255 - 221) = 10.58  disons 10 pour les tests...
-        
+        self.addSubview(halfInfiniteWall1)
         
         _ = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (Timer) in
             self.updateMotion()
@@ -107,9 +108,11 @@ class VrView: UIView, CLLocationManagerDelegate {
             
             halfInfiniteWall2.backgroundColor = UIColor.red
             halfInfiniteWall2.alpha = 0.5
+            halfInfiniteWall2.layer.zPosition = 2
             
             halfInfiniteWall1.backgroundColor = UIColor.blue
             halfInfiniteWall1.alpha = 0.5
+            halfInfiniteWall2.layer.zPosition = 3
             
             self.addSubview(DyawLabel)
             self.addSubview(DrollLabel)
@@ -143,9 +146,11 @@ class VrView: UIView, CLLocationManagerDelegate {
     func placePointOnWall(view: UIView, degree: CGFloat) {
         if (degree >= 180 && degree <= 0) {
             view.frame = CGRect(x: CGFloat(degree/180)*halfInfiniteWall1.frame.width - 30, y: self.frame.height/2 - 30, width: 60, height: 60)
+            halfInfiniteWall1.layer.zPosition = 1
             halfInfiniteWall1.addSubview(view)
         } else {
             view.frame = CGRect(x: CGFloat((degree-180)/180)*halfInfiniteWall2.frame.width - 30, y: self.frame.height/2 - 30, width: 60, height: 60)
+            halfInfiniteWall2.layer.zPosition = 1
             halfInfiniteWall2.addSubview(view)
         }
     }
@@ -170,16 +175,30 @@ class VrView: UIView, CLLocationManagerDelegate {
         
         view.isUserInteractionEnabled = true
         
-        view.addTarget(self, action: #selector(self.pressedArena(sender:)), for: UIControlEvents.touchUpInside)
+        view.layer.zPosition = 10
+        
+        view.addTarget(self, action: #selector(pressedArena), for: UIControlEvents.touchUpInside)
         
         return view
+    }
+    
+    func addViewToLocation(view: UIView, toAdd: CLLocationCoordinate2D) {
+        let bearing = calculateBearing(origin: self.location, destination: toAdd)
+        
+        if (bearing >= 180 && bearing <= 0) {
+            view.frame = CGRect(x: CGFloat(bearing/180)*halfInfiniteWall1.frame.width/2 , y: self.frame.height/2, width: view.frame.width, height: view.frame.height)
+            halfInfiniteWall1.addSubview(view)
+        } else {
+            view.frame = CGRect(x: CGFloat((bearing-180)/180)*halfInfiniteWall1.frame.width/2 , y: self.frame.height/2, width: view.frame.width, height: view.frame.height)
+            halfInfiniteWall2.addSubview(view)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func pressedArena(sender: UIButton) {
+    func pressedArena() {
         print("Image2")
     }
     

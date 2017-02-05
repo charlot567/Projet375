@@ -7,17 +7,17 @@ provides-member:
 - ["C9Projet37514ControllerUser", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "StringLiteralType"
-- !private "kBaseUrl"
-- "Void"
-- "Bool"
 - "ControllerUser"
-- "TernaryPrecedence"
-- "Controller"
 - "AssignmentPrecedence"
 - !private "=="
-- "User"
 - !private "UserDefaults"
+- !private "kBaseUrl"
+- "Void"
+- "TernaryPrecedence"
+- "Bool"
+- "User"
+- !private "StringLiteralType"
+- "Controller"
 - !private "UnicodeScalarType"
 depends-member:
 - !private ["Ps9AnyObject", "UserDefaults"]

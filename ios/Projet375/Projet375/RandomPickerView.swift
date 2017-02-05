@@ -166,7 +166,7 @@ class RandomPickerView: UIView {
                 print("Question récupéré")
                 
                 DispatchQueue.main.sync {
-                    self.questionView = QuestionView(frame: self.frame, q: q!, match: self.match)
+                    self.questionView = QuestionView(frame: self.frame, q: q!, match: self.match, background: false)
                     self.questionView.layer.zPosition = 101
                     self.addSubview(self.questionView)
                     

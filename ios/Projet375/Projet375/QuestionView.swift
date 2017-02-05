@@ -29,6 +29,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
     var lgpr: UILongPressGestureRecognizer
     var hasAnswer = false
     var match: Match!
+    var background: Bool
     
     var que = question(id: -1, type: -1, categorie: "", quest: "", reponse: ["","","",""], reponseImage: [UIImage()], reponseId: -1, location: CLLocationCoordinate2D())
     
@@ -41,6 +42,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         timeLabel = UILabel()
         map = MKMapView()
         lgpr = UILongPressGestureRecognizer()
+        background = true
         super.init(frame: frame)
         
         self.locationManager.requestWhenInUseAuthorization()
@@ -53,7 +55,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         
     }
     
-    init(frame: CGRect, q: question, match: Match) {
+    init(frame: CGRect, q: question, match: Match, background: Bool) {
         self.match = match
         navBar = UINavigationBar()
         questionLabel = UILabel()
@@ -64,6 +66,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         timeLabel = UILabel()
         map = MKMapView()
         lgpr = UILongPressGestureRecognizer()
+        self.background = background
         super.init(frame:frame)
         
         let bg = UIView()
@@ -81,8 +84,8 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         }
         
         
-        
         createHeader(cat: que.categorie)
+        
         
         
         
@@ -141,10 +144,12 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
                 self.timesUp()
             }
         })
+        if(background) {
+            self.addSubview(timeLabel)
+            self.addSubview(loadingBar)
+            self.addSubview(navBar)
+        }
         
-        self.addSubview(timeLabel)
-        self.addSubview(loadingBar)
-        self.addSubview(navBar)
         headerHeight = self.timeLabel.maxY
     }
     

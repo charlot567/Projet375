@@ -6,107 +6,109 @@ provides-nominal:
 provides-member:
 - ["C9Projet37512QuestionView", ""]
 provides-dynamic-lookup:
-- "time"
-- "mapMargin"
-- "margin"
-- "headerHeight"
-- "hasAnswer"
-- "displayResultView"
-- "displayMapAnswer"
-- "timesUp"
-- "questionLabel"
-- "loadingBar"
 - "pressed"
-- "resultView"
-- "locationManager"
-- "locationManager"
-- "timeLabel"
+- "hasAnswer"
+- "time"
+- "headerHeight"
 - "verticalMargin"
-- "lgpr"
 - "createHeader"
-- "map"
-- "navBar"
-- "userHasWon"
-- "buttons"
-- "createMapContent"
-- "userHasLost"
-- "timer"
-- "displayRegularAnswer"
-- "marginB"
-- "createRegularContent"
+- "loadingBar"
+- "timeLabel"
+- "lgpr"
+- "locationManager"
+- "locationManager"
+- "margin"
 - "checkAnswer"
+- "resultView"
+- "questionLabel"
+- "displayRegularAnswer"
 - "mapView"
+- "buttons"
+- "background"
+- "createMapContent"
+- "timer"
+- "marginB"
+- "userHasLost"
+- "navBar"
+- "displayMapAnswer"
+- "map"
+- "createRegularContent"
+- "timesUp"
+- "userHasWon"
+- "mapMargin"
+- "displayResultView"
 depends-top-level:
-- "CGFloat"
-- !private "MKCoordinateSpan"
-- !private "kBlue"
-- "UILongPressGestureRecognizer"
-- "UIButton"
-- !private "UINavigationItem"
-- "MKMapView"
-- !private "kBeige"
-- "String"
-- "CLLocationManagerDelegate"
-- "CLLocationManager"
-- "MKMapViewDelegate"
-- !private "MKCircleRenderer"
-- !private "kColorForCategories"
-- !private "fatalError"
-- "NSCoder"
-- "CLLocationCoordinate2D"
-- !private "kRed"
-- !private "MKCircle"
-- !private "UIControlEvents"
-- "ResultView"
-- !private ">"
-- "UINavigationBar"
-- "StringLiteralType"
 - !private "kPurple"
-- !private "kGreen"
-- "BooleanLiteralType"
-- !private "MKCoordinateRegion"
-- !private "Dictionary"
-- !private "+"
-- "QuestionView"
-- !private "print"
-- !private "NSTextAlignment"
-- !private "..."
-- "TernaryPrecedence"
-- "UIImage"
-- !private "UIGestureRecognizerState"
-- !private "kGoodAnswer"
-- "Match"
-- !private "kCLLocationAccuracyNearestTenMeters"
 - "MKOverlayRenderer"
-- "UIView"
-- "UILabel"
-- !private "kTypeRegular"
-- "Array"
-- "Timer"
-- !private "kTypeMap"
-- !private "kHeight"
-- "CGRect"
-- "AssignmentPrecedence"
-- !private "~="
-- !private "UIBarStyle"
-- !private "Int"
-- !private "UnicodeScalarType"
-- !private "=="
-- "CastingPrecedence"
-- "CLLocation"
-- "MKOverlay"
-- "question"
-- !private "*"
-- !private "NSForegroundColorAttributeName"
-- !private "UIColor"
-- !private "-"
-- !private "!="
-- !private "MKPointAnnotation"
-- !private "UIFont"
+- !private "print"
+- !private ">"
+- !private "kBlue"
+- !private "kGoodAnswer"
+- !private "NSTextAlignment"
+- "CGFloat"
+- !private "MKCircle"
 - !private "CLCircularRegion"
 - !private "+="
-- !private "DispatchQueue"
+- !private "UIGestureRecognizerState"
+- "BooleanLiteralType"
+- "UIImage"
+- !private "kBeige"
+- !private "*"
+- "Bool"
+- !private "MKCoordinateSpan"
+- "Match"
+- !private "+"
+- !private "kRed"
+- !private "UIControlEvents"
+- "StringLiteralType"
+- !private "MKCoordinateRegion"
+- "MKMapViewDelegate"
+- !private "kColorForCategories"
+- !private "kGreen"
+- !private "Dictionary"
+- !private "kCLLocationAccuracyNearestTenMeters"
+- !private "UINavigationItem"
+- "CastingPrecedence"
+- !private "MKCircleRenderer"
+- "CLLocationManagerDelegate"
+- !private "UIFont"
+- "UINavigationBar"
+- "AssignmentPrecedence"
+- !private "~="
+- !private "=="
+- !private "..."
+- "CGRect"
+- !private "-"
+- "MKMapView"
+- "QuestionView"
+- "CLLocationCoordinate2D"
+- "ResultView"
+- "CLLocationManager"
+- "NSCoder"
+- !private "UnicodeScalarType"
+- "TernaryPrecedence"
+- !private "UIColor"
+- "CLLocation"
+- "question"
 - !private "/"
+- !private "NSForegroundColorAttributeName"
+- "Array"
+- !private "MKPointAnnotation"
+- "UILongPressGestureRecognizer"
+- !private "!="
+- !private "Int"
+- !private "fatalError"
+- !private "UIBarStyle"
+- "UIButton"
+- !private "kTypeRegular"
+- !private "DispatchQueue"
+- !private "kHeight"
+- "UIView"
+- "UILabel"
+- "String"
+- "Timer"
+- !private "kTypeMap"
+- "MKOverlay"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - ["Ps16AbsoluteValuable", "init"]
@@ -146,6 +148,7 @@ depends-member:
 - !private ["Ps9AnyObject", "addTarget"]
 - !private ["Ps9AnyObject", "animate"]
 - !private ["Ps9AnyObject", "async"]
+- ["Ps9AnyObject", "background"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "barStyle"]
 - !private ["Ps9AnyObject", "barTintColor"]
@@ -347,6 +350,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "addTarget"]
 - !private ["PSo15CALayerDelegate", "animate"]
+- ["PSo15CALayerDelegate", "background"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
 - !private ["PSo15CALayerDelegate", "barStyle"]
 - !private ["PSo15CALayerDelegate", "barTintColor"]
@@ -490,6 +494,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "UINavigationItem"]
 - !private ["PSo25CLLocationManagerDelegate", "UIView"]
 - !private ["PSo25CLLocationManagerDelegate", "addSubview"]
+- !private ["PSo25CLLocationManagerDelegate", "background"]
 - !private ["PSo25CLLocationManagerDelegate", "backgroundColor"]
 - !private ["PSo25CLLocationManagerDelegate", "buttons"]
 - !private ["PSo25CLLocationManagerDelegate", "checkAnswer"]
@@ -597,6 +602,7 @@ depends-member:
 - !private ["Ps7CVarArg", "animate"]
 - !private ["Ps7CVarArg", "append"]
 - !private ["Ps7CVarArg", "async"]
+- ["Ps7CVarArg", "background"]
 - !private ["Ps7CVarArg", "backgroundColor"]
 - !private ["Ps7CVarArg", "barStyle"]
 - !private ["Ps7CVarArg", "barTintColor"]
@@ -774,6 +780,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "animate"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "async"]
+- ["Ps28CustomDebugStringConvertible", "background"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "barStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
@@ -968,6 +975,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "animate"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "async"]
+- ["Ps23CustomStringConvertible", "background"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "barStyle"]
 - !private ["Ps23CustomStringConvertible", "barTintColor"]
@@ -1146,6 +1154,7 @@ depends-member:
 - !private ["Ps9Equatable", "addTarget"]
 - !private ["Ps9Equatable", "animate"]
 - !private ["Ps9Equatable", "async"]
+- ["Ps9Equatable", "background"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "barStyle"]
 - !private ["Ps9Equatable", "barTintColor"]
@@ -1334,6 +1343,7 @@ depends-member:
 - !private ["Ps8Hashable", "addTarget"]
 - !private ["Ps8Hashable", "animate"]
 - !private ["Ps8Hashable", "async"]
+- ["Ps8Hashable", "background"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "barStyle"]
 - !private ["Ps8Hashable", "barTintColor"]
@@ -1548,6 +1558,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "UINavigationItem"]
 - !private ["PSo17MKMapViewDelegate", "UIView"]
 - !private ["PSo17MKMapViewDelegate", "addSubview"]
+- !private ["PSo17MKMapViewDelegate", "background"]
 - !private ["PSo17MKMapViewDelegate", "backgroundColor"]
 - !private ["PSo17MKMapViewDelegate", "buttons"]
 - !private ["PSo17MKMapViewDelegate", "checkAnswer"]
@@ -1678,6 +1689,7 @@ depends-member:
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "animate"]
+- ["PSo8NSCoding", "background"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "barStyle"]
 - !private ["PSo8NSCoding", "barTintColor"]
@@ -1784,6 +1796,7 @@ depends-member:
 - !private ["PSo9NSCopying", "white"]
 - !private ["PSo9NSCopying", "withAlphaComponent"]
 - ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "CLCircularRegion"]
@@ -1826,6 +1839,7 @@ depends-member:
 - !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "animate"]
 - !private ["CSo8NSObject", "async"]
+- ["CSo8NSObject", "background"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "barStyle"]
 - !private ["CSo8NSObject", "barTintColor"]
@@ -1969,6 +1983,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "animate"]
 - !private ["PSo16NSObjectProtocol", "async"]
+- ["PSo16NSObjectProtocol", "background"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "barStyle"]
 - !private ["PSo16NSObjectProtocol", "barTintColor"]
@@ -2096,6 +2111,7 @@ depends-member:
 - !private ["Ps9OptionSet", "Element"]
 - !private ["Ps9OptionSet", "touchUpInside"]
 - ["Sq", "deinit"]
+- ["C9Projet37512QuestionView", "Bool"]
 - ["C9Projet37512QuestionView", "CGFloat"]
 - ["C9Projet37512QuestionView", "CGRect"]
 - !private ["C9Projet37512QuestionView", "CLCircularRegion"]
@@ -2132,6 +2148,7 @@ depends-member:
 - !private ["C9Projet37512QuestionView", "UINavigationItem"]
 - ["C9Projet37512QuestionView", "UIView"]
 - !private ["C9Projet37512QuestionView", "addSubview"]
+- ["C9Projet37512QuestionView", "background"]
 - !private ["C9Projet37512QuestionView", "backgroundColor"]
 - ["C9Projet37512QuestionView", "buttons"]
 - ["C9Projet37512QuestionView", "checkAnswer"]
@@ -2320,6 +2337,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "animate"]
+- ["PSo29UIAccessibilityIdentification", "background"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "barStyle"]
 - !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
@@ -2436,6 +2454,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "addTarget"]
 - !private ["PSo12UIAppearance", "animate"]
+- ["PSo12UIAppearance", "background"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "barStyle"]
 - !private ["PSo12UIAppearance", "barTintColor"]
@@ -2552,6 +2571,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - !private ["PSo21UIAppearanceContainer", "animate"]
+- ["PSo21UIAppearanceContainer", "background"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "barStyle"]
 - !private ["PSo21UIAppearanceContainer", "barTintColor"]
@@ -2720,6 +2740,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
 - !private ["PSo17UICoordinateSpace", "animate"]
+- ["PSo17UICoordinateSpace", "background"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "barStyle"]
 - !private ["PSo17UICoordinateSpace", "barTintColor"]
@@ -2836,6 +2857,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
 - !private ["PSo13UIDynamicItem", "animate"]
+- ["PSo13UIDynamicItem", "background"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "barStyle"]
 - !private ["PSo13UIDynamicItem", "barTintColor"]
@@ -2952,6 +2974,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
 - !private ["PSo18UIFocusEnvironment", "animate"]
+- ["PSo18UIFocusEnvironment", "background"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "barStyle"]
 - !private ["PSo18UIFocusEnvironment", "barTintColor"]
@@ -3068,6 +3091,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "addTarget"]
 - !private ["PSo11UIFocusItem", "animate"]
+- ["PSo11UIFocusItem", "background"]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
 - !private ["PSo11UIFocusItem", "barStyle"]
 - !private ["PSo11UIFocusItem", "barTintColor"]
@@ -3190,6 +3214,7 @@ depends-member:
 - !private ["CSo15UINavigationBar", "titleTextAttributes"]
 - ["CSo16UINavigationItem", "deinit"]
 - !private ["CSo16UINavigationItem", "init"]
+- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "CLCircularRegion"]
@@ -3231,6 +3256,7 @@ depends-member:
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
 - !private ["CSo11UIResponder", "animate"]
+- ["CSo11UIResponder", "background"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "barStyle"]
 - !private ["CSo11UIResponder", "barTintColor"]
@@ -3346,6 +3372,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "addTarget"]
 - !private ["PSo30UIResponderStandardEditActions", "animate"]
+- ["PSo30UIResponderStandardEditActions", "background"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - !private ["PSo30UIResponderStandardEditActions", "barStyle"]
 - !private ["PSo30UIResponderStandardEditActions", "barTintColor"]
@@ -3462,6 +3489,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - !private ["PSo18UITraitEnvironment", "animate"]
+- ["PSo18UITraitEnvironment", "background"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "barStyle"]
 - !private ["PSo18UITraitEnvironment", "barTintColor"]
@@ -3543,6 +3571,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "userHasWon"]
 - ["PSo18UITraitEnvironment", "verticalMargin"]
 - ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "CGFloat"]
 - ["CSo6UIView", "CGRect"]
 - !private ["CSo6UIView", "CLCircularRegion"]
@@ -3584,6 +3613,7 @@ depends-member:
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "animate"]
+- ["CSo6UIView", "background"]
 - !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "barStyle"]
 - !private ["CSo6UIView", "barTintColor"]
@@ -3720,6 +3750,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addTarget"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "animate"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "background"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "barStyle"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "barTintColor"]
@@ -3870,6 +3901,7 @@ depends-member:
 - !private ["Ps9_Hashable", "addTarget"]
 - !private ["Ps9_Hashable", "animate"]
 - !private ["Ps9_Hashable", "async"]
+- ["Ps9_Hashable", "background"]
 - !private ["Ps9_Hashable", "backgroundColor"]
 - !private ["Ps9_Hashable", "barStyle"]
 - !private ["Ps9_Hashable", "barTintColor"]
@@ -4283,4 +4315,4 @@ depends-external:
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
-interface-hash: "fc0519a0efdeb71847db5294c571ab6a"
+interface-hash: "2542c7f9b0d78b7fd9dff6d4850049a6"

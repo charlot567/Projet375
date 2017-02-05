@@ -43,7 +43,7 @@ class ProfileView: UIView {
         
         self.backgroundColor = kGreen
         
-//        
+        
 //        let profileImageWidth = kWidth / 6
 //        let profileImageView = UIImageView()
 //        profileImageView.frame = cgrect
