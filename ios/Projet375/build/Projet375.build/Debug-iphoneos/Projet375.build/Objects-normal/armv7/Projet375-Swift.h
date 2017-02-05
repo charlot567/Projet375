@@ -146,10 +146,16 @@ SWIFT_CLASS("_TtC9Projet37511AppDelegate")
 @class CLLocationManager;
 @class MKMapView;
 @class CLLocation;
+@protocol MKOverlay;
+@class MKOverlayRenderer;
 @class NSCoder;
+@class UIViewController;
 
 SWIFT_CLASS("_TtC9Projet3759ArenaView")
 @interface ArenaView : UIView <MKMapViewDelegate, CLLocationManagerDelegate>
+@property (nonatomic) BOOL showVR;
+@property (nonatomic, weak) UIViewController * _Null_unspecified controller;
+@property (nonatomic) BOOL isActive;
 @property (nonatomic) CLLocationCoordinate2D areneLoc;
 @property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
 @property (nonatomic, strong) MKMapView * _Nonnull map;
@@ -157,7 +163,9 @@ SWIFT_CLASS("_TtC9Projet3759ArenaView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (void)back;
+- (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (UIViewController * _Nullable)getCurrentViewController;
 @end
 
 
@@ -209,8 +217,6 @@ SWIFT_CLASS("_TtC9Projet37511ProfileView")
 @class UILabel;
 @class NSTimer;
 @class UILongPressGestureRecognizer;
-@protocol MKOverlay;
-@class MKOverlayRenderer;
 
 SWIFT_CLASS("_TtC9Projet37512QuestionView")
 @interface QuestionView : UIView <MKMapViewDelegate, CLLocationManagerDelegate>
@@ -248,12 +254,15 @@ SWIFT_CLASS("_TtC9Projet37512QuestionView")
 - (void)userHasLost;
 @end
 
+@class UIImageView;
 
 SWIFT_CLASS("_TtC9Projet37516RandomPickerView")
 @interface RandomPickerView : UIView
 @property (nonatomic, strong) QuestionView * _Null_unspecified questionView;
 @property (nonatomic, strong) UILabel * _Null_unspecified firstLabel;
 @property (nonatomic, strong) UILabel * _Null_unspecified secondLabel;
+@property (nonatomic, strong) UILabel * _Null_unspecified opposantName;
+@property (nonatomic, strong) UIImageView * _Null_unspecified opposentImageView;
 - (void)generateCategory;
 - (void)clickToPlayWithButton:(UIButton * _Nonnull)button;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -322,6 +331,7 @@ SWIFT_CLASS("_TtC9Projet3756VrView")
 @property (nonatomic, strong) UILabel * _Null_unspecified DrollLabel;
 @property (nonatomic, strong) UILabel * _Null_unspecified DheadingLabel;
 @property (nonatomic, strong) UILabel * _Null_unspecified DlocationLabel;
+@property (nonatomic) CLLocationCoordinate2D location;
 @property (nonatomic, readonly) BOOL DEBUG;
 @property (nonatomic, readonly, strong) UIColor * _Nonnull DebugColor;
 @property (nonatomic, strong) CMMotionManager * _Null_unspecified motionManager;
@@ -334,6 +344,7 @@ SWIFT_CLASS("_TtC9Projet3756VrView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateHeading:(CLHeading * _Nonnull)newHeading;
 - (void)placePointOnWallWithView:(UIView * _Nonnull)view degree:(CGFloat)degree;
+- (void)addLocationToViewToAdd:(CLLocationCoordinate2D)toAdd;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)updateMotion;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;

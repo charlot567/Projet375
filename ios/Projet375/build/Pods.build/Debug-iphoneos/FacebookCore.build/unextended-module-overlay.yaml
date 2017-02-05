@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': '/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules'
+    'name': '/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules'
     'contents': [{
       'type': 'file',
       'name': 'module.modulemap',
-      'external-contents': '/Users/alexmorin/Desktop/Projet375/build/Pods.build/Debug-iphoneos/FacebookCore.build/unextended-module.modulemap',
+      'external-contents': '/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Pods.build/Debug-iphoneos/FacebookCore.build/unextended-module.modulemap',
     }]
   }]
 }

@@ -166,7 +166,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         
         for index in 0...3 {
             let button = UIButton(frame: CGRect(x: marginB/2, y: verticalMargin*2 + questionLabel.frame.maxY + (CGFloat(index)*buttonHeight) + marginB/2 + marginB/2*CGFloat(index), width: self.frame.width - marginB, height: buttonHeight))
-            button.setTitleColor(UIColor.white, for: [])
+            button.setTitleColor(UIColor.black, for: [])
             button.setTitle(que.reponse![index], for: [])
             
             button.layer.borderWidth = 2

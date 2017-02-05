@@ -6,73 +6,77 @@ provides-nominal:
 provides-member:
 - ["C9Projet3756VrView", ""]
 provides-dynamic-lookup:
+- "radToDeg"
+- "location"
+- "DrollLabel"
+- "motionManager"
+- "locationManager"
+- "locationManager"
+- "locationManager"
+- "placePointOnWall"
+- "calculateDistance"
 - "beginCameraSession"
-- "locationManager"
-- "locationManager"
-- "locationManager"
+- "addLocationToView"
+- "captureSession"
+- "halfInfiniteWall1"
+- "DebugColor"
+- "deviceWidth"
 - "DpitchLabel"
 - "DlocationLabel"
-- "motionManager"
-- "deviceWidth"
-- "calculateBearing"
-- "placePointOnWall"
 - "halfInfiniteWall2"
-- "captureSession"
-- "DheadingLabel"
-- "DyawLabel"
-- "DebugColor"
-- "captureDevice"
-- "halfInfiniteWall1"
-- "updateMotion"
-- "radToDeg"
-- "calculateDistance"
-- "DrollLabel"
 - "DEBUG"
+- "captureDevice"
+- "DyawLabel"
+- "DheadingLabel"
+- "calculateBearing"
+- "updateMotion"
 depends-top-level:
-- "NSCoder"
-- "UILabel"
-- "CLLocation"
-- !private "-"
-- !private "asin"
-- !private "&&"
-- "CGRect"
-- !private "AVCaptureVideoPreviewLayer"
-- "CMMotionManager"
-- "BooleanLiteralType"
-- "AVCaptureSession"
-- "CLLocationManager"
-- !private ">="
-- !private "!="
-- "StringLiteralType"
-- !private "fmod"
-- !private "AVCaptureDevicePosition"
-- !private ">"
 - !private "M_PI"
+- !private "AVCaptureVideoPreviewLayer"
+- "CLHeading"
+- "VrView"
+- "StringLiteralType"
+- !private "-"
+- "AVCaptureSession"
+- !private "Timer"
+- !private "fmod"
+- !private "<="
+- "CLLocationManager"
+- !private "*"
+- !private ">="
+- !private "fatalError"
+- "Double"
+- !private ">"
+- !private "AnyObject"
+- !private "/"
+- "BooleanLiteralType"
+- !private "kHeight"
+- !private "asin"
 - "UIView"
-- "AssignmentPrecedence"
-- "CLLocationManagerDelegate"
+- !private "kWidth"
+- !private "AVCaptureDeviceInput"
 - "AVCaptureDevice"
+- "UIColor"
+- !private "!="
 - !private "AVMediaTypeVideo"
 - !private "AVCaptureSessionPresetHigh"
-- !private "CastingPrecedence"
-- "UIColor"
-- !private "kCLLocationAccuracyNearestTenMeters"
-- "Double"
-- !private "print"
-- !private "<="
-- !private "AVCaptureDeviceInput"
-- !private "=="
-- !private "atan2"
 - !private "+"
-- !private "AnyObject"
-- "CLHeading"
-- !private "Timer"
-- !private "fatalError"
-- "VrView"
-- !private "/"
-- "CLLocationCoordinate2D"
+- !private "kCLLocationAccuracyNearestTenMeters"
 - "CGFloat"
-- !private "*"
+- "UILabel"
+- "NSCoder"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "AVCaptureDevicePosition"
+- !private "atan2"
+- !private "print"
+- "CLLocation"
+- "CMMotionManager"
+- !private "CastingPrecedence"
+- "CLLocationCoordinate2D"
+- !private "&&"
+- "CGRect"
+- "CLLocationManagerDelegate"
 depends-member:
 - !private ["CSo15AVCaptureDevice", "deinit"]
 - !private ["CSo15AVCaptureDevice", "devices"]
@@ -102,6 +106,7 @@ depends-member:
 - ["Ps9AnyObject", "CGFloat"]
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "CLLocation"]
+- ["Ps9AnyObject", "CLLocationCoordinate2D"]
 - !private ["Ps9AnyObject", "CLLocationManager"]
 - !private ["Ps9AnyObject", "CMMotionManager"]
 - ["Ps9AnyObject", "DEBUG"]
@@ -117,6 +122,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UILabel"]
 - !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "addInput"]
+- ["Ps9AnyObject", "addLocationToView"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "alpha"]
 - !private ["Ps9AnyObject", "asin"]
@@ -147,13 +153,17 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "insertSublayer"]
 - !private ["Ps9AnyObject", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["Ps9AnyObject", "kHeight"]
+- !private ["Ps9AnyObject", "kWidth"]
 - !private ["Ps9AnyObject", "layer"]
+- ["Ps9AnyObject", "location"]
 - ["Ps9AnyObject", "locationManager"]
 - ["Ps9AnyObject", "locationManagerDidPauseLocationUpdates"]
 - ["Ps9AnyObject", "locationManagerDidResumeLocationUpdates"]
 - ["Ps9AnyObject", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["Ps9AnyObject", "magneticHeading"]
 - ["Ps9AnyObject", "motionManager"]
+- !private ["Ps9AnyObject", "orange"]
 - ["Ps9AnyObject", "placePointOnWall"]
 - !private ["Ps9AnyObject", "position"]
 - !private ["Ps9AnyObject", "print"]
@@ -222,6 +232,7 @@ depends-member:
 - ["PSo15CALayerDelegate", "CGFloat"]
 - !private ["PSo15CALayerDelegate", "CGRect"]
 - !private ["PSo15CALayerDelegate", "CLLocation"]
+- ["PSo15CALayerDelegate", "CLLocationCoordinate2D"]
 - !private ["PSo15CALayerDelegate", "CLLocationManager"]
 - !private ["PSo15CALayerDelegate", "CMMotionManager"]
 - ["PSo15CALayerDelegate", "DEBUG"]
@@ -236,6 +247,7 @@ depends-member:
 - ["PSo15CALayerDelegate", "UIColor"]
 - !private ["PSo15CALayerDelegate", "UILabel"]
 - !private ["PSo15CALayerDelegate", "UIView"]
+- ["PSo15CALayerDelegate", "addLocationToView"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "alpha"]
 - !private ["PSo15CALayerDelegate", "asin"]
@@ -254,7 +266,10 @@ depends-member:
 - ["PSo15CALayerDelegate", "halfInfiniteWall2"]
 - ["PSo15CALayerDelegate", "init"]
 - !private ["PSo15CALayerDelegate", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo15CALayerDelegate", "kHeight"]
+- !private ["PSo15CALayerDelegate", "kWidth"]
 - !private ["PSo15CALayerDelegate", "layer"]
+- ["PSo15CALayerDelegate", "location"]
 - ["PSo15CALayerDelegate", "locationManager"]
 - ["PSo15CALayerDelegate", "locationManagerDidPauseLocationUpdates"]
 - ["PSo15CALayerDelegate", "locationManagerDidResumeLocationUpdates"]
@@ -285,6 +300,7 @@ depends-member:
 - !private ["CSo10CLLocation", "distance"]
 - !private ["CSo10CLLocation", "init"]
 - ["VSC22CLLocationCoordinate2D", "deinit"]
+- ["VSC22CLLocationCoordinate2D", "init"]
 - !private ["VSC22CLLocationCoordinate2D", "latitude"]
 - !private ["VSC22CLLocationCoordinate2D", "longitude"]
 - ["CSo17CLLocationManager", "deinit"]
@@ -304,6 +320,7 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "CGFloat"]
 - !private ["PSo25CLLocationManagerDelegate", "CGRect"]
 - !private ["PSo25CLLocationManagerDelegate", "CLLocation"]
+- ["PSo25CLLocationManagerDelegate", "CLLocationCoordinate2D"]
 - !private ["PSo25CLLocationManagerDelegate", "CLLocationManager"]
 - !private ["PSo25CLLocationManagerDelegate", "CMMotionManager"]
 - !private ["PSo25CLLocationManagerDelegate", "DEBUG"]
@@ -322,6 +339,8 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "asin"]
 - !private ["PSo25CLLocationManagerDelegate", "atan2"]
 - !private ["PSo25CLLocationManagerDelegate", "beginCameraSession"]
+- !private ["PSo25CLLocationManagerDelegate", "calculateBearing"]
+- !private ["PSo25CLLocationManagerDelegate", "calculateDistance"]
 - !private ["PSo25CLLocationManagerDelegate", "captureDevice"]
 - !private ["PSo25CLLocationManagerDelegate", "captureSession"]
 - !private ["PSo25CLLocationManagerDelegate", "deviceWidth"]
@@ -331,7 +350,10 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "halfInfiniteWall1"]
 - !private ["PSo25CLLocationManagerDelegate", "halfInfiniteWall2"]
 - !private ["PSo25CLLocationManagerDelegate", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo25CLLocationManagerDelegate", "kHeight"]
+- !private ["PSo25CLLocationManagerDelegate", "kWidth"]
 - !private ["PSo25CLLocationManagerDelegate", "layer"]
+- !private ["PSo25CLLocationManagerDelegate", "location"]
 - ["PSo25CLLocationManagerDelegate", "locationManager"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerDidPauseLocationUpdates"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerDidResumeLocationUpdates"]
@@ -366,6 +388,7 @@ depends-member:
 - ["Ps7CVarArg", "CGFloat"]
 - !private ["Ps7CVarArg", "CGRect"]
 - !private ["Ps7CVarArg", "CLLocation"]
+- ["Ps7CVarArg", "CLLocationCoordinate2D"]
 - !private ["Ps7CVarArg", "CLLocationManager"]
 - !private ["Ps7CVarArg", "CMMotionManager"]
 - ["Ps7CVarArg", "DEBUG"]
@@ -388,6 +411,7 @@ depends-member:
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "addInput"]
+- ["Ps7CVarArg", "addLocationToView"]
 - !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "alpha"]
 - !private ["Ps7CVarArg", "asin"]
@@ -416,13 +440,17 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "insertSublayer"]
 - !private ["Ps7CVarArg", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["Ps7CVarArg", "kHeight"]
+- !private ["Ps7CVarArg", "kWidth"]
 - !private ["Ps7CVarArg", "layer"]
+- ["Ps7CVarArg", "location"]
 - ["Ps7CVarArg", "locationManager"]
 - ["Ps7CVarArg", "locationManagerDidPauseLocationUpdates"]
 - ["Ps7CVarArg", "locationManagerDidResumeLocationUpdates"]
 - ["Ps7CVarArg", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["Ps7CVarArg", "magneticHeading"]
 - ["Ps7CVarArg", "motionManager"]
+- !private ["Ps7CVarArg", "orange"]
 - ["Ps7CVarArg", "placePointOnWall"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "quaternion"]
@@ -463,6 +491,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRect"]
 - !private ["Ps28CustomDebugStringConvertible", "CLLocation"]
+- ["Ps28CustomDebugStringConvertible", "CLLocationCoordinate2D"]
 - !private ["Ps28CustomDebugStringConvertible", "CLLocationManager"]
 - !private ["Ps28CustomDebugStringConvertible", "CMMotionManager"]
 - ["Ps28CustomDebugStringConvertible", "DEBUG"]
@@ -482,6 +511,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addInput"]
+- ["Ps28CustomDebugStringConvertible", "addLocationToView"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "asin"]
@@ -511,13 +541,17 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "insertSublayer"]
 - !private ["Ps28CustomDebugStringConvertible", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["Ps28CustomDebugStringConvertible", "kHeight"]
+- !private ["Ps28CustomDebugStringConvertible", "kWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
+- ["Ps28CustomDebugStringConvertible", "location"]
 - ["Ps28CustomDebugStringConvertible", "locationManager"]
 - ["Ps28CustomDebugStringConvertible", "locationManagerDidPauseLocationUpdates"]
 - ["Ps28CustomDebugStringConvertible", "locationManagerDidResumeLocationUpdates"]
 - ["Ps28CustomDebugStringConvertible", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["Ps28CustomDebugStringConvertible", "magneticHeading"]
 - ["Ps28CustomDebugStringConvertible", "motionManager"]
+- !private ["Ps28CustomDebugStringConvertible", "orange"]
 - !private ["Ps28CustomDebugStringConvertible", "origin"]
 - ["Ps28CustomDebugStringConvertible", "placePointOnWall"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -572,6 +606,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "CGFloat"]
 - !private ["Ps23CustomStringConvertible", "CGRect"]
 - !private ["Ps23CustomStringConvertible", "CLLocation"]
+- ["Ps23CustomStringConvertible", "CLLocationCoordinate2D"]
 - !private ["Ps23CustomStringConvertible", "CLLocationManager"]
 - !private ["Ps23CustomStringConvertible", "CMMotionManager"]
 - ["Ps23CustomStringConvertible", "DEBUG"]
@@ -595,6 +630,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addInput"]
+- ["Ps23CustomStringConvertible", "addLocationToView"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "alpha"]
 - !private ["Ps23CustomStringConvertible", "asin"]
@@ -623,13 +659,17 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "insertSublayer"]
 - !private ["Ps23CustomStringConvertible", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["Ps23CustomStringConvertible", "kHeight"]
+- !private ["Ps23CustomStringConvertible", "kWidth"]
 - !private ["Ps23CustomStringConvertible", "layer"]
+- ["Ps23CustomStringConvertible", "location"]
 - ["Ps23CustomStringConvertible", "locationManager"]
 - ["Ps23CustomStringConvertible", "locationManagerDidPauseLocationUpdates"]
 - ["Ps23CustomStringConvertible", "locationManagerDidResumeLocationUpdates"]
 - ["Ps23CustomStringConvertible", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["Ps23CustomStringConvertible", "magneticHeading"]
 - ["Ps23CustomStringConvertible", "motionManager"]
+- !private ["Ps23CustomStringConvertible", "orange"]
 - ["Ps23CustomStringConvertible", "placePointOnWall"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "quaternion"]
@@ -669,6 +709,7 @@ depends-member:
 - ["Ps9Equatable", "CGFloat"]
 - !private ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "CLLocation"]
+- ["Ps9Equatable", "CLLocationCoordinate2D"]
 - !private ["Ps9Equatable", "CLLocationManager"]
 - !private ["Ps9Equatable", "CMMotionManager"]
 - ["Ps9Equatable", "DEBUG"]
@@ -689,6 +730,7 @@ depends-member:
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addInput"]
+- ["Ps9Equatable", "addLocationToView"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "alpha"]
 - !private ["Ps9Equatable", "asin"]
@@ -719,13 +761,17 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "insertSublayer"]
 - !private ["Ps9Equatable", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["Ps9Equatable", "kHeight"]
+- !private ["Ps9Equatable", "kWidth"]
 - !private ["Ps9Equatable", "layer"]
+- ["Ps9Equatable", "location"]
 - ["Ps9Equatable", "locationManager"]
 - ["Ps9Equatable", "locationManagerDidPauseLocationUpdates"]
 - ["Ps9Equatable", "locationManagerDidResumeLocationUpdates"]
 - ["Ps9Equatable", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["Ps9Equatable", "magneticHeading"]
 - ["Ps9Equatable", "motionManager"]
+- !private ["Ps9Equatable", "orange"]
 - !private ["Ps9Equatable", "origin"]
 - ["Ps9Equatable", "placePointOnWall"]
 - !private ["Ps9Equatable", "print"]
@@ -773,6 +819,7 @@ depends-member:
 - ["Ps8Hashable", "CGFloat"]
 - !private ["Ps8Hashable", "CGRect"]
 - !private ["Ps8Hashable", "CLLocation"]
+- ["Ps8Hashable", "CLLocationCoordinate2D"]
 - !private ["Ps8Hashable", "CLLocationManager"]
 - !private ["Ps8Hashable", "CMMotionManager"]
 - ["Ps8Hashable", "DEBUG"]
@@ -793,6 +840,7 @@ depends-member:
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addInput"]
+- ["Ps8Hashable", "addLocationToView"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "alpha"]
 - !private ["Ps8Hashable", "asin"]
@@ -822,13 +870,17 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "insertSublayer"]
 - !private ["Ps8Hashable", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["Ps8Hashable", "kHeight"]
+- !private ["Ps8Hashable", "kWidth"]
 - !private ["Ps8Hashable", "layer"]
+- ["Ps8Hashable", "location"]
 - ["Ps8Hashable", "locationManager"]
 - ["Ps8Hashable", "locationManagerDidPauseLocationUpdates"]
 - ["Ps8Hashable", "locationManagerDidResumeLocationUpdates"]
 - ["Ps8Hashable", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["Ps8Hashable", "magneticHeading"]
 - ["Ps8Hashable", "motionManager"]
+- !private ["Ps8Hashable", "orange"]
 - ["Ps8Hashable", "placePointOnWall"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "quaternion"]
@@ -903,6 +955,7 @@ depends-member:
 - ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "CLLocation"]
+- ["PSo8NSCoding", "CLLocationCoordinate2D"]
 - !private ["PSo8NSCoding", "CLLocationManager"]
 - !private ["PSo8NSCoding", "CMMotionManager"]
 - ["PSo8NSCoding", "DEBUG"]
@@ -917,6 +970,7 @@ depends-member:
 - ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UILabel"]
 - !private ["PSo8NSCoding", "UIView"]
+- ["PSo8NSCoding", "addLocationToView"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "alpha"]
 - !private ["PSo8NSCoding", "asin"]
@@ -940,13 +994,17 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "insertSublayer"]
 - !private ["PSo8NSCoding", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo8NSCoding", "kHeight"]
+- !private ["PSo8NSCoding", "kWidth"]
 - !private ["PSo8NSCoding", "layer"]
+- ["PSo8NSCoding", "location"]
 - ["PSo8NSCoding", "locationManager"]
 - ["PSo8NSCoding", "locationManagerDidPauseLocationUpdates"]
 - ["PSo8NSCoding", "locationManagerDidResumeLocationUpdates"]
 - ["PSo8NSCoding", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo8NSCoding", "magneticHeading"]
 - ["PSo8NSCoding", "motionManager"]
+- !private ["PSo8NSCoding", "orange"]
 - ["PSo8NSCoding", "placePointOnWall"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "quaternion"]
@@ -962,6 +1020,7 @@ depends-member:
 - !private ["PSo9NSCopying", "distance"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "magneticHeading"]
+- !private ["PSo9NSCopying", "orange"]
 - !private ["PSo9NSCopying", "quaternion"]
 - ["PSo9NSCopying", "red"]
 - !private ["PSo16NSMutableCopying", "init"]
@@ -995,6 +1054,7 @@ depends-member:
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "addInput"]
+- ["CSo8NSObject", "addLocationToView"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "alpha"]
 - !private ["CSo8NSObject", "asin"]
@@ -1023,13 +1083,17 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "insertSublayer"]
 - !private ["CSo8NSObject", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["CSo8NSObject", "kHeight"]
+- !private ["CSo8NSObject", "kWidth"]
 - !private ["CSo8NSObject", "layer"]
+- ["CSo8NSObject", "location"]
 - ["CSo8NSObject", "locationManager"]
 - ["CSo8NSObject", "locationManagerDidPauseLocationUpdates"]
 - ["CSo8NSObject", "locationManagerDidResumeLocationUpdates"]
 - ["CSo8NSObject", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["CSo8NSObject", "magneticHeading"]
 - ["CSo8NSObject", "motionManager"]
+- !private ["CSo8NSObject", "orange"]
 - ["CSo8NSObject", "placePointOnWall"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "quaternion"]
@@ -1056,6 +1120,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "CLLocation"]
+- ["PSo16NSObjectProtocol", "CLLocationCoordinate2D"]
 - !private ["PSo16NSObjectProtocol", "CLLocationManager"]
 - !private ["PSo16NSObjectProtocol", "CMMotionManager"]
 - ["PSo16NSObjectProtocol", "DEBUG"]
@@ -1071,6 +1136,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UILabel"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "addInput"]
+- ["PSo16NSObjectProtocol", "addLocationToView"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "asin"]
@@ -1099,13 +1165,17 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "insertSublayer"]
 - !private ["PSo16NSObjectProtocol", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo16NSObjectProtocol", "kHeight"]
+- !private ["PSo16NSObjectProtocol", "kWidth"]
 - !private ["PSo16NSObjectProtocol", "layer"]
+- ["PSo16NSObjectProtocol", "location"]
 - ["PSo16NSObjectProtocol", "locationManager"]
 - ["PSo16NSObjectProtocol", "locationManagerDidPauseLocationUpdates"]
 - ["PSo16NSObjectProtocol", "locationManagerDidResumeLocationUpdates"]
 - ["PSo16NSObjectProtocol", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo16NSObjectProtocol", "magneticHeading"]
 - ["PSo16NSObjectProtocol", "motionManager"]
+- !private ["PSo16NSObjectProtocol", "orange"]
 - ["PSo16NSObjectProtocol", "placePointOnWall"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "quaternion"]
@@ -1129,6 +1199,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "distance"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "magneticHeading"]
+- !private ["PSo14NSSecureCoding", "orange"]
 - !private ["PSo14NSSecureCoding", "quaternion"]
 - ["PSo14NSSecureCoding", "red"]
 - !private ["CSo8NSString", "init"]
@@ -1207,6 +1278,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "CGFloat"]
 - !private ["PSo29UIAccessibilityIdentification", "CGRect"]
 - !private ["PSo29UIAccessibilityIdentification", "CLLocation"]
+- ["PSo29UIAccessibilityIdentification", "CLLocationCoordinate2D"]
 - !private ["PSo29UIAccessibilityIdentification", "CLLocationManager"]
 - !private ["PSo29UIAccessibilityIdentification", "CMMotionManager"]
 - ["PSo29UIAccessibilityIdentification", "DEBUG"]
@@ -1221,6 +1293,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "UIColor"]
 - !private ["PSo29UIAccessibilityIdentification", "UILabel"]
 - !private ["PSo29UIAccessibilityIdentification", "UIView"]
+- ["PSo29UIAccessibilityIdentification", "addLocationToView"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "asin"]
@@ -1239,7 +1312,10 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "halfInfiniteWall2"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo29UIAccessibilityIdentification", "kHeight"]
+- !private ["PSo29UIAccessibilityIdentification", "kWidth"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
+- ["PSo29UIAccessibilityIdentification", "location"]
 - ["PSo29UIAccessibilityIdentification", "locationManager"]
 - ["PSo29UIAccessibilityIdentification", "locationManagerDidPauseLocationUpdates"]
 - ["PSo29UIAccessibilityIdentification", "locationManagerDidResumeLocationUpdates"]
@@ -1262,6 +1338,7 @@ depends-member:
 - ["PSo12UIAppearance", "CGFloat"]
 - !private ["PSo12UIAppearance", "CGRect"]
 - !private ["PSo12UIAppearance", "CLLocation"]
+- ["PSo12UIAppearance", "CLLocationCoordinate2D"]
 - !private ["PSo12UIAppearance", "CLLocationManager"]
 - !private ["PSo12UIAppearance", "CMMotionManager"]
 - ["PSo12UIAppearance", "DEBUG"]
@@ -1276,6 +1353,7 @@ depends-member:
 - ["PSo12UIAppearance", "UIColor"]
 - !private ["PSo12UIAppearance", "UILabel"]
 - !private ["PSo12UIAppearance", "UIView"]
+- ["PSo12UIAppearance", "addLocationToView"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "asin"]
@@ -1294,7 +1372,10 @@ depends-member:
 - ["PSo12UIAppearance", "halfInfiniteWall2"]
 - ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo12UIAppearance", "kHeight"]
+- !private ["PSo12UIAppearance", "kWidth"]
 - !private ["PSo12UIAppearance", "layer"]
+- ["PSo12UIAppearance", "location"]
 - ["PSo12UIAppearance", "locationManager"]
 - ["PSo12UIAppearance", "locationManagerDidPauseLocationUpdates"]
 - ["PSo12UIAppearance", "locationManagerDidResumeLocationUpdates"]
@@ -1317,6 +1398,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "CLLocation"]
+- ["PSo21UIAppearanceContainer", "CLLocationCoordinate2D"]
 - !private ["PSo21UIAppearanceContainer", "CLLocationManager"]
 - !private ["PSo21UIAppearanceContainer", "CMMotionManager"]
 - ["PSo21UIAppearanceContainer", "DEBUG"]
@@ -1331,6 +1413,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UILabel"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
+- ["PSo21UIAppearanceContainer", "addLocationToView"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "alpha"]
 - !private ["PSo21UIAppearanceContainer", "asin"]
@@ -1349,7 +1432,10 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "halfInfiniteWall2"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo21UIAppearanceContainer", "kHeight"]
+- !private ["PSo21UIAppearanceContainer", "kWidth"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "location"]
 - ["PSo21UIAppearanceContainer", "locationManager"]
 - ["PSo21UIAppearanceContainer", "locationManagerDidPauseLocationUpdates"]
 - ["PSo21UIAppearanceContainer", "locationManagerDidResumeLocationUpdates"]
@@ -1364,6 +1450,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo7UIColor", "blue"]
 - ["CSo7UIColor", "deinit"]
+- !private ["CSo7UIColor", "orange"]
 - ["CSo7UIColor", "red"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "init"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
@@ -1378,6 +1465,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "CGFloat"]
 - !private ["PSo17UICoordinateSpace", "CGRect"]
 - !private ["PSo17UICoordinateSpace", "CLLocation"]
+- ["PSo17UICoordinateSpace", "CLLocationCoordinate2D"]
 - !private ["PSo17UICoordinateSpace", "CLLocationManager"]
 - !private ["PSo17UICoordinateSpace", "CMMotionManager"]
 - ["PSo17UICoordinateSpace", "DEBUG"]
@@ -1392,6 +1480,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "UIColor"]
 - !private ["PSo17UICoordinateSpace", "UILabel"]
 - !private ["PSo17UICoordinateSpace", "UIView"]
+- ["PSo17UICoordinateSpace", "addLocationToView"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "asin"]
@@ -1410,7 +1499,10 @@ depends-member:
 - ["PSo17UICoordinateSpace", "halfInfiniteWall2"]
 - ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo17UICoordinateSpace", "kHeight"]
+- !private ["PSo17UICoordinateSpace", "kWidth"]
 - !private ["PSo17UICoordinateSpace", "layer"]
+- ["PSo17UICoordinateSpace", "location"]
 - ["PSo17UICoordinateSpace", "locationManager"]
 - ["PSo17UICoordinateSpace", "locationManagerDidPauseLocationUpdates"]
 - ["PSo17UICoordinateSpace", "locationManagerDidResumeLocationUpdates"]
@@ -1433,6 +1525,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "CGFloat"]
 - !private ["PSo13UIDynamicItem", "CGRect"]
 - !private ["PSo13UIDynamicItem", "CLLocation"]
+- ["PSo13UIDynamicItem", "CLLocationCoordinate2D"]
 - !private ["PSo13UIDynamicItem", "CLLocationManager"]
 - !private ["PSo13UIDynamicItem", "CMMotionManager"]
 - ["PSo13UIDynamicItem", "DEBUG"]
@@ -1447,6 +1540,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "UIColor"]
 - !private ["PSo13UIDynamicItem", "UILabel"]
 - !private ["PSo13UIDynamicItem", "UIView"]
+- ["PSo13UIDynamicItem", "addLocationToView"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "asin"]
@@ -1465,7 +1559,10 @@ depends-member:
 - ["PSo13UIDynamicItem", "halfInfiniteWall2"]
 - ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo13UIDynamicItem", "kHeight"]
+- !private ["PSo13UIDynamicItem", "kWidth"]
 - !private ["PSo13UIDynamicItem", "layer"]
+- ["PSo13UIDynamicItem", "location"]
 - ["PSo13UIDynamicItem", "locationManager"]
 - ["PSo13UIDynamicItem", "locationManagerDidPauseLocationUpdates"]
 - ["PSo13UIDynamicItem", "locationManagerDidResumeLocationUpdates"]
@@ -1488,6 +1585,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "CGFloat"]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "CLLocation"]
+- ["PSo18UIFocusEnvironment", "CLLocationCoordinate2D"]
 - !private ["PSo18UIFocusEnvironment", "CLLocationManager"]
 - !private ["PSo18UIFocusEnvironment", "CMMotionManager"]
 - ["PSo18UIFocusEnvironment", "DEBUG"]
@@ -1502,6 +1600,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UILabel"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
+- ["PSo18UIFocusEnvironment", "addLocationToView"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "alpha"]
 - !private ["PSo18UIFocusEnvironment", "asin"]
@@ -1520,7 +1619,10 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "halfInfiniteWall2"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo18UIFocusEnvironment", "kHeight"]
+- !private ["PSo18UIFocusEnvironment", "kWidth"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "location"]
 - ["PSo18UIFocusEnvironment", "locationManager"]
 - ["PSo18UIFocusEnvironment", "locationManagerDidPauseLocationUpdates"]
 - ["PSo18UIFocusEnvironment", "locationManagerDidResumeLocationUpdates"]
@@ -1543,6 +1645,7 @@ depends-member:
 - ["PSo11UIFocusItem", "CGFloat"]
 - !private ["PSo11UIFocusItem", "CGRect"]
 - !private ["PSo11UIFocusItem", "CLLocation"]
+- ["PSo11UIFocusItem", "CLLocationCoordinate2D"]
 - !private ["PSo11UIFocusItem", "CLLocationManager"]
 - !private ["PSo11UIFocusItem", "CMMotionManager"]
 - ["PSo11UIFocusItem", "DEBUG"]
@@ -1557,6 +1660,7 @@ depends-member:
 - ["PSo11UIFocusItem", "UIColor"]
 - !private ["PSo11UIFocusItem", "UILabel"]
 - !private ["PSo11UIFocusItem", "UIView"]
+- ["PSo11UIFocusItem", "addLocationToView"]
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "alpha"]
 - !private ["PSo11UIFocusItem", "asin"]
@@ -1575,7 +1679,10 @@ depends-member:
 - ["PSo11UIFocusItem", "halfInfiniteWall2"]
 - ["PSo11UIFocusItem", "init"]
 - !private ["PSo11UIFocusItem", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo11UIFocusItem", "kHeight"]
+- !private ["PSo11UIFocusItem", "kWidth"]
 - !private ["PSo11UIFocusItem", "layer"]
+- ["PSo11UIFocusItem", "location"]
 - ["PSo11UIFocusItem", "locationManager"]
 - ["PSo11UIFocusItem", "locationManagerDidPauseLocationUpdates"]
 - ["PSo11UIFocusItem", "locationManagerDidResumeLocationUpdates"]
@@ -1621,6 +1728,7 @@ depends-member:
 - ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIView"]
+- ["CSo11UIResponder", "addLocationToView"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "alpha"]
 - !private ["CSo11UIResponder", "asin"]
@@ -1639,7 +1747,10 @@ depends-member:
 - ["CSo11UIResponder", "halfInfiniteWall2"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["CSo11UIResponder", "kHeight"]
+- !private ["CSo11UIResponder", "kWidth"]
 - !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "location"]
 - ["CSo11UIResponder", "locationManager"]
 - ["CSo11UIResponder", "locationManagerDidPauseLocationUpdates"]
 - ["CSo11UIResponder", "locationManagerDidResumeLocationUpdates"]
@@ -1661,6 +1772,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "CGFloat"]
 - !private ["PSo30UIResponderStandardEditActions", "CGRect"]
 - !private ["PSo30UIResponderStandardEditActions", "CLLocation"]
+- ["PSo30UIResponderStandardEditActions", "CLLocationCoordinate2D"]
 - !private ["PSo30UIResponderStandardEditActions", "CLLocationManager"]
 - !private ["PSo30UIResponderStandardEditActions", "CMMotionManager"]
 - ["PSo30UIResponderStandardEditActions", "DEBUG"]
@@ -1675,6 +1787,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UILabel"]
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
+- ["PSo30UIResponderStandardEditActions", "addLocationToView"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "alpha"]
 - !private ["PSo30UIResponderStandardEditActions", "asin"]
@@ -1693,7 +1806,10 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "halfInfiniteWall2"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo30UIResponderStandardEditActions", "kHeight"]
+- !private ["PSo30UIResponderStandardEditActions", "kWidth"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
+- ["PSo30UIResponderStandardEditActions", "location"]
 - ["PSo30UIResponderStandardEditActions", "locationManager"]
 - ["PSo30UIResponderStandardEditActions", "locationManagerDidPauseLocationUpdates"]
 - ["PSo30UIResponderStandardEditActions", "locationManagerDidResumeLocationUpdates"]
@@ -1716,6 +1832,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "CGFloat"]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "CLLocation"]
+- ["PSo18UITraitEnvironment", "CLLocationCoordinate2D"]
 - !private ["PSo18UITraitEnvironment", "CLLocationManager"]
 - !private ["PSo18UITraitEnvironment", "CMMotionManager"]
 - ["PSo18UITraitEnvironment", "DEBUG"]
@@ -1730,6 +1847,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UILabel"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
+- ["PSo18UITraitEnvironment", "addLocationToView"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "alpha"]
 - !private ["PSo18UITraitEnvironment", "asin"]
@@ -1748,7 +1866,10 @@ depends-member:
 - ["PSo18UITraitEnvironment", "halfInfiniteWall2"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo18UITraitEnvironment", "kHeight"]
+- !private ["PSo18UITraitEnvironment", "kWidth"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "location"]
 - ["PSo18UITraitEnvironment", "locationManager"]
 - ["PSo18UITraitEnvironment", "locationManagerDidPauseLocationUpdates"]
 - ["PSo18UITraitEnvironment", "locationManagerDidResumeLocationUpdates"]
@@ -1790,6 +1911,7 @@ depends-member:
 - ["CSo6UIView", "UIColor"]
 - ["CSo6UIView", "UILabel"]
 - ["CSo6UIView", "UIView"]
+- ["CSo6UIView", "addLocationToView"]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "alpha"]
 - !private ["CSo6UIView", "asin"]
@@ -1809,7 +1931,10 @@ depends-member:
 - ["CSo6UIView", "halfInfiniteWall2"]
 - ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["CSo6UIView", "kHeight"]
+- !private ["CSo6UIView", "kWidth"]
 - !private ["CSo6UIView", "layer"]
+- ["CSo6UIView", "location"]
 - ["CSo6UIView", "locationManager"]
 - ["CSo6UIView", "locationManagerDidPauseLocationUpdates"]
 - ["CSo6UIView", "locationManagerDidResumeLocationUpdates"]
@@ -1857,6 +1982,7 @@ depends-member:
 - ["C9Projet3756VrView", "UIColor"]
 - ["C9Projet3756VrView", "UILabel"]
 - ["C9Projet3756VrView", "UIView"]
+- ["C9Projet3756VrView", "addLocationToView"]
 - !private ["C9Projet3756VrView", "addSubview"]
 - !private ["C9Projet3756VrView", "asin"]
 - !private ["C9Projet3756VrView", "atan2"]
@@ -1874,7 +2000,10 @@ depends-member:
 - ["C9Projet3756VrView", "halfInfiniteWall2"]
 - ["C9Projet3756VrView", "init"]
 - !private ["C9Projet3756VrView", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["C9Projet3756VrView", "kHeight"]
+- !private ["C9Projet3756VrView", "kWidth"]
 - !private ["C9Projet3756VrView", "layer"]
+- ["C9Projet3756VrView", "location"]
 - ["C9Projet3756VrView", "locationManager"]
 - ["C9Projet3756VrView", "locationManagerDidPauseLocationUpdates"]
 - ["C9Projet3756VrView", "locationManagerDidResumeLocationUpdates"]
@@ -1901,6 +2030,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGFloat"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGRect"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CLLocation"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "CLLocationCoordinate2D"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CLLocationManager"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CMMotionManager"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "DEBUG"]
@@ -1915,6 +2045,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UILabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIView"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "addLocationToView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "alpha"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "asin"]
@@ -1933,7 +2064,10 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "halfInfiniteWall2"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kHeight"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kWidth"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "location"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "locationManager"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "locationManagerDidPauseLocationUpdates"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "locationManagerDidResumeLocationUpdates"]
@@ -1960,6 +2094,7 @@ depends-member:
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps26_ExpressibleByColorLiteral", "blue"]
+- !private ["Ps26_ExpressibleByColorLiteral", "orange"]
 - ["Ps26_ExpressibleByColorLiteral", "red"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "AVCaptureDevice"]
@@ -1972,6 +2107,7 @@ depends-member:
 - ["Ps9_Hashable", "CGFloat"]
 - !private ["Ps9_Hashable", "CGRect"]
 - !private ["Ps9_Hashable", "CLLocation"]
+- ["Ps9_Hashable", "CLLocationCoordinate2D"]
 - !private ["Ps9_Hashable", "CLLocationManager"]
 - !private ["Ps9_Hashable", "CMMotionManager"]
 - ["Ps9_Hashable", "DEBUG"]
@@ -1992,6 +2128,7 @@ depends-member:
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addInput"]
+- ["Ps9_Hashable", "addLocationToView"]
 - !private ["Ps9_Hashable", "addSubview"]
 - !private ["Ps9_Hashable", "alpha"]
 - !private ["Ps9_Hashable", "asin"]
@@ -2021,13 +2158,17 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "insertSublayer"]
 - !private ["Ps9_Hashable", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["Ps9_Hashable", "kHeight"]
+- !private ["Ps9_Hashable", "kWidth"]
 - !private ["Ps9_Hashable", "layer"]
+- ["Ps9_Hashable", "location"]
 - ["Ps9_Hashable", "locationManager"]
 - ["Ps9_Hashable", "locationManagerDidPauseLocationUpdates"]
 - ["Ps9_Hashable", "locationManagerDidResumeLocationUpdates"]
 - ["Ps9_Hashable", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["Ps9_Hashable", "magneticHeading"]
 - ["Ps9_Hashable", "motionManager"]
+- !private ["Ps9_Hashable", "orange"]
 - ["Ps9_Hashable", "placePointOnWall"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "quaternion"]
@@ -2218,8 +2359,8 @@ depends-nominal:
 - !private "Ps14_SignedInteger"
 - "Ps11_Strideable"
 depends-dynamic-lookup:
-- !private "position"
 - !private "hasMediaType"
+- !private "position"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
@@ -2231,72 +2372,72 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/arm.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFExecutor.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
-interface-hash: "45e7c72c2bb5360f9666b36511ac3544"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/arm.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.swiftmodule"
+interface-hash: "3024412f617553d029bdea2c600c50e3"

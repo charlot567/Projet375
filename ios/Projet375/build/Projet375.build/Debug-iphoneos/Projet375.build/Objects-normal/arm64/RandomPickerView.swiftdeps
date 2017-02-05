@@ -6,54 +6,58 @@ provides-nominal:
 provides-member:
 - ["C9Projet37516RandomPickerView", ""]
 provides-dynamic-lookup:
+- "opposantName"
 - "clickToPlay"
-- "questionView"
 - "generateCategory"
 - "firstLabel"
+- "opposentImageView"
+- "questionView"
 - "secondLabel"
 depends-top-level:
-- !private "kCat3"
-- !private "ControllerQuestion"
-- !private "fatalError"
-- !private "kWidth"
-- !private "-"
+- !private "Bool"
+- "RandomPickerView"
+- !private "kCat2"
+- !private "DispatchQueue"
+- !private "UIImage"
+- !private "!="
+- "UIButton"
+- !private "kColorForCategories"
+- !private "kCat1"
+- "QuestionView"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "!="
-- !private "UIColor"
-- !private "kCat2"
-- !private "kCat4"
-- !private "Bool"
-- !private "UIImage"
-- "QuestionView"
-- "NSCoder"
-- "TernaryPrecedence"
-- "UILabel"
-- !private "question"
-- !private "DispatchQueue"
-- !private "BooleanLiteralType"
-- !private "displayAlert"
-- !private "kCat1"
-- "Match"
-- "RandomPickerView"
-- !private "SwiftSpinner"
-- !private "kColorForCategories"
-- !private "UInt32"
-- "UIButton"
-- !private "/"
-- "CGRect"
-- !private "arc4random_uniform"
-- !private "*"
+- "UIImageView"
 - !private "print"
+- "UILabel"
+- "UIView"
+- "CGRect"
+- !private "imageSize"
 - !private "&&"
+- "TernaryPrecedence"
+- !private "ControllerQuestion"
+- !private "kCat3"
+- !private "UInt32"
+- "NSCoder"
+- !private "arc4random_uniform"
+- !private "BooleanLiteralType"
+- "Int"
+- !private "displayAlert"
+- !private "fatalError"
+- !private "kCat4"
+- !private "kMasterVC"
+- !private "UIColor"
+- !private "/"
+- !private "SwiftSpinner"
+- !private "kHeight"
+- !private "+"
+- !private "kWidth"
+- !private "*"
 - !private "UIFont"
 - !private "StringLiteralType"
-- "UIView"
-- !private "kHeight"
-- !private "imageSize"
-- !private "+"
-- "Int"
-- !private "kMasterVC"
+- "Match"
+- !private "question"
+- !private "-"
+- !private "UnicodeScalarType"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "ControllerQuestion"]
@@ -77,6 +81,7 @@ depends-member:
 - !private ["Ps9AnyObject", "displayAlert"]
 - !private ["Ps9AnyObject", "fatalError"]
 - ["Ps9AnyObject", "firstLabel"]
+- !private ["Ps9AnyObject", "firstName"]
 - !private ["Ps9AnyObject", "font"]
 - !private ["Ps9AnyObject", "frame"]
 - ["Ps9AnyObject", "generateCategory"]
@@ -93,10 +98,13 @@ depends-member:
 - !private ["Ps9AnyObject", "kHeight"]
 - !private ["Ps9AnyObject", "kMasterVC"]
 - !private ["Ps9AnyObject", "kWidth"]
+- !private ["Ps9AnyObject", "lastName"]
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "main"]
 - ["Ps9AnyObject", "match"]
 - !private ["Ps9AnyObject", "maxY"]
+- ["Ps9AnyObject", "opposantName"]
+- ["Ps9AnyObject", "opposentImageView"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "questionView"]
 - !private ["Ps9AnyObject", "removeFromSuperview"]
@@ -205,6 +213,8 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "layer"]
 - ["PSo15CALayerDelegate", "match"]
 - !private ["PSo15CALayerDelegate", "maxY"]
+- ["PSo15CALayerDelegate", "opposantName"]
+- ["PSo15CALayerDelegate", "opposentImageView"]
 - !private ["PSo15CALayerDelegate", "print"]
 - ["PSo15CALayerDelegate", "questionView"]
 - !private ["PSo15CALayerDelegate", "removeFromSuperview"]
@@ -274,6 +284,8 @@ depends-member:
 - !private ["Ps7CVarArg", "main"]
 - ["Ps7CVarArg", "match"]
 - !private ["Ps7CVarArg", "maxY"]
+- ["Ps7CVarArg", "opposantName"]
+- ["Ps7CVarArg", "opposentImageView"]
 - !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "questionView"]
 - !private ["Ps7CVarArg", "removeFromSuperview"]
@@ -357,6 +369,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - ["Ps28CustomDebugStringConvertible", "match"]
 - !private ["Ps28CustomDebugStringConvertible", "maxY"]
+- ["Ps28CustomDebugStringConvertible", "opposantName"]
+- ["Ps28CustomDebugStringConvertible", "opposentImageView"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "questionView"]
 - !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
@@ -445,6 +459,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "main"]
 - ["Ps23CustomStringConvertible", "match"]
 - !private ["Ps23CustomStringConvertible", "maxY"]
+- ["Ps23CustomStringConvertible", "opposantName"]
+- ["Ps23CustomStringConvertible", "opposentImageView"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "questionView"]
 - !private ["Ps23CustomStringConvertible", "removeFromSuperview"]
@@ -530,6 +546,8 @@ depends-member:
 - ["Ps9Equatable", "match"]
 - !private ["Ps9Equatable", "maxY"]
 - !private ["Ps9Equatable", "normal"]
+- ["Ps9Equatable", "opposantName"]
+- ["Ps9Equatable", "opposentImageView"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "questionView"]
 - !private ["Ps9Equatable", "removeFromSuperview"]
@@ -619,6 +637,8 @@ depends-member:
 - !private ["Ps8Hashable", "main"]
 - ["Ps8Hashable", "match"]
 - !private ["Ps8Hashable", "maxY"]
+- ["Ps8Hashable", "opposantName"]
+- ["Ps8Hashable", "opposentImageView"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "questionView"]
 - !private ["Ps8Hashable", "removeFromSuperview"]
@@ -683,6 +703,8 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "init"]
 - !private ["PSo17MKMapViewDelegate", "layer"]
 - ["C9Projet3755Match", "deinit"]
+- !private ["C9Projet3755Match", "firstName"]
+- !private ["C9Projet3755Match", "lastName"]
 - !private ["Ps10MirrorPath", "IntegerLiteralType"]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
@@ -749,6 +771,8 @@ depends-member:
 - !private ["PSo8NSCoding", "layer"]
 - ["PSo8NSCoding", "match"]
 - !private ["PSo8NSCoding", "maxY"]
+- ["PSo8NSCoding", "opposantName"]
+- ["PSo8NSCoding", "opposentImageView"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "questionView"]
 - !private ["PSo8NSCoding", "removeFromSuperview"]
@@ -782,6 +806,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
 - !private ["CSo8NSObject", "UInt32"]
 - !private ["CSo8NSObject", "addSubview"]
@@ -814,6 +839,8 @@ depends-member:
 - !private ["CSo8NSObject", "main"]
 - ["CSo8NSObject", "match"]
 - !private ["CSo8NSObject", "maxY"]
+- ["CSo8NSObject", "opposantName"]
+- ["CSo8NSObject", "opposentImageView"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "question"]
 - ["CSo8NSObject", "questionView"]
@@ -872,6 +899,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "main"]
 - ["PSo16NSObjectProtocol", "match"]
 - !private ["PSo16NSObjectProtocol", "maxY"]
+- ["PSo16NSObjectProtocol", "opposantName"]
+- ["PSo16NSObjectProtocol", "opposentImageView"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "questionView"]
 - !private ["PSo16NSObjectProtocol", "removeFromSuperview"]
@@ -946,6 +975,7 @@ depends-member:
 - !private ["C9Projet37516RandomPickerView", "UIColor"]
 - !private ["C9Projet37516RandomPickerView", "UIFont"]
 - !private ["C9Projet37516RandomPickerView", "UIImage"]
+- ["C9Projet37516RandomPickerView", "UIImageView"]
 - ["C9Projet37516RandomPickerView", "UILabel"]
 - !private ["C9Projet37516RandomPickerView", "UInt32"]
 - !private ["C9Projet37516RandomPickerView", "addSubview"]
@@ -971,6 +1001,8 @@ depends-member:
 - !private ["C9Projet37516RandomPickerView", "kMasterVC"]
 - !private ["C9Projet37516RandomPickerView", "kWidth"]
 - !private ["C9Projet37516RandomPickerView", "match"]
+- ["C9Projet37516RandomPickerView", "opposantName"]
+- ["C9Projet37516RandomPickerView", "opposentImageView"]
 - !private ["C9Projet37516RandomPickerView", "print"]
 - !private ["C9Projet37516RandomPickerView", "question"]
 - ["C9Projet37516RandomPickerView", "questionView"]
@@ -1078,6 +1110,8 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - ["PSo29UIAccessibilityIdentification", "match"]
 - !private ["PSo29UIAccessibilityIdentification", "maxY"]
+- ["PSo29UIAccessibilityIdentification", "opposantName"]
+- ["PSo29UIAccessibilityIdentification", "opposentImageView"]
 - !private ["PSo29UIAccessibilityIdentification", "print"]
 - ["PSo29UIAccessibilityIdentification", "questionView"]
 - !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
@@ -1131,6 +1165,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "layer"]
 - ["PSo12UIAppearance", "match"]
 - !private ["PSo12UIAppearance", "maxY"]
+- ["PSo12UIAppearance", "opposantName"]
+- ["PSo12UIAppearance", "opposentImageView"]
 - !private ["PSo12UIAppearance", "print"]
 - ["PSo12UIAppearance", "questionView"]
 - !private ["PSo12UIAppearance", "removeFromSuperview"]
@@ -1183,6 +1219,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - ["PSo21UIAppearanceContainer", "match"]
 - !private ["PSo21UIAppearanceContainer", "maxY"]
+- ["PSo21UIAppearanceContainer", "opposantName"]
+- ["PSo21UIAppearanceContainer", "opposentImageView"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "questionView"]
 - !private ["PSo21UIAppearanceContainer", "removeFromSuperview"]
@@ -1271,6 +1309,8 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "layer"]
 - ["PSo17UICoordinateSpace", "match"]
 - !private ["PSo17UICoordinateSpace", "maxY"]
+- ["PSo17UICoordinateSpace", "opposantName"]
+- ["PSo17UICoordinateSpace", "opposentImageView"]
 - !private ["PSo17UICoordinateSpace", "print"]
 - ["PSo17UICoordinateSpace", "questionView"]
 - !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
@@ -1323,6 +1363,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "layer"]
 - ["PSo13UIDynamicItem", "match"]
 - !private ["PSo13UIDynamicItem", "maxY"]
+- ["PSo13UIDynamicItem", "opposantName"]
+- ["PSo13UIDynamicItem", "opposentImageView"]
 - !private ["PSo13UIDynamicItem", "print"]
 - ["PSo13UIDynamicItem", "questionView"]
 - !private ["PSo13UIDynamicItem", "removeFromSuperview"]
@@ -1375,6 +1417,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "layer"]
 - ["PSo18UIFocusEnvironment", "match"]
 - !private ["PSo18UIFocusEnvironment", "maxY"]
+- ["PSo18UIFocusEnvironment", "opposantName"]
+- ["PSo18UIFocusEnvironment", "opposentImageView"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "questionView"]
 - !private ["PSo18UIFocusEnvironment", "removeFromSuperview"]
@@ -1427,6 +1471,8 @@ depends-member:
 - !private ["PSo11UIFocusItem", "layer"]
 - ["PSo11UIFocusItem", "match"]
 - !private ["PSo11UIFocusItem", "maxY"]
+- ["PSo11UIFocusItem", "opposantName"]
+- ["PSo11UIFocusItem", "opposentImageView"]
 - !private ["PSo11UIFocusItem", "print"]
 - ["PSo11UIFocusItem", "questionView"]
 - !private ["PSo11UIFocusItem", "removeFromSuperview"]
@@ -1465,6 +1511,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
 - !private ["CSo11UIResponder", "UInt32"]
 - !private ["CSo11UIResponder", "addSubview"]
@@ -1496,6 +1543,8 @@ depends-member:
 - !private ["CSo11UIResponder", "layer"]
 - ["CSo11UIResponder", "match"]
 - !private ["CSo11UIResponder", "maxY"]
+- ["CSo11UIResponder", "opposantName"]
+- ["CSo11UIResponder", "opposentImageView"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "question"]
 - ["CSo11UIResponder", "questionView"]
@@ -1548,6 +1597,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
 - ["PSo30UIResponderStandardEditActions", "match"]
 - !private ["PSo30UIResponderStandardEditActions", "maxY"]
+- ["PSo30UIResponderStandardEditActions", "opposantName"]
+- ["PSo30UIResponderStandardEditActions", "opposentImageView"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "questionView"]
 - !private ["PSo30UIResponderStandardEditActions", "removeFromSuperview"]
@@ -1600,6 +1651,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "layer"]
 - ["PSo18UITraitEnvironment", "match"]
 - !private ["PSo18UITraitEnvironment", "maxY"]
+- ["PSo18UITraitEnvironment", "opposantName"]
+- ["PSo18UITraitEnvironment", "opposentImageView"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "questionView"]
 - !private ["PSo18UITraitEnvironment", "removeFromSuperview"]
@@ -1625,6 +1678,7 @@ depends-member:
 - !private ["CSo6UIView", "UIColor"]
 - !private ["CSo6UIView", "UIFont"]
 - !private ["CSo6UIView", "UIImage"]
+- ["CSo6UIView", "UIImageView"]
 - ["CSo6UIView", "UILabel"]
 - !private ["CSo6UIView", "UInt32"]
 - !private ["CSo6UIView", "addSubview"]
@@ -1657,6 +1711,8 @@ depends-member:
 - !private ["CSo6UIView", "layer"]
 - ["CSo6UIView", "match"]
 - !private ["CSo6UIView", "maxY"]
+- ["CSo6UIView", "opposantName"]
+- ["CSo6UIView", "opposentImageView"]
 - !private ["CSo6UIView", "print"]
 - !private ["CSo6UIView", "question"]
 - ["CSo6UIView", "questionView"]
@@ -1726,6 +1782,8 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "match"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "maxY"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "opposantName"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "opposentImageView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "print"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "questionView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
@@ -1808,6 +1866,8 @@ depends-member:
 - !private ["Ps9_Hashable", "main"]
 - ["Ps9_Hashable", "match"]
 - !private ["Ps9_Hashable", "maxY"]
+- ["Ps9_Hashable", "opposantName"]
+- ["Ps9_Hashable", "opposentImageView"]
 - !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "questionView"]
 - !private ["Ps9_Hashable", "removeFromSuperview"]
@@ -2013,72 +2073,72 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/arm64.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFExecutor.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm64.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
-interface-hash: "a570075c4869860f240e76365d76fb38"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
+interface-hash: "c7e7fd5d960c0d3b9eddb82fcc90ef6c"

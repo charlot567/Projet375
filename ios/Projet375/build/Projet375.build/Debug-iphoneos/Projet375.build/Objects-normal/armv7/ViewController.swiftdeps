@@ -6,49 +6,49 @@ provides-nominal:
 provides-member:
 - ["C9Projet37514ViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "resultToMenu"
-- "preferredStatusBarStyle"
-- "resultToQuestion"
 - "switchNav"
+- "resultToQuestion"
+- "viewDidLoad"
+- "resultToMenu"
+- "didReceiveMemoryWarning"
+- "preferredStatusBarStyle"
 depends-top-level:
-- "ProfileView"
-- "RandomPickerView"
-- "UIViewController"
-- !private "KVCart"
-- !private "KVArena"
-- "AssignmentPrecedence"
-- !private "!="
-- !private "UIView"
-- !private "=="
-- !private "KVChart"
-- !private "KVPlay"
-- "ChartView"
-- "UIStatusBarStyle"
-- !private "KVHome"
-- !private "kWidth"
-- !private "&&"
-- !private "createCurrentUser"
-- !private "kCurrentUser"
-- "MenuView"
-- !private "KVProfile"
-- !private "ControllerMatch"
-- !private "print"
-- "LoginView"
-- "Int"
-- !private "SwiftSpinner"
-- !private "displayAlert"
 - !private "KVLogIn"
-- "Match"
-- !private "AccessToken"
-- "ViewController"
+- "UIViewController"
+- "MenuView"
+- "RandomPickerView"
+- "ProfileView"
+- !private "kHeight"
+- !private "DispatchQueue"
+- !private "kWidth"
 - "StringLiteralType"
+- "UIStatusBarStyle"
+- !private "kCurrentUser"
+- !private "KVProfile"
+- "Match"
+- !private "print"
+- !private "KVHome"
 - !private "Bool"
 - !private "kMasterVC"
-- !private "DispatchQueue"
+- !private "KVCart"
+- !private "!="
+- !private "createCurrentUser"
+- !private "displayAlert"
+- !private "SwiftSpinner"
+- !private "KVChart"
+- "ChartView"
+- !private "&&"
+- "LoginView"
+- !private "AccessToken"
+- !private "UIView"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "KVPlay"
+- "ViewController"
+- "Int"
+- !private "KVArena"
 - "ArenaView"
-- !private "kHeight"
+- !private "ControllerMatch"
 depends-member:
 - !private ["V12FacebookCore11AccessToken", "current"]
 - !private ["V12FacebookCore11AccessToken", "deinit"]
@@ -85,6 +85,7 @@ depends-member:
 - !private ["Ps9AnyObject", "getMatch"]
 - !private ["Ps9AnyObject", "hide"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isActive"]
 - !private ["Ps9AnyObject", "kCurrentUser"]
 - !private ["Ps9AnyObject", "kHeight"]
 - !private ["Ps9AnyObject", "kMasterVC"]
@@ -113,6 +114,7 @@ depends-member:
 - !private ["P12FacebookCore26AppEventParameterValueType", "init"]
 - ["C9Projet3759ArenaView", "deinit"]
 - !private ["C9Projet3759ArenaView", "init"]
+- !private ["C9Projet3759ArenaView", "isActive"]
 - !private ["C9Projet3759ArenaView", "x"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
@@ -122,6 +124,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "generateCategory"]
 - !private ["PSo15CALayerDelegate", "hide"]
 - !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "isActive"]
 - !private ["PSo15CALayerDelegate", "loadData"]
 - !private ["PSo15CALayerDelegate", "questionView"]
 - !private ["PSo15CALayerDelegate", "removeFromSuperview"]
@@ -133,6 +136,7 @@ depends-member:
 - !private ["VSC6CGRect", "height"]
 - !private ["VSC6CGRect", "width"]
 - !private ["PSo25CLLocationManagerDelegate", "init"]
+- !private ["PSo25CLLocationManagerDelegate", "isActive"]
 - !private ["PSo25CLLocationManagerDelegate", "removeFromSuperview"]
 - !private ["PSo25CLLocationManagerDelegate", "resultView"]
 - !private ["PSo25CLLocationManagerDelegate", "x"]
@@ -167,6 +171,7 @@ depends-member:
 - !private ["Ps7CVarArg", "generateCategory"]
 - !private ["Ps7CVarArg", "hide"]
 - !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isActive"]
 - !private ["Ps7CVarArg", "kCurrentUser"]
 - !private ["Ps7CVarArg", "kHeight"]
 - !private ["Ps7CVarArg", "kMasterVC"]
@@ -231,6 +236,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "height"]
 - !private ["Ps28CustomDebugStringConvertible", "hide"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isActive"]
 - !private ["Ps28CustomDebugStringConvertible", "kCurrentUser"]
 - !private ["Ps28CustomDebugStringConvertible", "kHeight"]
 - !private ["Ps28CustomDebugStringConvertible", "kMasterVC"]
@@ -297,6 +303,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "generateCategory"]
 - !private ["Ps23CustomStringConvertible", "hide"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isActive"]
 - !private ["Ps23CustomStringConvertible", "kCurrentUser"]
 - !private ["Ps23CustomStringConvertible", "kHeight"]
 - !private ["Ps23CustomStringConvertible", "kMasterVC"]
@@ -361,6 +368,7 @@ depends-member:
 - !private ["Ps9Equatable", "height"]
 - !private ["Ps9Equatable", "hide"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isActive"]
 - !private ["Ps9Equatable", "kCurrentUser"]
 - !private ["Ps9Equatable", "kHeight"]
 - !private ["Ps9Equatable", "kMasterVC"]
@@ -425,6 +433,7 @@ depends-member:
 - !private ["Ps8Hashable", "generateCategory"]
 - !private ["Ps8Hashable", "hide"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isActive"]
 - !private ["Ps8Hashable", "kCurrentUser"]
 - !private ["Ps8Hashable", "kHeight"]
 - !private ["Ps8Hashable", "kMasterVC"]
@@ -461,6 +470,7 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["PSo17MKMapViewDelegate", "init"]
+- !private ["PSo17MKMapViewDelegate", "isActive"]
 - !private ["PSo17MKMapViewDelegate", "removeFromSuperview"]
 - !private ["PSo17MKMapViewDelegate", "resultView"]
 - !private ["PSo17MKMapViewDelegate", "x"]
@@ -501,6 +511,7 @@ depends-member:
 - !private ["PSo8NSCoding", "generateCategory"]
 - !private ["PSo8NSCoding", "hide"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isActive"]
 - !private ["PSo8NSCoding", "kCurrentUser"]
 - !private ["PSo8NSCoding", "kHeight"]
 - !private ["PSo8NSCoding", "kMasterVC"]
@@ -603,6 +614,7 @@ depends-member:
 - !private ["CSo8NSObject", "generateCategory"]
 - !private ["CSo8NSObject", "hide"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isActive"]
 - !private ["CSo8NSObject", "kCurrentUser"]
 - !private ["CSo8NSObject", "kHeight"]
 - !private ["CSo8NSObject", "kMasterVC"]
@@ -658,6 +670,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "generateCategory"]
 - !private ["PSo16NSObjectProtocol", "hide"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isActive"]
 - !private ["PSo16NSObjectProtocol", "kCurrentUser"]
 - !private ["PSo16NSObjectProtocol", "kHeight"]
 - !private ["PSo16NSObjectProtocol", "kMasterVC"]
@@ -712,6 +725,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "generateCategory"]
 - !private ["PSo29UIAccessibilityIdentification", "hide"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "isActive"]
 - !private ["PSo29UIAccessibilityIdentification", "loadData"]
 - !private ["PSo29UIAccessibilityIdentification", "questionView"]
 - !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
@@ -725,6 +739,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "generateCategory"]
 - !private ["PSo12UIAppearance", "hide"]
 - !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "isActive"]
 - !private ["PSo12UIAppearance", "loadData"]
 - !private ["PSo12UIAppearance", "questionView"]
 - !private ["PSo12UIAppearance", "removeFromSuperview"]
@@ -763,6 +778,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "generateCategory"]
 - !private ["PSo21UIAppearanceContainer", "hide"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isActive"]
 - !private ["PSo21UIAppearanceContainer", "kCurrentUser"]
 - !private ["PSo21UIAppearanceContainer", "kHeight"]
 - !private ["PSo21UIAppearanceContainer", "kMasterVC"]
@@ -834,6 +850,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "generateCategory"]
 - !private ["PSo17UICoordinateSpace", "hide"]
 - !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "isActive"]
 - !private ["PSo17UICoordinateSpace", "loadData"]
 - !private ["PSo17UICoordinateSpace", "questionView"]
 - !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
@@ -847,6 +864,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "generateCategory"]
 - !private ["PSo13UIDynamicItem", "hide"]
 - !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "isActive"]
 - !private ["PSo13UIDynamicItem", "loadData"]
 - !private ["PSo13UIDynamicItem", "questionView"]
 - !private ["PSo13UIDynamicItem", "removeFromSuperview"]
@@ -885,6 +903,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "generateCategory"]
 - !private ["PSo18UIFocusEnvironment", "hide"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isActive"]
 - !private ["PSo18UIFocusEnvironment", "kCurrentUser"]
 - !private ["PSo18UIFocusEnvironment", "kHeight"]
 - !private ["PSo18UIFocusEnvironment", "kMasterVC"]
@@ -914,6 +933,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "generateCategory"]
 - !private ["PSo11UIFocusItem", "hide"]
 - !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "isActive"]
 - !private ["PSo11UIFocusItem", "loadData"]
 - !private ["PSo11UIFocusItem", "questionView"]
 - !private ["PSo11UIFocusItem", "removeFromSuperview"]
@@ -956,6 +976,7 @@ depends-member:
 - !private ["CSo11UIResponder", "generateCategory"]
 - !private ["CSo11UIResponder", "hide"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "isActive"]
 - !private ["CSo11UIResponder", "kCurrentUser"]
 - !private ["CSo11UIResponder", "kHeight"]
 - !private ["CSo11UIResponder", "kMasterVC"]
@@ -1009,6 +1030,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "generateCategory"]
 - !private ["PSo30UIResponderStandardEditActions", "hide"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isActive"]
 - !private ["PSo30UIResponderStandardEditActions", "kCurrentUser"]
 - !private ["PSo30UIResponderStandardEditActions", "kHeight"]
 - !private ["PSo30UIResponderStandardEditActions", "kMasterVC"]
@@ -1107,6 +1129,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "generateCategory"]
 - !private ["PSo18UITraitEnvironment", "hide"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isActive"]
 - !private ["PSo18UITraitEnvironment", "kCurrentUser"]
 - !private ["PSo18UITraitEnvironment", "kHeight"]
 - !private ["PSo18UITraitEnvironment", "kMasterVC"]
@@ -1136,6 +1159,7 @@ depends-member:
 - !private ["CSo6UIView", "generateCategory"]
 - !private ["CSo6UIView", "hide"]
 - !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "isActive"]
 - !private ["CSo6UIView", "loadData"]
 - !private ["CSo6UIView", "questionView"]
 - !private ["CSo6UIView", "removeFromSuperview"]
@@ -1243,6 +1267,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "generateCategory"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "hide"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isActive"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "loadData"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "questionView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
@@ -1288,6 +1313,7 @@ depends-member:
 - !private ["Ps9_Hashable", "generateCategory"]
 - !private ["Ps9_Hashable", "hide"]
 - !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isActive"]
 - !private ["Ps9_Hashable", "kCurrentUser"]
 - !private ["Ps9_Hashable", "kHeight"]
 - !private ["Ps9_Hashable", "kMasterVC"]
@@ -1416,72 +1442,72 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/arm.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFExecutor.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/arm.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm.swiftmodule"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.swiftmodule"
 interface-hash: "d857c3b4eba79ae6bec199c45465c414"

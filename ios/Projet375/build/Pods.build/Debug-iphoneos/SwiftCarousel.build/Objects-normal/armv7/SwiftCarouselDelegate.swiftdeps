@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["P13SwiftCarousel21SwiftCarouselDelegate", ""]
 provides-dynamic-lookup:
+- "didDeselectItem"
 - "didEndDragging"
-- "didScroll"
 - "willBeginDragging"
 - "didSelectItem"
-- "didDeselectItem"
+- "didScroll"
 depends-top-level:
-- "Bool"
+- "UIView"
 - "SwiftCarouselDelegate"
 - "CGPoint"
+- "Bool"
 - "Int"
-- "UIView"
 depends-member:
 - ["P13SwiftCarousel21SwiftCarouselDelegate", "Bool"]
 - ["P13SwiftCarousel21SwiftCarouselDelegate", "CGPoint"]
@@ -32,8 +32,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/Pods/Target Support Files/SwiftCarousel/SwiftCarousel-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Pods.build/Debug-iphoneos/SwiftCarousel.build/unextended-module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Pods/Target Support Files/SwiftCarousel/SwiftCarousel-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Pods.build/Debug-iphoneos/SwiftCarousel.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"

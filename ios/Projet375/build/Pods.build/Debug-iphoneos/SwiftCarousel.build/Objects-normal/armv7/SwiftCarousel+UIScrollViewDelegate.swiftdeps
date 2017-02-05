@@ -5,30 +5,30 @@ provides-nominal:
 provides-member:
 - ["C13SwiftCarousel13SwiftCarousel", ""]
 provides-dynamic-lookup:
-- "scrollViewDidEndDragging"
 - "scrollViewWillEndDragging"
 - "scrollViewWillBeginDragging"
 - "scrollViewDidEndScrollingAnimation"
 - "scrollViewDidEndDecelerating"
+- "scrollViewDidEndDragging"
 depends-top-level:
+- "UIScrollViewDelegate"
+- !private "<"
+- !private "BooleanLiteralType"
+- "SwiftCarousel"
+- !private "+="
+- !private "<="
 - !private "||"
 - "AssignmentPrecedence"
-- !private "<="
+- !private "*"
 - "UIScrollView"
-- !private "<"
-- !private "+="
-- !private "/"
-- "SwiftCarousel"
+- !private "-"
+- !private ">"
 - "CGPoint"
 - !private "+"
 - !private ">="
-- !private "-"
-- "UnsafeMutablePointer"
 - "Bool"
-- !private "BooleanLiteralType"
-- !private ">"
-- !private "*"
-- "UIScrollViewDelegate"
+- "UnsafeMutablePointer"
+- !private "/"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "center"]
@@ -818,8 +818,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
-- "/Users/alexmorin/Desktop/Projet375/Pods/Target Support Files/SwiftCarousel/SwiftCarousel-umbrella.h"
-- "/Users/alexmorin/Desktop/Projet375/build/Pods.build/Debug-iphoneos/SwiftCarousel.build/unextended-module.modulemap"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/Pods/Target Support Files/SwiftCarousel/SwiftCarousel-umbrella.h"
+- "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Pods.build/Debug-iphoneos/SwiftCarousel.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
