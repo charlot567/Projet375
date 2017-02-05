@@ -145,6 +145,7 @@ SWIFT_CLASS("_TtC9Projet37511AppDelegate")
 
 @class CLLocationManager;
 @class MKMapView;
+@class VrView;
 @class CLLocation;
 @class UIButton;
 @protocol MKOverlay;
@@ -161,7 +162,9 @@ SWIFT_CLASS("_TtC9Projet3759ArenaView")
 @property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
 @property (nonatomic, strong) MKMapView * _Nonnull map;
 @property (nonatomic, readonly) CGFloat margin;
+@property (nonatomic, strong) VrView * _Null_unspecified v;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)load;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (void)back;
 - (void)pressedArenaWithSender:(UIButton * _Nonnull)sender;
@@ -346,6 +349,7 @@ SWIFT_CLASS("_TtC9Projet3756VrView")
 @property (nonatomic, strong) UIView * _Null_unspecified halfInfiniteWall2;
 @property (nonatomic, strong) UITapGestureRecognizer * _Nonnull touchGR;
 @property (nonatomic) CGFloat deviceWidth;
+@property (nonatomic, strong) UIButton * _Null_unspecified view;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateHeading:(CLHeading * _Nonnull)newHeading;
 - (void)placePointOnWallWithView:(UIView * _Nonnull)view degree:(CGFloat)degree;

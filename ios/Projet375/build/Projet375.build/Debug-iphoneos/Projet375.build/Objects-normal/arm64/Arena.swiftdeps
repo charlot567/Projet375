@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 depends-top-level:
 - "User"
 - "Double"
-- "Int"
 - "Arena"
 - "String"
+- "Int"
 depends-member:
 - ["Ps9AnyObject", ""]
 - ["C9Projet3755Arena", "Double"]

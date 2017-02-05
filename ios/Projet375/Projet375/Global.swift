@@ -14,9 +14,10 @@ import SwiftSpinner
 
 func getImage(url: String, completitionHandler: (_ success: Bool, _ imageDownloaded: UIImage?) -> Void) {
     
+    let urlV = url.replacingOccurrences(of: "&amp;", with: "&")
     //  Download the image
-    let imageData = NSData(contentsOf: NSURL(string: url)! as URL)
-    
+    let imageData = NSData(contentsOf: NSURL(string: urlV)! as URL)
+    print(url)
     if(imageData != nil) {
         let image = UIImage(data: NSData(data: imageData! as Data) as Data)
         completitionHandler(true, image)

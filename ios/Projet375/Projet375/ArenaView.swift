@@ -18,13 +18,14 @@ class ArenaView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
     var showVR = false
     weak var controller:UIViewController!
     var isActive = false;
-    
+    var arena: Arena!
     var areneLoc = CLLocationCoordinate2D(latitude: 45.50438399999999, longitude: -73.61288289999999)
     
     let locationManager = CLLocationManager()
     var map = MKMapView()
     
     let margin:CGFloat = 10;
+    var v: VrView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -83,6 +84,12 @@ class ArenaView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
 
     }
     
+    func load() {
+        //  Arena disponible
+//        self.arena
+        
+    }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last! as CLLocation
         let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
@@ -97,16 +104,18 @@ class ArenaView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
                 
                     let alert = UIAlertController(title: "Alerte d'Arène", message: "Une arène est sur votre chemin voulez vous combattre?", preferredStyle: UIAlertControllerStyle.alert)
                     alert.addAction(UIAlertAction(title: "Oui", style: UIAlertActionStyle.default, handler: { action in
-                        var v = VrView(frame: self.map.frame)
-                        v.clipsToBounds = true
-                        self.addSubview(v)
+                        self.v = VrView(frame: self.map.frame)
+                        self.v.arena = self.arena
+                        self.v.clipsToBounds = true
+                        self.addSubview(self.v)
                         
                         //QuestionView(frame: CGRect(x:,y:,width), q: <#T##question#>, match: <#T##Match#>, background: false)
                         
                         //v.addViewToLocation(view: , toAdd: <#T##CLLocationCoordinate2D#>)
-                        let button = v.addLocationToView(toAdd: self.areneLoc)
+                        let button = self.v.addLocationToView(toAdd: self.areneLoc)
                         button.addTarget(self, action: #selector(self.pressedArena(sender:)), for: UIControlEvents.touchUpInside)
                         self.showVR=true
+                        self.load()
                     }))
                 
                     alert.addAction(UIAlertAction(title: "Non", style: UIAlertActionStyle.destructive, handler: nil))

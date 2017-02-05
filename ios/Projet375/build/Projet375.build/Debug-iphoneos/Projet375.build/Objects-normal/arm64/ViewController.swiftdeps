@@ -6,56 +6,59 @@ provides-nominal:
 provides-member:
 - ["C9Projet37514ViewController", ""]
 provides-dynamic-lookup:
-- "resultToQuestion"
 - "preferredStatusBarStyle"
 - "viewDidLoad"
-- "resultToMenu"
 - "switchNav"
 - "didReceiveMemoryWarning"
+- "resultToQuestion"
+- "resultToMenu"
 depends-top-level:
 - "ChartView"
-- "UIViewController"
-- "RandomPickerView"
-- !private "UIView"
-- !private "KVArena"
-- "Match"
-- !private "Bool"
-- "ProfileView"
-- "ViewController"
-- "Int"
-- !private "KVLogIn"
 - !private "KVChart"
-- !private "AccessToken"
-- !private "KVPlay"
-- !private "displayAlert"
-- !private "SwiftSpinner"
-- "StringLiteralType"
-- !private "kCurrentUser"
-- !private "UIImage"
-- "AssignmentPrecedence"
-- "MenuView"
-- !private "=="
-- !private "&&"
-- "LoginView"
-- !private "KVProfile"
-- !private "ControllerMatch"
-- !private "DispatchQueue"
-- !private "KVCart"
-- "ArenaView"
+- !private "KVLogIn"
+- !private "UIView"
+- "ProfileView"
 - !private "kWidth"
-- "UIStatusBarStyle"
 - !private "!="
+- !private "SwiftSpinner"
 - !private "kHeight"
-- !private "KVHome"
 - !private "kMasterVC"
-- !private "createCurrentUser"
+- !private "DispatchQueue"
+- !private "UIImage"
 - !private "print"
+- "UIStatusBarStyle"
+- !private "&&"
+- !private "StringLiteralType"
+- !private "ControllerMatch"
+- !private "KVPlay"
+- "MenuView"
+- !private "displayAlert"
+- "ArenaView"
+- "Int"
+- "ViewController"
+- "AssignmentPrecedence"
+- !private "createCurrentUser"
+- !private "KVProfile"
+- !private "kCurrentUser"
+- !private "KVHome"
+- !private "Arena"
+- !private "=="
+- !private "KVArena"
+- "LoginView"
+- !private "AccessToken"
+- "RandomPickerView"
+- !private "ControllerArena"
+- "Match"
+- !private "KVCart"
+- "UIViewController"
+- !private "Bool"
 depends-member:
 - !private ["V12FacebookCore11AccessToken", "current"]
 - !private ["V12FacebookCore11AccessToken", "deinit"]
 - !private ["Ps9AnyObject", "AccessToken"]
 - !private ["Ps9AnyObject", "ArenaView"]
 - !private ["Ps9AnyObject", "ChartView"]
+- !private ["Ps9AnyObject", "ControllerArena"]
 - !private ["Ps9AnyObject", "ControllerMatch"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
 - !private ["Ps9AnyObject", "KVArena"]
@@ -73,6 +76,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "animate"]
+- !private ["Ps9AnyObject", "arena"]
 - ["Ps9AnyObject", "arenaView"]
 - ["Ps9AnyObject", "chartView"]
 - !private ["Ps9AnyObject", "createCurrentUser"]
@@ -83,6 +87,7 @@ depends-member:
 - !private ["Ps9AnyObject", "firstName"]
 - !private ["Ps9AnyObject", "frame"]
 - !private ["Ps9AnyObject", "generateCategory"]
+- !private ["Ps9AnyObject", "getArena"]
 - !private ["Ps9AnyObject", "getMatch"]
 - !private ["Ps9AnyObject", "getProfileImage"]
 - !private ["Ps9AnyObject", "hide"]
@@ -106,6 +111,7 @@ depends-member:
 - ["Ps9AnyObject", "resultToQuestion"]
 - !private ["Ps9AnyObject", "resultView"]
 - !private ["Ps9AnyObject", "setUsernameLabel"]
+- !private ["Ps9AnyObject", "show"]
 - !private ["Ps9AnyObject", "showPage"]
 - ["Ps9AnyObject", "switchNav"]
 - !private ["Ps9AnyObject", "sync"]
@@ -115,6 +121,8 @@ depends-member:
 - !private ["Ps9AnyObject", "y"]
 - ["Ps9AnyObject", ""]
 - !private ["P12FacebookCore26AppEventParameterValueType", "init"]
+- !private ["C9Projet3755Arena", "deinit"]
+- !private ["C9Projet3759ArenaView", "arena"]
 - ["C9Projet3759ArenaView", "deinit"]
 - !private ["C9Projet3759ArenaView", "init"]
 - !private ["C9Projet3759ArenaView", "isActive"]
@@ -123,6 +131,7 @@ depends-member:
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "animate"]
+- !private ["PSo15CALayerDelegate", "arena"]
 - !private ["PSo15CALayerDelegate", "frame"]
 - !private ["PSo15CALayerDelegate", "generateCategory"]
 - !private ["PSo15CALayerDelegate", "hide"]
@@ -133,12 +142,14 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "removeFromSuperview"]
 - !private ["PSo15CALayerDelegate", "resultView"]
 - !private ["PSo15CALayerDelegate", "setUsernameLabel"]
+- !private ["PSo15CALayerDelegate", "show"]
 - !private ["PSo15CALayerDelegate", "showPage"]
 - !private ["PSo15CALayerDelegate", "x"]
 - !private ["PSo15CALayerDelegate", "y"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["VSC6CGRect", "height"]
 - !private ["VSC6CGRect", "width"]
+- !private ["PSo25CLLocationManagerDelegate", "arena"]
 - !private ["PSo25CLLocationManagerDelegate", "init"]
 - !private ["PSo25CLLocationManagerDelegate", "isActive"]
 - !private ["PSo25CLLocationManagerDelegate", "removeFromSuperview"]
@@ -147,6 +158,7 @@ depends-member:
 - !private ["Ps7CVarArg", "AccessToken"]
 - !private ["Ps7CVarArg", "ArenaView"]
 - !private ["Ps7CVarArg", "ChartView"]
+- !private ["Ps7CVarArg", "ControllerArena"]
 - !private ["Ps7CVarArg", "ControllerMatch"]
 - !private ["Ps7CVarArg", "DispatchQueue"]
 - !private ["Ps7CVarArg", "KVArena"]
@@ -164,6 +176,7 @@ depends-member:
 - !private ["Ps7CVarArg", "UIView"]
 - !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "animate"]
+- !private ["Ps7CVarArg", "arena"]
 - ["Ps7CVarArg", "arenaView"]
 - ["Ps7CVarArg", "chartView"]
 - !private ["Ps7CVarArg", "createCurrentUser"]
@@ -194,6 +207,7 @@ depends-member:
 - ["Ps7CVarArg", "resultToQuestion"]
 - !private ["Ps7CVarArg", "resultView"]
 - !private ["Ps7CVarArg", "setUsernameLabel"]
+- !private ["Ps7CVarArg", "show"]
 - !private ["Ps7CVarArg", "showPage"]
 - ["Ps7CVarArg", "switchNav"]
 - !private ["Ps7CVarArg", "sync"]
@@ -207,11 +221,14 @@ depends-member:
 - !private ["C9Projet3759ChartView", "loadData"]
 - !private ["C9Projet3759ChartView", "x"]
 - !private ["Ps10Comparable", "init"]
+- !private ["C9Projet37510Controller", "getArena"]
 - !private ["C9Projet37510Controller", "getMatch"]
+- !private ["C9Projet37515ControllerArena", "getArena"]
 - !private ["C9Projet37515ControllerMatch", "getMatch"]
 - !private ["Ps28CustomDebugStringConvertible", "AccessToken"]
 - !private ["Ps28CustomDebugStringConvertible", "ArenaView"]
 - !private ["Ps28CustomDebugStringConvertible", "ChartView"]
+- !private ["Ps28CustomDebugStringConvertible", "ControllerArena"]
 - !private ["Ps28CustomDebugStringConvertible", "ControllerMatch"]
 - !private ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
 - !private ["Ps28CustomDebugStringConvertible", "KVArena"]
@@ -229,6 +246,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "animate"]
+- !private ["Ps28CustomDebugStringConvertible", "arena"]
 - ["Ps28CustomDebugStringConvertible", "arenaView"]
 - ["Ps28CustomDebugStringConvertible", "chartView"]
 - !private ["Ps28CustomDebugStringConvertible", "createCurrentUser"]
@@ -260,6 +278,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "resultToQuestion"]
 - !private ["Ps28CustomDebugStringConvertible", "resultView"]
 - !private ["Ps28CustomDebugStringConvertible", "setUsernameLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "show"]
 - !private ["Ps28CustomDebugStringConvertible", "showPage"]
 - ["Ps28CustomDebugStringConvertible", "switchNav"]
 - !private ["Ps28CustomDebugStringConvertible", "sync"]
@@ -280,6 +299,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "AccessToken"]
 - !private ["Ps23CustomStringConvertible", "ArenaView"]
 - !private ["Ps23CustomStringConvertible", "ChartView"]
+- !private ["Ps23CustomStringConvertible", "ControllerArena"]
 - !private ["Ps23CustomStringConvertible", "ControllerMatch"]
 - !private ["Ps23CustomStringConvertible", "DispatchQueue"]
 - !private ["Ps23CustomStringConvertible", "KVArena"]
@@ -298,6 +318,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "animate"]
+- !private ["Ps23CustomStringConvertible", "arena"]
 - ["Ps23CustomStringConvertible", "arenaView"]
 - ["Ps23CustomStringConvertible", "chartView"]
 - !private ["Ps23CustomStringConvertible", "createCurrentUser"]
@@ -328,6 +349,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "resultToQuestion"]
 - !private ["Ps23CustomStringConvertible", "resultView"]
 - !private ["Ps23CustomStringConvertible", "setUsernameLabel"]
+- !private ["Ps23CustomStringConvertible", "show"]
 - !private ["Ps23CustomStringConvertible", "showPage"]
 - ["Ps23CustomStringConvertible", "switchNav"]
 - !private ["Ps23CustomStringConvertible", "sync"]
@@ -345,6 +367,7 @@ depends-member:
 - !private ["Ps9Equatable", "AccessToken"]
 - !private ["Ps9Equatable", "ArenaView"]
 - !private ["Ps9Equatable", "ChartView"]
+- !private ["Ps9Equatable", "ControllerArena"]
 - !private ["Ps9Equatable", "ControllerMatch"]
 - !private ["Ps9Equatable", "DispatchQueue"]
 - !private ["Ps9Equatable", "KVArena"]
@@ -363,6 +386,7 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "animate"]
+- !private ["Ps9Equatable", "arena"]
 - ["Ps9Equatable", "arenaView"]
 - ["Ps9Equatable", "chartView"]
 - !private ["Ps9Equatable", "createCurrentUser"]
@@ -395,6 +419,7 @@ depends-member:
 - ["Ps9Equatable", "resultToQuestion"]
 - !private ["Ps9Equatable", "resultView"]
 - !private ["Ps9Equatable", "setUsernameLabel"]
+- !private ["Ps9Equatable", "show"]
 - !private ["Ps9Equatable", "showPage"]
 - ["Ps9Equatable", "switchNav"]
 - !private ["Ps9Equatable", "sync"]
@@ -412,6 +437,7 @@ depends-member:
 - !private ["Ps8Hashable", "AccessToken"]
 - !private ["Ps8Hashable", "ArenaView"]
 - !private ["Ps8Hashable", "ChartView"]
+- !private ["Ps8Hashable", "ControllerArena"]
 - !private ["Ps8Hashable", "ControllerMatch"]
 - !private ["Ps8Hashable", "DispatchQueue"]
 - !private ["Ps8Hashable", "KVArena"]
@@ -430,6 +456,7 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "animate"]
+- !private ["Ps8Hashable", "arena"]
 - ["Ps8Hashable", "arenaView"]
 - ["Ps8Hashable", "chartView"]
 - !private ["Ps8Hashable", "createCurrentUser"]
@@ -461,6 +488,7 @@ depends-member:
 - ["Ps8Hashable", "resultToQuestion"]
 - !private ["Ps8Hashable", "resultView"]
 - !private ["Ps8Hashable", "setUsernameLabel"]
+- !private ["Ps8Hashable", "show"]
 - !private ["Ps8Hashable", "showPage"]
 - ["Ps8Hashable", "switchNav"]
 - !private ["Ps8Hashable", "sync"]
@@ -478,6 +506,7 @@ depends-member:
 - !private ["C9Projet3759LoginView", "removeFromSuperview"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["PSo17MKMapViewDelegate", "arena"]
 - !private ["PSo17MKMapViewDelegate", "init"]
 - !private ["PSo17MKMapViewDelegate", "isActive"]
 - !private ["PSo17MKMapViewDelegate", "removeFromSuperview"]
@@ -492,6 +521,7 @@ depends-member:
 - !private ["PSo8NSCoding", "AccessToken"]
 - !private ["PSo8NSCoding", "ArenaView"]
 - !private ["PSo8NSCoding", "ChartView"]
+- !private ["PSo8NSCoding", "ControllerArena"]
 - !private ["PSo8NSCoding", "ControllerMatch"]
 - !private ["PSo8NSCoding", "DispatchQueue"]
 - !private ["PSo8NSCoding", "KVArena"]
@@ -509,6 +539,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "animate"]
+- !private ["PSo8NSCoding", "arena"]
 - ["PSo8NSCoding", "arenaView"]
 - ["PSo8NSCoding", "chartView"]
 - !private ["PSo8NSCoding", "createCurrentUser"]
@@ -538,6 +569,7 @@ depends-member:
 - ["PSo8NSCoding", "resultToQuestion"]
 - !private ["PSo8NSCoding", "resultView"]
 - !private ["PSo8NSCoding", "setUsernameLabel"]
+- !private ["PSo8NSCoding", "show"]
 - !private ["PSo8NSCoding", "showPage"]
 - ["PSo8NSCoding", "switchNav"]
 - !private ["PSo8NSCoding", "view"]
@@ -549,6 +581,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "AccessToken"]
 - !private ["PSo26NSExtensionRequestHandling", "ArenaView"]
 - !private ["PSo26NSExtensionRequestHandling", "ChartView"]
+- !private ["PSo26NSExtensionRequestHandling", "ControllerArena"]
 - !private ["PSo26NSExtensionRequestHandling", "ControllerMatch"]
 - !private ["PSo26NSExtensionRequestHandling", "DispatchQueue"]
 - !private ["PSo26NSExtensionRequestHandling", "KVArena"]
@@ -590,9 +623,11 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "AccessToken"]
+- !private ["CSo8NSObject", "Arena"]
 - ["CSo8NSObject", "ArenaView"]
 - !private ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "ChartView"]
+- !private ["CSo8NSObject", "ControllerArena"]
 - !private ["CSo8NSObject", "ControllerMatch"]
 - !private ["CSo8NSObject", "DispatchQueue"]
 - ["CSo8NSObject", "Int"]
@@ -614,6 +649,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "animate"]
+- !private ["CSo8NSObject", "arena"]
 - ["CSo8NSObject", "arenaView"]
 - ["CSo8NSObject", "chartView"]
 - !private ["CSo8NSObject", "createCurrentUser"]
@@ -644,6 +680,7 @@ depends-member:
 - ["CSo8NSObject", "resultToQuestion"]
 - !private ["CSo8NSObject", "resultView"]
 - !private ["CSo8NSObject", "setUsernameLabel"]
+- !private ["CSo8NSObject", "show"]
 - !private ["CSo8NSObject", "showPage"]
 - ["CSo8NSObject", "switchNav"]
 - !private ["CSo8NSObject", "sync"]
@@ -654,6 +691,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "AccessToken"]
 - !private ["PSo16NSObjectProtocol", "ArenaView"]
 - !private ["PSo16NSObjectProtocol", "ChartView"]
+- !private ["PSo16NSObjectProtocol", "ControllerArena"]
 - !private ["PSo16NSObjectProtocol", "ControllerMatch"]
 - !private ["PSo16NSObjectProtocol", "DispatchQueue"]
 - !private ["PSo16NSObjectProtocol", "KVArena"]
@@ -671,6 +709,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "animate"]
+- !private ["PSo16NSObjectProtocol", "arena"]
 - ["PSo16NSObjectProtocol", "arenaView"]
 - ["PSo16NSObjectProtocol", "chartView"]
 - !private ["PSo16NSObjectProtocol", "createCurrentUser"]
@@ -701,6 +740,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "resultToQuestion"]
 - !private ["PSo16NSObjectProtocol", "resultView"]
 - !private ["PSo16NSObjectProtocol", "setUsernameLabel"]
+- !private ["PSo16NSObjectProtocol", "show"]
 - !private ["PSo16NSObjectProtocol", "showPage"]
 - ["PSo16NSObjectProtocol", "switchNav"]
 - !private ["PSo16NSObjectProtocol", "sync"]
@@ -730,11 +770,14 @@ depends-member:
 - !private ["C9Projet37510ResultView", "removeFromSuperview"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
+- ["C12SwiftSpinner12SwiftSpinner", "deinit"]
 - !private ["C12SwiftSpinner12SwiftSpinner", "hide"]
+- !private ["C12SwiftSpinner12SwiftSpinner", "show"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "animate"]
+- !private ["PSo29UIAccessibilityIdentification", "arena"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "generateCategory"]
 - !private ["PSo29UIAccessibilityIdentification", "hide"]
@@ -745,11 +788,13 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
 - !private ["PSo29UIAccessibilityIdentification", "resultView"]
 - !private ["PSo29UIAccessibilityIdentification", "setUsernameLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "show"]
 - !private ["PSo29UIAccessibilityIdentification", "showPage"]
 - !private ["PSo29UIAccessibilityIdentification", "x"]
 - !private ["PSo29UIAccessibilityIdentification", "y"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "animate"]
+- !private ["PSo12UIAppearance", "arena"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "generateCategory"]
 - !private ["PSo12UIAppearance", "hide"]
@@ -760,12 +805,14 @@ depends-member:
 - !private ["PSo12UIAppearance", "removeFromSuperview"]
 - !private ["PSo12UIAppearance", "resultView"]
 - !private ["PSo12UIAppearance", "setUsernameLabel"]
+- !private ["PSo12UIAppearance", "show"]
 - !private ["PSo12UIAppearance", "showPage"]
 - !private ["PSo12UIAppearance", "x"]
 - !private ["PSo12UIAppearance", "y"]
 - !private ["PSo21UIAppearanceContainer", "AccessToken"]
 - !private ["PSo21UIAppearanceContainer", "ArenaView"]
 - !private ["PSo21UIAppearanceContainer", "ChartView"]
+- !private ["PSo21UIAppearanceContainer", "ControllerArena"]
 - !private ["PSo21UIAppearanceContainer", "ControllerMatch"]
 - !private ["PSo21UIAppearanceContainer", "DispatchQueue"]
 - !private ["PSo21UIAppearanceContainer", "KVArena"]
@@ -783,6 +830,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "animate"]
+- !private ["PSo21UIAppearanceContainer", "arena"]
 - ["PSo21UIAppearanceContainer", "arenaView"]
 - ["PSo21UIAppearanceContainer", "chartView"]
 - !private ["PSo21UIAppearanceContainer", "createCurrentUser"]
@@ -812,6 +860,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "resultToQuestion"]
 - !private ["PSo21UIAppearanceContainer", "resultView"]
 - !private ["PSo21UIAppearanceContainer", "setUsernameLabel"]
+- !private ["PSo21UIAppearanceContainer", "show"]
 - !private ["PSo21UIAppearanceContainer", "showPage"]
 - ["PSo21UIAppearanceContainer", "switchNav"]
 - !private ["PSo21UIAppearanceContainer", "view"]
@@ -822,6 +871,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "AccessToken"]
 - !private ["PSo18UIContentContainer", "ArenaView"]
 - !private ["PSo18UIContentContainer", "ChartView"]
+- !private ["PSo18UIContentContainer", "ControllerArena"]
 - !private ["PSo18UIContentContainer", "ControllerMatch"]
 - !private ["PSo18UIContentContainer", "DispatchQueue"]
 - !private ["PSo18UIContentContainer", "KVArena"]
@@ -863,6 +913,7 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "animate"]
+- !private ["PSo17UICoordinateSpace", "arena"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "generateCategory"]
 - !private ["PSo17UICoordinateSpace", "hide"]
@@ -873,11 +924,13 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
 - !private ["PSo17UICoordinateSpace", "resultView"]
 - !private ["PSo17UICoordinateSpace", "setUsernameLabel"]
+- !private ["PSo17UICoordinateSpace", "show"]
 - !private ["PSo17UICoordinateSpace", "showPage"]
 - !private ["PSo17UICoordinateSpace", "x"]
 - !private ["PSo17UICoordinateSpace", "y"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "animate"]
+- !private ["PSo13UIDynamicItem", "arena"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "generateCategory"]
 - !private ["PSo13UIDynamicItem", "hide"]
@@ -888,12 +941,14 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "removeFromSuperview"]
 - !private ["PSo13UIDynamicItem", "resultView"]
 - !private ["PSo13UIDynamicItem", "setUsernameLabel"]
+- !private ["PSo13UIDynamicItem", "show"]
 - !private ["PSo13UIDynamicItem", "showPage"]
 - !private ["PSo13UIDynamicItem", "x"]
 - !private ["PSo13UIDynamicItem", "y"]
 - !private ["PSo18UIFocusEnvironment", "AccessToken"]
 - !private ["PSo18UIFocusEnvironment", "ArenaView"]
 - !private ["PSo18UIFocusEnvironment", "ChartView"]
+- !private ["PSo18UIFocusEnvironment", "ControllerArena"]
 - !private ["PSo18UIFocusEnvironment", "ControllerMatch"]
 - !private ["PSo18UIFocusEnvironment", "DispatchQueue"]
 - !private ["PSo18UIFocusEnvironment", "KVArena"]
@@ -911,6 +966,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "animate"]
+- !private ["PSo18UIFocusEnvironment", "arena"]
 - ["PSo18UIFocusEnvironment", "arenaView"]
 - ["PSo18UIFocusEnvironment", "chartView"]
 - !private ["PSo18UIFocusEnvironment", "createCurrentUser"]
@@ -940,6 +996,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "resultToQuestion"]
 - !private ["PSo18UIFocusEnvironment", "resultView"]
 - !private ["PSo18UIFocusEnvironment", "setUsernameLabel"]
+- !private ["PSo18UIFocusEnvironment", "show"]
 - !private ["PSo18UIFocusEnvironment", "showPage"]
 - ["PSo18UIFocusEnvironment", "switchNav"]
 - !private ["PSo18UIFocusEnvironment", "view"]
@@ -949,6 +1006,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "animate"]
+- !private ["PSo11UIFocusItem", "arena"]
 - !private ["PSo11UIFocusItem", "frame"]
 - !private ["PSo11UIFocusItem", "generateCategory"]
 - !private ["PSo11UIFocusItem", "hide"]
@@ -959,13 +1017,16 @@ depends-member:
 - !private ["PSo11UIFocusItem", "removeFromSuperview"]
 - !private ["PSo11UIFocusItem", "resultView"]
 - !private ["PSo11UIFocusItem", "setUsernameLabel"]
+- !private ["PSo11UIFocusItem", "show"]
 - !private ["PSo11UIFocusItem", "showPage"]
 - !private ["PSo11UIFocusItem", "x"]
 - !private ["PSo11UIFocusItem", "y"]
 - !private ["CSo11UIResponder", "AccessToken"]
+- !private ["CSo11UIResponder", "Arena"]
 - ["CSo11UIResponder", "ArenaView"]
 - !private ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "ChartView"]
+- !private ["CSo11UIResponder", "ControllerArena"]
 - !private ["CSo11UIResponder", "ControllerMatch"]
 - !private ["CSo11UIResponder", "DispatchQueue"]
 - ["CSo11UIResponder", "Int"]
@@ -987,6 +1048,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "animate"]
+- !private ["CSo11UIResponder", "arena"]
 - ["CSo11UIResponder", "arenaView"]
 - ["CSo11UIResponder", "chartView"]
 - !private ["CSo11UIResponder", "createCurrentUser"]
@@ -1016,6 +1078,7 @@ depends-member:
 - ["CSo11UIResponder", "resultToQuestion"]
 - !private ["CSo11UIResponder", "resultView"]
 - !private ["CSo11UIResponder", "setUsernameLabel"]
+- !private ["CSo11UIResponder", "show"]
 - !private ["CSo11UIResponder", "showPage"]
 - ["CSo11UIResponder", "switchNav"]
 - !private ["CSo11UIResponder", "view"]
@@ -1025,6 +1088,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "AccessToken"]
 - !private ["PSo30UIResponderStandardEditActions", "ArenaView"]
 - !private ["PSo30UIResponderStandardEditActions", "ChartView"]
+- !private ["PSo30UIResponderStandardEditActions", "ControllerArena"]
 - !private ["PSo30UIResponderStandardEditActions", "ControllerMatch"]
 - !private ["PSo30UIResponderStandardEditActions", "DispatchQueue"]
 - !private ["PSo30UIResponderStandardEditActions", "KVArena"]
@@ -1042,6 +1106,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "animate"]
+- !private ["PSo30UIResponderStandardEditActions", "arena"]
 - ["PSo30UIResponderStandardEditActions", "arenaView"]
 - ["PSo30UIResponderStandardEditActions", "chartView"]
 - !private ["PSo30UIResponderStandardEditActions", "createCurrentUser"]
@@ -1071,6 +1136,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "resultToQuestion"]
 - !private ["PSo30UIResponderStandardEditActions", "resultView"]
 - !private ["PSo30UIResponderStandardEditActions", "setUsernameLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "show"]
 - !private ["PSo30UIResponderStandardEditActions", "showPage"]
 - ["PSo30UIResponderStandardEditActions", "switchNav"]
 - !private ["PSo30UIResponderStandardEditActions", "view"]
@@ -1081,6 +1147,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "AccessToken"]
 - !private ["PSo16UIStateRestoring", "ArenaView"]
 - !private ["PSo16UIStateRestoring", "ChartView"]
+- !private ["PSo16UIStateRestoring", "ControllerArena"]
 - !private ["PSo16UIStateRestoring", "ControllerMatch"]
 - !private ["PSo16UIStateRestoring", "DispatchQueue"]
 - !private ["PSo16UIStateRestoring", "KVArena"]
@@ -1125,6 +1192,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "AccessToken"]
 - !private ["PSo18UITraitEnvironment", "ArenaView"]
 - !private ["PSo18UITraitEnvironment", "ChartView"]
+- !private ["PSo18UITraitEnvironment", "ControllerArena"]
 - !private ["PSo18UITraitEnvironment", "ControllerMatch"]
 - !private ["PSo18UITraitEnvironment", "DispatchQueue"]
 - !private ["PSo18UITraitEnvironment", "KVArena"]
@@ -1142,6 +1210,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "animate"]
+- !private ["PSo18UITraitEnvironment", "arena"]
 - ["PSo18UITraitEnvironment", "arenaView"]
 - ["PSo18UITraitEnvironment", "chartView"]
 - !private ["PSo18UITraitEnvironment", "createCurrentUser"]
@@ -1171,6 +1240,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "resultToQuestion"]
 - !private ["PSo18UITraitEnvironment", "resultView"]
 - !private ["PSo18UITraitEnvironment", "setUsernameLabel"]
+- !private ["PSo18UITraitEnvironment", "show"]
 - !private ["PSo18UITraitEnvironment", "showPage"]
 - ["PSo18UITraitEnvironment", "switchNav"]
 - !private ["PSo18UITraitEnvironment", "view"]
@@ -1180,6 +1250,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "animate"]
+- !private ["CSo6UIView", "arena"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "generateCategory"]
 - !private ["CSo6UIView", "hide"]
@@ -1190,13 +1261,16 @@ depends-member:
 - !private ["CSo6UIView", "removeFromSuperview"]
 - !private ["CSo6UIView", "resultView"]
 - !private ["CSo6UIView", "setUsernameLabel"]
+- !private ["CSo6UIView", "show"]
 - !private ["CSo6UIView", "showPage"]
 - !private ["CSo6UIView", "x"]
 - !private ["CSo6UIView", "y"]
 - !private ["CSo16UIViewController", "AccessToken"]
+- !private ["CSo16UIViewController", "Arena"]
 - ["CSo16UIViewController", "ArenaView"]
 - !private ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "ChartView"]
+- !private ["CSo16UIViewController", "ControllerArena"]
 - !private ["CSo16UIViewController", "ControllerMatch"]
 - !private ["CSo16UIViewController", "DispatchQueue"]
 - ["CSo16UIViewController", "Int"]
@@ -1241,12 +1315,15 @@ depends-member:
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["C9Projet3754User", "deinit"]
 - !private ["C9Projet3754User", "firstName"]
 - !private ["C9Projet3754User", "getProfileImage"]
 - !private ["C9Projet37514ViewController", "AccessToken"]
+- !private ["C9Projet37514ViewController", "Arena"]
 - ["C9Projet37514ViewController", "ArenaView"]
 - !private ["C9Projet37514ViewController", "Bool"]
 - ["C9Projet37514ViewController", "ChartView"]
+- !private ["C9Projet37514ViewController", "ControllerArena"]
 - !private ["C9Projet37514ViewController", "ControllerMatch"]
 - !private ["C9Projet37514ViewController", "DispatchQueue"]
 - ["C9Projet37514ViewController", "Int"]
@@ -1292,6 +1369,7 @@ depends-member:
 - ["C9Projet37514ViewController", "viewDidLoad"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "animate"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "arena"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "generateCategory"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "hide"]
@@ -1302,6 +1380,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "resultView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setUsernameLabel"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "show"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "showPage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "x"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "y"]
@@ -1314,6 +1393,7 @@ depends-member:
 - !private ["Ps9_Hashable", "AccessToken"]
 - !private ["Ps9_Hashable", "ArenaView"]
 - !private ["Ps9_Hashable", "ChartView"]
+- !private ["Ps9_Hashable", "ControllerArena"]
 - !private ["Ps9_Hashable", "ControllerMatch"]
 - !private ["Ps9_Hashable", "DispatchQueue"]
 - !private ["Ps9_Hashable", "KVArena"]
@@ -1332,6 +1412,7 @@ depends-member:
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addSubview"]
 - !private ["Ps9_Hashable", "animate"]
+- !private ["Ps9_Hashable", "arena"]
 - ["Ps9_Hashable", "arenaView"]
 - ["Ps9_Hashable", "chartView"]
 - !private ["Ps9_Hashable", "createCurrentUser"]
@@ -1363,6 +1444,7 @@ depends-member:
 - ["Ps9_Hashable", "resultToQuestion"]
 - !private ["Ps9_Hashable", "resultView"]
 - !private ["Ps9_Hashable", "setUsernameLabel"]
+- !private ["Ps9_Hashable", "show"]
 - !private ["Ps9_Hashable", "showPage"]
 - ["Ps9_Hashable", "switchNav"]
 - !private ["Ps9_Hashable", "sync"]
@@ -1380,6 +1462,7 @@ depends-nominal:
 - !private "V12FacebookCore11AccessToken"
 - "Ps9AnyObject"
 - !private "P12FacebookCore26AppEventParameterValueType"
+- !private "C9Projet3755Arena"
 - "C9Projet3759ArenaView"
 - "Sb"
 - !private "PSo15CALayerDelegate"
@@ -1390,6 +1473,7 @@ depends-nominal:
 - "C9Projet3759ChartView"
 - !private "Ps10Comparable"
 - !private "C9Projet37510Controller"
+- !private "C9Projet37515ControllerArena"
 - !private "C9Projet37515ControllerMatch"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
@@ -1431,7 +1515,7 @@ depends-nominal:
 - !private "Ps16RawRepresentable"
 - !private "C9Projet37510ResultView"
 - "SS"
-- !private "C12SwiftSpinner12SwiftSpinner"
+- "C12SwiftSpinner12SwiftSpinner"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"

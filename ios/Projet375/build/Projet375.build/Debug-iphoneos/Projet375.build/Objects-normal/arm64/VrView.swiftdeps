@@ -6,83 +6,86 @@ provides-nominal:
 provides-member:
 - ["C9Projet3756VrView", ""]
 provides-dynamic-lookup:
-- "DheadingLabel"
-- "captureDevice"
 - "DyawLabel"
-- "deviceWidth"
-- "placePointOnWall"
+- "DheadingLabel"
 - "halfInfiniteWall1"
-- "locationManager"
-- "locationManager"
-- "locationManager"
-- "halfInfiniteWall2"
-- "addLocationToView"
-- "calculateBearing"
-- "radToDeg"
-- "DEBUG"
-- "beginCameraSession"
-- "DpitchLabel"
-- "DlocationLabel"
-- "updateMotion"
-- "motionManager"
-- "touchGR"
 - "pressedArena"
-- "calculateDistance"
-- "DrollLabel"
-- "location"
-- "DebugColor"
-- "captureSession"
+- "locationManager"
+- "locationManager"
+- "locationManager"
+- "deviceWidth"
+- "halfInfiniteWall2"
+- "updateMotion"
+- "DEBUG"
+- "captureDevice"
+- "radToDeg"
 - "addViewToLocation"
+- "captureSession"
+- "placePointOnWall"
+- "beginCameraSession"
+- "DebugColor"
+- "touchGR"
+- "DpitchLabel"
+- "addLocationToView"
+- "DlocationLabel"
+- "location"
+- "DrollLabel"
+- "motionManager"
+- "view"
+- "calculateBearing"
+- "calculateDistance"
 depends-top-level:
-- !private "&&"
-- !private ">"
-- "AssignmentPrecedence"
-- !private "=="
-- "AVCaptureDevice"
-- "Double"
-- !private "kCLLocationAccuracyNearestTenMeters"
-- !private "CastingPrecedence"
-- "UIButton"
-- !private "!="
-- "CMMotionManager"
-- !private "M_PI"
 - "NSCoder"
-- !private "UIControlEvents"
-- !private "AVMediaTypeVideo"
-- "UIColor"
+- !private "print"
+- "CLLocationCoordinate2D"
+- "CLLocation"
+- "CGRect"
+- "CLLocationManagerDelegate"
+- !private "AVCaptureVideoPreviewLayer"
+- !private ">"
+- "UIButton"
+- !private "atan2"
+- !private "fmod"
+- !private "AVCaptureDevicePosition"
+- "CLLocationManager"
+- !private "<="
+- !private "&&"
+- !private "-"
+- !private "M_PI"
+- !private ">="
 - !private "kWidth"
 - !private "kHeight"
-- !private "fatalError"
-- "UILabel"
-- !private "AVCaptureDeviceInput"
-- !private "*"
-- !private "AnyObject"
-- !private ">="
-- !private "fmod"
-- !private "/"
-- "CLLocationCoordinate2D"
-- "CLLocationManagerDelegate"
-- "CLHeading"
-- "CLLocation"
-- !private "AVCaptureVideoPreviewLayer"
-- "CGFloat"
-- "UIView"
-- !private "print"
-- "CLLocationManager"
-- "BooleanLiteralType"
-- !private "atan2"
-- "AVCaptureSession"
-- !private "asin"
-- "CGRect"
-- !private "+"
-- !private "<="
-- "UITapGestureRecognizer"
-- !private "AVCaptureDevicePosition"
 - !private "AVCaptureSessionPresetHigh"
-- "StringLiteralType"
+- !private "UIControlEvents"
 - !private "Timer"
-- !private "-"
+- !private "/"
+- "UITapGestureRecognizer"
+- "CGFloat"
+- !private "AVCaptureDeviceInput"
+- !private "UIImage"
+- "CMMotionManager"
+- !private "!="
+- !private "AnyObject"
+- "BooleanLiteralType"
+- !private "*"
+- "Arena"
+- "AVCaptureDevice"
+- !private "fatalError"
+- "StringLiteralType"
+- "UIColor"
+- !private "AVMediaTypeVideo"
+- !private "+"
+- "UIView"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "CastingPrecedence"
+- "UILabel"
+- "CLHeading"
+- !private "asin"
+- !private "kCLLocationAccuracyNearestTenMeters"
 - "VrView"
+- "AVCaptureSession"
+- "Double"
 depends-member:
 - !private ["CSo15AVCaptureDevice", "deinit"]
 - !private ["CSo15AVCaptureDevice", "devices"]
@@ -137,6 +140,7 @@ depends-member:
 - !private ["Ps9AnyObject", "addTarget"]
 - ["Ps9AnyObject", "addViewToLocation"]
 - !private ["Ps9AnyObject", "alpha"]
+- ["Ps9AnyObject", "arena"]
 - !private ["Ps9AnyObject", "asin"]
 - !private ["Ps9AnyObject", "atan2"]
 - !private ["Ps9AnyObject", "attitude"]
@@ -161,6 +165,7 @@ depends-member:
 - !private ["Ps9AnyObject", "fatalError"]
 - !private ["Ps9AnyObject", "fmod"]
 - !private ["Ps9AnyObject", "frame"]
+- !private ["Ps9AnyObject", "getProfileImage"]
 - ["Ps9AnyObject", "halfInfiniteWall1"]
 - ["Ps9AnyObject", "halfInfiniteWall2"]
 - !private ["Ps9AnyObject", "hasMediaType"]
@@ -191,6 +196,7 @@ depends-member:
 - !private ["Ps9AnyObject", "requestWhenInUseAuthorization"]
 - !private ["Ps9AnyObject", "scheduledTimer"]
 - !private ["Ps9AnyObject", "sessionPreset"]
+- !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "startDeviceMotionUpdates"]
 - !private ["Ps9AnyObject", "startRunning"]
 - !private ["Ps9AnyObject", "startUpdatingHeading"]
@@ -199,12 +205,15 @@ depends-member:
 - !private ["Ps9AnyObject", "textColor"]
 - ["Ps9AnyObject", "touchGR"]
 - ["Ps9AnyObject", "updateMotion"]
+- ["Ps9AnyObject", "view"]
+- !private ["Ps9AnyObject", "winner"]
 - !private ["Ps9AnyObject", "zPosition"]
 - ["Ps9AnyObject", ""]
 - !private ["P12FacebookCore26AppEventParameterValueType", "IntegerLiteralType"]
 - !private ["P12FacebookCore26AppEventParameterValueType", "Stride"]
 - !private ["P12FacebookCore26AppEventParameterValueType", "_DisabledRangeIndex"]
 - !private ["P12FacebookCore26AppEventParameterValueType", "init"]
+- !private ["C9Projet3755Arena", "winner"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "Iterator"]
 - !private ["Sa", "SubSequence"]
@@ -277,6 +286,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "addTarget"]
 - ["PSo15CALayerDelegate", "addViewToLocation"]
 - !private ["PSo15CALayerDelegate", "alpha"]
+- ["PSo15CALayerDelegate", "arena"]
 - !private ["PSo15CALayerDelegate", "asin"]
 - !private ["PSo15CALayerDelegate", "atan2"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
@@ -308,10 +318,12 @@ depends-member:
 - ["PSo15CALayerDelegate", "pressedArena"]
 - !private ["PSo15CALayerDelegate", "print"]
 - ["PSo15CALayerDelegate", "radToDeg"]
+- !private ["PSo15CALayerDelegate", "setImage"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "textColor"]
 - ["PSo15CALayerDelegate", "touchGR"]
 - ["PSo15CALayerDelegate", "updateMotion"]
+- ["PSo15CALayerDelegate", "view"]
 - ["PSo15CALayerDelegate", ""]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
 - !private ["PSo13CAMediaTiming", "frame"]
@@ -373,6 +385,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "UIView"]
 - !private ["PSo25CLLocationManagerDelegate", "addGestureRecognizer"]
 - !private ["PSo25CLLocationManagerDelegate", "addSubview"]
+- !private ["PSo25CLLocationManagerDelegate", "arena"]
 - !private ["PSo25CLLocationManagerDelegate", "asin"]
 - !private ["PSo25CLLocationManagerDelegate", "atan2"]
 - !private ["PSo25CLLocationManagerDelegate", "beginCameraSession"]
@@ -400,6 +413,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "radToDeg"]
 - !private ["PSo25CLLocationManagerDelegate", "touchGR"]
 - !private ["PSo25CLLocationManagerDelegate", "updateMotion"]
+- !private ["PSo25CLLocationManagerDelegate", "view"]
 - ["PSo25CLLocationManagerDelegate", ""]
 - ["CSo10CMAttitude", "deinit"]
 - !private ["CSo10CMAttitude", "quaternion"]
@@ -458,6 +472,7 @@ depends-member:
 - !private ["Ps7CVarArg", "addTarget"]
 - ["Ps7CVarArg", "addViewToLocation"]
 - !private ["Ps7CVarArg", "alpha"]
+- ["Ps7CVarArg", "arena"]
 - !private ["Ps7CVarArg", "asin"]
 - !private ["Ps7CVarArg", "atan2"]
 - !private ["Ps7CVarArg", "attitude"]
@@ -509,6 +524,7 @@ depends-member:
 - !private ["Ps7CVarArg", "requestWhenInUseAuthorization"]
 - !private ["Ps7CVarArg", "scheduledTimer"]
 - !private ["Ps7CVarArg", "sessionPreset"]
+- !private ["Ps7CVarArg", "setImage"]
 - !private ["Ps7CVarArg", "startDeviceMotionUpdates"]
 - !private ["Ps7CVarArg", "startRunning"]
 - !private ["Ps7CVarArg", "startUpdatingHeading"]
@@ -518,6 +534,7 @@ depends-member:
 - !private ["Ps7CVarArg", "textColor"]
 - ["Ps7CVarArg", "touchGR"]
 - ["Ps7CVarArg", "updateMotion"]
+- ["Ps7CVarArg", "view"]
 - !private ["Ps7CVarArg", "zPosition"]
 - ["Ps7CVarArg", ""]
 - !private ["Vs9Character", "deinit"]
@@ -571,6 +588,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
 - ["Ps28CustomDebugStringConvertible", "addViewToLocation"]
 - !private ["Ps28CustomDebugStringConvertible", "alpha"]
+- ["Ps28CustomDebugStringConvertible", "arena"]
 - !private ["Ps28CustomDebugStringConvertible", "asin"]
 - !private ["Ps28CustomDebugStringConvertible", "atan2"]
 - !private ["Ps28CustomDebugStringConvertible", "attitude"]
@@ -624,6 +642,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "requestWhenInUseAuthorization"]
 - !private ["Ps28CustomDebugStringConvertible", "scheduledTimer"]
 - !private ["Ps28CustomDebugStringConvertible", "sessionPreset"]
+- !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - !private ["Ps28CustomDebugStringConvertible", "startDeviceMotionUpdates"]
 - !private ["Ps28CustomDebugStringConvertible", "startRunning"]
 - !private ["Ps28CustomDebugStringConvertible", "startUpdatingHeading"]
@@ -633,6 +652,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - ["Ps28CustomDebugStringConvertible", "touchGR"]
 - ["Ps28CustomDebugStringConvertible", "updateMotion"]
+- ["Ps28CustomDebugStringConvertible", "view"]
 - !private ["Ps28CustomDebugStringConvertible", "width"]
 - !private ["Ps28CustomDebugStringConvertible", "x"]
 - !private ["Ps28CustomDebugStringConvertible", "zPosition"]
@@ -703,6 +723,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addTarget"]
 - ["Ps23CustomStringConvertible", "addViewToLocation"]
 - !private ["Ps23CustomStringConvertible", "alpha"]
+- ["Ps23CustomStringConvertible", "arena"]
 - !private ["Ps23CustomStringConvertible", "asin"]
 - !private ["Ps23CustomStringConvertible", "atan2"]
 - !private ["Ps23CustomStringConvertible", "attitude"]
@@ -754,6 +775,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "requestWhenInUseAuthorization"]
 - !private ["Ps23CustomStringConvertible", "scheduledTimer"]
 - !private ["Ps23CustomStringConvertible", "sessionPreset"]
+- !private ["Ps23CustomStringConvertible", "setImage"]
 - !private ["Ps23CustomStringConvertible", "startDeviceMotionUpdates"]
 - !private ["Ps23CustomStringConvertible", "startRunning"]
 - !private ["Ps23CustomStringConvertible", "startUpdatingHeading"]
@@ -763,6 +785,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "textColor"]
 - ["Ps23CustomStringConvertible", "touchGR"]
 - ["Ps23CustomStringConvertible", "updateMotion"]
+- ["Ps23CustomStringConvertible", "view"]
 - !private ["Ps23CustomStringConvertible", "zPosition"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
@@ -816,6 +839,7 @@ depends-member:
 - !private ["Ps9Equatable", "addTarget"]
 - ["Ps9Equatable", "addViewToLocation"]
 - !private ["Ps9Equatable", "alpha"]
+- ["Ps9Equatable", "arena"]
 - !private ["Ps9Equatable", "asin"]
 - !private ["Ps9Equatable", "atan2"]
 - !private ["Ps9Equatable", "attitude"]
@@ -857,6 +881,7 @@ depends-member:
 - ["Ps9Equatable", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["Ps9Equatable", "magneticHeading"]
 - ["Ps9Equatable", "motionManager"]
+- !private ["Ps9Equatable", "normal"]
 - !private ["Ps9Equatable", "numberOfTapsRequired"]
 - !private ["Ps9Equatable", "orange"]
 - !private ["Ps9Equatable", "origin"]
@@ -870,6 +895,7 @@ depends-member:
 - !private ["Ps9Equatable", "requestWhenInUseAuthorization"]
 - !private ["Ps9Equatable", "scheduledTimer"]
 - !private ["Ps9Equatable", "sessionPreset"]
+- !private ["Ps9Equatable", "setImage"]
 - !private ["Ps9Equatable", "startDeviceMotionUpdates"]
 - !private ["Ps9Equatable", "startRunning"]
 - !private ["Ps9Equatable", "startUpdatingHeading"]
@@ -879,6 +905,7 @@ depends-member:
 - ["Ps9Equatable", "touchGR"]
 - !private ["Ps9Equatable", "touchUpInside"]
 - ["Ps9Equatable", "updateMotion"]
+- ["Ps9Equatable", "view"]
 - !private ["Ps9Equatable", "width"]
 - !private ["Ps9Equatable", "x"]
 - !private ["Ps9Equatable", "zPosition"]
@@ -887,6 +914,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
 - !private ["Ps25ExpressibleByArrayLiteral", "SubSequence"]
 - !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "normal"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps25ExpressibleByArrayLiteral", "touchUpInside"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
@@ -941,6 +969,7 @@ depends-member:
 - !private ["Ps8Hashable", "addTarget"]
 - ["Ps8Hashable", "addViewToLocation"]
 - !private ["Ps8Hashable", "alpha"]
+- ["Ps8Hashable", "arena"]
 - !private ["Ps8Hashable", "asin"]
 - !private ["Ps8Hashable", "atan2"]
 - !private ["Ps8Hashable", "attitude"]
@@ -993,6 +1022,7 @@ depends-member:
 - !private ["Ps8Hashable", "requestWhenInUseAuthorization"]
 - !private ["Ps8Hashable", "scheduledTimer"]
 - !private ["Ps8Hashable", "sessionPreset"]
+- !private ["Ps8Hashable", "setImage"]
 - !private ["Ps8Hashable", "startDeviceMotionUpdates"]
 - !private ["Ps8Hashable", "startRunning"]
 - !private ["Ps8Hashable", "startUpdatingHeading"]
@@ -1001,6 +1031,7 @@ depends-member:
 - !private ["Ps8Hashable", "textColor"]
 - ["Ps8Hashable", "touchGR"]
 - ["Ps8Hashable", "updateMotion"]
+- ["Ps8Hashable", "view"]
 - !private ["Ps8Hashable", "zPosition"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
@@ -1084,6 +1115,7 @@ depends-member:
 - !private ["PSo8NSCoding", "addTarget"]
 - ["PSo8NSCoding", "addViewToLocation"]
 - !private ["PSo8NSCoding", "alpha"]
+- ["PSo8NSCoding", "arena"]
 - !private ["PSo8NSCoding", "asin"]
 - !private ["PSo8NSCoding", "atan2"]
 - !private ["PSo8NSCoding", "attitude"]
@@ -1125,10 +1157,12 @@ depends-member:
 - !private ["PSo8NSCoding", "quaternion"]
 - ["PSo8NSCoding", "radToDeg"]
 - ["PSo8NSCoding", "red"]
+- !private ["PSo8NSCoding", "setImage"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textColor"]
 - ["PSo8NSCoding", "touchGR"]
 - ["PSo8NSCoding", "updateMotion"]
+- ["PSo8NSCoding", "view"]
 - !private ["PSo8NSCoding", "zPosition"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "attitude"]
@@ -1149,6 +1183,7 @@ depends-member:
 - !private ["CSo8NSObject", "AVCaptureVideoPreviewLayer"]
 - !private ["CSo8NSObject", "AVMediaTypeVideo"]
 - !private ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Arena"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "CLHeading"]
@@ -1170,6 +1205,7 @@ depends-member:
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIControlEvents"]
+- !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UITapGestureRecognizer"]
 - ["CSo8NSObject", "UIView"]
@@ -1180,6 +1216,7 @@ depends-member:
 - !private ["CSo8NSObject", "addTarget"]
 - ["CSo8NSObject", "addViewToLocation"]
 - !private ["CSo8NSObject", "alpha"]
+- ["CSo8NSObject", "arena"]
 - !private ["CSo8NSObject", "asin"]
 - !private ["CSo8NSObject", "atan2"]
 - !private ["CSo8NSObject", "attitude"]
@@ -1231,6 +1268,7 @@ depends-member:
 - !private ["CSo8NSObject", "requestWhenInUseAuthorization"]
 - !private ["CSo8NSObject", "scheduledTimer"]
 - !private ["CSo8NSObject", "sessionPreset"]
+- !private ["CSo8NSObject", "setImage"]
 - !private ["CSo8NSObject", "startDeviceMotionUpdates"]
 - !private ["CSo8NSObject", "startRunning"]
 - !private ["CSo8NSObject", "startUpdatingHeading"]
@@ -1239,6 +1277,7 @@ depends-member:
 - !private ["CSo8NSObject", "textColor"]
 - ["CSo8NSObject", "touchGR"]
 - ["CSo8NSObject", "updateMotion"]
+- ["CSo8NSObject", "view"]
 - !private ["CSo8NSObject", "zPosition"]
 - !private ["PSo16NSObjectProtocol", "AVCaptureDevice"]
 - !private ["PSo16NSObjectProtocol", "AVCaptureDeviceInput"]
@@ -1275,6 +1314,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - ["PSo16NSObjectProtocol", "addViewToLocation"]
 - !private ["PSo16NSObjectProtocol", "alpha"]
+- ["PSo16NSObjectProtocol", "arena"]
 - !private ["PSo16NSObjectProtocol", "asin"]
 - !private ["PSo16NSObjectProtocol", "atan2"]
 - !private ["PSo16NSObjectProtocol", "attitude"]
@@ -1326,6 +1366,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "requestWhenInUseAuthorization"]
 - !private ["PSo16NSObjectProtocol", "scheduledTimer"]
 - !private ["PSo16NSObjectProtocol", "sessionPreset"]
+- !private ["PSo16NSObjectProtocol", "setImage"]
 - !private ["PSo16NSObjectProtocol", "startDeviceMotionUpdates"]
 - !private ["PSo16NSObjectProtocol", "startRunning"]
 - !private ["PSo16NSObjectProtocol", "startUpdatingHeading"]
@@ -1334,6 +1375,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "textColor"]
 - ["PSo16NSObjectProtocol", "touchGR"]
 - ["PSo16NSObjectProtocol", "updateMotion"]
+- ["PSo16NSObjectProtocol", "view"]
 - !private ["PSo16NSObjectProtocol", "zPosition"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "attitude"]
@@ -1347,6 +1389,7 @@ depends-member:
 - ["PSo14NSSecureCoding", "red"]
 - !private ["CSo8NSString", "init"]
 - ["Os5Never", "deinit"]
+- !private ["Ps9OptionSet", "normal"]
 - !private ["Ps9OptionSet", "touchUpInside"]
 - ["Sq", "deinit"]
 - !private ["Ps22RandomAccessCollection", "Index"]
@@ -1381,6 +1424,7 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["Ps16RawRepresentable", "RawValue"]
 - !private ["Ps16RawRepresentable", "back"]
+- !private ["Ps16RawRepresentable", "normal"]
 - !private ["Ps16RawRepresentable", "touchUpInside"]
 - ["V10ObjectiveC8Selector", "deinit"]
 - !private ["Ps8Sequence", "Element"]
@@ -1391,6 +1435,7 @@ depends-member:
 - !private ["Ps8Sequence", "SubSequence"]
 - !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "subscript"]
+- !private ["Ps10SetAlgebra", "normal"]
 - !private ["Ps10SetAlgebra", "touchUpInside"]
 - !private ["Ps13SignedInteger", "IntegerLiteralType"]
 - !private ["Ps13SignedInteger", "Stride"]
@@ -1449,6 +1494,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - ["PSo29UIAccessibilityIdentification", "addViewToLocation"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
+- ["PSo29UIAccessibilityIdentification", "arena"]
 - !private ["PSo29UIAccessibilityIdentification", "asin"]
 - !private ["PSo29UIAccessibilityIdentification", "atan2"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
@@ -1480,10 +1526,12 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "pressedArena"]
 - !private ["PSo29UIAccessibilityIdentification", "print"]
 - ["PSo29UIAccessibilityIdentification", "radToDeg"]
+- !private ["PSo29UIAccessibilityIdentification", "setImage"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - ["PSo29UIAccessibilityIdentification", "touchGR"]
 - ["PSo29UIAccessibilityIdentification", "updateMotion"]
+- ["PSo29UIAccessibilityIdentification", "view"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["PSo12UIAppearance", "AVCaptureDevice"]
 - !private ["PSo12UIAppearance", "AVCaptureDeviceInput"]
@@ -1519,6 +1567,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "addTarget"]
 - ["PSo12UIAppearance", "addViewToLocation"]
 - !private ["PSo12UIAppearance", "alpha"]
+- ["PSo12UIAppearance", "arena"]
 - !private ["PSo12UIAppearance", "asin"]
 - !private ["PSo12UIAppearance", "atan2"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
@@ -1550,10 +1599,12 @@ depends-member:
 - ["PSo12UIAppearance", "pressedArena"]
 - !private ["PSo12UIAppearance", "print"]
 - ["PSo12UIAppearance", "radToDeg"]
+- !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textColor"]
 - ["PSo12UIAppearance", "touchGR"]
 - ["PSo12UIAppearance", "updateMotion"]
+- ["PSo12UIAppearance", "view"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "AVCaptureDevice"]
 - !private ["PSo21UIAppearanceContainer", "AVCaptureDeviceInput"]
@@ -1589,6 +1640,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - ["PSo21UIAppearanceContainer", "addViewToLocation"]
 - !private ["PSo21UIAppearanceContainer", "alpha"]
+- ["PSo21UIAppearanceContainer", "arena"]
 - !private ["PSo21UIAppearanceContainer", "asin"]
 - !private ["PSo21UIAppearanceContainer", "atan2"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
@@ -1620,10 +1672,12 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "pressedArena"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "radToDeg"]
+- !private ["PSo21UIAppearanceContainer", "setImage"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - ["PSo21UIAppearanceContainer", "touchGR"]
 - ["PSo21UIAppearanceContainer", "updateMotion"]
+- ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "addTarget"]
 - !private ["CSo8UIButton", "backgroundColor"]
@@ -1633,6 +1687,7 @@ depends-member:
 - !private ["CSo8UIButton", "init"]
 - !private ["CSo8UIButton", "isUserInteractionEnabled"]
 - !private ["CSo8UIButton", "layer"]
+- !private ["CSo8UIButton", "setImage"]
 - !private ["CSo7UIColor", "blue"]
 - ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "orange"]
@@ -1647,8 +1702,11 @@ depends-member:
 - !private ["CSo9UIControl", "init"]
 - !private ["CSo9UIControl", "isUserInteractionEnabled"]
 - !private ["CSo9UIControl", "layer"]
+- !private ["CSo9UIControl", "setImage"]
 - ["VSC15UIControlEvents", "deinit"]
 - !private ["VSC15UIControlEvents", "touchUpInside"]
+- !private ["VSC14UIControlState", "deinit"]
+- !private ["VSC14UIControlState", "normal"]
 - !private ["PSo17UICoordinateSpace", "AVCaptureDevice"]
 - !private ["PSo17UICoordinateSpace", "AVCaptureDeviceInput"]
 - !private ["PSo17UICoordinateSpace", "AVCaptureDevicePosition"]
@@ -1683,6 +1741,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "addTarget"]
 - ["PSo17UICoordinateSpace", "addViewToLocation"]
 - !private ["PSo17UICoordinateSpace", "alpha"]
+- ["PSo17UICoordinateSpace", "arena"]
 - !private ["PSo17UICoordinateSpace", "asin"]
 - !private ["PSo17UICoordinateSpace", "atan2"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
@@ -1714,10 +1773,12 @@ depends-member:
 - ["PSo17UICoordinateSpace", "pressedArena"]
 - !private ["PSo17UICoordinateSpace", "print"]
 - ["PSo17UICoordinateSpace", "radToDeg"]
+- !private ["PSo17UICoordinateSpace", "setImage"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
 - ["PSo17UICoordinateSpace", "touchGR"]
 - ["PSo17UICoordinateSpace", "updateMotion"]
+- ["PSo17UICoordinateSpace", "view"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "AVCaptureDevice"]
 - !private ["PSo13UIDynamicItem", "AVCaptureDeviceInput"]
@@ -1753,6 +1814,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "addTarget"]
 - ["PSo13UIDynamicItem", "addViewToLocation"]
 - !private ["PSo13UIDynamicItem", "alpha"]
+- ["PSo13UIDynamicItem", "arena"]
 - !private ["PSo13UIDynamicItem", "asin"]
 - !private ["PSo13UIDynamicItem", "atan2"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
@@ -1784,10 +1846,12 @@ depends-member:
 - ["PSo13UIDynamicItem", "pressedArena"]
 - !private ["PSo13UIDynamicItem", "print"]
 - ["PSo13UIDynamicItem", "radToDeg"]
+- !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textColor"]
 - ["PSo13UIDynamicItem", "touchGR"]
 - ["PSo13UIDynamicItem", "updateMotion"]
+- ["PSo13UIDynamicItem", "view"]
 - ["PSo13UIDynamicItem", ""]
 - !private ["PSo18UIFocusEnvironment", "AVCaptureDevice"]
 - !private ["PSo18UIFocusEnvironment", "AVCaptureDeviceInput"]
@@ -1823,6 +1887,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
 - ["PSo18UIFocusEnvironment", "addViewToLocation"]
 - !private ["PSo18UIFocusEnvironment", "alpha"]
+- ["PSo18UIFocusEnvironment", "arena"]
 - !private ["PSo18UIFocusEnvironment", "asin"]
 - !private ["PSo18UIFocusEnvironment", "atan2"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
@@ -1854,10 +1919,12 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "pressedArena"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "radToDeg"]
+- !private ["PSo18UIFocusEnvironment", "setImage"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textColor"]
 - ["PSo18UIFocusEnvironment", "touchGR"]
 - ["PSo18UIFocusEnvironment", "updateMotion"]
+- ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "AVCaptureDevice"]
 - !private ["PSo11UIFocusItem", "AVCaptureDeviceInput"]
@@ -1893,6 +1960,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "addTarget"]
 - ["PSo11UIFocusItem", "addViewToLocation"]
 - !private ["PSo11UIFocusItem", "alpha"]
+- ["PSo11UIFocusItem", "arena"]
 - !private ["PSo11UIFocusItem", "asin"]
 - !private ["PSo11UIFocusItem", "atan2"]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
@@ -1924,10 +1992,12 @@ depends-member:
 - ["PSo11UIFocusItem", "pressedArena"]
 - !private ["PSo11UIFocusItem", "print"]
 - ["PSo11UIFocusItem", "radToDeg"]
+- !private ["PSo11UIFocusItem", "setImage"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "textColor"]
 - ["PSo11UIFocusItem", "touchGR"]
 - ["PSo11UIFocusItem", "updateMotion"]
+- ["PSo11UIFocusItem", "view"]
 - ["PSo11UIFocusItem", ""]
 - !private ["CSo19UIGestureRecognizer", "addTarget"]
 - ["CSo19UIGestureRecognizer", "init"]
@@ -1944,6 +2014,7 @@ depends-member:
 - !private ["CSo11UIResponder", "AVCaptureVideoPreviewLayer"]
 - !private ["CSo11UIResponder", "AVMediaTypeVideo"]
 - !private ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Arena"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGRect"]
 - ["CSo11UIResponder", "CLHeading"]
@@ -1965,6 +2036,7 @@ depends-member:
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIControlEvents"]
+- !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UITapGestureRecognizer"]
 - ["CSo11UIResponder", "UIView"]
@@ -1974,6 +2046,7 @@ depends-member:
 - !private ["CSo11UIResponder", "addTarget"]
 - ["CSo11UIResponder", "addViewToLocation"]
 - !private ["CSo11UIResponder", "alpha"]
+- ["CSo11UIResponder", "arena"]
 - !private ["CSo11UIResponder", "asin"]
 - !private ["CSo11UIResponder", "atan2"]
 - !private ["CSo11UIResponder", "backgroundColor"]
@@ -2005,10 +2078,12 @@ depends-member:
 - ["CSo11UIResponder", "pressedArena"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "radToDeg"]
+- !private ["CSo11UIResponder", "setImage"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textColor"]
 - ["CSo11UIResponder", "touchGR"]
 - ["CSo11UIResponder", "updateMotion"]
+- ["CSo11UIResponder", "view"]
 - !private ["PSo30UIResponderStandardEditActions", "AVCaptureDevice"]
 - !private ["PSo30UIResponderStandardEditActions", "AVCaptureDeviceInput"]
 - !private ["PSo30UIResponderStandardEditActions", "AVCaptureDevicePosition"]
@@ -2043,6 +2118,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "addTarget"]
 - ["PSo30UIResponderStandardEditActions", "addViewToLocation"]
 - !private ["PSo30UIResponderStandardEditActions", "alpha"]
+- ["PSo30UIResponderStandardEditActions", "arena"]
 - !private ["PSo30UIResponderStandardEditActions", "asin"]
 - !private ["PSo30UIResponderStandardEditActions", "atan2"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
@@ -2074,10 +2150,12 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "pressedArena"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "radToDeg"]
+- !private ["PSo30UIResponderStandardEditActions", "setImage"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "textColor"]
 - ["PSo30UIResponderStandardEditActions", "touchGR"]
 - ["PSo30UIResponderStandardEditActions", "updateMotion"]
+- ["PSo30UIResponderStandardEditActions", "view"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo22UITapGestureRecognizer", "addTarget"]
 - ["CSo22UITapGestureRecognizer", "deinit"]
@@ -2117,6 +2195,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - ["PSo18UITraitEnvironment", "addViewToLocation"]
 - !private ["PSo18UITraitEnvironment", "alpha"]
+- ["PSo18UITraitEnvironment", "arena"]
 - !private ["PSo18UITraitEnvironment", "asin"]
 - !private ["PSo18UITraitEnvironment", "atan2"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
@@ -2148,10 +2227,12 @@ depends-member:
 - ["PSo18UITraitEnvironment", "pressedArena"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "radToDeg"]
+- !private ["PSo18UITraitEnvironment", "setImage"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textColor"]
 - ["PSo18UITraitEnvironment", "touchGR"]
 - ["PSo18UITraitEnvironment", "updateMotion"]
+- ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "AVCaptureDevice"]
 - !private ["CSo6UIView", "AVCaptureDeviceInput"]
@@ -2161,6 +2242,7 @@ depends-member:
 - !private ["CSo6UIView", "AVCaptureVideoPreviewLayer"]
 - !private ["CSo6UIView", "AVMediaTypeVideo"]
 - !private ["CSo6UIView", "AnyObject"]
+- ["CSo6UIView", "Arena"]
 - ["CSo6UIView", "CGFloat"]
 - ["CSo6UIView", "CGRect"]
 - ["CSo6UIView", "CLHeading"]
@@ -2182,6 +2264,7 @@ depends-member:
 - ["CSo6UIView", "UIButton"]
 - ["CSo6UIView", "UIColor"]
 - !private ["CSo6UIView", "UIControlEvents"]
+- !private ["CSo6UIView", "UIImage"]
 - ["CSo6UIView", "UILabel"]
 - ["CSo6UIView", "UITapGestureRecognizer"]
 - ["CSo6UIView", "UIView"]
@@ -2191,6 +2274,7 @@ depends-member:
 - !private ["CSo6UIView", "addTarget"]
 - ["CSo6UIView", "addViewToLocation"]
 - !private ["CSo6UIView", "alpha"]
+- ["CSo6UIView", "arena"]
 - !private ["CSo6UIView", "asin"]
 - !private ["CSo6UIView", "atan2"]
 - !private ["CSo6UIView", "backgroundColor"]
@@ -2223,10 +2307,12 @@ depends-member:
 - ["CSo6UIView", "pressedArena"]
 - !private ["CSo6UIView", "print"]
 - ["CSo6UIView", "radToDeg"]
+- !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textColor"]
 - ["CSo6UIView", "touchGR"]
 - ["CSo6UIView", "updateMotion"]
+- ["CSo6UIView", "view"]
 - ["CSo6UIView", ""]
 - ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
@@ -2234,6 +2320,7 @@ depends-member:
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
+- !private ["C9Projet3754User", "getProfileImage"]
 - ["C9Projet3756VrView", "AVCaptureDevice"]
 - !private ["C9Projet3756VrView", "AVCaptureDeviceInput"]
 - !private ["C9Projet3756VrView", "AVCaptureDevicePosition"]
@@ -2242,6 +2329,7 @@ depends-member:
 - !private ["C9Projet3756VrView", "AVCaptureVideoPreviewLayer"]
 - !private ["C9Projet3756VrView", "AVMediaTypeVideo"]
 - !private ["C9Projet3756VrView", "AnyObject"]
+- ["C9Projet3756VrView", "Arena"]
 - ["C9Projet3756VrView", "CGFloat"]
 - ["C9Projet3756VrView", "CGRect"]
 - ["C9Projet3756VrView", "CLHeading"]
@@ -2263,6 +2351,7 @@ depends-member:
 - ["C9Projet3756VrView", "UIButton"]
 - ["C9Projet3756VrView", "UIColor"]
 - !private ["C9Projet3756VrView", "UIControlEvents"]
+- !private ["C9Projet3756VrView", "UIImage"]
 - ["C9Projet3756VrView", "UILabel"]
 - ["C9Projet3756VrView", "UITapGestureRecognizer"]
 - ["C9Projet3756VrView", "UIView"]
@@ -2270,6 +2359,7 @@ depends-member:
 - ["C9Projet3756VrView", "addLocationToView"]
 - !private ["C9Projet3756VrView", "addSubview"]
 - ["C9Projet3756VrView", "addViewToLocation"]
+- ["C9Projet3756VrView", "arena"]
 - !private ["C9Projet3756VrView", "asin"]
 - !private ["C9Projet3756VrView", "atan2"]
 - ["C9Projet3756VrView", "beginCameraSession"]
@@ -2301,6 +2391,7 @@ depends-member:
 - ["C9Projet3756VrView", "radToDeg"]
 - ["C9Projet3756VrView", "touchGR"]
 - ["C9Projet3756VrView", "updateMotion"]
+- ["C9Projet3756VrView", "view"]
 - !private ["Ps14_ArrayProtocol", "Index"]
 - !private ["Ps14_ArrayProtocol", "Iterator"]
 - !private ["Ps14_ArrayProtocol", "SubSequence"]
@@ -2342,6 +2433,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addTarget"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "addViewToLocation"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "alpha"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "arena"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "asin"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "atan2"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
@@ -2373,10 +2465,12 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "pressedArena"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "print"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "radToDeg"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setImage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textColor"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "touchGR"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "updateMotion"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "view"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "Iterator"]
@@ -2435,6 +2529,7 @@ depends-member:
 - !private ["Ps9_Hashable", "addTarget"]
 - ["Ps9_Hashable", "addViewToLocation"]
 - !private ["Ps9_Hashable", "alpha"]
+- ["Ps9_Hashable", "arena"]
 - !private ["Ps9_Hashable", "asin"]
 - !private ["Ps9_Hashable", "atan2"]
 - !private ["Ps9_Hashable", "attitude"]
@@ -2487,6 +2582,7 @@ depends-member:
 - !private ["Ps9_Hashable", "requestWhenInUseAuthorization"]
 - !private ["Ps9_Hashable", "scheduledTimer"]
 - !private ["Ps9_Hashable", "sessionPreset"]
+- !private ["Ps9_Hashable", "setImage"]
 - !private ["Ps9_Hashable", "startDeviceMotionUpdates"]
 - !private ["Ps9_Hashable", "startRunning"]
 - !private ["Ps9_Hashable", "startUpdatingHeading"]
@@ -2495,6 +2591,7 @@ depends-member:
 - !private ["Ps9_Hashable", "textColor"]
 - ["Ps9_Hashable", "touchGR"]
 - ["Ps9_Hashable", "updateMotion"]
+- ["Ps9_Hashable", "view"]
 - !private ["Ps9_Hashable", "zPosition"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
@@ -2540,6 +2637,7 @@ depends-nominal:
 - "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
 - !private "P12FacebookCore26AppEventParameterValueType"
+- !private "C9Projet3755Arena"
 - "Sa"
 - !private "Ps23BidirectionalCollection"
 - !private "Ps22BidirectionalIndexable"
@@ -2638,6 +2736,7 @@ depends-nominal:
 - !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "CSo9UIControl"
 - "VSC15UIControlEvents"
+- !private "VSC14UIControlState"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
@@ -2655,6 +2754,7 @@ depends-nominal:
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
 - !private "Sc"
+- !private "C9Projet3754User"
 - "C9Projet3756VrView"
 - !private "Ps14_ArrayProtocol"
 - "Ps15_CVarArgAligned"
@@ -2759,4 +2859,4 @@ depends-external:
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
-interface-hash: "da6150b483419916890d0c16f98c3061"
+interface-hash: "21559a2578468b8473c2a06946f17aa7"

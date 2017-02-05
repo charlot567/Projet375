@@ -6,71 +6,74 @@ provides-nominal:
 provides-member:
 - ["C9Projet3759ArenaView", ""]
 provides-dynamic-lookup:
-- "isActive"
+- "load"
 - "controller"
-- "back"
-- "pressedArena"
-- "getCurrentViewController"
-- "showVR"
+- "isActive"
 - "areneLoc"
+- "margin"
+- "getCurrentViewController"
 - "map"
 - "locationManager"
 - "locationManager"
-- "margin"
 - "mapView"
+- "back"
+- "v"
+- "showVR"
+- "pressedArena"
 depends-top-level:
-- "CGRect"
-- !private "imageSize"
-- !private "StringLiteralType"
-- !private "+"
-- "UILabel"
-- "UIView"
-- !private "UIAlertAction"
-- "MKMapView"
-- !private "CLCircularRegion"
-- !private "KVHome"
-- !private "kMasterVC"
+- !private "UIControlEvents"
 - !private "fatalError"
-- !private "UIImage"
-- !private "VrView"
-- "BooleanLiteralType"
-- !private "kWidth"
-- !private "!="
-- !private "kHeight"
-- !private "kBlue"
-- !private "MKCoordinateSpan"
-- "MKOverlay"
-- !private "print"
-- !private "kGreen"
-- "MKMapViewDelegate"
-- !private "-"
-- !private "MKCircle"
-- !private "MKCoordinateRegion"
-- "CGFloat"
-- "MKOverlayRenderer"
-- "UIButton"
-- !private "NSTextAlignment"
+- "ArenaView"
 - !private "UIAlertActionStyle"
-- !private "kCLLocationAccuracyNearestTenMeters"
-- !private "*"
-- !private "/"
-- !private "MKCircleRenderer"
-- "CLLocationManager"
-- "NSCoder"
-- "CLLocationManagerDelegate"
-- !private "UIAlertController"
-- !private "UIFont"
+- "UIViewController"
+- !private "kGreen"
+- !private "+"
+- !private "kHeight"
+- "CGRect"
+- "MKOverlayRenderer"
 - !private "UIApplication"
-- !private "UIAlertControllerStyle"
+- !private "kWidth"
+- !private "*"
+- "MKMapViewDelegate"
+- !private "CLCircularRegion"
+- "UIView"
+- "NSCoder"
+- "UIButton"
+- "CGFloat"
+- !private "print"
+- !private "MKCircleRenderer"
+- "UILabel"
+- !private "NSTextAlignment"
+- "VrView"
+- !private "kMasterVC"
+- !private "kCLLocationAccuracyNearestTenMeters"
+- !private "UIFont"
+- "MKMapView"
+- "BooleanLiteralType"
 - "CLLocationCoordinate2D"
+- !private "UIColor"
+- "CLLocationManager"
+- "CLLocationManagerDelegate"
+- "Arena"
+- !private "StringLiteralType"
+- !private "UIAlertControllerStyle"
+- "MKOverlay"
+- "CLLocation"
 - "AssignmentPrecedence"
 - !private "=="
 - "CastingPrecedence"
-- !private "UIControlEvents"
-- !private "UIColor"
-- "CLLocation"
-- "ArenaView"
-- "UIViewController"
+- !private "MKCircle"
+- !private "!="
+- !private "kBlue"
+- !private "KVHome"
+- !private "UIImage"
+- !private "imageSize"
+- !private "MKCoordinateRegion"
+- !private "UIAlertController"
+- !private "-"
+- !private "/"
+- !private "MKCoordinateSpan"
+- !private "UIAlertAction"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -104,6 +107,7 @@ depends-member:
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
 - !private ["Ps9AnyObject", "adjustsFontSizeToFitWidth"]
+- ["Ps9AnyObject", "arena"]
 - ["Ps9AnyObject", "areneLoc"]
 - ["Ps9AnyObject", "back"]
 - !private ["Ps9AnyObject", "backgroundColor"]
@@ -134,6 +138,7 @@ depends-member:
 - !private ["Ps9AnyObject", "keyWindow"]
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "lineWidth"]
+- ["Ps9AnyObject", "load"]
 - ["Ps9AnyObject", "locationManager"]
 - ["Ps9AnyObject", "locationManagerDidPauseLocationUpdates"]
 - ["Ps9AnyObject", "locationManagerDidResumeLocationUpdates"]
@@ -169,10 +174,12 @@ depends-member:
 - !private ["Ps9AnyObject", "textColor"]
 - ["Ps9AnyObject", "titleLabel"]
 - ["Ps9AnyObject", "topNavBar"]
+- ["Ps9AnyObject", "v"]
 - !private ["Ps9AnyObject", "white"]
 - !private ["Ps9AnyObject", "withAlphaComponent"]
 - ["Ps9AnyObject", ""]
 - !private ["P12FacebookCore26AppEventParameterValueType", "init"]
+- ["C9Projet3759ArenaView", "Arena"]
 - ["C9Projet3759ArenaView", "CGFloat"]
 - ["C9Projet3759ArenaView", "CGRect"]
 - !private ["C9Projet3759ArenaView", "CLCircularRegion"]
@@ -202,8 +209,9 @@ depends-member:
 - ["C9Projet3759ArenaView", "UILabel"]
 - ["C9Projet3759ArenaView", "UIView"]
 - ["C9Projet3759ArenaView", "UIViewController"]
-- !private ["C9Projet3759ArenaView", "VrView"]
+- ["C9Projet3759ArenaView", "VrView"]
 - !private ["C9Projet3759ArenaView", "addSubview"]
+- ["C9Projet3759ArenaView", "arena"]
 - ["C9Projet3759ArenaView", "areneLoc"]
 - ["C9Projet3759ArenaView", "back"]
 - !private ["C9Projet3759ArenaView", "backgroundColor"]
@@ -222,6 +230,7 @@ depends-member:
 - !private ["C9Projet3759ArenaView", "kHeight"]
 - !private ["C9Projet3759ArenaView", "kMasterVC"]
 - !private ["C9Projet3759ArenaView", "kWidth"]
+- ["C9Projet3759ArenaView", "load"]
 - ["C9Projet3759ArenaView", "locationManager"]
 - ["C9Projet3759ArenaView", "locationManagerDidPauseLocationUpdates"]
 - ["C9Projet3759ArenaView", "locationManagerDidResumeLocationUpdates"]
@@ -241,6 +250,7 @@ depends-member:
 - ["C9Projet3759ArenaView", "showVR"]
 - !private ["C9Projet3759ArenaView", "titleLabel"]
 - !private ["C9Projet3759ArenaView", "topNavBar"]
+- ["C9Projet3759ArenaView", "v"]
 - !private ["Sa", "Iterator"]
 - !private ["Sa", "_Element"]
 - ["Sa", "deinit"]
@@ -286,6 +296,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "addTarget"]
 - !private ["PSo15CALayerDelegate", "adjustsFontSizeToFitWidth"]
+- ["PSo15CALayerDelegate", "arena"]
 - ["PSo15CALayerDelegate", "areneLoc"]
 - ["PSo15CALayerDelegate", "back"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
@@ -308,6 +319,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "kMasterVC"]
 - !private ["PSo15CALayerDelegate", "kWidth"]
 - !private ["PSo15CALayerDelegate", "layer"]
+- ["PSo15CALayerDelegate", "load"]
 - ["PSo15CALayerDelegate", "locationManager"]
 - ["PSo15CALayerDelegate", "locationManagerDidPauseLocationUpdates"]
 - ["PSo15CALayerDelegate", "locationManagerDidResumeLocationUpdates"]
@@ -334,6 +346,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "textColor"]
 - ["PSo15CALayerDelegate", "titleLabel"]
 - ["PSo15CALayerDelegate", "topNavBar"]
+- ["PSo15CALayerDelegate", "v"]
 - ["PSo15CALayerDelegate", ""]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
@@ -387,6 +400,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "VrView"]
 - !private ["PSo25CLLocationManagerDelegate", "addLocationToView"]
 - !private ["PSo25CLLocationManagerDelegate", "addSubview"]
+- !private ["PSo25CLLocationManagerDelegate", "arena"]
 - !private ["PSo25CLLocationManagerDelegate", "areneLoc"]
 - !private ["PSo25CLLocationManagerDelegate", "back"]
 - !private ["PSo25CLLocationManagerDelegate", "backgroundColor"]
@@ -404,6 +418,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "kHeight"]
 - !private ["PSo25CLLocationManagerDelegate", "kMasterVC"]
 - !private ["PSo25CLLocationManagerDelegate", "kWidth"]
+- !private ["PSo25CLLocationManagerDelegate", "load"]
 - ["PSo25CLLocationManagerDelegate", "locationManager"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerDidPauseLocationUpdates"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerDidResumeLocationUpdates"]
@@ -423,6 +438,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "showVR"]
 - !private ["PSo25CLLocationManagerDelegate", "titleLabel"]
 - !private ["PSo25CLLocationManagerDelegate", "topNavBar"]
+- !private ["PSo25CLLocationManagerDelegate", "v"]
 - ["PSo25CLLocationManagerDelegate", ""]
 - !private ["CSo8CLRegion", "contains"]
 - !private ["CSo8CLRegion", "init"]
@@ -459,6 +475,7 @@ depends-member:
 - !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "addTarget"]
 - !private ["Ps7CVarArg", "adjustsFontSizeToFitWidth"]
+- ["Ps7CVarArg", "arena"]
 - ["Ps7CVarArg", "areneLoc"]
 - ["Ps7CVarArg", "back"]
 - !private ["Ps7CVarArg", "backgroundColor"]
@@ -490,6 +507,7 @@ depends-member:
 - !private ["Ps7CVarArg", "last"]
 - !private ["Ps7CVarArg", "layer"]
 - !private ["Ps7CVarArg", "lineWidth"]
+- ["Ps7CVarArg", "load"]
 - ["Ps7CVarArg", "locationManager"]
 - ["Ps7CVarArg", "locationManagerDidPauseLocationUpdates"]
 - ["Ps7CVarArg", "locationManagerDidResumeLocationUpdates"]
@@ -525,6 +543,7 @@ depends-member:
 - !private ["Ps7CVarArg", "textColor"]
 - ["Ps7CVarArg", "titleLabel"]
 - ["Ps7CVarArg", "topNavBar"]
+- ["Ps7CVarArg", "v"]
 - !private ["Ps7CVarArg", "white"]
 - !private ["Ps7CVarArg", "withAlphaComponent"]
 - ["Ps7CVarArg", ""]
@@ -565,6 +584,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
 - !private ["Ps28CustomDebugStringConvertible", "adjustsFontSizeToFitWidth"]
+- ["Ps28CustomDebugStringConvertible", "arena"]
 - ["Ps28CustomDebugStringConvertible", "areneLoc"]
 - ["Ps28CustomDebugStringConvertible", "back"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
@@ -597,6 +617,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "last"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "lineWidth"]
+- ["Ps28CustomDebugStringConvertible", "load"]
 - ["Ps28CustomDebugStringConvertible", "locationManager"]
 - ["Ps28CustomDebugStringConvertible", "locationManagerDidPauseLocationUpdates"]
 - ["Ps28CustomDebugStringConvertible", "locationManagerDidResumeLocationUpdates"]
@@ -633,6 +654,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - ["Ps28CustomDebugStringConvertible", "titleLabel"]
 - ["Ps28CustomDebugStringConvertible", "topNavBar"]
+- ["Ps28CustomDebugStringConvertible", "v"]
 - !private ["Ps28CustomDebugStringConvertible", "white"]
 - !private ["Ps28CustomDebugStringConvertible", "width"]
 - !private ["Ps28CustomDebugStringConvertible", "withAlphaComponent"]
@@ -684,6 +706,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "addTarget"]
 - !private ["Ps23CustomStringConvertible", "adjustsFontSizeToFitWidth"]
+- ["Ps23CustomStringConvertible", "arena"]
 - ["Ps23CustomStringConvertible", "areneLoc"]
 - ["Ps23CustomStringConvertible", "back"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
@@ -715,6 +738,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "last"]
 - !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "lineWidth"]
+- ["Ps23CustomStringConvertible", "load"]
 - ["Ps23CustomStringConvertible", "locationManager"]
 - ["Ps23CustomStringConvertible", "locationManagerDidPauseLocationUpdates"]
 - ["Ps23CustomStringConvertible", "locationManagerDidResumeLocationUpdates"]
@@ -750,6 +774,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "textColor"]
 - ["Ps23CustomStringConvertible", "titleLabel"]
 - ["Ps23CustomStringConvertible", "topNavBar"]
+- ["Ps23CustomStringConvertible", "v"]
 - !private ["Ps23CustomStringConvertible", "white"]
 - !private ["Ps23CustomStringConvertible", "withAlphaComponent"]
 - ["Ps23CustomStringConvertible", ""]
@@ -787,6 +812,7 @@ depends-member:
 - !private ["Ps9Equatable", "addTarget"]
 - !private ["Ps9Equatable", "adjustsFontSizeToFitWidth"]
 - !private ["Ps9Equatable", "alert"]
+- ["Ps9Equatable", "arena"]
 - ["Ps9Equatable", "areneLoc"]
 - ["Ps9Equatable", "back"]
 - !private ["Ps9Equatable", "backgroundColor"]
@@ -821,6 +847,7 @@ depends-member:
 - !private ["Ps9Equatable", "keyWindow"]
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "lineWidth"]
+- ["Ps9Equatable", "load"]
 - ["Ps9Equatable", "locationManager"]
 - ["Ps9Equatable", "locationManagerDidPauseLocationUpdates"]
 - ["Ps9Equatable", "locationManagerDidResumeLocationUpdates"]
@@ -859,6 +886,7 @@ depends-member:
 - ["Ps9Equatable", "titleLabel"]
 - ["Ps9Equatable", "topNavBar"]
 - !private ["Ps9Equatable", "touchUpInside"]
+- ["Ps9Equatable", "v"]
 - !private ["Ps9Equatable", "white"]
 - !private ["Ps9Equatable", "width"]
 - !private ["Ps9Equatable", "withAlphaComponent"]
@@ -910,6 +938,7 @@ depends-member:
 - !private ["Ps8Hashable", "addTarget"]
 - !private ["Ps8Hashable", "adjustsFontSizeToFitWidth"]
 - !private ["Ps8Hashable", "alert"]
+- ["Ps8Hashable", "arena"]
 - ["Ps8Hashable", "areneLoc"]
 - ["Ps8Hashable", "back"]
 - !private ["Ps8Hashable", "backgroundColor"]
@@ -943,6 +972,7 @@ depends-member:
 - !private ["Ps8Hashable", "keyWindow"]
 - !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "lineWidth"]
+- ["Ps8Hashable", "load"]
 - ["Ps8Hashable", "locationManager"]
 - ["Ps8Hashable", "locationManagerDidPauseLocationUpdates"]
 - ["Ps8Hashable", "locationManagerDidResumeLocationUpdates"]
@@ -978,6 +1008,7 @@ depends-member:
 - !private ["Ps8Hashable", "textColor"]
 - ["Ps8Hashable", "titleLabel"]
 - ["Ps8Hashable", "topNavBar"]
+- ["Ps8Hashable", "v"]
 - !private ["Ps8Hashable", "white"]
 - !private ["Ps8Hashable", "withAlphaComponent"]
 - ["Ps8Hashable", ""]
@@ -1039,6 +1070,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "UIView"]
 - !private ["PSo17MKMapViewDelegate", "VrView"]
 - !private ["PSo17MKMapViewDelegate", "addSubview"]
+- !private ["PSo17MKMapViewDelegate", "arena"]
 - !private ["PSo17MKMapViewDelegate", "areneLoc"]
 - !private ["PSo17MKMapViewDelegate", "back"]
 - !private ["PSo17MKMapViewDelegate", "backgroundColor"]
@@ -1054,6 +1086,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "kHeight"]
 - !private ["PSo17MKMapViewDelegate", "kMasterVC"]
 - !private ["PSo17MKMapViewDelegate", "kWidth"]
+- !private ["PSo17MKMapViewDelegate", "load"]
 - ["PSo17MKMapViewDelegate", "locationManager"]
 - ["PSo17MKMapViewDelegate", "locationManagerDidPauseLocationUpdates"]
 - ["PSo17MKMapViewDelegate", "locationManagerDidResumeLocationUpdates"]
@@ -1073,6 +1106,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "showVR"]
 - !private ["PSo17MKMapViewDelegate", "titleLabel"]
 - !private ["PSo17MKMapViewDelegate", "topNavBar"]
+- !private ["PSo17MKMapViewDelegate", "v"]
 - ["PSo17MKMapViewDelegate", ""]
 - ["PSo9MKOverlay", "deinit"]
 - !private ["PSo9MKOverlay", "init"]
@@ -1123,6 +1157,7 @@ depends-member:
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "adjustsFontSizeToFitWidth"]
+- ["PSo8NSCoding", "arena"]
 - ["PSo8NSCoding", "areneLoc"]
 - ["PSo8NSCoding", "back"]
 - !private ["PSo8NSCoding", "backgroundColor"]
@@ -1149,6 +1184,7 @@ depends-member:
 - !private ["PSo8NSCoding", "kMasterVC"]
 - !private ["PSo8NSCoding", "kWidth"]
 - !private ["PSo8NSCoding", "layer"]
+- ["PSo8NSCoding", "load"]
 - ["PSo8NSCoding", "locationManager"]
 - ["PSo8NSCoding", "locationManagerDidPauseLocationUpdates"]
 - ["PSo8NSCoding", "locationManagerDidResumeLocationUpdates"]
@@ -1179,6 +1215,7 @@ depends-member:
 - !private ["PSo8NSCoding", "textColor"]
 - ["PSo8NSCoding", "titleLabel"]
 - ["PSo8NSCoding", "topNavBar"]
+- ["PSo8NSCoding", "v"]
 - !private ["PSo8NSCoding", "white"]
 - !private ["PSo8NSCoding", "withAlphaComponent"]
 - ["PSo8NSCoding", ""]
@@ -1194,6 +1231,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "presentedViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "switchNav"]
 - !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Arena"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "CLCircularRegion"]
@@ -1223,13 +1261,14 @@ depends-member:
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIView"]
 - ["CSo8NSObject", "UIViewController"]
-- !private ["CSo8NSObject", "VrView"]
+- ["CSo8NSObject", "VrView"]
 - !private ["CSo8NSObject", "add"]
 - !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "addLocationToView"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "adjustsFontSizeToFitWidth"]
+- ["CSo8NSObject", "arena"]
 - ["CSo8NSObject", "areneLoc"]
 - ["CSo8NSObject", "back"]
 - !private ["CSo8NSObject", "backgroundColor"]
@@ -1260,6 +1299,7 @@ depends-member:
 - !private ["CSo8NSObject", "keyWindow"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "lineWidth"]
+- ["CSo8NSObject", "load"]
 - ["CSo8NSObject", "locationManager"]
 - ["CSo8NSObject", "locationManagerDidPauseLocationUpdates"]
 - ["CSo8NSObject", "locationManagerDidResumeLocationUpdates"]
@@ -1295,6 +1335,7 @@ depends-member:
 - !private ["CSo8NSObject", "textColor"]
 - ["CSo8NSObject", "titleLabel"]
 - ["CSo8NSObject", "topNavBar"]
+- ["CSo8NSObject", "v"]
 - !private ["CSo8NSObject", "white"]
 - !private ["CSo8NSObject", "withAlphaComponent"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
@@ -1328,6 +1369,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "adjustsFontSizeToFitWidth"]
+- ["PSo16NSObjectProtocol", "arena"]
 - ["PSo16NSObjectProtocol", "areneLoc"]
 - ["PSo16NSObjectProtocol", "back"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
@@ -1358,6 +1400,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "keyWindow"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "lineWidth"]
+- ["PSo16NSObjectProtocol", "load"]
 - ["PSo16NSObjectProtocol", "locationManager"]
 - ["PSo16NSObjectProtocol", "locationManagerDidPauseLocationUpdates"]
 - ["PSo16NSObjectProtocol", "locationManagerDidResumeLocationUpdates"]
@@ -1393,6 +1436,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "textColor"]
 - ["PSo16NSObjectProtocol", "titleLabel"]
 - ["PSo16NSObjectProtocol", "topNavBar"]
+- ["PSo16NSObjectProtocol", "v"]
 - !private ["PSo16NSObjectProtocol", "white"]
 - !private ["PSo16NSObjectProtocol", "withAlphaComponent"]
 - ["PSo16NSObjectProtocol", ""]
@@ -1473,6 +1517,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "adjustsFontSizeToFitWidth"]
+- ["PSo29UIAccessibilityIdentification", "arena"]
 - ["PSo29UIAccessibilityIdentification", "areneLoc"]
 - ["PSo29UIAccessibilityIdentification", "back"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
@@ -1495,6 +1540,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "kMasterVC"]
 - !private ["PSo29UIAccessibilityIdentification", "kWidth"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
+- ["PSo29UIAccessibilityIdentification", "load"]
 - ["PSo29UIAccessibilityIdentification", "locationManager"]
 - ["PSo29UIAccessibilityIdentification", "locationManagerDidPauseLocationUpdates"]
 - ["PSo29UIAccessibilityIdentification", "locationManagerDidResumeLocationUpdates"]
@@ -1522,6 +1568,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - ["PSo29UIAccessibilityIdentification", "titleLabel"]
 - ["PSo29UIAccessibilityIdentification", "topNavBar"]
+- ["PSo29UIAccessibilityIdentification", "v"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - ["CSo13UIAlertAction", "deinit"]
 - !private ["CSo13UIAlertAction", "init"]
@@ -1563,6 +1610,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "addTarget"]
 - !private ["PSo12UIAppearance", "adjustsFontSizeToFitWidth"]
+- ["PSo12UIAppearance", "arena"]
 - ["PSo12UIAppearance", "areneLoc"]
 - ["PSo12UIAppearance", "back"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
@@ -1585,6 +1633,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "kMasterVC"]
 - !private ["PSo12UIAppearance", "kWidth"]
 - !private ["PSo12UIAppearance", "layer"]
+- ["PSo12UIAppearance", "load"]
 - ["PSo12UIAppearance", "locationManager"]
 - ["PSo12UIAppearance", "locationManagerDidPauseLocationUpdates"]
 - ["PSo12UIAppearance", "locationManagerDidResumeLocationUpdates"]
@@ -1611,6 +1660,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "textColor"]
 - ["PSo12UIAppearance", "titleLabel"]
 - ["PSo12UIAppearance", "topNavBar"]
+- ["PSo12UIAppearance", "v"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
@@ -1643,6 +1693,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - !private ["PSo21UIAppearanceContainer", "adjustsFontSizeToFitWidth"]
+- ["PSo21UIAppearanceContainer", "arena"]
 - ["PSo21UIAppearanceContainer", "areneLoc"]
 - ["PSo21UIAppearanceContainer", "back"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
@@ -1665,6 +1716,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "kMasterVC"]
 - !private ["PSo21UIAppearanceContainer", "kWidth"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "load"]
 - ["PSo21UIAppearanceContainer", "locationManager"]
 - ["PSo21UIAppearanceContainer", "locationManagerDidPauseLocationUpdates"]
 - ["PSo21UIAppearanceContainer", "locationManagerDidResumeLocationUpdates"]
@@ -1694,6 +1746,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - ["PSo21UIAppearanceContainer", "titleLabel"]
 - ["PSo21UIAppearanceContainer", "topNavBar"]
+- ["PSo21UIAppearanceContainer", "v"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["CSo13UIApplication", "deinit"]
 - !private ["CSo13UIApplication", "keyWindow"]
@@ -1760,6 +1813,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
 - !private ["PSo17UICoordinateSpace", "adjustsFontSizeToFitWidth"]
+- ["PSo17UICoordinateSpace", "arena"]
 - ["PSo17UICoordinateSpace", "areneLoc"]
 - ["PSo17UICoordinateSpace", "back"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
@@ -1782,6 +1836,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "kMasterVC"]
 - !private ["PSo17UICoordinateSpace", "kWidth"]
 - !private ["PSo17UICoordinateSpace", "layer"]
+- ["PSo17UICoordinateSpace", "load"]
 - ["PSo17UICoordinateSpace", "locationManager"]
 - ["PSo17UICoordinateSpace", "locationManagerDidPauseLocationUpdates"]
 - ["PSo17UICoordinateSpace", "locationManagerDidResumeLocationUpdates"]
@@ -1808,6 +1863,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "textColor"]
 - ["PSo17UICoordinateSpace", "titleLabel"]
 - ["PSo17UICoordinateSpace", "topNavBar"]
+- ["PSo17UICoordinateSpace", "v"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "CGFloat"]
 - !private ["PSo13UIDynamicItem", "CGRect"]
@@ -1839,6 +1895,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
 - !private ["PSo13UIDynamicItem", "adjustsFontSizeToFitWidth"]
+- ["PSo13UIDynamicItem", "arena"]
 - ["PSo13UIDynamicItem", "areneLoc"]
 - ["PSo13UIDynamicItem", "back"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
@@ -1861,6 +1918,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "kMasterVC"]
 - !private ["PSo13UIDynamicItem", "kWidth"]
 - !private ["PSo13UIDynamicItem", "layer"]
+- ["PSo13UIDynamicItem", "load"]
 - ["PSo13UIDynamicItem", "locationManager"]
 - ["PSo13UIDynamicItem", "locationManagerDidPauseLocationUpdates"]
 - ["PSo13UIDynamicItem", "locationManagerDidResumeLocationUpdates"]
@@ -1887,6 +1945,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "textColor"]
 - ["PSo13UIDynamicItem", "titleLabel"]
 - ["PSo13UIDynamicItem", "topNavBar"]
+- ["PSo13UIDynamicItem", "v"]
 - ["PSo13UIDynamicItem", ""]
 - !private ["PSo18UIFocusEnvironment", "CGFloat"]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
@@ -1919,6 +1978,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
 - !private ["PSo18UIFocusEnvironment", "adjustsFontSizeToFitWidth"]
+- ["PSo18UIFocusEnvironment", "arena"]
 - ["PSo18UIFocusEnvironment", "areneLoc"]
 - ["PSo18UIFocusEnvironment", "back"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
@@ -1941,6 +2001,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "kMasterVC"]
 - !private ["PSo18UIFocusEnvironment", "kWidth"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "load"]
 - ["PSo18UIFocusEnvironment", "locationManager"]
 - ["PSo18UIFocusEnvironment", "locationManagerDidPauseLocationUpdates"]
 - ["PSo18UIFocusEnvironment", "locationManagerDidResumeLocationUpdates"]
@@ -1970,6 +2031,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "textColor"]
 - ["PSo18UIFocusEnvironment", "titleLabel"]
 - ["PSo18UIFocusEnvironment", "topNavBar"]
+- ["PSo18UIFocusEnvironment", "v"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "CGFloat"]
 - !private ["PSo11UIFocusItem", "CGRect"]
@@ -2001,6 +2063,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "addTarget"]
 - !private ["PSo11UIFocusItem", "adjustsFontSizeToFitWidth"]
+- ["PSo11UIFocusItem", "arena"]
 - ["PSo11UIFocusItem", "areneLoc"]
 - ["PSo11UIFocusItem", "back"]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
@@ -2023,6 +2086,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "kMasterVC"]
 - !private ["PSo11UIFocusItem", "kWidth"]
 - !private ["PSo11UIFocusItem", "layer"]
+- ["PSo11UIFocusItem", "load"]
 - ["PSo11UIFocusItem", "locationManager"]
 - ["PSo11UIFocusItem", "locationManagerDidPauseLocationUpdates"]
 - ["PSo11UIFocusItem", "locationManagerDidResumeLocationUpdates"]
@@ -2049,6 +2113,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "textColor"]
 - ["PSo11UIFocusItem", "titleLabel"]
 - ["PSo11UIFocusItem", "topNavBar"]
+- ["PSo11UIFocusItem", "v"]
 - ["PSo11UIFocusItem", ""]
 - !private ["CSo6UIFont", "init"]
 - ["CSo7UIImage", "deinit"]
@@ -2065,6 +2130,7 @@ depends-member:
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textAlignment"]
 - !private ["CSo7UILabel", "textColor"]
+- ["CSo11UIResponder", "Arena"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "CLCircularRegion"]
@@ -2094,13 +2160,14 @@ depends-member:
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIView"]
 - ["CSo11UIResponder", "UIViewController"]
-- !private ["CSo11UIResponder", "VrView"]
+- ["CSo11UIResponder", "VrView"]
 - !private ["CSo11UIResponder", "add"]
 - !private ["CSo11UIResponder", "addAction"]
 - !private ["CSo11UIResponder", "addLocationToView"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
 - !private ["CSo11UIResponder", "adjustsFontSizeToFitWidth"]
+- ["CSo11UIResponder", "arena"]
 - ["CSo11UIResponder", "areneLoc"]
 - ["CSo11UIResponder", "back"]
 - !private ["CSo11UIResponder", "backgroundColor"]
@@ -2124,6 +2191,7 @@ depends-member:
 - !private ["CSo11UIResponder", "kWidth"]
 - !private ["CSo11UIResponder", "keyWindow"]
 - !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "load"]
 - ["CSo11UIResponder", "locationManager"]
 - ["CSo11UIResponder", "locationManagerDidPauseLocationUpdates"]
 - ["CSo11UIResponder", "locationManagerDidResumeLocationUpdates"]
@@ -2154,6 +2222,7 @@ depends-member:
 - !private ["CSo11UIResponder", "textColor"]
 - ["CSo11UIResponder", "titleLabel"]
 - ["CSo11UIResponder", "topNavBar"]
+- ["CSo11UIResponder", "v"]
 - !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
 - !private ["PSo30UIResponderStandardEditActions", "CGRect"]
 - !private ["PSo30UIResponderStandardEditActions", "CLCircularRegion"]
@@ -2185,6 +2254,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "addTarget"]
 - !private ["PSo30UIResponderStandardEditActions", "adjustsFontSizeToFitWidth"]
+- ["PSo30UIResponderStandardEditActions", "arena"]
 - ["PSo30UIResponderStandardEditActions", "areneLoc"]
 - ["PSo30UIResponderStandardEditActions", "back"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
@@ -2208,6 +2278,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "kWidth"]
 - !private ["PSo30UIResponderStandardEditActions", "keyWindow"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
+- ["PSo30UIResponderStandardEditActions", "load"]
 - ["PSo30UIResponderStandardEditActions", "locationManager"]
 - ["PSo30UIResponderStandardEditActions", "locationManagerDidPauseLocationUpdates"]
 - ["PSo30UIResponderStandardEditActions", "locationManagerDidResumeLocationUpdates"]
@@ -2238,6 +2309,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "textColor"]
 - ["PSo30UIResponderStandardEditActions", "titleLabel"]
 - ["PSo30UIResponderStandardEditActions", "topNavBar"]
+- ["PSo30UIResponderStandardEditActions", "v"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "addAction"]
 - !private ["PSo16UIStateRestoring", "init"]
@@ -2275,6 +2347,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - !private ["PSo18UITraitEnvironment", "adjustsFontSizeToFitWidth"]
+- ["PSo18UITraitEnvironment", "arena"]
 - ["PSo18UITraitEnvironment", "areneLoc"]
 - ["PSo18UITraitEnvironment", "back"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
@@ -2297,6 +2370,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "kMasterVC"]
 - !private ["PSo18UITraitEnvironment", "kWidth"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "load"]
 - ["PSo18UITraitEnvironment", "locationManager"]
 - ["PSo18UITraitEnvironment", "locationManagerDidPauseLocationUpdates"]
 - ["PSo18UITraitEnvironment", "locationManagerDidResumeLocationUpdates"]
@@ -2326,7 +2400,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "textColor"]
 - ["PSo18UITraitEnvironment", "titleLabel"]
 - ["PSo18UITraitEnvironment", "topNavBar"]
+- ["PSo18UITraitEnvironment", "v"]
 - ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Arena"]
 - ["CSo6UIView", "CGFloat"]
 - ["CSo6UIView", "CGRect"]
 - !private ["CSo6UIView", "CLCircularRegion"]
@@ -2356,12 +2432,13 @@ depends-member:
 - ["CSo6UIView", "UILabel"]
 - ["CSo6UIView", "UIView"]
 - ["CSo6UIView", "UIViewController"]
-- !private ["CSo6UIView", "VrView"]
+- ["CSo6UIView", "VrView"]
 - !private ["CSo6UIView", "add"]
 - !private ["CSo6UIView", "addLocationToView"]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "adjustsFontSizeToFitWidth"]
+- ["CSo6UIView", "arena"]
 - ["CSo6UIView", "areneLoc"]
 - ["CSo6UIView", "back"]
 - !private ["CSo6UIView", "backgroundColor"]
@@ -2385,6 +2462,7 @@ depends-member:
 - !private ["CSo6UIView", "kMasterVC"]
 - !private ["CSo6UIView", "kWidth"]
 - !private ["CSo6UIView", "layer"]
+- ["CSo6UIView", "load"]
 - ["CSo6UIView", "locationManager"]
 - ["CSo6UIView", "locationManagerDidPauseLocationUpdates"]
 - ["CSo6UIView", "locationManagerDidResumeLocationUpdates"]
@@ -2411,6 +2489,7 @@ depends-member:
 - !private ["CSo6UIView", "textColor"]
 - ["CSo6UIView", "titleLabel"]
 - ["CSo6UIView", "topNavBar"]
+- ["CSo6UIView", "v"]
 - ["CSo6UIView", ""]
 - !private ["CSo16UIViewController", "addAction"]
 - ["CSo16UIViewController", "deinit"]
@@ -2423,6 +2502,7 @@ depends-member:
 - ["Su", "deinit"]
 - !private ["C9Projet37514ViewController", "switchNav"]
 - !private ["C9Projet3756VrView", "addLocationToView"]
+- !private ["C9Projet3756VrView", "arena"]
 - !private ["C9Projet3756VrView", "clipsToBounds"]
 - !private ["C9Projet3756VrView", "deinit"]
 - !private ["C9Projet3756VrView", "init"]
@@ -2461,6 +2541,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addTarget"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "adjustsFontSizeToFitWidth"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "arena"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "areneLoc"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "back"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
@@ -2483,6 +2564,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kMasterVC"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kWidth"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "load"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "locationManager"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "locationManagerDidPauseLocationUpdates"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "locationManagerDidResumeLocationUpdates"]
@@ -2509,6 +2591,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textColor"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleLabel"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "topNavBar"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "v"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
 - !private ["Ps24_DestructorSafeContainer", "Iterator"]
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
@@ -2557,6 +2640,7 @@ depends-member:
 - !private ["Ps9_Hashable", "addTarget"]
 - !private ["Ps9_Hashable", "adjustsFontSizeToFitWidth"]
 - !private ["Ps9_Hashable", "alert"]
+- ["Ps9_Hashable", "arena"]
 - ["Ps9_Hashable", "areneLoc"]
 - ["Ps9_Hashable", "back"]
 - !private ["Ps9_Hashable", "backgroundColor"]
@@ -2590,6 +2674,7 @@ depends-member:
 - !private ["Ps9_Hashable", "keyWindow"]
 - !private ["Ps9_Hashable", "layer"]
 - !private ["Ps9_Hashable", "lineWidth"]
+- ["Ps9_Hashable", "load"]
 - ["Ps9_Hashable", "locationManager"]
 - ["Ps9_Hashable", "locationManagerDidPauseLocationUpdates"]
 - ["Ps9_Hashable", "locationManagerDidResumeLocationUpdates"]
@@ -2625,6 +2710,7 @@ depends-member:
 - !private ["Ps9_Hashable", "textColor"]
 - ["Ps9_Hashable", "titleLabel"]
 - ["Ps9_Hashable", "topNavBar"]
+- ["Ps9_Hashable", "v"]
 - !private ["Ps9_Hashable", "white"]
 - !private ["Ps9_Hashable", "withAlphaComponent"]
 - ["Ps9_Hashable", ""]
@@ -2859,4 +2945,4 @@ depends-external:
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
 - "/Users/alexmorin/Desktop/Projet375/ios/Projet375/build/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
-interface-hash: "f08a427bba7e282ac1de5948dddd7aeb"
+interface-hash: "402525a6c13b824efd4053243df20b17"

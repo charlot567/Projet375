@@ -7,25 +7,26 @@ provides-member:
 - ["C9Projet37515ControllerArena", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "BooleanLiteralType"
-- "Bool"
-- !private "String"
-- !private "AnyObject"
-- "Controller"
-- !private "!="
 - !private "StringLiteralType"
-- !private "kCurrentUser"
-- !private "&&"
-- !private "AssignmentPrecedence"
 - "Arena"
-- "ControllerArena"
-- !private "CastingPrecedence"
-- !private "Double"
-- !private "User"
 - "Int"
+- "Controller"
+- !private "String"
+- !private "User"
+- !private "kCurrentUser"
+- !private "Double"
+- "Bool"
+- "BooleanLiteralType"
 - "Void"
 - !private "kBaseUrl"
+- "ControllerArena"
+- !private "AssignmentPrecedence"
+- !private "&&"
 - !private "UserChart"
+- !private "CastingPrecedence"
+- !private "AnyObject"
+- !private "print"
+- !private "!="
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Arena"]
@@ -48,6 +49,7 @@ depends-member:
 - !private ["Ps9AnyObject", "name"]
 - !private ["Ps9AnyObject", "nbQuestionReussi"]
 - !private ["Ps9AnyObject", "point"]
+- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "profileImageUrl"]
 - ["Ps9AnyObject", "setArena"]
 - !private ["Ps9AnyObject", "subscript"]
@@ -91,6 +93,7 @@ depends-member:
 - ["C9Projet37510Controller", "init"]
 - !private ["C9Projet37510Controller", "kBaseUrl"]
 - !private ["C9Projet37510Controller", "kCurrentUser"]
+- !private ["C9Projet37510Controller", "print"]
 - ["C9Projet37510Controller", "setArena"]
 - ["C9Projet37510Controller", ""]
 - !private ["C9Projet37515ControllerArena", "AnyObject"]
@@ -108,6 +111,7 @@ depends-member:
 - ["C9Projet37515ControllerArena", "init"]
 - !private ["C9Projet37515ControllerArena", "kBaseUrl"]
 - !private ["C9Projet37515ControllerArena", "kCurrentUser"]
+- !private ["C9Projet37515ControllerArena", "print"]
 - ["C9Projet37515ControllerArena", "setArena"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]

@@ -14,7 +14,7 @@ import FBSDKLoginKit
 import SwiftSpinner
 
 class ViewController: UIViewController {
-
+    
     private var menuView: MenuView!
     private var loginView: LoginView!
     private var randomView: RandomPickerView!
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         chartView = ChartView(frame: self.view.frame)
         profileView = ProfileView(frame: self.view.frame)
         arenaView = ArenaView(frame: self.view.frame)
-//        randomView = RandomPickerView(frame: self.view.frame)
+        //        randomView = RandomPickerView(frame: self.view.frame)
         
         self.currentViewIndex = KVLogIn
         
@@ -50,13 +50,15 @@ class ViewController: UIViewController {
                 if(success) {
                     self.switchNav(index: KVHome)
                 }
-                
+                    
                 else { self.switchNav(index: KVLogIn) }
                 
             }
         } else { self.switchNav(index: KVLogIn) }
-    
-        kCurrentUser.getProfileImage { (image: UIImage?) in }
+        
+        if(kCurrentUser != nil) {
+            kCurrentUser.getProfileImage { (image: UIImage?) in }
+        }
     }
     
     func switchNav(index: Int) {
@@ -65,7 +67,7 @@ class ViewController: UIViewController {
         loginView.removeFromSuperview()
         
         if(self.currentViewIndex == KVChart) {
-            UIView.animate(withDuration: 0.5, animations: { 
+            UIView.animate(withDuration: 0.5, animations: {
                 self.chartView.x = kWidth
             })
             arenaView.isActive = false
@@ -90,7 +92,7 @@ class ViewController: UIViewController {
             self.menuView.setUsernameLabel(name: kCurrentUser.firstName)
             arenaView.isActive = false
         }
-        
+            
         else if(index == KVLogIn) {
             self.view.addSubview(loginView)
             arenaView.isActive = false
@@ -108,13 +110,31 @@ class ViewController: UIViewController {
         }
             
         else if(index == KVArena) {
-            arenaView.x = kWidth
-            arenaView.isActive = true
             
-            UIView.animate(withDuration: 0.5, animations: {
-                self.arenaView.x = 0
+            SwiftSpinner.show("Chargement...")
+            
+            ControllerArena.getArena(completitionHandler: { (succes:Bool, a: Arena?) in
+                DispatchQueue.main.sync {
+                    if(succes && a != nil) {
+                        self.arenaView.arena = a!
+                        self.arenaView.x = kWidth
+                        self.arenaView.isActive = true
+                        
+                        UIView.animate(withDuration: 0.5, animations: {
+                            self.arenaView.x = 0
+                        })
+                        
+                        
+                        self.view.addSubview(self.arenaView)
+                    }
+                    
+                    else {
+                        displayAlert(currentViewController: self, title: "Erreur", message: "Problème lors de la récupération des arènes")
+                    }
+                }
             })
-            self.view.addSubview(arenaView)
+            
+            
         }
             
         else if(index == KVProfile) {
@@ -128,7 +148,7 @@ class ViewController: UIViewController {
             self.profileView.showPage()
             self.view.addSubview(profileView)
         }
-        
+            
         else if(index == KVPlay) {
             
             //  Need to fetch match
@@ -144,7 +164,7 @@ class ViewController: UIViewController {
                             self.view.addSubview(self.randomView)
                             self.randomView.generateCategory()
                             
-                            UIView.animate(withDuration: 0.5, animations: { 
+                            UIView.animate(withDuration: 0.5, animations: {
                                 self.randomView.y = 0
                             })
                         }
@@ -155,17 +175,17 @@ class ViewController: UIViewController {
                     }
                 }
             }
-            
+                
             else {
                 
-//                DispatchQueue.main.sync {
-//                    print(self.randomView)
-                    self.view.addSubview(self.randomView)
-                    self.randomView.generateCategory()
-//                }
+                //                DispatchQueue.main.sync {
+                //                    print(self.randomView)
+                self.view.addSubview(self.randomView)
+                self.randomView.generateCategory()
+                //                }
             }
         }
-        
+            
         else if(index == KVCart) {
             displayAlert(currentViewController: kMasterVC, title: "Info", message: "Boutique")
         }
@@ -188,15 +208,15 @@ class ViewController: UIViewController {
         self.randomView.questionView.removeFromSuperview()
         self.randomView.removeFromSuperview()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-
+    
 }
 

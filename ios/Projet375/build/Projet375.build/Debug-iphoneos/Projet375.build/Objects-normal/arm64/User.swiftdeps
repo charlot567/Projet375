@@ -8,16 +8,16 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "String"
-- !private "Bool"
-- !private "UnicodeScalarType"
 - "User"
+- "UIImage"
 - !private "StringLiteralType"
-- "AssignmentPrecedence"
+- !private "Bool"
 - !private "!="
 - !private "getImage"
-- !private "&&"
-- "UIImage"
+- "AssignmentPrecedence"
 - "Void"
+- !private "UnicodeScalarType"
+- !private "&&"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "_completeName"]

@@ -11,46 +11,47 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "UIImage"
-- "resetUser"
-- !private "NSURL"
-- !private "NSData"
-- !private "!="
-- !private "StringLiteralType"
-- !private "/"
-- !private "Error"
-- "getImage"
-- "Void"
-- !private "Data"
-- !private "UIAlertController"
-- !private "UIAlertControllerStyle"
-- "imageSize"
-- !private "&&"
-- !private "FBSDKGraphRequest"
 - "getUserInfoForCurrentUser"
-- !private "BooleanLiteralType"
 - !private "URL"
-- "createCurrentUser"
-- !private "UIAlertActionStyle"
-- !private "SwiftSpinner"
-- !private "FBSDKGraphRequestConnection"
-- "displayAlert"
-- !private "UIAlertAction"
-- !private "print"
-- !private "UserDefaults"
-- !private "kCurrentUser"
-- !private "Dictionary"
-- "CGFloat"
-- "UIViewController"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "User"
-- "CastingPrecedence"
-- "Bool"
-- "CGSize"
-- "imageSizeHeight"
-- !private "AnyObject"
+- "imageSize"
 - "String"
+- "UIImage"
+- "AssignmentPrecedence"
+- !private "NSURL"
+- !private "FBSDKGraphRequest"
+- "CastingPrecedence"
+- !private "UIAlertAction"
+- !private "Error"
+- !private "=="
+- "getImage"
+- "resetUser"
+- "Bool"
+- "CGFloat"
+- !private "UIAlertController"
+- !private "Dictionary"
+- !private "kCurrentUser"
+- !private "/"
+- !private "UnicodeScalarType"
+- !private "UserDefaults"
+- "displayAlert"
+- "imageSizeHeight"
+- !private "BooleanLiteralType"
+- !private "SwiftSpinner"
+- !private "Data"
+- !private "UIAlertControllerStyle"
+- "Void"
+- !private "User"
+- !private "&&"
+- !private "NSData"
+- !private "AnyObject"
+- !private "UIAlertActionStyle"
+- !private "print"
+- "UIViewController"
+- !private "FBSDKGraphRequestConnection"
+- !private "StringLiteralType"
+- "CGSize"
+- !private "!="
+- "createCurrentUser"
 depends-member:
 - !private ["Vs11AnyHashable", "deinit"]
 - !private ["Ps9AnyObject", "addAction"]
@@ -62,6 +63,7 @@ depends-member:
 - !private ["Ps9AnyObject", "lastName"]
 - !private ["Ps9AnyObject", "present"]
 - !private ["Ps9AnyObject", "profileImageUrl"]
+- !private ["Ps9AnyObject", "replacingOccurrences"]
 - !private ["Ps9AnyObject", "set"]
 - !private ["Ps9AnyObject", "standard"]
 - !private ["Ps9AnyObject", "start"]
@@ -70,6 +72,7 @@ depends-member:
 - !private ["Ps9AnyObject", "token"]
 - !private ["Ps9AnyObject", "value"]
 - !private ["P12FacebookCore26AppEventParameterValueType", "init"]
+- !private ["P12FacebookCore26AppEventParameterValueType", "replacingOccurrences"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "hide"]
@@ -83,6 +86,7 @@ depends-member:
 - !private ["Ps7CVarArg", "hide"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "present"]
+- !private ["Ps7CVarArg", "replacingOccurrences"]
 - !private ["Ps7CVarArg", "set"]
 - !private ["Ps7CVarArg", "standard"]
 - !private ["Ps7CVarArg", "start"]
@@ -91,6 +95,7 @@ depends-member:
 - !private ["Ps10Collection", "Key"]
 - !private ["Ps10Collection", "Value"]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "replacingOccurrences"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
@@ -98,6 +103,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "hide"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "present"]
+- !private ["Ps28CustomDebugStringConvertible", "replacingOccurrences"]
 - !private ["Ps28CustomDebugStringConvertible", "set"]
 - !private ["Ps28CustomDebugStringConvertible", "standard"]
 - !private ["Ps28CustomDebugStringConvertible", "start"]
@@ -107,12 +113,14 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "height"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "replacingOccurrences"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "width"]
 - !private ["Ps17CustomReflectable", "Key"]
 - !private ["Ps17CustomReflectable", "Value"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "height"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "replacingOccurrences"]
 - !private ["Ps17CustomReflectable", "width"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "Value"]
@@ -121,6 +129,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "hide"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "present"]
+- !private ["Ps23CustomStringConvertible", "replacingOccurrences"]
 - !private ["Ps23CustomStringConvertible", "set"]
 - !private ["Ps23CustomStringConvertible", "standard"]
 - !private ["Ps23CustomStringConvertible", "start"]
@@ -139,6 +148,7 @@ depends-member:
 - !private ["Ps9Equatable", "hide"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "present"]
+- !private ["Ps9Equatable", "replacingOccurrences"]
 - !private ["Ps9Equatable", "set"]
 - !private ["Ps9Equatable", "standard"]
 - !private ["Ps9Equatable", "start"]
@@ -150,9 +160,13 @@ depends-member:
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "replacingOccurrences"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "replacingOccurrences"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "replacingOccurrences"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "replacingOccurrences"]
 - !private ["CSo17FBSDKGraphRequest", "init"]
 - !private ["CSo17FBSDKGraphRequest", "start"]
 - !private ["Sf", "deinit"]
@@ -163,6 +177,7 @@ depends-member:
 - !private ["Ps8Hashable", "hide"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "present"]
+- !private ["Ps8Hashable", "replacingOccurrences"]
 - !private ["Ps8Hashable", "set"]
 - !private ["Ps8Hashable", "standard"]
 - !private ["Ps8Hashable", "start"]
@@ -176,23 +191,29 @@ depends-member:
 - !private ["Si", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps25LosslessStringConvertible", "replacingOccurrences"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["Ps10MirrorPath", "replacingOccurrences"]
 - !private ["PSo8NSCoding", "addAction"]
 - !private ["PSo8NSCoding", "hide"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "present"]
+- !private ["PSo8NSCoding", "replacingOccurrences"]
 - !private ["PSo9NSCopying", "deinit"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "replacingOccurrences"]
 - ["CSo6NSData", "deinit"]
 - !private ["CSo6NSData", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "present"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "replacingOccurrences"]
 - !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "hide"]
 - !private ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "present"]
+- !private ["CSo8NSObject", "replacingOccurrences"]
 - !private ["CSo8NSObject", "set"]
 - !private ["CSo8NSObject", "standard"]
 - !private ["CSo8NSObject", "start"]
@@ -202,13 +223,16 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "hide"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "present"]
+- !private ["PSo16NSObjectProtocol", "replacingOccurrences"]
 - !private ["PSo16NSObjectProtocol", "set"]
 - !private ["PSo16NSObjectProtocol", "standard"]
 - !private ["PSo16NSObjectProtocol", "start"]
 - !private ["PSo16NSObjectProtocol", "synchronize"]
 - !private ["PSo16NSObjectProtocol", "value"]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "replacingOccurrences"]
 - !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "replacingOccurrences"]
 - ["CSo5NSURL", "deinit"]
 - !private ["CSo5NSURL", "init"]
 - ["Sq", "deinit"]
@@ -218,9 +242,12 @@ depends-member:
 - !private ["Ps8Sequence", "Value"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
+- !private ["SS", "replacingOccurrences"]
 - !private ["C12SwiftSpinner12SwiftSpinner", "hide"]
 - !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps16TextOutputStream", "replacingOccurrences"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps20TextOutputStreamable", "replacingOccurrences"]
 - !private ["PSo29UIAccessibilityIdentification", "hide"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - ["CSo13UIAlertAction", "deinit"]
@@ -284,11 +311,16 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "hide"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "replacingOccurrences"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "replacingOccurrences"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "replacingOccurrences"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "replacingOccurrences"]
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "replacingOccurrences"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addAction"]
 - !private ["Ps9_Hashable", "alert"]
@@ -296,6 +328,7 @@ depends-member:
 - !private ["Ps9_Hashable", "hide"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "present"]
+- !private ["Ps9_Hashable", "replacingOccurrences"]
 - !private ["Ps9_Hashable", "set"]
 - !private ["Ps9_Hashable", "standard"]
 - !private ["Ps9_Hashable", "start"]
@@ -306,6 +339,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "height"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "replacingOccurrences"]
 - !private ["Ps21_ObjectiveCBridgeable", "width"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:

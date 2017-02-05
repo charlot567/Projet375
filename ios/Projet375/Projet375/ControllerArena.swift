@@ -17,9 +17,10 @@ class ControllerArena: Controller {
                 
                 var usercharts = [UserChart]()
                 if let values = jsonResult!["values"] as? AnyObject {
+                    print(values)
                     
                     let id = values["id"] as! String
-                    let name = values["name"] as! String
+                    let name = "Polytechnique de montréal"
                     let winnerId = values["facebook_id"] as! String
                     let nbQuestionReussi = values["nombre_question"] as! String
                     let lat = values["lat"] as! String

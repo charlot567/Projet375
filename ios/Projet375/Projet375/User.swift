@@ -46,15 +46,20 @@ class User {
                 if(success && image != nil) {
                     _profileImage = image!
                     
-                    return completitionHandler(_profileImage)
+                    completitionHandler(_profileImage)
+                    return
+                }
+                
+                else {
+                    _profileImage = UIImage(named: "profile_icon")
                 }
             })
             
         }
         else {
-            _profileImage = UIImage(named: "default_profile_image")
+            _profileImage = UIImage(named: "profile_icon")
         }
         
-        return completitionHandler(_profileImage)
+        completitionHandler(_profileImage)
     }
 }

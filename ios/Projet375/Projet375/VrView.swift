@@ -30,8 +30,10 @@ class VrView: UIView, CLLocationManagerDelegate {
     var halfInfiniteWall2: UIView!
 
     var touchGR = UITapGestureRecognizer()
+    var arena: Arena!
     
     var deviceWidth = CGFloat(0)
+    var view: UIButton!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -158,7 +160,7 @@ class VrView: UIView, CLLocationManagerDelegate {
     func addLocationToView(toAdd: CLLocationCoordinate2D) -> UIButton {
         let bearing = calculateBearing(origin: self.location, destination: toAdd)
         
-        let view = UIButton()
+        view = UIButton()
         view.backgroundColor = UIColor.orange
         
         
@@ -178,6 +180,15 @@ class VrView: UIView, CLLocationManagerDelegate {
         view.layer.zPosition = 10
         
         view.addTarget(self, action: #selector(pressedArena), for: UIControlEvents.touchUpInside)
+        
+        
+        self.arena.winner.getProfileImage { (image: UIImage?) in
+            
+            if(image != nil) {
+                view.setImage(image, for: .normal)
+            }
+            
+        }
         
         return view
     }
