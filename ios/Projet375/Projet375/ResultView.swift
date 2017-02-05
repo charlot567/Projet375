@@ -84,7 +84,6 @@ class ResultView: UIView {
             }
                 
             else {
-                //  Send final score of the game + say the result to the user
                 
                 if(kGoodAnswer > match.score) {
                     displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez gagnez le match! \(kGoodAnswer)-\(match.score!)")

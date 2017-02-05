@@ -77,7 +77,7 @@ class ControllerMatch: Controller {
     
     //  Game qui existe déja
     static func setScore(playerId: String, score: Int, token: String, completitionHandler: @escaping (_ success: Bool) -> Void) {
-        
+        print("Token: \(token)")
         getData(url: "\(kBaseUrl)/set_score.php", postParameterAsString: "facebook_id=\(playerId)&point=\(score)&token=\(token)") { (success, jsonResult) in
             
             completitionHandler(success)

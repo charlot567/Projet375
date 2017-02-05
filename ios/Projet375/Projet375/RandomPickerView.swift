@@ -25,6 +25,9 @@ class RandomPickerView: UIView {
     var firstLabel: UILabel!
     var secondLabel: UILabel!
     
+    var opposantName: UILabel!
+    var opposentImageView: UIImageView!
+    
     init(frame: CGRect, match: Match) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.yellow
@@ -98,7 +101,14 @@ class RandomPickerView: UIView {
         artView.addSubview(aImg)
         categoryView.append(artView)
         
-        
+        let gap = kWidth / 20
+        let textHeight = kHeight / 23
+        opposantName = UILabel()
+        opposantName.frame = CGRect(x: gap, y: gap * 2, width: kWidth - gap * 2, height: textHeight)
+        opposantName.font = UIFont(name: "Helvetica", size: textHeight * 0.8)
+        opposantName.textColor = UIColor.white
+        opposantName.textAlignment = .center
+        self.addSubview(opposantName)
     }
     
     func generateCategory() {
@@ -111,6 +121,13 @@ class RandomPickerView: UIView {
             secondLabel.removeFromSuperview()
         }
         
+        if self.match.firstName != nil && self.match.lastName != nil {
+            opposantName.text = "\(self.match.firstName!) \(self.match.lastName!)"
+        }
+        
+        else {
+            opposantName.text = "Joueur aléatoire"
+        }
         var textHeight = kHeight / 16
         firstLabel = UILabel()
         firstLabel.frame = CGRect(x: kHeight / 20, y: kHeight / 5.5, width: kWidth - kHeight / 10, height: textHeight)
