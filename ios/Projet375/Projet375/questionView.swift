@@ -280,7 +280,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         self.map.addAnnotation(point)
         
         
-        let c = CLCircularRegion(center: que.location!, radius: 200, identifier: "circle")
+        let c = CLCircularRegion(center: que.location!, radius: 2000, identifier: "circle")
         if c.contains(locationCoordinate) {
             hasAnswer = true
             userHasWon()
@@ -289,13 +289,19 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
             userHasLost()
         }
         
-        displayMapAnswer()
+        self.resultView = ResultView(frame: self.frame, bgColor: self.backgroundColor!, success: hasAnswer, goodAnswer: "", match: match)
         timer.invalidate()
+        lgpr.isEnabled = false
+        displayMapAnswer()
+        
+        self.loadingBar.layer.removeAllAnimations()
+        
+        Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(displayResultView), userInfo: nil, repeats: false)
         
     }
     
     func displayMapAnswer() {
-        let circle = MKCircle(center: que.location!, radius: 200)
+        let circle = MKCircle(center: que.location!, radius: 1000)
         map.add(circle)
     }
     
@@ -306,7 +312,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last! as CLLocation
         let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
         
         self.map.setRegion(region, animated: false)
     }

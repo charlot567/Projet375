@@ -22,6 +22,9 @@ class RandomPickerView: UIView {
     private var currentCat: Int!
     private var match: Match!
     
+    var firstLabel: UILabel!
+    var secondLabel: UILabel!
+    
     init(frame: CGRect, match: Match) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.yellow
@@ -95,12 +98,42 @@ class RandomPickerView: UIView {
         artView.addSubview(aImg)
         categoryView.append(artView)
         
+        
     }
     
     func generateCategory() {
         let randomNum:UInt32 = arc4random_uniform(4)
         self.currentCat = Int(randomNum)
         self.addSubview(self.categoryView[Int(self.currentCat)])
+        
+        if(firstLabel != nil) {
+            firstLabel.removeFromSuperview()
+            secondLabel.removeFromSuperview()
+        }
+        
+        var textHeight = kHeight / 16
+        firstLabel = UILabel()
+        firstLabel.frame = CGRect(x: kHeight / 20, y: kHeight / 5.5, width: kWidth - kHeight / 10, height: textHeight)
+        firstLabel.font = UIFont(name: "Helvetica", size: textHeight * 0.8)
+        firstLabel.text = "Vous avez obtenu la catégorie:"
+        firstLabel.textAlignment = .center
+        firstLabel.textColor = UIColor.white
+        firstLabel.adjustsFontSizeToFitWidth = true
+        self.addSubview(firstLabel)
+        
+        textHeight = kHeight / 20
+        secondLabel = UILabel()
+        secondLabel.frame = CGRect(x: 0, y: self.categoryView[Int(self.currentCat)].maxY + kHeight / 25, width: kWidth, height: textHeight)
+        secondLabel.font = UIFont(name: "Helvetica", size: textHeight * 0.8)
+        secondLabel.textAlignment = .center
+        secondLabel.textColor = UIColor.white
+        secondLabel.adjustsFontSizeToFitWidth = true
+        self.addSubview(secondLabel)
+        
+        secondLabel.text = self.currentCat == 0 ? "Géographie" : currentCat == 1 ? "Histoire" : currentCat == 2 ? "Tourisme" : "Art"
+        
+        self.backgroundColor = self.categoryView[Int(self.currentCat)].backgroundColor
+        
     }
     
     func clickToPlay(button: UIButton) {

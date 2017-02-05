@@ -18,7 +18,7 @@ class ResultView: UIView {
         
         self.backgroundColor = bgColor
         
-        let textHeight = kHeight / 20
+        let textHeight = kHeight / 15
         let infoLabel = UILabel()
         infoLabel.frame = CGRect(x: kWidth / 6, y: kHeight / 3, width: kWidth - kWidth / 3, height: textHeight)
         infoLabel.text = success ? "Vous avez obtenu la bonne réponse!" : "Vous n'avez pas obtenu la bonne réponse"
@@ -26,13 +26,14 @@ class ResultView: UIView {
         infoLabel.textColor = UIColor.white
         infoLabel.adjustsFontSizeToFitWidth = true
         infoLabel.numberOfLines = 2
+        infoLabel.textAlignment = .center
         self.addSubview(infoLabel)
         
         let gap = kWidth / 20
         let bHeight = kHeight / 15
         let replayBtn = UIButton()
         replayBtn.frame = CGRect(x: gap, y: kHeight - bHeight * 1.5, width: kWidth - gap * 2, height: bHeight)
-        replayBtn.setTitle(kUserCurrentTurn == 3 ? "Terminer" : "Suivant", for: UIControlState.normal)
+        replayBtn.setTitle(kUserCurrentTurn == 3 ? "Terminé" : "Suivant", for: UIControlState.normal)
         replayBtn.setTitleColor(UIColor.white, for: .normal)
         replayBtn.layer.borderWidth = 1
         replayBtn.layer.borderColor = UIColor.white.cgColor
