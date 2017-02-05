@@ -197,6 +197,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         
         self.resultView = ResultView(frame: self.frame, bgColor: self.backgroundColor!, success: sender.tag == que.reponseId, goodAnswer: sender.titleLabel!.text)
         
+//        self.loadingBar.stopAl
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(displayResultView), userInfo: nil, repeats: false)
     }
     

@@ -30,7 +30,7 @@ class ResultView: UIView {
         let gap = kWidth / 20
         let bHeight = kHeight / 15
         let replayBtn = UIButton()
-        replayBtn.frame = CGRect(x: gap, y: kHeight - kHeight * 1.5, width: kWidth - gap * 2, height: bHeight)
+        replayBtn.frame = CGRect(x: gap, y: kHeight - bHeight * 1.5, width: kWidth - gap * 2, height: bHeight)
         replayBtn.setTitle(kUserCurrentTurn == 3 ? "Terminer" : "Suivant", for: UIControlState.normal)
         replayBtn.setTitleColor(UIColor.white, for: .normal)
         replayBtn.layer.borderWidth = 1
@@ -41,11 +41,11 @@ class ResultView: UIView {
     
     func replayBtn(button: UIButton) {
         if(button.titleLabel!.text == "Terminer") {
-            
+            kMasterVC.resultToMenu()
         }
         
         else {
-            
+            kMasterVC.resultToQuestion()
         }
         
         print("Replay")

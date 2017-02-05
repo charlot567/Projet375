@@ -76,6 +76,19 @@ class ViewController: UIViewController {
         
         
     }
+    
+    func resultToQuestion() {
+        self.randomView.questionView.resultView.removeFromSuperview()
+        self.randomView.questionView.removeFromSuperview()
+        self.randomView.removeFromSuperview()
+        switchNav(index: KVPlay)
+    }
+    
+    func resultToMenu() {
+        self.randomView.questionView.resultView.removeFromSuperview()
+        self.randomView.questionView.removeFromSuperview()
+        self.randomView.removeFromSuperview()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

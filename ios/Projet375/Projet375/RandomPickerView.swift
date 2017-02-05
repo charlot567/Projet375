@@ -17,7 +17,7 @@ class RandomPickerView: UIView {
     //  Tourisme
     //  Art
     
-    private var questionView: QuestionView!
+    var questionView: QuestionView!
     private var categoryView = [UIButton]()
     private var currentCat: Int!
     
