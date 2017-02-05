@@ -29,6 +29,31 @@ class ResultView: UIView {
         infoLabel.textAlignment = .center
         self.addSubview(infoLabel)
         
+        if(!success && goodAnswer != nil && !(goodAnswer?.isEmpty)!) {
+            let answerLabel = UILabel()
+            answerLabel.frame = CGRect(x: kWidth / 6, y: infoLabel.maxY + kHeight / 20, width: kWidth - kWidth / 3, height: textHeight)
+            answerLabel.text = "La réponse était:"
+            answerLabel.font = UIFont(name: "Helvetica", size: textHeight * 0.9)
+            answerLabel.textColor = UIColor.white
+            answerLabel.adjustsFontSizeToFitWidth = true
+            answerLabel.numberOfLines = 2
+            answerLabel.textAlignment = .center
+            self.addSubview(answerLabel)
+            
+            let textViewHeight = kHeight / 5
+            let gapV = kWidth / 20
+            let answerTextView = UITextView()
+            answerTextView.frame = CGRect(x: gapV, y: answerLabel.maxY + kHeight / 40, width: kWidth - gapV * 2, height: textViewHeight)
+            answerTextView.isEditable = false
+            answerTextView.isSelectable = false
+            answerTextView.backgroundColor = UIColor.clear
+            answerTextView.text = goodAnswer == nil ? "" : goodAnswer!
+            answerTextView.textAlignment = .center
+            answerTextView.textColor = UIColor.white
+            answerTextView.font = UIFont(name: "Helvetica", size: kHeight / 20 * 0.7)
+            self.addSubview(answerTextView)
+        }
+        
         let gap = kWidth / 20
         let bHeight = kHeight / 15
         let replayBtn = UIButton()
@@ -57,18 +82,18 @@ class ResultView: UIView {
                     }
                 })
             }
-            
+                
             else {
                 //  Send final score of the game + say the result to the user
                 
                 if(kGoodAnswer > match.score) {
                     displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez gagnez le match! \(kGoodAnswer)-\(match.score!)")
                 }
-                
+                    
                 else if(kGoodAnswer == match.score) {
                     displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez égalisé le match! \(kGoodAnswer)-\(match.score!)")
                 }
-                
+                    
                 else {
                     displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez perdu le match! \(kGoodAnswer)-\(match.score!)")
                 }
@@ -82,7 +107,7 @@ class ResultView: UIView {
             
             kGoodAnswer = 0
         }
-        
+            
         else {
             kMasterVC.resultToQuestion()
         }

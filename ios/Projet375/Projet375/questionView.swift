@@ -197,7 +197,7 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
             userHasLost()
         }
         
-        self.resultView = ResultView(frame: self.frame, bgColor: self.backgroundColor!, success: sender.tag == que.reponseId, goodAnswer: sender.titleLabel!.text, match: match)
+        self.resultView = ResultView(frame: self.frame, bgColor: self.backgroundColor!, success: sender.tag == que.reponseId, goodAnswer: self.que.reponse?[que.reponseId], match: match)
         
         self.timer.invalidate()
         self.loadingBar.layer.removeAllAnimations()
