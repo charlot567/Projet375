@@ -13,4 +13,6 @@ class UserChart {
     var playerCompleteName: String!
     var urlImage: String!
     var point: Int!
+    
+    var profileImage: UIImage!
 }

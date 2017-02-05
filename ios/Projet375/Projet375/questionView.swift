@@ -215,17 +215,22 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
     }
     
     func timesUp() {
-        if (que.type == kTypeRegular) {
-            for index in 0...3 {
-                buttons[index].isEnabled = false
-            }
-            displayRegularAnswer()
-        } else if(que.type == kTypeMap) {
-            lgpr.isEnabled = false
-            displayMapAnswer()
-        } else {
-            print("on sait pas quoi faire encore...")
-        }
+        self.resultView = ResultView(frame: self.frame, bgColor: self.backgroundColor!, success: false, goodAnswer: "",  match: match)
+        
+        self.timer.invalidate()
+        self.loadingBar.layer.removeAllAnimations()
+//        
+//        if (que.type == kTypeRegular) {
+//            for index in 0...3 {
+//                buttons[index].isEnabled = false
+//            }
+//            displayRegularAnswer()
+//        } else if(que.type == kTypeMap) {
+//            lgpr.isEnabled = false
+//            displayMapAnswer()
+//        } else {
+//            print("on sait pas quoi faire encore...")
+//        }
     }
 
     
