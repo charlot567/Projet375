@@ -210,6 +210,7 @@ SWIFT_CLASS("_TtC9Projet37511ProfileView")
 @interface ProfileView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)back;
+- (void)showPage;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

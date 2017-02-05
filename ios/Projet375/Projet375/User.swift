@@ -51,8 +51,9 @@ class User {
             })
             
         }
-        
-        _profileImage = UIImage(named: "default_profile_image")
+        else {
+            _profileImage = UIImage(named: "default_profile_image")
+        }
         
         return completitionHandler(_profileImage)
     }

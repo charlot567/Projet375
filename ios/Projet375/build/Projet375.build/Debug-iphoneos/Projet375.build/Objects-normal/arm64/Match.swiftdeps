@@ -7,8 +7,8 @@ provides-member:
 - ["C9Projet3755Match", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
 - "Match"
+- "Int"
 - "String"
 depends-member:
 - ["Ps9AnyObject", ""]

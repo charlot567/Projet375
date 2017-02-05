@@ -7,14 +7,14 @@ provides-member:
 - ["C9Projet3758question", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "UIImage"
+- !private "print"
 - !private "StringLiteralType"
 - "CLLocationCoordinate2D"
-- "question"
-- !private "print"
-- "UIImage"
+- "AssignmentPrecedence"
 - "String"
 - "Int"
-- "AssignmentPrecedence"
+- "question"
 depends-member:
 - !private ["Ps9AnyObject", "categorie"]
 - !private ["Ps9AnyObject", "id"]

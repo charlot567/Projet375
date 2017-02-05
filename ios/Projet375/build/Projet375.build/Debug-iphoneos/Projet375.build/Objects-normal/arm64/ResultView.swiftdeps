@@ -8,45 +8,45 @@ provides-member:
 provides-dynamic-lookup:
 - "replayBtn"
 depends-top-level:
-- !private "/"
-- !private "kUserCurrentTurn"
+- !private "-"
+- "TernaryPrecedence"
 - !private "UIFont"
-- !private "kMasterVC"
+- !private "print"
+- !private "UIControlState"
+- !private "displayAlert"
+- "Bool"
+- "Match"
+- "String"
+- !private "kCurrentUser"
+- !private "kGoodAnswer"
+- "NSCoder"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "UIControlState"
-- !private "print"
-- !private "-"
-- !private "&&"
-- !private "kGoodAnswer"
-- "TernaryPrecedence"
-- "ResultView"
-- !private "*"
-- !private "!="
-- !private "ControllerMatch"
-- !private "+="
-- !private "displayAlert"
 - "UIColor"
-- !private "kWidth"
-- !private "BooleanLiteralType"
-- !private "fatalError"
-- "String"
-- !private "kHeight"
-- "UIButton"
-- !private "UITextView"
-- !private ">"
-- "UIView"
-- !private "kCurrentUser"
-- "Bool"
-- !private "!"
-- "CGRect"
-- "Match"
-- !private "kNewMatch"
-- !private "StringLiteralType"
-- !private "UnicodeScalarType"
-- "NSCoder"
-- !private "+"
 - !private "UILabel"
+- "UIView"
+- !private "kNewMatch"
+- "CGRect"
+- !private "!"
+- "UIButton"
+- !private "&&"
+- !private "UITextView"
+- !private "ControllerMatch"
+- "ResultView"
+- !private "+"
+- !private "UnicodeScalarType"
+- !private "StringLiteralType"
+- !private "kMasterVC"
+- !private "fatalError"
+- !private "!="
+- !private "/"
+- !private "BooleanLiteralType"
+- !private "kWidth"
+- !private "kUserCurrentTurn"
+- !private "*"
+- !private "kHeight"
+- !private ">"
+- !private "+="
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "ControllerMatch"]
@@ -85,6 +85,7 @@ depends-member:
 - ["Ps9AnyObject", "match"]
 - !private ["Ps9AnyObject", "maxY"]
 - !private ["Ps9AnyObject", "numberOfLines"]
+- !private ["Ps9AnyObject", "opposantPlayerId"]
 - !private ["Ps9AnyObject", "opposantToken"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "replayBtn"]
@@ -438,6 +439,7 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps25LosslessStringConvertible", "isEmpty"]
 - ["C9Projet3755Match", "deinit"]
+- !private ["C9Projet3755Match", "opposantPlayerId"]
 - !private ["C9Projet3755Match", "opposantToken"]
 - !private ["C9Projet3755Match", "score"]
 - !private ["C9Projet3755Match", "state"]

@@ -7,10 +7,10 @@ provides-member:
 - ["C9Projet3759UserChart", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UserChart"
 - "String"
-- "Int"
 - "UIImage"
+- "UserChart"
+- "Int"
 depends-member:
 - ["Ps9AnyObject", ""]
 - ["SQ", "deinit"]

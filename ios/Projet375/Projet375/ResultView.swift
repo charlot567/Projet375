@@ -85,19 +85,32 @@ class ResultView: UIView {
                 
             else {
                 
+                var pointage_1 = 0;
+                var pointage_2 = 0;
+                
                 if(kGoodAnswer > match.score) {
                     displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez gagnez le match! \(kGoodAnswer)-\(match.score!)")
+                    pointage_1 = 2;
                 }
                     
                 else if(kGoodAnswer == match.score) {
                     displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez égalisé le match! \(kGoodAnswer)-\(match.score!)")
+                    pointage_1 = 1;
+                    pointage_2 = 1;
                 }
                     
                 else {
                     displayAlert(currentViewController: kMasterVC, title: "Résultat", message: "Vous avez perdu le match! \(kGoodAnswer)-\(match.score!)")
+                    pointage_2 = 2;
                 }
                 
-                ControllerMatch.setScore(playerId: kCurrentUser.fbId, score: kGoodAnswer, token: match.opposantToken == nil ? "NOTOKEN" : match.opposantToken, completitionHandler: { (success: Bool) in
+                ControllerMatch.setScore(playerId: kCurrentUser.fbId, score: pointage_1, token: "NOTOKEN", completitionHandler: { (success: Bool) in
+                    if(!success) {
+                        displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Le match n'a pas été sauvegardé")
+                    }
+                })
+                
+                ControllerMatch.setScore(playerId: match.opposantPlayerId, score: pointage_2, token: match.opposantToken == nil ? "NOTOKEN" : match.opposantToken, completitionHandler: { (success: Bool) in
                     if(!success) {
                         displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Le match n'a pas été sauvegardé")
                     }

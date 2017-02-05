@@ -10,27 +10,27 @@ provides-member:
 - ["C13FacebookLogin11LoginButton", "sizeThatFits"]
 - ["C13FacebookLogin11LoginButton", "intrinsicContentSize"]
 provides-dynamic-lookup:
-- "layoutSubviews"
 - "sizeThatFits"
 - "intrinsicContentSize"
 - "sizeToFit"
+- "layoutSubviews"
 depends-top-level:
-- "LoginButtonDelegate"
-- "CGSize"
-- "LoginBehavior"
-- "AssignmentPrecedence"
-- !private "??"
-- "PublishPermission"
 - "LoginButton"
-- "FBSDKLoginButton"
-- !private "CGFloat"
+- "LoginBehavior"
+- "CGSize"
+- !private "StringLiteralType"
+- "LoginButtonDelegate"
+- "NSCoder"
+- "PublishPermission"
+- !private "??"
+- "LoginDefaultAudience"
+- "AssignmentPrecedence"
+- "ReadPermission"
 - "UIView"
 - "LoginButtonDelegateBridge"
+- "FBSDKLoginButton"
 - "CGRect"
-- "LoginDefaultAudience"
-- !private "StringLiteralType"
-- "ReadPermission"
-- "NSCoder"
+- !private "CGFloat"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "greatestFiniteMagnitude"]
 - !private ["Ps9AnyObject", "CGFloat"]
