@@ -74,6 +74,10 @@ class ViewController: UIViewController {
         }
         
         self.currentViewIndex = index
+        
+        print(index)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

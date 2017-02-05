@@ -43,6 +43,8 @@ class MenuView: UIView {
         let arenaButton = UIButton()
         arenaButton.frame = CGRect(x: buttonGapW, y: topNavBar.maxY + buttonGapH, width: kWidth - buttonGapW * 2, height: buttonHeight)
         arenaButton.backgroundColor = kGreen
+        arenaButton.tag = KVArena
+        arenaButton.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         self.addSubview(arenaButton)
         
         let arenaImage = UIImage(named: "arena_icon")
@@ -51,6 +53,8 @@ class MenuView: UIView {
         let arenaImg = UIButton()
         arenaImg.frame = CGRect(x: arenaButton.w / 2 - arenaImageSize.width / 2, y: arenaButton.h * 0.25, width: arenaImageSize.width, height: arenaImageSize.height)
         arenaImg.setImage(arenaImage, for: .normal)
+        arenaImg.tag = KVArena
+        arenaImg.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         arenaButton.addSubview(arenaImg)
         
         let arenaLabel = UIButton()
@@ -58,12 +62,16 @@ class MenuView: UIView {
         arenaLabel.setTitle("Arène", for: .normal)
         arenaLabel.setTitleColor(UIColor.white, for: .normal)
         arenaLabel.titleLabel?.textAlignment = .center
+        arenaLabel.tag = KVArena
+        arenaLabel.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         arenaButton.addSubview(arenaLabel)
         
         let bWidth = kWidth / 2 - buttonGapW
         let cartButton = UIButton()
         cartButton.frame = CGRect(x: buttonGapW, y: arenaButton.maxY + buttonGapH, width: bWidth, height: buttonHeight)
         cartButton.backgroundColor = kBlue
+        cartButton.tag = KVCart
+        cartButton.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         self.addSubview(cartButton)
         
         let cartImage = UIImage(named: "cart_icon")
@@ -72,6 +80,8 @@ class MenuView: UIView {
         let cartImg = UIButton()
         cartImg.frame = CGRect(x: cartButton.w / 2 - cartImageSize.width + cartImageSize.width * 0.1, y: cartButton.h / 2 - cartImageSize.height / 1.5, width: cartImageSize.width, height: cartImageSize.height)
         cartImg.setImage(cartImage, for: .normal)
+        cartImg.tag = KVCart
+        cartImg.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         cartButton.addSubview(cartImg)
         
         let cartLabel = UIButton()
@@ -81,11 +91,15 @@ class MenuView: UIView {
         cartLabel.titleLabel?.textAlignment = .left
         cartLabel.sizeToFit()
         cartLabel.x = (cartImg.minX + cartImg.w / 2) - cartLabel.w / 2 + 5
+        cartLabel.tag = KVCart
+        cartLabel.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         cartButton.addSubview(cartLabel)
         
         let profilButton = UIButton()
         profilButton.frame = CGRect(x: cartButton.maxX + buttonGapW, y: cartButton.minY, width: cartButton.w - buttonGapW, height: buttonHeight)
         profilButton.backgroundColor = kOrange
+        profilButton.tag = KVProfile
+        profilButton.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         self.addSubview(profilButton)
         
         let profileImage = UIImage(named: "profile_icon")
@@ -94,6 +108,8 @@ class MenuView: UIView {
         let profileImg = UIButton()
         profileImg.frame = CGRect(x: profilButton.w / 2 - profileImageSize.width * 0.1, y: profilButton.h / 2 - profileImageSize.height / 1.5, width: profileImageSize.width, height: profileImageSize.height)
         profileImg.setImage(profileImage, for: .normal)
+        profileImg.tag = KVProfile
+        profileImg.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         profilButton.addSubview(profileImg)
         
         let profileLabel = UIButton()
@@ -103,11 +119,15 @@ class MenuView: UIView {
         profileLabel.titleLabel?.textAlignment = .left
         profileLabel.sizeToFit()
         profileLabel.x = (profileImg.minX + profileImg.w / 2) - profileLabel.w / 2
+        profileLabel.tag = KVProfile
+        profileLabel.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         profilButton.addSubview(profileLabel)
         
         let chartButton = UIButton()
         chartButton.frame = CGRect(x: buttonGapW, y: profilButton.maxY + buttonGapH, width: arenaButton.w, height: buttonHeight)
         chartButton.backgroundColor = kRed
+        chartButton.tag = KVChart
+        chartButton.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         self.addSubview(chartButton)
         
         let chartImage = UIImage(named: "chart_icon")
@@ -116,6 +136,8 @@ class MenuView: UIView {
         let chartImg = UIButton()
         chartImg.frame = CGRect(x: chartButton.w / 2 - chartImageSize.width / 2, y: chartButton.h * 0.25, width: chartImageSize.width, height: chartImageSize.height)
         chartImg.setImage(chartImage, for: .normal)
+        chartImg.tag = KVChart
+        chartImg.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         chartButton.addSubview(chartImg)
         
         let chartLabel = UIButton()
@@ -123,6 +145,8 @@ class MenuView: UIView {
         chartLabel.setTitle("Classement", for: .normal)
         chartLabel.setTitleColor(UIColor.white, for: .normal)
         chartLabel.titleLabel?.textAlignment = .center
+        chartLabel.tag = KVChart
+        chartLabel.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         chartButton.addSubview(chartLabel)
         
         let newBW = cartButton.w / 1.8
@@ -131,6 +155,8 @@ class MenuView: UIView {
         playButton.backgroundColor = kPurple
         playButton.layer.borderColor = UIColor.white.cgColor
         playButton.layer.borderWidth = buttonGapW
+        playButton.tag = KVPlay
+        playButton.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         self.addSubview(playButton)
         
         let playImage = UIImage(named: "play_icon")
@@ -139,8 +165,15 @@ class MenuView: UIView {
         let playImg = UIButton()
         playImg.frame = CGRect(x: playButton.w / 2 - playImageSize.width / 2, y: playButton.h / 2 - playImageSize.height / 2, width: playImageSize.width, height: playImageSize.height)
         playImg.setImage(playImage, for: .normal)
+        playImg.tag = KVPlay
+        playImg.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         playButton.addSubview(playImg)
         
+    }
+    
+    func selectMenuItem(button: UIButton) {
+        let index = button.tag
+        kMasterVC.switchNav(index: index)
     }
     
     func setUsernameLabel(name: String) {

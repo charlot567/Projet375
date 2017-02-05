@@ -43,5 +43,10 @@ var kMasterVC: ViewController!
 
 let KVLogIn = 0
 let KVHome = 1
+let KVArena = 2
+let KVCart = 3
+let KVPlay = 4
+let KVProfile = 5
+let KVChart = 6
 
 
