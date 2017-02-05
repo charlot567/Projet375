@@ -1,0 +1,12 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "832f84bde4c684879d07e5840850cffa"
+build_time: [539608620, 258285000]
+inputs:
+  "/Users/alexmorin/Desktop/Projet375/Pods/FacebookLogin/Sources/Login/LoginBehavior.swift": [539548660, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/FacebookLogin/Sources/Login/LoginButton.swift": [539548660, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/FacebookLogin/Sources/Login/LoginButton.Tooltip.swift": [539548660, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/FacebookLogin/Sources/Login/LoginButtonDelegate.swift": [539548660, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/FacebookLogin/Sources/Login/LoginButtonDelegateBridge.swift": [539548660, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/FacebookLogin/Sources/Login/LoginDefaultAudience.swift": [539548660, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/FacebookLogin/Sources/Login/LoginManager.swift": [539548660, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/FacebookLogin/Sources/Login/LoginResult.swift": [539548660, 0]
