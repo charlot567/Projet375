@@ -1,0 +1,12 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "e38aa20eb6c6afccf846b1bfae5eb535"
+build_time: [539608617, 236999000]
+inputs:
+  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarousel+UIGestureRecognizerDelegate.swift": [539592798, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarousel+UIScrollViewDelegate.swift": [539592798, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarousel.swift": [539592798, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarouselDelegate.swift": [539592798, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarouselError.swift": [539592798, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarouselResizeType.swift": [539592798, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/SwiftCarouselScroll.swift": [539592798, 0]
+  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftCarousel/Source/UIView+SwiftCarousel.swift": [539592798, 0]

@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "b769d92c60316dde466ed1c6f6bf08ed"
+build_time: [539608616, 192307000]
+inputs:
+  "/Users/alexmorin/Desktop/Projet375/Pods/SwiftSpinner/SwiftSpinner/SwiftSpinner.swift": [539558052, 0]
