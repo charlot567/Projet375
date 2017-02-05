@@ -25,12 +25,12 @@ let kBaseUrl:String = "http://79.170.44.147/projet-375.org/API"
 
 
 //Les catégories de questions
-let kCat1:String = "Cat1"
-let kCat2:String = "Cat2"
-let kCat3:String = "Cat3"
-let kCat4:String = "Cat4"
+let kCat1:String = "Géographie"
+let kCat2:String = "Histoire"
+let kCat3:String = "Tourisme"
+let kCat4:String = "Art"
 
-let kColorForCategories: [String:UIColor] = [kCat1:kRed, kCat2:kBlue, kCat3:kGreen, kCat4:kOrange]
+let kColorForCategories: [String:UIColor] = [kCat1:kGreen, kCat2:kPurple, kCat3:kBlue, kCat4:kRed]
 
 //Les type de questions
 let kTypeMap:Int     = 0

@@ -9,5 +9,6 @@ target 'Projet375' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod "SwiftSpinner"
+  pod "SwiftCarousel"
 
 end

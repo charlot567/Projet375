@@ -17,6 +17,7 @@ class ViewController: UIViewController {
 
     private var menuView: MenuView!
     private var loginView: LoginView!
+    private var randomView: RandomPickerView!
     
     private var currentViewIndex: Int!
     
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
         //  Init View
         menuView = MenuView(frame: self.view.frame)
         loginView = LoginView(frame: self.view.frame)
+        randomView = RandomPickerView(frame: self.view.frame)
         
         self.currentViewIndex = KVLogIn
 //        DispatchQueue.main.async { SwiftSpinner.show("Chargement") }
@@ -71,6 +73,11 @@ class ViewController: UIViewController {
         
         else if(index == KVLogIn) {
             self.view.addSubview(loginView)
+        }
+        
+        else if(index == KVPlay) {
+            self.view.addSubview(randomView)
+            randomView.generateCategory()
         }
         
         self.currentViewIndex = index
