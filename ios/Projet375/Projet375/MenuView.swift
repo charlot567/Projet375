@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FacebookLogin
+import FacebookCore
+import FBSDKLoginKit
 
 class MenuView: UIView {
     
@@ -32,6 +35,15 @@ class MenuView: UIView {
         usernameLabel.textColor = .white
         usernameLabel.adjustsFontSizeToFitWidth = true
         self.topNavBar.addSubview(usernameLabel)
+        
+        let logoutImage = UIImage(named: "logout_icon")
+        let logoutSize = imageSize(imageWidth: kWidth / 15, imageSize: logoutImage!.size)
+        
+        let logoutButton = UIButton()
+        logoutButton.frame = CGRect(x: kWidth - logoutSize.width * 1.5, y: topNavBar.h / 2 - logoutSize.height / 2 + 5, width: logoutSize.width, height: logoutSize.height)
+        logoutButton.setImage(logoutImage, for: .normal)
+        logoutButton.addTarget(self, action: #selector(logout), for: .touchUpInside)
+        self.topNavBar.addSubview(logoutButton)
         
         let buttonGapH: CGFloat = 2
         let buttonGapW: CGFloat = 2
@@ -170,6 +182,15 @@ class MenuView: UIView {
         playButton.addSubview(playImg)
         
     }
+    
+    func logout() {
+        let fb = FBSDKLoginManager()
+        fb.logOut()
+        
+        resetUser()
+        kMasterVC.switchNav(index: KVLogIn)
+    }
+    
     
     func selectMenuItem(button: UIButton) {
         let index = button.tag
