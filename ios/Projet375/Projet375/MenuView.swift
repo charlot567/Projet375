@@ -49,7 +49,7 @@ class MenuView: UIView {
         let arenaImageSize = imageSizeHeight(imageHeight: imageSizeHeightForIcon, imageSize: arenaImage!.size)
         
         let arenaImg = UIButton()
-        arenaImg.frame = CGRect(x: arenaButton.w / 2 - arenaImageSize.width / 2, y: arenaButton.h * 0.15, width: arenaImageSize.width, height: arenaImageSize.height)
+        arenaImg.frame = CGRect(x: arenaButton.w / 2 - arenaImageSize.width / 2, y: arenaButton.h * 0.25, width: arenaImageSize.width, height: arenaImageSize.height)
         arenaImg.setImage(arenaImage, for: .normal)
         arenaButton.addSubview(arenaImg)
         
@@ -70,7 +70,7 @@ class MenuView: UIView {
         let cartImageSize = imageSizeHeight(imageHeight: imageSizeHeightForIcon * 0.7, imageSize: cartImage!.size)
         
         let cartImg = UIButton()
-        cartImg.frame = CGRect(x: cartButton.w / 2 - cartImageSize.width - cartImageSize.width * 0.1, y: cartButton.h / 2 - cartImageSize.height / 1.5, width: cartImageSize.width, height: cartImageSize.height)
+        cartImg.frame = CGRect(x: cartButton.w / 2 - cartImageSize.width + cartImageSize.width * 0.1, y: cartButton.h / 2 - cartImageSize.height / 1.5, width: cartImageSize.width, height: cartImageSize.height)
         cartImg.setImage(cartImage, for: .normal)
         cartButton.addSubview(cartImg)
         
@@ -114,7 +114,7 @@ class MenuView: UIView {
         let chartImageSize = imageSizeHeight(imageHeight: imageSizeHeightForIcon, imageSize: chartImage!.size)
         
         let chartImg = UIButton()
-        chartImg.frame = CGRect(x: chartButton.w / 2 - chartImageSize.width / 2, y: chartButton.h * 0.15, width: chartImageSize.width, height: chartImageSize.height)
+        chartImg.frame = CGRect(x: chartButton.w / 2 - chartImageSize.width / 2, y: chartButton.h * 0.25, width: chartImageSize.width, height: chartImageSize.height)
         chartImg.setImage(chartImage, for: .normal)
         chartButton.addSubview(chartImg)
         
