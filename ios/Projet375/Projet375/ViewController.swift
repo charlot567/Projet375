@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     private var loginView: LoginView!
     private var randomView: RandomPickerView!
     private var chartView: ChartView!
+    private var profileView: ProfileView!
     var currentMatch: Match!
     
     private var currentViewIndex: Int!
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
         menuView = MenuView(frame: self.view.frame)
         loginView = LoginView(frame: self.view.frame)
         chartView = ChartView(frame: self.view.frame)
+        profileView = ProfileView(frame: self.view.frame)
 //        randomView = RandomPickerView(frame: self.view.frame)
         
         self.currentViewIndex = KVLogIn
@@ -65,7 +67,13 @@ class ViewController: UIViewController {
             })
         }
         
-        if(index == KVHome && self.currentViewIndex != KVChart) {
+        if(self.currentViewIndex == KVProfile) {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.profileView.x = kWidth
+            })
+        }
+        
+        if(index == KVHome && self.currentViewIndex != KVChart && self.currentViewIndex != KVProfile) {
             self.view.addSubview(menuView)
             self.menuView.setUsernameLabel(name: kCurrentUser.firstName)
         }
@@ -84,6 +92,16 @@ class ViewController: UIViewController {
             chartView.loadData()
             self.view.addSubview(chartView)
         }
+            
+        else if(index == KVProfile) {
+            profileView.x = kWidth
+            
+            UIView.animate(withDuration: 0.5, animations: {
+                self.profileView.x = 0
+            })
+            
+            self.view.addSubview(profileView)
+        }
         
         else if(index == KVPlay) {
             
@@ -96,8 +114,13 @@ class ViewController: UIViewController {
                         DispatchQueue.main.sync {
                             self.currentMatch = match
                             self.randomView = RandomPickerView(frame: self.view.frame, match: match!)
+                            self.randomView.y = kHeight
                             self.view.addSubview(self.randomView)
                             self.randomView.generateCategory()
+                            
+                            UIView.animate(withDuration: 0.5, animations: { 
+                                self.randomView.y = 0
+                            })
                         }
                     }
                         

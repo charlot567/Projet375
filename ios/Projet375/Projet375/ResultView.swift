@@ -42,7 +42,7 @@ class ResultView: UIView {
     }
     
     func replayBtn(button: UIButton) {
-        if(button.titleLabel!.text == "Terminer") {
+        if(button.titleLabel!.text == "Terminé") {
             kMasterVC.resultToMenu()
             kUserCurrentTurn = 0
             kMasterVC.currentMatch = nil
