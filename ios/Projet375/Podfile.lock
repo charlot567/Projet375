@@ -17,11 +17,13 @@ PODS:
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.19.0):
     - FBSDKCoreKit
+  - SwiftCarousel (0.8.0)
   - SwiftSpinner (1.1.0)
 
 DEPENDENCIES:
   - FacebookCore
   - FacebookLogin
+  - SwiftCarousel
   - SwiftSpinner
 
 SPEC CHECKSUMS:
@@ -30,8 +32,9 @@ SPEC CHECKSUMS:
   FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
   FBSDKCoreKit: 894b2b6eda6a4c8c4204e92e59cc355709ef045c
   FBSDKLoginKit: 83ca4d8f12a2022570af9fd6aacf27f6b425b99f
+  SwiftCarousel: a62f4e9b944d1bca4ccfe3f28abb6119e3e36b12
   SwiftSpinner: c03815614599b91eea46594bd52ba742849d0414
 
-PODFILE CHECKSUM: 4d0ef129084c58a1b671e91d7c4a776c6f8b4dec
+PODFILE CHECKSUM: c5c1d4c9d5e3eafb2c39d73409571c6d0ada5758
 
 COCOAPODS: 1.1.1

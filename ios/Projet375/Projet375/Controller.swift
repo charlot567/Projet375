@@ -20,7 +20,7 @@ public class Controller {
         
         //  Build the request
         request.httpBody = postString.data(using: String.Encoding.utf8)
-        print(NSString(data: request.httpBody!, encoding: String.Encoding.utf8.rawValue))
+    
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data, response, error in
             
             //  Check for error
