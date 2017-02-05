@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     private var menuView: MenuView!
     private var loginView: LoginView!
     private var randomView: RandomPickerView!
+    private var chartView: ChartView!
     var currentMatch: Match!
     
     private var currentViewIndex: Int!
@@ -33,6 +34,7 @@ class ViewController: UIViewController {
         //  Init View
         menuView = MenuView(frame: self.view.frame)
         loginView = LoginView(frame: self.view.frame)
+        chartView = ChartView(frame: self.view.frame)
 //        randomView = RandomPickerView(frame: self.view.frame)
         
         self.currentViewIndex = KVLogIn
@@ -57,13 +59,30 @@ class ViewController: UIViewController {
         
         loginView.removeFromSuperview()
         
-        if(index == KVHome) {
+        if(self.currentViewIndex == KVChart) {
+            UIView.animate(withDuration: 0.5, animations: { 
+                self.chartView.x = kWidth
+            })
+        }
+        
+        if(index == KVHome && self.currentViewIndex != KVChart) {
             self.view.addSubview(menuView)
             self.menuView.setUsernameLabel(name: kCurrentUser.firstName)
         }
         
         else if(index == KVLogIn) {
             self.view.addSubview(loginView)
+        }
+            
+        else if(index == KVChart) {
+            chartView.x = kWidth
+            
+            UIView.animate(withDuration: 0.5, animations: {
+                self.chartView.x = 0
+            })
+            
+            chartView.loadData()
+            self.view.addSubview(chartView)
         }
         
         else if(index == KVPlay) {
