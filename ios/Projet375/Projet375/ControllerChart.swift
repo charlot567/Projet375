@@ -20,10 +20,10 @@ class ControllerChart: Controller {
                 if let values = jsonResult!["values"] as? AnyObject {
                  
                     for i in 0 ..< values.count {
-                        let firstName = (values[i] as AnyObject)["first_name"] as? String
-                        let lastName = (values[i] as AnyObject)["last_name"] as? String
-                        let point = (values[i] as AnyObject)["point"] as? String
-                        let imageUrl = (values[i] as AnyObject)["url_image"] as? String
+                        let firstName = (values.object(at: i) as AnyObject)["first_name"] as? String
+                        let lastName = (values.object(at: i) as AnyObject)["last_name"] as? String
+                        let point = (values.object(at: i) as AnyObject)["point"] as? String
+                        let imageUrl = (values.object(at: i) as AnyObject)["url_image"] as? String
                         
                         if firstName != nil && lastName != nil && point != nil && imageUrl != nil {
                             

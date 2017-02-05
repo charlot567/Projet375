@@ -219,6 +219,8 @@ class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         
         self.timer.invalidate()
         self.loadingBar.layer.removeAllAnimations()
+        
+        displayResultView()
 //        
 //        if (que.type == kTypeRegular) {
 //            for index in 0...3 {
