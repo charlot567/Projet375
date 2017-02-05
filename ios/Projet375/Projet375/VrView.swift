@@ -12,7 +12,7 @@ import AVFoundation
 import CoreLocation
 
 class VrView: UIView, CLLocationManagerDelegate {
-
+    
     var DyawLabel: UILabel!
     var DpitchLabel: UILabel!
     var DrollLabel: UILabel!
@@ -47,7 +47,7 @@ class VrView: UIView, CLLocationManagerDelegate {
                             self.captureDevice = device as? AVCaptureDevice
                         }
                     }
-                
+                    
                 }
                 if(self.captureDevice != nil) {
                     self.beginCameraSession()
@@ -75,7 +75,7 @@ class VrView: UIView, CLLocationManagerDelegate {
         
         self.addSubview(halfInfiniteWall1)
         self.addSubview(halfInfiniteWall2)
-
+        
         
         
         //221 a 255 ... 360/(255 - 221) = 10.58  disons 10 pour les tests...
@@ -117,7 +117,7 @@ class VrView: UIView, CLLocationManagerDelegate {
             self.addSubview(DheadingLabel)
             self.addSubview(DlocationLabel)
         }
-
+        
         
         
         
@@ -219,7 +219,7 @@ class VrView: UIView, CLLocationManagerDelegate {
         
         return fmod(radToDeg(rad: atan2(y, x)), 360.0) + 90.0
     }
-
+    
     
     func beginCameraSession() {
         do {
@@ -232,5 +232,5 @@ class VrView: UIView, CLLocationManagerDelegate {
             print("Cannot start Camera")
         }
     }
-
+    
 }
