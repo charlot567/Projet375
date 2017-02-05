@@ -35,7 +35,6 @@ class ViewController: UIViewController {
         randomView = RandomPickerView(frame: self.view.frame)
         
         self.currentViewIndex = KVLogIn
-//        DispatchQueue.main.async { SwiftSpinner.show("Chargement") }
         
         //  Check if we need to display the login page
         if AccessToken.current != nil {

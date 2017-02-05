@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftSpinner
 
 class RandomPickerView: UIView {
     
@@ -16,6 +17,7 @@ class RandomPickerView: UIView {
     //  Tourisme
     //  Art
     
+    private var questionView: QuestionView!
     private var categoryView = [UIButton]()
     private var currentCat: Int!
     
@@ -101,8 +103,31 @@ class RandomPickerView: UIView {
     }
     
     func clickToPlay(button: UIButton) {
+        
+        SwiftSpinner.show("Récupération de la question ...")
         let tag = button.tag
         print("Play: \(tag)")
+        
+        
+        ControllerQuestion.getQuestion(location: nil, cat: button.tag/**toreplace with button.tag*/) { (success: Bool, q: question?) in
+            
+            
+            if(success && q != nil) {
+                print("Question récupéré")
+                
+                DispatchQueue.main.sync {
+                    self.questionView = QuestionView(frame: self.frame, q: q!)
+                    self.questionView.layer.zPosition = 101
+                    self.addSubview(self.questionView)
+                    
+                    SwiftSpinner.hide()
+                }
+            }
+                
+            else {
+                displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Erreur lors de la récupération de la question")
+            }
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

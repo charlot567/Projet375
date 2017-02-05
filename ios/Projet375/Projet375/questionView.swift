@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class questionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
+class QuestionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
     
     let locationManager = CLLocationManager()
     
@@ -53,6 +53,7 @@ class questionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
     }
     
     init(frame: CGRect, q: question) {
+        
         navBar = UINavigationBar()
         questionLabel = UILabel()
         buttons = []
@@ -63,6 +64,12 @@ class questionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         map = MKMapView()
         lgpr = UILongPressGestureRecognizer()
         super.init(frame:frame)
+        
+        let bg = UIView()
+        bg.frame = self.frame
+        bg.backgroundColor = kColorForCategories[q.categorie]
+        self.addSubview(bg)
+        
         
         self.locationManager.requestWhenInUseAuthorization()
         
@@ -80,12 +87,13 @@ class questionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
         
         switch que.type {
         case kTypeMap:
-            //On load la view map
-            createMapContent()
-        case kTypeRegular:
             //On load la view reguliere question réponse
             createRegularContent()
-            //print("Regular")
+        //print("Regular")
+        case kTypeRegular:
+            //On load la view map
+            createMapContent()
+            
         default:
             //On fait rien...
             print("Does not work...")
@@ -99,12 +107,14 @@ class questionView: UIView, CLLocationManagerDelegate, MKMapViewDelegate {
     func createHeader(cat: String) {
         navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height*0.1))
         navBar.barStyle = UIBarStyle.default
-        navBar.barTintColor = kColorForCategories[cat]
-        self.backgroundColor = kColorForCategories[cat]?.withAlphaComponent(0.4)
+        
+        let color = [kGreen, kPurple, kBlue, kRed]
+        navBar.barTintColor = color[Int(cat)!]
+        self.backgroundColor = color[Int(cat)!]
         
         loadingBar.backgroundColor = UIColor.blue
         
-        let navItem = UINavigationItem(title: cat);
+        let navItem = UINavigationItem(title: cat == "0" ? "Géographie" : cat == "1" ? "Histoire" : cat == "2" ? "Tourisme" : "Art");
         navBar.setItems([navItem], animated: false);
         
         self.loadingBar.frame = CGRect(x: 0, y: navBar.frame.maxY - 1, width: self.frame.width, height: 4)
