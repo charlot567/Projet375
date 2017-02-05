@@ -20,12 +20,17 @@ class LoginView: UIView, LoginButtonDelegate {
         super.init(frame: frame)
         
         let bWidth = kWidth - kWidth / 4
-        let bHeight = kHeight / 10
+        let bHeight = kHeight / 15
         loginButton = LoginButton(readPermissions: [ .publicProfile, .email ])
-        loginButton.frame = CGRect(x: kWidth / 2 - bWidth / 2, y: 200, width: bWidth, height: bHeight)
+        loginButton.frame = CGRect(x: kWidth / 2 - bWidth / 2, y: kHeight - kHeight / 4, width: bWidth, height: bHeight)
         loginButton.delegate = self
+        loginButton.layer.zPosition = 100
         self.addSubview(loginButton)
         
+        let bg = UIImageView()
+        bg.frame = self.frame
+        bg.image = UIImage(named: "signupbg")
+        self.addSubview(bg)
     }
     
     /**

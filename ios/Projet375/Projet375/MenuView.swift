@@ -169,6 +169,17 @@ class MenuView: UIView {
         playImg.addTarget(self, action: #selector(selectMenuItem(button:)), for: .touchUpInside)
         playButton.addSubview(playImg)
         
+        ControllerQuestion.getQuestion(location: nil, cat: 1) { (success: Bool, q: question?) in
+            
+            
+            if(success && q != nil) {
+                print("Question récupéré")
+            }
+            
+            else {
+                displayAlert(currentViewController: kMasterVC, title: "Erreur", message: "Erreur lors de la récupération de la question")
+            }
+        }
     }
     
     func selectMenuItem(button: UIButton) {

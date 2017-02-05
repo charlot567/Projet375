@@ -20,6 +20,8 @@ class question {
     var reponseId:Int!              //Le numéro de la réponse
     var location: CLLocationCoordinate2D?
     
+    init() {}
+    
     init(id: Int, type:Int ,categorie:String, quest: String, reponse:[String], reponseImage:[UIImage], reponseId:Int, location: CLLocationCoordinate2D) {
         self.id = id
         self.type = type
